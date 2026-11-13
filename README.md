@@ -15,3 +15,7 @@ OpenRoot is a self-hosted, offline-first decentralized framework integrating phy
 - `bin/`: Operational shell automation, mesh bridging, and database tuning macros.
 - `workareas/`: Staging, validation receipts, and release packaging artifacts.
 - `data/`: Local validation ledgers, friction logs, and universal indexes.
+
+## Live model front door
+
+[Live model front door](docs/LIVE_FRONT_DOOR.md) — usage, verified scope, and limitations.
