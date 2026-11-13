@@ -87,6 +87,29 @@ Evidence (sealed by hash):
 | `/home/jesse/openroot/outbox/intensity_chain_20261105T070124Z/INTENSITY_CHAIN.json` | 5273 | `09bcadcd3818a19850669a31de0d24e1...` |
 | `/home/jesse/openroot/outbox/intensity_chain_20261105T070124Z/CHAIN_RECEIPT.md` | 1236 | `7d92118d1273a737351a1ee1faef1fc6...` |
 
+## #5 — ai-hybrid-20261112T140001Z
+
+- actor: jesse
+- sealed: 2026-11-12T14:00:41
+- parent: #1
+- hash: `44a2377b84ac57cded505f07be4caf06...`
+
+_absolute-path fractal fix; NQ=1_
+
+Steps:
+
+1. `friction_observer`
+2. `question_travel`
+3. `pods_fractal`
+
+Evidence (sealed by hash):
+
+| file | bytes | sha256 |
+|---|---|---|
+| `/home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z/friction_report.json` | 286545 | `fb39e87cdca56d2ec5949cc4cb6bc56f...` |
+| `/home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z/QUESTION_TRAVEL.json` | 928 | `17847e12725d8aa487e821de5d453564...` |
+| `/home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z/PODS_FRACTAL.json` | 3752 | `cf89ba64d4197fab7b7230ac4849ae65...` |
+
 ---
 
 To add a refinement, record it with `--parent <seq>` of the pathway you improved. The chain is the compounding.
