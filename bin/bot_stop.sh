@@ -1,5 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/sh
-set -euo pipefail
 PIDFILE="$HOME/openroot/bot_loop.pid"
 if [ -f "$PIDFILE" ]; then
   PID=$(cat "$PIDFILE")
