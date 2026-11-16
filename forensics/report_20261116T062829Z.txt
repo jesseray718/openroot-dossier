@@ -1,0 +1,213 @@
+
+===== P0 host identity =====
+2026-11-16T00:28:29,999329943-06:00
+optiplex3060
+Linux 7.0.0-43-generic x86_64
+/dev/sda4       1.4T  747G  550G  58% /
+
+===== P1 git state =====
+0bce324346f2a9fab16b1037f1eba611cf181bdd
+## HEAD (no branch)
+M  PATHWAYS.md
+ M a15
+dirty_files: 55
+HAVE   c7c38175488608460c7ff4fcf4296d86b8d367ea
+MISSING 57669b7e80a12f0bb4ea374228a2a4a56eb53adc
+MISSING c5344a4cb3f01d66585b6b8d53c20af0f75cd858
+/home/jesse/openroot                                                         0bce3243 (detached HEAD)
+/home/jesse/.local/state/openroot-checkpoints/20261024T203917-1431906        00000000 [docs/connection-context-20261024T203917-1431906]
+/home/jesse/.local/state/openroot-checkpoints/20261024T204305-1432512        00000000 [docs/connection-context-20261024T204305-1432512]
+/home/jesse/.local/state/openroot-checkpoints/20261024T204429-1432729        00000000 [docs/connection-context-20261024T204429-1432729]
+/home/jesse/openroot-group-commit-20261029T091126Z-59511                     00000000 [feature/group-commit-20261029T091126Z-59511]
+/home/jesse/openroot-hardening-20261029T082733Z-57753                        00000000 [fix/need-outcome-hardening-20261029T082733Z-57753]
+/home/jesse/openroot-integration-worktrees/review-20261103T121537Z-dWj2IsCw  d97f2e52 [review/persistence-20261103T121537Z-review-20261103T121537Z-dWj2IsCw]
+/home/jesse/openroot-main-verified                                           b744a5e6 (detached HEAD)
+/home/jesse/openroot-need-outcome-20261029T041134Z-46732                     00000000 [feature/need-outcome-engine-20261029T041134Z-46732]
+/home/jesse/openroot-phone-cli-review-20261103T143748Z                       2ac1e3e2 [feat/phone-snapshot-cli-20261103T143748Z]
+/home/jesse/openroot-pr134-fix                                               00000000 [fix/pr134-spdx]
+/home/jesse/openroot-publish-worktrees/pathway-cache-behavior                87ec5937 [demo/pathway-cache-behavior]
+/home/jesse/openroot-readme-20261103T133848Z-168362                          04e0d587 [docs/a15-mirror-20261103T133848Z-168362]
+/home/jesse/openroot-readme-20261103T133958Z-168458                          31d7f3bf [docs/a15-mirror-20261103T133958Z-168458]
+0bce3243 feat: publish verified A15-to-core model front door and repairs
+fc376083 squash: live A15 mesh hybrid + core dossier + analytics (R=1)
+316a9f69 docs: add standalone local AI pipeline user manual
+dcf44123 feat(une): add UNEClient governance interface and finalize system rollout
+bdcf0c12 feat(openroot): squash merge review branch - complete Agape Prime system & thermal baselines
+
+===== P2 rescue script contents (silent 61-byte file) =====
+61 bytes, mtime 2026-11-14 16:34:01.167206945 -0600
+# (Paste the script content above here, or save it directly)
+
+===== P3 giant Nov-15 dossier artifacts =====
+/home/jesse/openroot/dossier_summary.md : 587163759 bytes, mtime 2026-11-15 20:09:25.161883695 -0600
+--- first 250 bytes ---
+# OpenRoot Dossier Summary
+
+{
+  "pod": "knowledge",
+  "chunk_sha256": "09bcadcd3818a19850669a31de0d24e17bf88513008e60f2905578cb68b36c08",
+  "hash_verified": true,
+  "bm25": -63.28946670444406,
+  "pod_rank": 1,
+  "body": "{\n  \"ts\": \"2026-11-05T07:
+--- last 250 bytes ---
+ Removing and installing components",
+  "locations": [
+    {
+      "source": "https://dl.dell.com/topicspdf/optiplex-3060-desktop_Service-Manual3_en-us.pdf",
+      "part": 27,
+      "source_status": "indexed",
+      "secret_refs": []
+    }
+  ]
+}
+---
+
+/home/jesse/openroot/dossier_output.jsonl : 566164044 bytes, mtime 2026-11-15 20:09:01.653064335 -0600
+--- first 250 bytes ---
+{"pod": "knowledge", "chunk_sha256": "09bcadcd3818a19850669a31de0d24e17bf88513008e60f2905578cb68b36c08", "hash_verified": true, "bm25": -63.28946670444406, "pod_rank": 1, "body": "{\n  \"ts\": \"2026-11-05T07:03:26Z\",\n  \"db\": \"/home/jesse/pods/c
+--- last 250 bytes ---
+Lift the processor out of the socket [3].\n28 Removing and installing components", "locations": [{"source": "https://dl.dell.com/topicspdf/optiplex-3060-desktop_Service-Manual3_en-us.pdf", "part": 27, "source_status": "indexed", "secret_refs": []}]}
+
+lines=142363 valid_json=142363 invalid=0
+top_keys: [('pod', 142363), ('chunk_sha256', 142363), ('hash_verified', 142363), ('bm25', 142363), ('pod_rank', 142363), ('body', 142363), ('locations', 142363)]
+
+===== P4 zero-byte / symlink anomalies =====
+-- zero-byte top-level files:
+  1,
+  FETCH_HEAD
+  benote
+  fts_index.db
+  .env
+  0,
+-- symlink resolution:
+/home/jesse/pods/clone_universal_20261016T083202Z/pod.db
+target: /home/jesse/pods/clone_universal_20261016T083202Z/pod.db : 905707520 bytes
+-- quoting-accident files present:
+  1,
+  0,
+
+===== P5 port 11434 ownership and both model routes =====
+State  Recv-Q Send-Q                          Local Address:Port  Peer Address:PortProcess
+LISTEN 0      4096                                        *:11434            *:*          
+route A local 127.0.0.1:11434:
+HTTP 200 in 0.000435s
+route B tailscale 100.122.169.43:11434:
+HTTP 200 in 0.000382s
+tailscale0       UNKNOWN        100.122.169.43/32 fd7a:115c:a1e0::1a01:a9d5/128 fe80::eb46:75bc:c9df:8f24/64 
+
+===== P6 pinned-hash verification + pathway demo repro =====
+ABSENT  tools/recovered/compile_gate_dossier_v2.py
+ABSENT  examples/pathway-cache-behavior/demo.py
+
+===== P7 SQLite census (immutable, read-only) =====
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/acre/ledger.jsonl	602B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/archive/openroot-genesis.tar.gz	3545B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/bridges/ledger_bridge.md	375B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/coder/bin/openroot_coder_stack.py	2333B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/context/openroot_coder_context.json	603B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/context_bridge/ledger_wiring.json	686B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/context_bridge/openroot_state.py	2312B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/dist/openroot-unified-v1.0.tar.gz	2466B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/from_sd/research/algorithms/openroot-algorithms.js	8809B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/inbox/openroot-skills-20260907.tar.gz	18232B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/inbox/openroot-skills-rest-20260907.tar.gz	81270B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/infra/systemd/openroot-observer.service	390B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/kit/bin/openroot_loop.py	1873B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/ledger.jsonl	1294B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/github-repos/openroot/research/algorithms/openroot-algorithms.js	8809B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/github-repos/openroot/tools/acre-ledger/ledger.py	2804B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot-ecosystem/openroot/archive/openroot-genesis.tar.gz	3545B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot-ecosystem/openroot/openroot-push.sh	3229B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot-ecosystem/openroot/research/algorithms/openroot-algorithms.js	8809B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot-ecosystem/openroot/src/openroot-business-v0.4.py	3204B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot-ecosystem/openroot/src/openroot-core-v0.3.py	14792B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot-ecosystem/openroot/tools/acre-ledger/ledger.py	2804B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/archive/openroot-genesis.tar.gz	3545B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/dist/openroot-unified-v1.0.tar.gz	2466B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/openroot-push.sh	3229B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/research/algorithms/openroot-algorithms.js	8809B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/src/openroot-business-v0.4.py	3204B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/src/openroot-core-v0.3.py	14792B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot/tools/acre-ledger/ledger.py	2804B
+  ERR: file is not a database
+data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/openroot_complete_handbook.md	6334B
+  ERR: file is not a database
+
+===== P8 openroot-fulltext (help text only, no model call) =====
+usage: openroot_fulltext_v2-e82244d3f46d.py [-h] [--state STATE]
+                                            {build,search,baseline,where-used,secrets,status}
+                                            ...
+
+OpenRoot full-text v2: filesystem + SQLite intake, baseline, dossier, private
+secrets file.
+
+positional arguments:
+  {build,search,baseline,where-used,secrets,status}
+
+options:
+  -h, --help            show this help message and exit
+  --state STATE
+
+===== P9 what changed since Nov 15 00:00 (last 30) =====
+2026-11-15 21:42        1266  .git/objects/c7/c38175488608460c7ff4fcf4296d86b8d367ea
+2026-11-15 21:42        1748  .git/objects/b9/481b09052eecdf06955141fb2f741653235b7b
+2026-11-15 21:42        1874  .git/objects/74/ba091266dac64d42d67c639307dbe274a02937
+2026-11-15 21:42         200  .git/objects/af/d5cdc0affd6a65c6c0535be91d5515f61a42b5
+2026-11-15 21:42         203  .git/objects/87/ec59375d20ecbc7b4de41fc3724b816dd25fc9
+2026-11-15 21:42         229  .git/objects/44/3330fc379812ba7bc7b60e3712999646a73aad
+2026-11-15 21:42        2305  .git/objects/cb/72885daccb3c375985c2fa1be08492761acf9a
+2026-11-15 21:42        2524  .git/objects/cb/cd82dfac3fb4dda3df21387c103e0a6e9924f8
+2026-11-15 21:42        2559  .git/objects/ef/6e0a9bc30a2f80bb292e84c708a744f3eed4a0
+2026-11-15 21:42      316356  .git/worktrees/pathway-cache-behavior/index
+2026-11-15 21:42         350  .git/objects/16/9db7cd7304930db2f1ebdf00940dcde3ae6631
+2026-11-15 21:42         380  .git/logs/refs/heads/demo/pathway-cache-behavior
+2026-11-15 21:42          39  .git/objects/43/ae0e2a6c6d8fca34872506ca0f2e64194fec7c
+2026-11-15 21:42          41  .git/refs/heads/demo/pathway-cache-behavior
+2026-11-15 21:42          41  .git/worktrees/pathway-cache-behavior/ORIG_HEAD
+2026-11-15 21:42          44  .git/worktrees/pathway-cache-behavior/HEAD
+2026-11-15 21:42         504  .git/worktrees/pathway-cache-behavior/logs/HEAD
+2026-11-15 21:42        5169  .git/objects/02/f169eba8d411f3ae6f2fac10c689054e285e95
+2026-11-15 21:42        6529  .git/objects/89/7120b241cc16cbd9c274e01f98e7585b5c01ba
+2026-11-15 21:42          65  .git/objects/94/bc2539197d2c29edbfadd2c3f50ae4accb20a1
+2026-11-15 21:42        6737  .git/objects/9c/11d9a5fccb8b28f12f1d82eeb1a304c3b527ee
+2026-11-15 21:42          67  .git/objects/9e/82f3cff6a242844e785f576138730b57cab986
+2026-11-15 21:42          67  .git/worktrees/pathway-cache-behavior/gitdir
+2026-11-15 21:42         696  .git/objects/3a/736a79b7737979bc5da7f43a0bc8257ef25d42
+2026-11-15 21:42           6  .git/worktrees/pathway-cache-behavior/commondir
+2026-11-15 21:42          71  .git/objects/62/d28381df5fb8b2af4f45e4e9e360acdcaf561f
+2026-11-15 21:42          72  .git/worktrees/pathway-cache-behavior/COMMIT_EDITMSG
+2026-11-15 21:42         900  .git/objects/dc/81e7d93819b601bd0345f6b27392c8a133838b
+2026-11-15 21:42          99  .git/FETCH_HEAD
+2026-11-16 00:28       10903  forensics/report_20261116T062829Z.txt
+
+===== P10 done =====
+report saved: /home/jesse/openroot/forensics/report_20261116T062829Z.txt
