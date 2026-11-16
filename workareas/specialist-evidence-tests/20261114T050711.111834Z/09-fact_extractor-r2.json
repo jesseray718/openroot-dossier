@@ -1,0 +1,10 @@
+{
+  "role": "fact_extractor",
+  "model": "qwen3.5:0.8b",
+  "round": 2,
+  "execution_status": "failed",
+  "prompt_sha256": "17956e079c37dbbd36a3934b2428685856c73a52b8d47f8a8533cebbdc927b2c",
+  "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The documented procedure for A15 reuse from OptiPlex is the 'L0 Cached Pathway' (S6), which explicitly excludes live SQLite databases and Turing Tidbit object storage.\",\n      \"source_ids\": [\"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway. It intentionally excludes: - live SQLite databases, - Turing Tidbit object storage,\"\n    },\n    {\n      \"claim\": \"The execution of this reuse is not yet validated end-to-end in the current system state.\",\n      \"source_ids\": [\"S4\"],\n      \"quote\": \"This collaboration is not yet validated end to end. The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt-cache database, genesis-chain artifact...\"\n    }\n  ],\n  \"questions\": [\n    \"What specific execution steps are required for L0 to be considered 'demonstrated' rather than just documented?\",\n    \"Are there any other pathways in the indexed records that demonstrate A15 reuse from OptiPlex besides S6?\"\n  ]\n}",
+  "error": "Quotation not found in cited excerpt",
+  "elapsed_seconds": 91.05
+}

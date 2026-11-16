@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-11-13T11:33:38.740018+00:00",
+  "endpoint": "http://127.0.0.1:11434",
+  "cloud_fallback": false,
+  "execution_status": "passed",
+  "model": "qwen2.5-coder:0.5b",
+  "prompt_sha256": "599babfdcc366ece9466413739878b8e694c5a4f8488abb46a6f069ad15c294e",
+  "response_chars": 13,
+  "response_sha256": "1219dea307024b200bb706e616987dbec90f29ee8ca33c8484b71c9fd3b536a0",
+  "generation_done": true,
+  "elapsed_seconds": 9.191
+}

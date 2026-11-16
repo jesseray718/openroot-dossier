@@ -1,0 +1,25 @@
+{
+  "attempt": {
+    "role": "contradictions",
+    "model": "granite4:1b",
+    "attempt": 1,
+    "launch_round": 71,
+    "start_seconds": 70.0040260029491,
+    "first_text_seconds": null,
+    "characters": 0,
+    "observed_finish_round": 117,
+    "observed_finish_seconds": 116.00108878395986,
+    "elapsed_seconds": 45.997062781010754,
+    "status": "attempt_timeout",
+    "error": null,
+    "generation": {}
+  },
+  "state": {
+    "attempts": 1,
+    "status": "attempt_timeout",
+    "partial": "",
+    "error": null,
+    "validated": null,
+    "terminal": false
+  }
+}

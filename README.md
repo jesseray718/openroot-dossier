@@ -1,21 +1,38 @@
-# OpenRoot — Appropriate Technology & Decentralized Edge Ecosystem
+# OpenRoot
 
-OpenRoot is a self-hosted, offline-first decentralized framework integrating physical infrastructure (AeroCement 2.0 composites, passive thermal copper loops, sensor meshes) with lightweight local edge computing (TinyML, Ollama, Qwen Coder).
+Local-first knowledge pods: SHA-256-sealed corpora, FTS5 + Nomic hybrid retrieval, grounded local-model answers, correction-ledger evaluation.
 
-## Core Pillars
-- **Physical Build Systems:** Modular structural geometries, low-power microcontrollers, and durable material formulations.
-- **Edge Intelligence:** TinyML micro-inference on ESP32 sensor nodes for structural health monitoring (SHM) and thermal loop optimization.
-- **Distributed Core:** Local SQLite/FTS5 indexing synchronized via secure mesh pathways and append-only verification ledgers.
+Site: jesseray718.github.io/openroot/
 
-## Recent Milestones
-- **Review Tool v2 (Sandbox CLI):** Native pathway validation, acceptance receipts, and automated release asset bundling.
-- **Edge-to-Spoke Pipelines:** Robust binary/JSON payload ingestion syncing edge telemetry back to the Dell OptiPlex 3060 heavy-spoke storage core.
+## What OpenRoot is
 
-## Repository Layout
-- `bin/`: Operational shell automation, mesh bridging, and database tuning macros.
-- `workareas/`: Staging, validation receipts, and release packaging artifacts.
-- `data/`: Local validation ledgers, friction logs, and universal indexes.
+One trunk for shelter, heat, and compute you can stand up on a phone and a used PC:
 
-## Live model front door
+- **Compute** — a local 7B coder runs on an OptiPlex; the phone (Termux) is the client over a Tailscale SSH tunnel. No cloud inference, ever. Inference passes through a sealed pathway ledger (plan - execute - verify - seal).
+- **Proof-of-physical-work** — an append-only, hash-linked JSONL ledger. Seals are verified in microseconds; work is only recomputed on seal failure. `v1.2.1-popw-ledger`.
+- **Mesh** — two-node Syncthing v2 mesh (a15 + OptiPlex) over the tailnet, per-file BLAKE3 seals planned, SQLite pod index derived locally per node (never synced). Transport carries payloads; the ledger carries truth.
+- **Release rail (dossier doctrine)** — every commit passes the gate first: `bash -n` on scripts, `py_compile` on Python, first-principles table drift checks. Receipts (GATE_RECEIPT.txt, BUILD_STATUS.md, append-only WORK_LOG.md) ship with the tree. No history rewrites.
+- **Thermal layer** — AeroCement open-cell mixes, Carnot/Stirling delta-T bounds, wet-bulb limits, earth-battery sizing, and cardboard geodesic formwork — all stdlib-only Python, all gated, all in `tools/`.
 
-[Live model front door](docs/LIVE_FRONT_DOOR.md) — usage, verified scope, and limitations.
+## The one metric
+
+eta = useful_joules / human_joules
+
+If a component does not raise that ratio, it is archived or pinned — not featured.
+
+## Spokes
+
+Spokes derive from `openroot-canon` (the whole-goal constitution). Do not clone everything:
+
+| Need | Repo |
+|---|---|
+| Engineering hub | `openroot` (this repo) |
+| Dashboard | `canonical` (pins only) |
+| Stack template | `openroot-spoke-template` |
+| Operator kit | `wisdom-scaffold` |
+| Sealed mesh + thermal | `aperture-mesh` |
+| Thesis | `openroot-thesis` |
+
+## License
+
+GPL-3.0. This is a public workshop, not a product funnel.

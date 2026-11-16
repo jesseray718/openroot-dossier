@@ -1,0 +1,13 @@
+{
+  "claim_eligible": true,
+  "eta_score": 80.0,
+  "hash": "8169b588b130593b10292b437443c477d5396da31cd21ea4195e810a7c4bf3d9",
+  "ledger_entry_hash": "5c2bc0fc84d5093a00afff91fc27c8e6434eff6b993cd395099301f48713feeb",
+  "ledger_status": "sandbox_ledger_appended",
+  "merkle_root": "2e1cfa82b035c26cbbbdae632cea070514eb8b773f616aaeaf668e2f0be8f10d",
+  "proof_trace": [],
+  "rules_version": "lattice-rules-v1",
+  "task_sha256": "ba72bc694e61fe0676a3727c8b94a709ac9de814494ec01bbac342b7b175053c",
+  "timestamp": "2026-11-11T13:27:24.583600+00:00",
+  "write_approved": true
+}

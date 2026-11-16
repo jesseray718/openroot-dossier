@@ -1,0 +1,44 @@
+===== bin/autodossier_compiler.py =====
+lines: 66
+#!/usr/bin/env python3
+"""
+Autodossier Compiler & AI Loop Daemon
+Integrates local SQLite/FTS5 metadata cataloging with automated loop execution,
+zero-heap allocation verification, and thermodynamic Joule logging.
+"""
+
+import os
+import sys
+import sqlite3
+import hashlib
+import time
+from pathlib import Path
+
+DB_PATH = Path("analysis/autodossier.db")
+
+def init_db():
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+===== /home/jesse/pods/ask_pod_v1.py =====
+lines: 80
+#!/usr/bin/env python3
+"""ask_pod v1 - full stack: retrieval -> 7B synthesis -> cited answer. Provenance-logged."""
+import sqlite3, json, sys, time, urllib.request, hashlib, re, struct
+
+DB = "/home/jesse/pods/github-docs/pod.db"
+Q = sys.argv[1] if len(sys.argv) > 1 else "how do GitHub Actions use secrets securely"
+MODEL = "qwen2.5-coder:7b"
+
+def ollama(endpoint, payload, timeout=600):
+    req = urllib.request.Request("http://localhost:11434" + endpoint,
+        data=json.dumps(payload).encode(), headers={"Content-Type":"application/json"})
+    return json.loads(urllib.request.urlopen(req, timeout=timeout).read())
+
+db = sqlite3.connect(DB)
+db.executescript("""
+CREATE TABLE IF NOT EXISTS ask_runs(
+  rid INTEGER PRIMARY KEY, ts TEXT, question TEXT, model TEXT,
+  evidence_cids TEXT, answer TEXT, eval_tokens INTEGER, elapsed_ms INTEGER);
+""")
+root = db.execute("SELECT merkle_root FROM seals ORDER BY seal_id DESC LIMIT 1").fetchone()

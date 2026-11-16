@@ -1,0 +1,10 @@
+{
+  "file": "024-record_selector-r4.json",
+  "role": "record_selector",
+  "model": "qwen3.5:0.8b",
+  "round": 4,
+  "budget_seconds": 45,
+  "status": "time_limited_partial",
+  "prompt_sha256": "44d0399579d6d144a20c6dd96a48d7ca9c7df7d9af7a03adef94fb6feff46482",
+  "elapsed_seconds": 45.05
+}

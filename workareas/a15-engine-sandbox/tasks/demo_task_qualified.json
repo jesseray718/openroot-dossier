@@ -1,0 +1,12 @@
+{
+  "name": "sandbox qualified lattice probe",
+  "base_eta": 80.0,
+  "energy": "solar",
+  "observation_days": 14,
+  "feedback": true,
+  "human_input": 3,
+  "involves_compute": true,
+  "compute_joules": 1200,
+  "outputs": [],
+  "recommendations": []
+}

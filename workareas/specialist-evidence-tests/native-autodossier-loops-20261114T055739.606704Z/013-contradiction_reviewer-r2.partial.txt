@@ -1,0 +1,1 @@
+{"status": "ready", "selected_ids": ["N2", "N643", "N3"], "note": "The existing native pathway/cache interfaces for A15 reuse completed OptiPlex work include pathway_cache_v1.py, pods_sync.py, and friction_observer_v1.py. These interfaces handle ledger path management, chain loading, and pathway refinement.",

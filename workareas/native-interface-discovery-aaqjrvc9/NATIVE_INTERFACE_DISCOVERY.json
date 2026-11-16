@@ -1,0 +1,1077 @@
+{
+  "bytes_read": 76370,
+  "canonical_status": "not_canonical",
+  "compatibility_status": "not_yet_established",
+  "database_access": false,
+  "errors_or_skips": [
+    {
+      "error_type": "SyntaxError",
+      "path": "PODBENCHv3.py",
+      "status": "inspection_error"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 13855,
+      "cli": [
+        {
+          "arguments": [
+            "--root"
+          ],
+          "line": 339
+        },
+        {
+          "arguments": [
+            "--ledger"
+          ],
+          "line": 340
+        },
+        {
+          "arguments": [
+            "record"
+          ],
+          "line": 343
+        },
+        {
+          "arguments": [
+            "--name"
+          ],
+          "line": 344
+        },
+        {
+          "arguments": [
+            "--actor"
+          ],
+          "line": 345
+        },
+        {
+          "arguments": [
+            "--step"
+          ],
+          "line": 346
+        },
+        {
+          "arguments": [
+            "--evidence"
+          ],
+          "line": 347
+        },
+        {
+          "arguments": [
+            "--notes"
+          ],
+          "line": 348
+        },
+        {
+          "arguments": [
+            "--parent"
+          ],
+          "line": 349
+        },
+        {
+          "arguments": [
+            "--allow-dangerous"
+          ],
+          "line": 350
+        },
+        {
+          "arguments": [
+            "list"
+          ],
+          "line": 352
+        },
+        {
+          "arguments": [
+            "show"
+          ],
+          "line": 353
+        },
+        {
+          "arguments": [
+            "key"
+          ],
+          "line": 354
+        },
+        {
+          "arguments": [
+            "search"
+          ],
+          "line": 355
+        },
+        {
+          "arguments": [
+            "term"
+          ],
+          "line": 356
+        },
+        {
+          "arguments": [
+            "verify"
+          ],
+          "line": 357
+        },
+        {
+          "arguments": [
+            "export-md"
+          ],
+          "line": 358
+        },
+        {
+          "arguments": [
+            "out"
+          ],
+          "line": 359
+        }
+      ],
+      "dictionary_keys": [
+        "actor",
+        "bytes",
+        "created_at",
+        "dangerous",
+        "event",
+        "evidence",
+        "name",
+        "notes",
+        "parent_seq",
+        "path",
+        "seq",
+        "sha256",
+        "steps"
+      ],
+      "functions": [
+        {
+          "line": 56,
+          "name": "sha256_bytes",
+          "parameters": [
+            "data"
+          ]
+        },
+        {
+          "line": 60,
+          "name": "ledger_path",
+          "parameters": [
+            "root",
+            "ledger_arg"
+          ]
+        },
+        {
+          "line": 65,
+          "name": "load_chain",
+          "parameters": [
+            "lp"
+          ]
+        },
+        {
+          "line": 80,
+          "name": "entry_hash",
+          "parameters": [
+            "entry"
+          ]
+        },
+        {
+          "line": 86,
+          "name": "dangerous_steps",
+          "parameters": [
+            "steps"
+          ]
+        },
+        {
+          "line": 94,
+          "name": "cmd_record",
+          "parameters": [
+            "args",
+            "root"
+          ]
+        },
+        {
+          "line": 150,
+          "name": "cmd_list",
+          "parameters": [
+            "args",
+            "root"
+          ]
+        },
+        {
+          "line": 163,
+          "name": "find_entry",
+          "parameters": [
+            "chain",
+            "key"
+          ]
+        },
+        {
+          "line": 176,
+          "name": "cmd_show",
+          "parameters": [
+            "args",
+            "root"
+          ]
+        },
+        {
+          "line": 186,
+          "name": "cmd_search",
+          "parameters": [
+            "args",
+            "root"
+          ]
+        },
+        {
+          "line": 209,
+          "name": "cmd_verify",
+          "parameters": [
+            "args",
+            "root"
+          ]
+        },
+        {
+          "line": 233,
+          "name": "cmd_export",
+          "parameters": [
+            "args",
+            "root"
+          ]
+        },
+        {
+          "line": 289,
+          "name": "self_test",
+          "parameters": []
+        },
+        {
+          "line": 335,
+          "name": "main",
+          "parameters": []
+        },
+        {
+          "line": 298,
+          "name": "run",
+          "parameters": []
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "mkdir",
+          "line": 140
+        },
+        {
+          "call": "write_text",
+          "line": 283
+        },
+        {
+          "call": "open",
+          "line": 141
+        },
+        {
+          "call": "write_text",
+          "line": 295
+        },
+        {
+          "call": "write_text",
+          "line": 325
+        }
+      ],
+      "path": "bin/pathway_cache_v1.py",
+      "sha256": "1c148b1c6f9a4474c3b1840ba0819de6fa343457d2681bec1812ae9107cffc5c",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": [
+        "data/pathway_cache.jsonl",
+        "led.jsonl"
+      ]
+    },
+    {
+      "bytes": 306,
+      "cli": [
+        {
+          "arguments": [
+            "--prompt"
+          ],
+          "line": 4
+        },
+        {
+          "arguments": [
+            "--local-only"
+          ],
+          "line": 5
+        }
+      ],
+      "dictionary_keys": [],
+      "functions": [],
+      "io_calls": [],
+      "path": "bin/kai",
+      "sha256": "c6f93c2f5eeb0a9ed7b377e126627356c5f1374929b65acbe023038cde2b6f82",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": []
+    },
+    {
+      "bytes": 6986,
+      "cli": [
+        {
+          "arguments": [
+            "query"
+          ],
+          "line": 142
+        },
+        {
+          "arguments": [
+            "--db"
+          ],
+          "line": 143
+        },
+        {
+          "arguments": [
+            "--limit"
+          ],
+          "line": 144
+        },
+        {
+          "arguments": [
+            "--model"
+          ],
+          "line": 145
+        },
+        {
+          "arguments": [
+            "--json"
+          ],
+          "line": 146
+        }
+      ],
+      "dictionary_keys": [
+        "answer",
+        "block_height",
+        "database_sha256",
+        "evidence",
+        "evidence_id",
+        "evidence_ids",
+        "merkle_root",
+        "model",
+        "prompt",
+        "query",
+        "response",
+        "tags",
+        "timestamp"
+      ],
+      "functions": [
+        {
+          "line": 24,
+          "name": "fts_query",
+          "parameters": [
+            "text"
+          ]
+        },
+        {
+          "line": 31,
+          "name": "search_pods",
+          "parameters": [
+            "keyword",
+            "db_path",
+            "limit"
+          ]
+        },
+        {
+          "line": 68,
+          "name": "database_sha256",
+          "parameters": [
+            "db_path"
+          ]
+        },
+        {
+          "line": 81,
+          "name": "answer_pods",
+          "parameters": [
+            "query",
+            "db_path",
+            "model",
+            "limit"
+          ]
+        },
+        {
+          "line": 122,
+          "name": "print_records",
+          "parameters": [
+            "records",
+            "keyword"
+          ]
+        },
+        {
+          "line": 136,
+          "name": "main",
+          "parameters": [
+            "argv"
+          ]
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "open",
+          "line": 75
+        },
+        {
+          "call": "connect",
+          "line": 46
+        },
+        {
+          "call": "execute",
+          "line": 49
+        },
+        {
+          "call": "replace",
+          "line": 28
+        }
+      ],
+      "path": "bin/fts_pod_search.py",
+      "sha256": "9146d9f08e2dad4ca0b57d1c0c886ff666257b89c7494cf8618ade07d9070486",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": [
+        "data/thermodynamics/openroot_interactive_pods.db"
+      ]
+    },
+    {
+      "bytes": 30902,
+      "cli": [
+        {
+          "arguments": [
+            "run"
+          ],
+          "line": 745
+        },
+        {
+          "arguments": [
+            "--root-live"
+          ],
+          "line": 746
+        },
+        {
+          "arguments": [
+            "--root-mirror"
+          ],
+          "line": 747
+        },
+        {
+          "arguments": [
+            "--big-bytes"
+          ],
+          "line": 748
+        },
+        {
+          "arguments": [
+            "--no-remote"
+          ],
+          "line": 749
+        },
+        {
+          "arguments": [
+            "--remote-host"
+          ],
+          "line": 750
+        },
+        {
+          "arguments": [
+            "--ts"
+          ],
+          "line": 751
+        },
+        {
+          "arguments": [
+            "scan"
+          ],
+          "line": 752
+        },
+        {
+          "arguments": [
+            "root"
+          ],
+          "line": 753
+        },
+        {
+          "arguments": [
+            "state-rebuild"
+          ],
+          "line": 754
+        },
+        {
+          "arguments": [
+            "root"
+          ],
+          "line": 756
+        },
+        {
+          "arguments": [
+            "--drop"
+          ],
+          "line": 757
+        },
+        {
+          "arguments": [
+            "status"
+          ],
+          "line": 758
+        },
+        {
+          "arguments": [
+            "--root-live"
+          ],
+          "line": 759
+        },
+        {
+          "arguments": [
+            "--root-mirror"
+          ],
+          "line": 760
+        }
+      ],
+      "dictionary_keys": [
+        "A15",
+        "SSH",
+        "action",
+        "backup",
+        "backups",
+        "bytes",
+        "copied",
+        "dir",
+        "fails",
+        "files",
+        "free",
+        "lives",
+        "mirrors",
+        "mode",
+        "notes",
+        "pair",
+        "pane",
+        "parked",
+        "pass",
+        "policy",
+        "rel",
+        "remote",
+        "result",
+        "role",
+        "root",
+        "sha256",
+        "sha_a",
+        "sha_b",
+        "size",
+        "skip_big",
+        "skip_space",
+        "state",
+        "why"
+      ],
+      "functions": [
+        {
+          "line": 52,
+          "name": "log",
+          "parameters": [
+            "msg"
+          ]
+        },
+        {
+          "line": 56,
+          "name": "q",
+          "parameters": [
+            "s"
+          ]
+        },
+        {
+          "line": 60,
+          "name": "sha256_file",
+          "parameters": [
+            "path",
+            "chunk"
+          ]
+        },
+        {
+          "line": 71,
+          "name": "detect_pane",
+          "parameters": []
+        },
+        {
+          "line": 79,
+          "name": "scan_root",
+          "parameters": [
+            "root"
+          ]
+        },
+        {
+          "line": 100,
+          "name": "state_path",
+          "parameters": [
+            "root"
+          ]
+        },
+        {
+          "line": 104,
+          "name": "load_state",
+          "parameters": [
+            "root"
+          ]
+        },
+        {
+          "line": 111,
+          "name": "save_state",
+          "parameters": [
+            "root",
+            "cur",
+            "prior",
+            "drop"
+          ]
+        },
+        {
+          "line": 123,
+          "name": "plan_pair",
+          "parameters": [
+            "pname",
+            "policy",
+            "cur_a",
+            "cur_b",
+            "st_a",
+            "st_b"
+          ]
+        },
+        {
+          "line": 162,
+          "name": "exec_row_local",
+          "parameters": [
+            "row",
+            "root_a",
+            "root_b",
+            "big_bytes"
+          ]
+        },
+        {
+          "line": 210,
+          "name": "ssh_args",
+          "parameters": [
+            "key",
+            "scp"
+          ]
+        },
+        {
+          "line": 220,
+          "name": "remote_run",
+          "parameters": [
+            "spec",
+            "key",
+            "cmd",
+            "timeout"
+          ]
+        },
+        {
+          "line": 231,
+          "name": "remote_candidates",
+          "parameters": [
+            "override"
+          ]
+        },
+        {
+          "line": 239,
+          "name": "exec_cross",
+          "parameters": [
+            "stats",
+            "exec_log",
+            "local_root",
+            "spec",
+            "key",
+            "remote_root",
+            "big_bytes",
+            "pre_local_state"
+          ]
+        },
+        {
+          "line": 403,
+          "name": "build_sites",
+          "parameters": [
+            "args"
+          ]
+        },
+        {
+          "line": 436,
+          "name": "cmd_run",
+          "parameters": [
+            "args"
+          ]
+        },
+        {
+          "line": 694,
+          "name": "cmd_scan",
+          "parameters": [
+            "args"
+          ]
+        },
+        {
+          "line": 706,
+          "name": "cmd_state_rebuild",
+          "parameters": [
+            "args"
+          ]
+        },
+        {
+          "line": 719,
+          "name": "cmd_status",
+          "parameters": [
+            "args"
+          ]
+        },
+        {
+          "line": 742,
+          "name": "main",
+          "parameters": []
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "mkdir",
+          "line": 116
+        },
+        {
+          "call": "write_text",
+          "line": 118
+        },
+        {
+          "call": "replace",
+          "line": 119
+        },
+        {
+          "call": "mkdir",
+          "line": 187
+        },
+        {
+          "call": "replace",
+          "line": 438
+        },
+        {
+          "call": "mkdir",
+          "line": 476
+        },
+        {
+          "call": "write_text",
+          "line": 671
+        },
+        {
+          "call": "write_text",
+          "line": 673
+        },
+        {
+          "call": "write_text",
+          "line": 676
+        },
+        {
+          "call": "write_text",
+          "line": 682
+        },
+        {
+          "call": "open",
+          "line": 62
+        },
+        {
+          "call": "replace",
+          "line": 198
+        },
+        {
+          "call": "write_text",
+          "line": 479
+        },
+        {
+          "call": "mkdir",
+          "line": 351
+        },
+        {
+          "call": "replace",
+          "line": 371
+        },
+        {
+          "call": "mkdir",
+          "line": 450
+        },
+        {
+          "call": "mkdir",
+          "line": 456
+        },
+        {
+          "call": "write_text",
+          "line": 577
+        },
+        {
+          "call": "unlink",
+          "line": 201
+        }
+      ],
+      "path": "bin/pods_sync.py",
+      "sha256": "7179662bb730d69231195f6d793118c1715f737fb888a3201d2676f81efbc84d",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": [
+        "-state.json",
+        ".json",
+        "EXEC_LOG.json",
+        "STATS.json",
+        "merge current scan into state.json",
+        "state.json"
+      ]
+    },
+    {
+      "bytes": 1648,
+      "cli": [
+        {
+          "arguments": [
+            "--out"
+          ],
+          "line": 15
+        },
+        {
+          "arguments": [
+            "--work"
+          ],
+          "line": 16
+        },
+        {
+          "arguments": [
+            "--joules"
+          ],
+          "line": 17
+        },
+        {
+          "arguments": [
+            "--photo"
+          ],
+          "line": 18
+        },
+        {
+          "arguments": [
+            "--mass-kg"
+          ],
+          "line": 19
+        }
+      ],
+      "dictionary_keys": [
+        "acre",
+        "chain",
+        "human_joules",
+        "mass_kg",
+        "n",
+        "not",
+        "photo",
+        "photo_sha256",
+        "schema",
+        "ts",
+        "work",
+        "wrote"
+      ],
+      "functions": [
+        {
+          "line": 7,
+          "name": "sha256_file",
+          "parameters": [
+            "p"
+          ]
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "mkdir",
+          "line": 48
+        },
+        {
+          "call": "open",
+          "line": 49
+        },
+        {
+          "call": "open",
+          "line": 9
+        }
+      ],
+      "path": "bin/popw_hang.py",
+      "sha256": "674c8d3e53e2ebf17d0ce97cabaafa1a82a558c215c10a79eeb3151f5d24e12c",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": []
+    },
+    {
+      "bytes": 3511,
+      "cli": [],
+      "dictionary_keys": [
+        "Content-Type",
+        "model",
+        "prompt",
+        "stream"
+      ],
+      "functions": [
+        {
+          "line": 16,
+          "name": "rapl_read",
+          "parameters": []
+        },
+        {
+          "line": 24,
+          "name": "delta_joules",
+          "parameters": [
+            "b",
+            "a"
+          ]
+        },
+        {
+          "line": 32,
+          "name": "call",
+          "parameters": [
+            "stage",
+            "model",
+            "prompt"
+          ]
+        },
+        {
+          "line": 51,
+          "name": "main",
+          "parameters": []
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "connect",
+          "line": 42
+        },
+        {
+          "call": "execute",
+          "line": 43
+        },
+        {
+          "call": "execute",
+          "line": 45
+        },
+        {
+          "call": "connect",
+          "line": 54
+        },
+        {
+          "call": "open",
+          "line": 20
+        },
+        {
+          "call": "execute",
+          "line": 56
+        }
+      ],
+      "path": "bin/popw_ledger.py",
+      "sha256": "928be079cfa988e5b2bd47e49d6da500b3349a34fe166dfab221396915088803",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": [
+        "/home/jesse/openroot/data/popw_ledger.db"
+      ]
+    },
+    {
+      "bytes": 3895,
+      "cli": [],
+      "dictionary_keys": [
+        "cycle_id",
+        "db_used",
+        "eta",
+        "eta_law",
+        "evidence",
+        "hash",
+        "human_joules",
+        "id",
+        "models",
+        "newton_tip",
+        "note",
+        "payload",
+        "pod_root",
+        "postulate",
+        "prev",
+        "questions",
+        "recall_hits",
+        "ts",
+        "type",
+        "useful_joules",
+        "written"
+      ],
+      "functions": [
+        {
+          "line": 10,
+          "name": "sha",
+          "parameters": [
+            "obj"
+          ]
+        },
+        {
+          "line": 13,
+          "name": "tip",
+          "parameters": [
+            "path"
+          ]
+        },
+        {
+          "line": 23,
+          "name": "init",
+          "parameters": []
+        },
+        {
+          "line": 42,
+          "name": "add",
+          "parameters": [
+            "payload",
+            "human_joules",
+            "useful_joules"
+          ]
+        },
+        {
+          "line": 71,
+          "name": "verify",
+          "parameters": []
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "mkdir",
+          "line": 24
+        },
+        {
+          "call": "open",
+          "line": 17
+        },
+        {
+          "call": "open",
+          "line": 66
+        },
+        {
+          "call": "open",
+          "line": 75
+        },
+        {
+          "call": "open",
+          "line": 34
+        },
+        {
+          "call": "open",
+          "line": 38
+        }
+      ],
+      "path": "bin/popw_thermal_ledger.py",
+      "sha256": "9eec3a528a47612f8cf199b1f00620e668e71d261c9f037689695408c0ccaae3",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": [
+        "newton_chain.jsonl",
+        "popw_thermal.jsonl"
+      ]
+    },
+    {
+      "bytes": 866,
+      "cli": [],
+      "dictionary_keys": [],
+      "functions": [
+        {
+          "line": 16,
+          "name": "main",
+          "parameters": []
+        }
+      ],
+      "io_calls": [],
+      "path": "bin/rerun_all_receipts.py",
+      "sha256": "0ac4fb5393de3db6c4b45a3ccaac0c855bcc7c2e06f52ca740c593303090177f",
+      "status": "statically_inspected_not_executed",
+      "storage_path_literals": []
+    }
+  ],
+  "files_inspected": 8,
+  "limits": {
+    "files": 100,
+    "per_file_bytes": 300000,
+    "total_bytes": 6000000
+  },
+  "purpose": "discover_existing_native_interfaces_before_adapter_design",
+  "source_execution": false,
+  "timestamp": "2026-11-11T13:51:16.390580+00:00"
+}

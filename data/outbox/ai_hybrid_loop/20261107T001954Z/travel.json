@@ -1,0 +1,100 @@
+{
+  "ts": "2026-11-07T00:19:57Z",
+  "db": "/home/jesse/.local/state/openroot-fulltext-v2/knowledge.pod.sqlite3",
+  "candidates": [
+    "/home/jesse/.local/state/openroot-fulltext-v2/knowledge.pod.sqlite3",
+    "/home/jesse/.local/state/openroot-fulltext-v2/system.pod.sqlite3",
+    "/home/jesse/.local/state/openroot-fulltext-v2/manual.pod.sqlite3",
+    "/home/jesse/pods/chunkhash_github-docs/pod.db",
+    "/home/jesse/pods/clone_universal_20261016T083202Z/pod.db",
+    "/home/jesse/pods/exp_universal_20261016T090321Z/pod.db",
+    "/home/jesse/pods/github-docs/pod.db",
+    "/home/jesse/pods/github-docs-clone/pod.db",
+    "/home/jesse/pods/grants_pod/pod.db",
+    "/home/jesse/pods/lab_universal/pod.db",
+    "/home/jesse/pods/openroot/pod.db",
+    "/home/jesse/pods/pod_a15-mobile/pod.db"
+  ],
+  "questions": [
+    {
+      "idx": 0,
+      "source_rowid": 112542,
+      "question": "What does the corpus say about headinglink?",
+      "recall_hit": false,
+      "answer": {
+        "status": "OK",
+        "model": "qwen2.5-coder:0.5b",
+        "text": "The corpus states that the `headingLink` is created with `textDecoration: 'underline'`, `href: ''`, and `id: FIRST_LINK_ID`.",
+        "elapsed_s": 0.9
+      }
+    },
+    {
+      "idx": 1,
+      "source_rowid": 225083,
+      "question": "What does the corpus say about copilot, enter, name?",
+      "recall_hit": true,
+      "answer": {
+        "status": "OK",
+        "model": "qwen2.5-coder:0.5b",
+        "text": "The corpus says that copilot is a name for the {% data variables.copilot.copilot_automation %}.",
+        "elapsed_s": 0.7
+      }
+    },
+    {
+      "idx": 2,
+      "source_rowid": 337624,
+      "question": "What does the corpus say about ulong, head, const?",
+      "recall_hit": false,
+      "answer": {
+        "status": "OK",
+        "model": "qwen2.5-coder:0.5b",
+        "text": "The corpus states that `ulong` is a 64-bit integer type, which is used in the context of flash attention operations.",
+        "elapsed_s": 1.9
+      }
+    }
+  ],
+  "models_tried": [
+    "qwen2.5-coder:0.5b",
+    "smollm2:1.7b",
+    "qwen2.5:1.5b"
+  ],
+  "pod_root": "/home/jesse/pods",
+  "fulltext_state": "/home/jesse/.local/state/openroot-fulltext-v2",
+  "fts_table": "words",
+  "text_col": "body",
+  "rows": 450167,
+  "ollama_available": [
+    "deepseek-r1:1.5b",
+    "gemma3:1b",
+    "gemma4:31b-cloud",
+    "granite3.3:2b",
+    "granite4:1b",
+    "llama3.2:1b",
+    "llama3.2:3b",
+    "minimax-m3.1-flash:cloud",
+    "nomic-embed-text:latest",
+    "openroot-assistant:latest",
+    "openroot-coder:latest",
+    "openroot-instruct:7b",
+    "phi4-mini:latest",
+    "phi4-router:latest",
+    "qwen2.5-coder:0.5b",
+    "qwen2.5-coder:1.5b",
+    "qwen2.5-coder:3b",
+    "qwen2.5-coder:7b",
+    "qwen2.5:1.5b",
+    "qwen2.5:3b",
+    "qwen2.5:7b",
+    "qwen2.5:7b-instruct",
+    "qwen3.5:0.8b",
+    "qwen3.5:9b",
+    "qwen3:0.6b",
+    "qwen3:1.7b",
+    "smollm2:1.7b"
+  ],
+  "summary": {
+    "questions": 3,
+    "recall_hits": 1,
+    "answered_ok": 3
+  }
+}

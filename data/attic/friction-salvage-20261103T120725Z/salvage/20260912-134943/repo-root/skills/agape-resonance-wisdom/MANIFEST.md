@@ -1,0 +1,21 @@
+# Manifest
+- name: agape-resonance-wisdom
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: sandbox
+- live_paths:
+  - /home/workdir/.grok/skills/agape-resonance-wisdom
+  - /home/workdir/.grok/skills/agape-resonance-wisdom/references/dossier.md
+  - /home/workdir/.grok/skills/agape-resonance-wisdom/references/growth-resume.md
+- sisters:
+  - agape-engine
+  - une-joule-native
+  - openroot-stack
+  - openroot-integration
+- trigger_ids:
+  - frictionless
+  - resource dossier
+  - gain per effort
+  - training resume
+- status: live

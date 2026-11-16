@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "20261114T050139.723168Z",
+  "retrieval_checks": [
+    {
+      "database": "/home/jesse/openroot/data/fts_index.db",
+      "table": "knowledge_fts",
+      "query_status": "passed",
+      "returned_rows": 3,
+      "elapsed_ms": 72.78
+    },
+    {
+      "database": "/home/jesse/openroot/data/md_fts_v1.db",
+      "table": "md",
+      "query_status": "passed",
+      "returned_rows": 3,
+      "elapsed_ms": 66.67
+    }
+  ],
+  "evidence_records": 6,
+  "generation_status": "passed",
+  "semantic_grounding": "not_independently_verified",
+  "ingestion_status": "not_tested",
+  "full_pipeline_status": "not_verified",
+  "generation_exit": 0,
+  "elapsed_seconds": 38.17,
+  "cited_labels": [],
+  "unknown_labels": [],
+  "citation_label_check": "not_passed",
+  "model": "qwen2.5-coder:1.5b",
+  "answer_sha256": "5450d9d30d21b89a7e45a01c8408a58a7395e4c65545ed82e2e37ed20e71c09e"
+}

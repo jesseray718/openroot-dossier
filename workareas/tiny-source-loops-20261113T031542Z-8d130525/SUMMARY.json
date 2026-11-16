@@ -1,0 +1,21 @@
+{
+  "elapsed_seconds": 132.263,
+  "abort": "Halt: Request timed out; no further requests will be submitted. Server-side cancellation is not established.",
+  "max_rounds": 6,
+  "task_statuses": {
+    "inference": "held_run_stopped",
+    "pathway_write": "audit_contract_matched",
+    "energy_inputs": "held_run_stopped",
+    "verification_side_effect": "held_interrupted",
+    "compiler": "source_pattern_checks_passed"
+  },
+  "live_ledger_writers_invoked": false,
+  "canonical_promotion": false,
+  "git_operations": 0,
+  "limitations": [
+    "Socket timeout is not a strict end-to-end deadline",
+    "Whole-run budget is checked between operations",
+    "Timeout does not establish server-side cancellation",
+    "No independent semantic verification or runtime replay"
+  ]
+}

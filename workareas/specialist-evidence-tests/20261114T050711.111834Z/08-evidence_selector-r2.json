@@ -1,0 +1,10 @@
+{
+  "role": "evidence_selector",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 2,
+  "execution_status": "failed",
+  "prompt_sha256": "60e967cac4dca9649ed04f74ebbce999ffe7b3e0705cdc70cf1d404ec818f4ed",
+  "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\"\n    }\n  ],\n  \"questions\": [\n    \"What evidence is directly addressed reuse and retrieval?\",\n    \"What evidence is documented in the `knowledge_fts` table?\",\n    \"What evidence is documented in the `knowledge_fts` table?\"\n  ]\n}",
+  "error": "Quotation not found in cited excerpt",
+  "elapsed_seconds": 20.85
+}

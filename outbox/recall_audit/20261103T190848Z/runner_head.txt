@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""
+UNIVERSAL FTS5 LATTICE INDEXER
+==============================
+Builds an offline SQLite FTS5 index with SHA256 content-addressable storage,
+mtime tracking, vector embeddings, history inception, change logging,
+and Merkle tree ledger verification.
+"""
+
+import os
+import sys
+import sqlite3
+import hashlib
+import json
+import time
+from pathlib import Path
+from datetime import datetime, timezone
+
+# Configuration
+BUILD_DIR = Path("~/openloom-build").expanduser()
+PRIVATE_DIR = Path("~/openloom-private").expanduser()
+INDEX_DB_PATH = PRIVATE_DIR / "universal_lattice_fts5.db"
+
+def compute_sha256(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+def init_lattice_db(db_path: Path) -> sqlite3.Connection:
+    db_path.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(str(db_path))
+    
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS lattice_registry (
+            sha256 TEXT PRIMARY KEY,
+            pod_name TEXT NOT NULL,
+            chunk_id TEXT NOT NULL,
+            source_path TEXT NOT NULL,
+            mtime REAL NOT NULL,
+            history_inception TEXT NOT NULL,
+            metadata TEXT NOT NULL,
+            embedding BLOB,
+            changes_json TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS merkle_ledger (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT NOT NULL,
+            parent_merkle_root TEXT,
+            current_merkle_root TEXT NOT NULL,
+            nodes_indexed INTEGER NOT NULL,
+            status TEXT NOT NULL
+        );
+
+        CREATE TABLE IF NOT EXISTS cache_state (
+            file_path TEXT PRIMARY KEY,
+            mtime REAL NOT NULL,
+            sha256 TEXT NOT NULL,
+            last_scanned REAL NOT NULL
+        );
+
+        CREATE VIRTUAL TABLE IF NOT EXISTS fts_chunks USING fts5(

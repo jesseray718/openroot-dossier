@@ -1,0 +1,76 @@
+{
+  "assets": [
+    {
+      "blake3": "fallback_sha3_a411a4cc7141ccfcc354f1f1a59ffb6757edf0c2c4b65183ca58491e3aafc1ea",
+      "file_path": "ARTIFACT_SHA256SUMS",
+      "sha256": "436f5c340dcb71fc8c800fbcf1f7114096e84802d422ca1de789c57bdf96d1bc",
+      "size_bytes": 703
+    },
+    {
+      "blake3": "fallback_sha3_3e81c827a81df4a24b1d54e7749688fd542f30fb9b5efa46e08f7f46ed352d8d",
+      "file_path": "RECEIPT.md",
+      "sha256": "6185efc7368522d0faacd05cb2ab01dc26038084ffba0366103914ff87e9160b",
+      "size_bytes": 5781
+    },
+    {
+      "blake3": "fallback_sha3_a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+      "file_path": "bank_config_hits.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "blake3": "fallback_sha3_42f799bf150976ce2f1ac014f818cb6ec0fce0473535ac6158a33dfe26cf9a09",
+      "file_path": "db_probe.json",
+      "sha256": "6e8fa667b0eda181299d37258c22003771d2e0985e94a56018d6bc6294f3089c",
+      "size_bytes": 2062
+    },
+    {
+      "blake3": "fallback_sha3_a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+      "file_path": "link_err.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "blake3": "fallback_sha3_cb0519dce99fb3ae097c2796b1b5f14d032ce2ce479f01a669a56740cd47da36",
+      "file_path": "runner_dbref.txt",
+      "sha256": "eb55c8d04233b14ac73c65b9864813aa41a8da1da2c67ee2849bf2b23e9a45e4",
+      "size_bytes": 61
+    },
+    {
+      "blake3": "fallback_sha3_a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+      "file_path": "runner_flags.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "blake3": "fallback_sha3_f1ae8f618fbfddf5f3cd029b05b4def52caa2a83a5ce81d730e4799418ed77c7",
+      "file_path": "runner_head.txt",
+      "sha256": "b0fe9eb1031f3656948b1aa330f911ccd7037e9ed87ac132dc1f37d283927f77",
+      "size_bytes": 1847
+    },
+    {
+      "blake3": "fallback_sha3_2d63b77027bb6c6806d25ebff870847db9a4018cd09f13e5dca7400e21f4f942",
+      "file_path": "runner_linecount.txt",
+      "sha256": "f06f93d621eb3e0ee0831f6bec1903d2a0368696212bf1d7efe07b19d78c6bd5",
+      "size_bytes": 4
+    },
+    {
+      "blake3": "fallback_sha3_bfa26d86836304e28940a5c3a349e7d38165dfafb3ba9397f8f9deea42ed0300",
+      "file_path": "verdicts.txt",
+      "sha256": "c4c91477d7b2e1c4f125e4b8e8c80af22608d19c1db1825f6096cd7b4826a759",
+      "size_bytes": 789
+    },
+    {
+      "blake3": "fallback_sha3_8247c095e2bb8dc1f5314cbb29272052695a45e89bfc249c1e0bedd2ae93ba23",
+      "file_path": "runner_source/universal_fts5_lattice_indexer.py",
+      "sha256": "99a3eeaed0b98890a31036c0bb0c6bc0f8160c3bf02819d4bb7a766180fb967e",
+      "size_bytes": 6776
+    }
+  ],
+  "errors": 0,
+  "hash_mode": "sha3_fallback",
+  "root": "20261103T203808Z",
+  "schema": "openroot_manifest_v2",
+  "total_bytes": 18023,
+  "total_files": 11
+}

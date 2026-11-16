@@ -1,0 +1,1563 @@
+/home/jesse/openroot/bin/friction_observer_v1.py:153: SyntaxWarning: invalid escape sequence '\~'
+  "detail": f"line \~{line} links to missing target: {target}",
+========================================================================
+FRICTION OBSERVER v1 — /home/jesse/openroot
+generated 2026-11-10T14:00:02.410123+00:00
+scanned: 6793 files, 1704 markdown read (7271 KiB)
+findings: HIGH 0 / MED 734 / LOW 35
+========================================================================
+
+--- MED ---
+[backup_sprawl] /home/jesse/openroot
+    1 script names with 3+ live variants; worst: agape_cascade -> agape_cascade_v2.py, agape_cascade_v21.py, agape_cascade_v22.py, agape_cascade_v23.py, agape_cascade_v24.py
+[broken_link] /home/jesse/openroot/README.md
+    line \~37 links to missing target: ./START-HERE.md
+[broken_link] /home/jesse/openroot/README.md
+    line \~38 links to missing target: ./THESIS.md
+[broken_link] /home/jesse/openroot/README.md
+    line \~39 links to missing target: ./aerocement/
+[broken_link] /home/jesse/openroot/README.md
+    line \~40 links to missing target: ./TALENT-ALIGNMENT-PROMPT.md
+[broken_link] /home/jesse/openroot/README.md
+    line \~126 links to missing target: ./START-HERE.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~37 links to missing target: MANIFEST.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~39 links to missing target: INTEGRATION.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~40 links to missing target: INTEGRATION_CHECKLIST.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~491 links to missing target: ../../discussions
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~504 links to missing target: ../aerocement
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~505 links to missing target: ../openroot
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~506 links to missing target: ../wisdom-scaffold
+[broken_link] /home/jesse/openroot/data/sdcard-sync/README.md
+    line \~507 links to missing target: ../renaissance-protocol
+[broken_link] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/AE-GFRC-01.md
+    line \~80 links to missing target: ../hypotheses/H-003.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/CTBS-01.md
+    line \~64 links to missing target: ../hypotheses/H-003.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/WBTE-01.md
+    line \~58 links to missing target: ../hypotheses/H-003.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/AE-GFRC-01.md
+    line \~80 links to missing target: ../hypotheses/H-003.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/CTBS-01.md
+    line \~64 links to missing target: ../hypotheses/H-003.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/WBTE-01.md
+    line \~58 links to missing target: ../hypotheses/H-003.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/skills-library/concrete-aerocement/README.md
+    line \~30 links to missing target: activated-carbon-pyrolysis.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/skills-library/concrete-aerocement/README.md
+    line \~39 links to missing target: ferrocement-tank-construction.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/skills-library/concrete-aerocement/README.md
+    line \~48 links to missing target: pneumatic-hog-pliers-technique.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/AGENTS.md
+    line \~180 links to missing target: .github/pull_request_template.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/README.md
+    line \~202 links to missing target: /examples/llama.android
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~21 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~25 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~29 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~33 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~37 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~38 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~39 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~40 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~41 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~244 links to missing target: common/chat.cpp
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~250 links to missing target: common/chat-auto-parser-helpers.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~256 links to missing target: common/chat-auto-parser.h
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    line \~466 links to missing target: tests/test-chat.cpp
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/OPENCL.md
+    line \~31 links to missing target: /docs/backend/SYCL.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/SYCL.md
+    line \~47 links to missing target: ../../.github/workflows/release.yml
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/SYCL.md
+    line \~127 links to missing target: /docs/backend/OPENCL.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~13 links to missing target: /tools/cli/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~14 links to missing target: /tools/completion/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~15 links to missing target: /tools/imatrix/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~16 links to missing target: /tools/quantize/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~17 links to missing target: /tools/server/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~22 links to missing target: /convert_hf_to_gguf.py
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~22 links to missing target: /examples/convert_legacy_llama.py
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~28 links to missing target: /conversion
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~44 links to missing target: /gguf-py/gguf/constants.py
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~67 links to missing target: /gguf-py/gguf/tensor_mapping.py
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~117 links to missing target: /examples/eval-callback/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    line \~130 links to missing target: tools/mtmd/debug/mtmd-debug.cpp
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/docker.md
+    line \~41 links to missing target: ../.devops/
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/docker.md
+    line \~41 links to missing target: ../.github/workflows/docker.yml
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/docker.md
+    line \~155 links to missing target: ../.devops/intel.Dockerfile
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/function-calling.md
+    line \~327 links to missing target: ../models/templates/README.md
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/function-calling.md
+    line \~330 links to missing target: ../models/templates/llama-cpp-deepseek-r1.jinja
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/README.md
+    line \~671 links to missing target: ../embedding
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/README.md
+    line \~2004 links to missing target: chat.mjs
+[broken_link] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/README.md
+    line \~2011 links to missing target: chat.sh
+[chain_health] data/bot_heartbeats.jsonl
+    heartbeats stale: last write 133.6h ago
+[dead_symlink] /home/jesse/openroot
+    10 dead symlinks, e.g. /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/.gitignore.bak, /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/LICENSE, /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/.github/workflows/antifragility_lair.yml, /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/contributions/meta_upgrade_20260805_000217.py, /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/contributions/meta_upgrade_20260805_030419.py
+[stub_doc] /home/jesse/openroot/LOOP_SPEC.md
+    1 heading(s) with no body, e.g. OpenRoot AI Hybrid Loop — Hardened Order of Operations (v1.1)
+[stub_doc] /home/jesse/openroot/MASTER_TODO.md
+    1 heading(s) with no body, e.g. MASTER_TODO — REBUILD DRAFT 20260920_032224
+[stub_doc] /home/jesse/openroot/README.md
+    3 heading(s) with no body, e.g. OpenRoot — Floor-Lift Economy, Four Engines, Superlinear Orchestration; Hardware We're Building; A15 micro-mirror rollout
+[stub_doc] /home/jesse/openroot/SUPERLINEAR.md
+    1 heading(s) with no body, e.g. SUPERLINEAR.md — the skeleton. Read this FIRST from any window.
+[stub_doc] /home/jesse/openroot/TASK.md
+    2 heading(s) with no body, e.g. Task: Document db_tune.sh; Target
+[stub_doc] /home/jesse/openroot/analysis/knowledge_probe_report_2026-09-18.md
+    2 heading(s) with no body, e.g. Knowledge Probe Report — 2026-09-18; Sqlite ledger hits (3568 total across 13 dbs)
+[stub_doc] /home/jesse/openroot/bench/PODBENCH_100_SPEC_v1.md
+    1 heading(s) with no body, e.g. 4. The 100 Questions
+[stub_doc] /home/jesse/openroot/context_bridge/archive-20260920/MASTER_TODO.meshdraft.20260920_052939.md
+    4 heading(s) with no body, e.g. MASTER_TODO.md mesh rebuild draft; 7B drafted · 3B graded · verdict=HOLD · sha16:2345bd6073cbd4e7; sources: 12 chunks · 2 statements; Master TODO List
+[stub_doc] /home/jesse/openroot/context_bridge/archive-20260920/MASTER_TODO.meshdraft.retry1.20260920_053533.md
+    7 heading(s) with no body, e.g. MASTER_TODO.md mesh rebuild draft — retry 1/2; 7B revised · 3B graded · verdict=HOLD · sha16:9f18a288ee1e9e97; prior feedback: The 'Infrastructure', 'Documentation', and 'Community' sections are empty, which violates the rubric requirement that every item is actionable.; There are no items listed under any of the section headings. The list should contain specific tasks or actions for each category.; The 'Physics/Hardware' section contains only placeholder text ('- actionable_tasks - tasks') without actual content.; MASTER_TODO.md mesh rebuild draft
+[stub_doc] /home/jesse/openroot/context_bridge/archive-20260920/MASTER_TODO.meshdraft.retry2.20260920_053533.md
+    7 heading(s) with no body, e.g. MASTER_TODO.md mesh rebuild draft — retry 2/2; 7B revised · 3B graded · verdict=PASS · sha16:1585e86295bfd81d; prior feedback: Every item is actionable.; No duplicates across sections.; Grouped under correct headings (Infrastructure, Documentation, Community, Physics/Hardware).; Nothing invented beyond original statements.; MASTER_TODO.md mesh rebuild draft
+[stub_doc] /home/jesse/openroot/context_bridge/handoff_window-close-20260921-am.md
+    1 heading(s) with no body, e.g. AM Window Close - 2026-09-21 (verified seal)
+[stub_doc] /home/jesse/openroot/context_bridge/handoff_window-close-20260921.md
+    1 heading(s) with no body, e.g. WINDOW CLOSE — 2026-09-21 (sealed)
+[stub_doc] /home/jesse/openroot/context_bridge/hive-live-convergence-20260920_230844.md
+    2 heading(s) with no body, e.g. Hive Live Convergence Run - 20260920_230844; Ledger totals
+[stub_doc] /home/jesse/openroot/context_bridge/lb-loop-milestone-final.md
+    1 heading(s) with no body, e.g. lb_loop v2 Milestone: Non-Recompute Pathway Demonstrated
+[stub_doc] /home/jesse/openroot/context_bridge/lessons_draft_20260920.md
+    2 heading(s) with no body, e.g. Lessons Draft — session 2026-09-20 (UNCOMMITTED, human gate); Extracted from verified terminal events today; every claim cites its source event.
+[stub_doc] /home/jesse/openroot/context_bridge/lumo-handoff-2026-09-13-evening.md
+    1 heading(s) with no body, e.g. LUMO HANDOFF — Sep 13, 2026 Evening Session (Rescue, Consolidation & Launch)
+[stub_doc] /home/jesse/openroot/context_bridge/lumo-handoff-2026-09-14-night.md
+    1 heading(s) with no body, e.g. LUMO HANDOFF — Sep 14, 2026 Night Session (Yield Launch + Multi-Agent Mesh)
+[stub_doc] /home/jesse/openroot/context_bridge/quarantine-docs-20260920_204735/doc_compile_optiplex_20260920_193059.md
+    28 heading(s) with no body, e.g. Proposed human-review tasks; MASTER_TODO.md mesh rebuild draft; 7B drafted · 3B graded · verdict=HOLD · sha16:2345bd6073cbd4e7; sources: 12 chunks · 2 statements
+[stub_doc] /home/jesse/openroot/context_bridge/seed_refinery_20260920_143226.md
+    1 heading(s) with no body, e.g. REFINERY SEED — concept compounding queue
+[stub_doc] /home/jesse/openroot/context_bridge/session-2026-09-19-gh-audit-triage.md
+    1 heading(s) with no body, e.g. GH Fleet Audit — Session Handoff (2026-09-19)
+[stub_doc] /home/jesse/openroot/context_bridge/session-2026-09-20-floorlift-seal.md
+    1 heading(s) with no body, e.g. Provenance: lumo-assisted, human-gated
+[stub_doc] /home/jesse/openroot/context_bridge/session-2026-09-21-lbloop-fix3.md
+    2 heading(s) with no body, e.g. Provenance: lumo-assisted, human-gated; Loop-rc: 1
+[stub_doc] /home/jesse/openroot/context_bridge/session-2026-09-21-lbloop-fix4.md
+    2 heading(s) with no body, e.g. Provenance: lumo-assisted, human-gated; Loop-rc: 0
+[stub_doc] /home/jesse/openroot/context_bridge/session-2026-09-21-lbloop-seal-v2.md
+    1 heading(s) with no body, e.g. Provenance: lumo-assisted, human-gated
+[stub_doc] /home/jesse/openroot/context_bridge/session-20260918_123446-mesh-publish.md
+    1 heading(s) with no body, e.g. session: mesh_publish_v2 2026-09-18T17:34:46Z
+[stub_doc] /home/jesse/openroot/context_bridge/session-20260918_123633-fix.md
+    1 heading(s) with no body, e.g. session: mesh_fix_v3
+[stub_doc] /home/jesse/openroot/context_bridge/session-20260918_close-sealed.md
+    1 heading(s) with no body, e.g. session close: 2026-09-18
+[stub_doc] /home/jesse/openroot/context_bridge/session-20260918_late-sealed.md
+    1 heading(s) with no body, e.g. session close: 2026-09-18 late
+[stub_doc] /home/jesse/openroot/context_bridge/session-20260919-0750-merge-sealed.md
+    1 heading(s) with no body, e.g. Merge Seal Session 2026-09-19
+[stub_doc] /home/jesse/openroot/context_bridge/session-20260919-1349-issue53-goals-sealed.md
+    1 heading(s) with no body, e.g. Session 2026-09-19 13:49 — issue #53 sealed + GOALS/MASTER_TODO promoted
+[stub_doc] /home/jesse/openroot/context_bridge/terminal-history-window-20260921_035509.md
+    2 heading(s) with no body, e.g. Canary-stamped log lines, last 24h; Bot loop log tail (if live)
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/.github/ISSUE_TEMPLATE/bug_report.md
+    8 heading(s) with no body, e.g. Summary; Repository and revision; Reproduction steps; Expected result
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/.github/ISSUE_TEMPLATE/feature_request.md
+    6 heading(s) with no body, e.g. Problem; Proposed change; Evidence or precedent; Verification criteria
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/.github/ISSUE_TEMPLATE/hardware_evidence.md
+    9 heading(s) with no body, e.g. System and version; Claim being evaluated; Materials, dimensions, and tools; Conditions and procedure
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/.github/PULL_REQUEST_TEMPLATE.md
+    6 heading(s) with no body, e.g. Purpose; Scope; Evidence, tests, or measurements; Reproduction / verification
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/SECURITY.md
+    1 heading(s) with no body, e.g. Security Policy
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/.github/copilot-instructions.md
+    3 heading(s) with no body, e.g. OpenRoot Copilot Instructions; Matches GitHub Copilot recommended workflow (repo-wide); Foundational for every script and every spoke node
+[stub_doc] /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/MASTER_THESIS.md
+    11 heading(s) with no body, e.g. MASTER THESIS: Civilization 2.0; PART I: PHILOSOPHICAL FOUNDATION; PART II: MATERIAL SCIENCE FOUNDATION; PART III: ENERGY & BIOMASS
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/.github/ISSUE_TEMPLATE/hardware_evidence.md
+    9 heading(s) with no body, e.g. System and revision; Claim being evaluated; Materials, dimensions, and tools; Conditions and procedure
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/.github/PULL_REQUEST_TEMPLATE.md
+    4 heading(s) with no body, e.g. Purpose; Packet files changed; Evidence, tests, or measurements; Safety and limitation changes
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/designs/example-system/BOM.md
+    1 heading(s) with no body, e.g. Material assumptions
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/designs/example-system/BUILD.md
+    1 heading(s) with no body, e.g. Build Procedure
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/designs/example-system/MEASUREMENTS.md
+    1 heading(s) with no body, e.g. Measurements and Evidence
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/designs/example-system/README.md
+    1 heading(s) with no body, e.g. Example System
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/designs/example-system/SAFETY.md
+    1 heading(s) with no body, e.g. Safety Boundary
+[stub_doc] /home/jesse/openroot/data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/designs/example-system/TEST_PLAN.md
+    1 heading(s) with no body, e.g. Test Plan
+[stub_doc] /home/jesse/openroot/data/router_memory/r001.md
+    1 heading(s) with no body, e.g. Router Round-1 Self-Memory
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/.github/ISSUE_TEMPLATE/bug_report.md
+    3 heading(s) with no body, e.g. Bug Report; Steps to Reproduce; Expected Behavior
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/.github/ISSUE_TEMPLATE/feature_request.md
+    2 heading(s) with no body, e.g. Feature Request; Problem It Solves
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/.github/ISSUE_TEMPLATE/validator_application.md
+    1 heading(s) with no body, e.g. Validator Application
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/.github/pull_request_template.md
+    1 heading(s) with no body, e.g. Pull Request
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/00_MASTER_CONSTITUTION.md
+    1 heading(s) with no body, e.g. THE OPENROOT MASTER CONSTITUTION v4.0
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/02_MODULES/agape/agape-primitives/.github/copilot-instructions.md
+    3 heading(s) with no body, e.g. OpenRoot Copilot Instructions; Matches GitHub Copilot recommended workflow (repo-wide); Foundational for every script and every spoke node
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/02_MODULES/agape/agape-une/README.md
+    1 heading(s) with no body, e.g. Current Status
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/02_MODULES/computational/und-protocol/.github/copilot-instructions.md
+    3 heading(s) with no body, e.g. OpenRoot Copilot Instructions; Matches GitHub Copilot recommended workflow (repo-wide); Foundational for every script and every spoke node
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/02_MODULES/computational/und-protocol/README.md
+    1 heading(s) with no body, e.g. Quick Start
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/BRIDGE.md
+    2 heading(s) with no body, e.g. OPENROOT UNIVERSAL CONTEXT BRIDGE v1; To the AI reading this: adopt this operating system for the session.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/CALL-TO-BUILDERS-01.md
+    1 heading(s) with no body, e.g. Call to Builders, Doers, Tinkerers, Thinkers, Dreamers
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/CLAIMS.md
+    1 heading(s) with no body, e.g. Smallest proof this file is alive
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/CONTRIBUTION_HUB_POLICY.md
+    1 heading(s) with no body, e.g. Contribution Hub Policy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/COPILOT_PROMPT.md
+    1 heading(s) with no body, e.g. GitHub Copilot Prompt — OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/FUNDING.md
+    1 heading(s) with no body, e.g. How to Fund
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/HYPOTHESIS_REVERSE_COMPUTATION.md
+    1 heading(s) with no body, e.g. Expanded System Stack
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/README.backup.202607052006.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/README.md
+    1 heading(s) with no body, e.g. 🌐 Main Site: https://jesseray718.github.io
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/SCIENTIFIC_FOUNDATION.md
+    1 heading(s) with no body, e.g. Scientific Foundation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/SEED.md
+    1 heading(s) with no body, e.g. OpenRoot Living Seed
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/START-HERE.md
+    2 heading(s) with no body, e.g. What Can You Actually Do With This?; How Do I Actually Start?
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/STRUCTURE.md
+    2 heading(s) with no body, e.g. OPENROOT SKELETON MAP; Level 1: Physical Infrastructure
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/STRUCTURE_V2.md
+    1 heading(s) with no body, e.g. OpenRoot Structure v2 — Two-Point Interlocking Form
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/TALENT-ALIGNMENT-PROMPT.md
+    4 heading(s) with no body, e.g. OpenRoot Talent Alignment Engine; Worked Example: Musician (Guitarist / Beat Maker / Producer); If Mike filled in `[YOUR TALENT]` with "musician — guitarist, beat maker, producer learning mixing and mastering," here's what the AI would produce:; Talent Alignment Document: Musician
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/THESIS.md
+    4 heading(s) with no body, e.g. III. The Living Engine: Black Locust Coppice + Rocket Mass Heater; IV. The Thermodynamic Ledger; VII. The Axiomatic Foundation; VIII. The Path Forward
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/UNIFIED_ARCHITECTURE.md
+    1 heading(s) with no body, e.g. UNIFIED_ARCHITECTURE.md
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/WIKILEAKS_USER_MANUAL.md
+    4 heading(s) with no body, e.g. OPENROOT WIKILEAKS USER MANUAL; Unredacted operating instructions for the lowest node; Generated 2026-08-21 · R=1.0 · η = useful_joules / human_joules; Absolute paths only. Never tilde. Serve the least among us first.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/aerocement/BUILD-001-test-tile.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Aerocement BUILD-001 Test Tile; Small-Scale Pour Protocol for AE-GFRC Foam Stability Test
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/analysis/full_cascade/LIMITS.md
+    1 heading(s) with no body, e.g. Full Cascade — Ratios and Limits
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/analysis/full_cascade/SYSTEM.md
+    2 heading(s) with no body, e.g. Full Cascading Thermal System — OpenRoot; Locked description 2026-08-12
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/black-locust-rmh/ALPINE-SSH.md
+    2 heading(s) with no body, e.g. then from Kai9000: Settings → SSH → host alias black-locust; push: rsync -avz -e "ssh -p 8022" . user@localhost:\~/black-locust-rmh/
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/bounties/README.md
+    1 heading(s) with no body, e.g. Advancement Engine
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/bridges/ledger_bridge.md
+    1 heading(s) with no body, e.g. Bridge: Thermodynamic Ledger
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/build-log/node-zero/BUILD_LOG.md
+    8 heading(s) with no body, e.g. Pre-Pour (48 Hours); Curing Phase (Days 1–21); Daily Log; First Commissioning (Days 29–30)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/build-log/node-zero/README.md
+    1 heading(s) with no body, e.g. Node Zero — Sikeston, Missouri, USA
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/build-log/node-zero/transcript-20260703.md
+    1 heading(s) with no body, e.g. 18:44:59
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/business-leveling/handbook/HANDBOOK.md
+    1 heading(s) with no body, e.g. Business Leveling Cooperative — Handbook
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/AGAPE-CORRECTIVE.md
+    1 heading(s) with no body, e.g. Agape Corrective Mechanism
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/CAPABILITY-IMPACT-RESOURCES.md
+    1 heading(s) with no body, e.g. 3. Free & Low-Barrier Resources That Can Fuel It
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/CIRCUIT-IMPLEMENTATION.md
+    1 heading(s) with no body, e.g. Circuit Implementation Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/FLOOR-RISING-SIMULATION.md
+    1 heading(s) with no body, e.g. Bottom Floor Rising — Integrated Agape Simulation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/FULLER-SYNERGETICS-NODES.md
+    1 heading(s) with no body, e.g. Synergetics, Geodesic Structures, Sanitary Principles & Node Coordination
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/ICOSAHEDRAL-MESH-FOUNDATION.md
+    1 heading(s) with no body, e.g. Icosahedral Mesh Foundation (Synergetics + Sacred Geometry)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/SEED-LIBRARY-REDIRECTION.md
+    1 heading(s) with no body, e.g. Open-Source Seed Libraries + Community Workshop Hubs
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/SIMULATION-REDIRECT.md
+    1 heading(s) with no body, e.g. Simulation: Redirecting Global Military Expenditure under Agape Priority
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/case-study/docs/THESIS.md
+    1 heading(s) with no body, e.g. Case Study: Centralized Power vs Decentralized Solutions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/community/VALIDATOR_HANDBOOK.md
+    4 heading(s) with no body, e.g. Community Validator Handbook; On-Site Inspection (60–90 minutes); Data Integrity Audit; Validator Nomination Process
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/context_bridge/BRIDGE.md
+    2 heading(s) with no body, e.g. OPENROOT UNIVERSAL CONTEXT BRIDGE v1; To the AI reading this: adopt this operating system for the session.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/context_bridge/INNER_WINDOW_AI_PROVIDER.md
+    3 heading(s) with no body, e.g. INNER WINDOW / AI PROVIDER CONTEXT BRIDGE; OpenRoot · Jesse Ray McMillen · 2026-08-17; Hand this document to any AI (Lumo, Grok, Copilot, local LLM, etc.)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/context_bridge/opencell-thermal-canon-20260913.md
+    2 heading(s) with no body, e.g. OPENCELL THERMAL SYSTEM — DESIGN CANON v1; Full architecture locked so it never needs re-explaining.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/context_bridge/session-2026-09-13.md
+    2 heading(s) with no body, e.g. SESSION CLOSE-OUT — 2026-09-13; VERIFIED STATE
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/dist/arxiv-submission-draft.md
+    3 heading(s) with no body, e.g. ArXiv Submission Draft — Core Unification Framework; Target Section: Physics > General Physics (physics.gen-ph); Alternative: Physics > Classical Physics (physics.class-ph)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/dist/publication/state.md
+    1 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-D (v4 WITH ALTERNATOR)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/CONTRIBUTION_WORKFLOW.md
+    1 heading(s) with no body, e.g. Contribution Workflow
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/LUMO_PROTOCOL.md
+    3 heading(s) with no body, e.g. 1. Session Memory Format; 2. Coding Style Preferences; 3. Value Alignment
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/README.md
+    4 heading(s) with no body, e.g. Navigate by System Layer; 3. Energy (H-003 Thermal); 5. Food, Health & Care; 6. Governance & Organization
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/axioms/AXIOM_IMPLEMENTATIONS.md
+    1 heading(s) with no body, e.g. Examples
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/axioms/COMPOUNDING-COOPERATION.md
+    1 heading(s) with no body, e.g. Compounding Cooperation Equation (Tribe-Scale)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/claims/DV.GEN.BL.RMH.001-acre-claim-v1.md
+    1 heading(s) with no body, e.g. ACRE Claim: DV.GEN.BL.RMH.001
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/community/specs/nanobot-swarm-openroot.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — OpenRoot Thermal Systems (H-003); Scientific Questions Requiring Peer Review
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/community/specs/nanobot-swarm-template.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — [TEAM_NAME]; Primary Objective
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/construction/SIKESTON-NODE-ZERO-IMPLEMENTATION.md
+    1 heading(s) with no body, e.g. Step-by-Step Implementation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/construction/global-fractal-mesh-framework.md
+    3 heading(s) with no body, e.g. Section 1: The Mathematical Foundation; Section 2: Sacred Geometry as Engineering; Section 6: Deployment Phasing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/context/CLAUDE-PRIMING-v1.md
+    3 heading(s) with no body, e.g. OPENROOT / AEROCEMENT / AGAPE-UNE — GROK-NODE DEEP DIVE + CLAUDE PRIMING; As of 2026-07-08 22:10 CDT | jesseray718 ecosystem | MAX SYSTEMIC BENEFIT / UNIT EFFORT; CUSTOMIZED CLAUDE PRIMING BLOCK (copy-paste entire ``` to Claude)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/context/CONTEXT-BRIDGE.md
+    3 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-C (VALIDATED); Last Updated: 2026-07-05 17:00 CDT  # POST-FIX; Status: PHYSICS VALIDATED ✓ | READY FOR PUBLICATION
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/context/LUMO-CONTINUITY-BRIDGE.md
+    6 heading(s) with no body, e.g. OPENROOT CONTINUITY BRIDGE — THERMAL CASCADE; Updated: 2026-07-05 | Author: Jesse McMillen | UNE: TH.CAL.TCR.V02; GIT: github.com/jesseray718/openroot (tag v0.4-validated-release); LICENSE: CC-BY 4.0 (dataset) | GPL-3.0 (code)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/context/pub-record-unification.md
+    2 heading(s) with no body, e.g. PUBLICATION RECORD — CORE UNIFRAME; Published: 2026-07-10T05:57:58-05:00
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/context/state.md
+    1 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-D (v4 WITH ALTERNATOR)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/core/PORTFOLIO.md
+    2 heading(s) with no body, e.g. OpenRoot Portfolio Overview; Status: 2026-07-02
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/economics/AX.CB.SYS.2607081000-CIV.md
+    1 heading(s) with no body, e.g. The Seven Mappings
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/economics/FINANCE-PLAN.md
+    1 heading(s) with no body, e.g. OpenRoot Financial Flywheel — status tracker
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/economics/trillion-dollar-redirect.md
+    1 heading(s) with no body, e.g. The Math at Every Scale
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/governance/AXIOMS.md
+    1 heading(s) with no body, e.g. OpenRoot Axiomatic Foundation (status: theory)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/handbook/OPENROOT-THESIS-v3.md
+    9 heading(s) with no body, e.g. AeroCement Ecosystem: Civilization 2.0; 2. The Passive Solar-Thermal Loop; 4. Shelter: Geodesic AeroCement; 5. Life: Biointensive Permaculture Guilds
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/handbook/intro.md
+    1 heading(s) with no body, e.g. OpenRoot Handbook
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/health/bio-stack.md
+    1 heading(s) with no body, e.g. OpenRoot Biological Stack (v1.0)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/kai9000/Kai 9000 on Galaxy A15_ Complete Workflow Guide for Open-Hardwar.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/kai9000/OPERATORS_MANUAL.md
+    2 heading(s) with no body, e.g. When ready, push:; git commit -m "docs: OPERATORS_MANUAL.md v2.0 (ALIGN→ASSESS→ACT→AMPLIFY)"
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/mesh-geometry/00-INDEX.md
+    1 heading(s) with no body, e.g. Fractal Convergence — OpenRoot Theoretical Framework
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/mesh-geometry/10-PI-GENOMIC-NODE.md
+    1 heading(s) with no body, e.g. Prototype: Pi-Based Offline Genomic Vault Node
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/mesh-geometry/11-MAX-GOOD-MIN-INPUT.md
+    1 heading(s) with no body, e.g. AX-017 & PO-013 — Maximum Good with Minimum Input
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/mesh-geometry/17-GLOBAL-FRACTAL-MESH-FRAMEWORK.md
+    3 heading(s) with no body, e.g. Section 1: The Mathematical Foundation; Section 2: Sacred Geometry as Engineering; Section 6: Deployment Phasing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/offline-toolkit.md
+    1 heading(s) with no body, e.g. Modules
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/outreach/researcher-email-template.md
+    1 heading(s) with no body, e.g. Outreach Email Template — OpenRoot Thermal Cascade
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/outreach/researcher-targets.md
+    6 heading(s) with no body, e.g. Researcher Targets — H-003 Thermal Cascade Outreach; TIER 1: NEAR-EXACT SYSTEM MATCH; TIER 1: QUESTION 1 — CARNOT / RADIATIVE COOLING; TIER 2: QUESTION 2 — PORE-SCALE CFD
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/releases/v1.0-definition.md
+    1 heading(s) with no body, e.g. Five Pillars of v1.0
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/runbook.md
+    3 heading(s) with no body, e.g. Daily offline workflow; Troubleshooting; "Data directory missing" from doctor
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/specs/black-locust-carbon-negative-energy-v1.md
+    1 heading(s) with no body, e.g. Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/technical/STATOR-MOTOR.md
+    1 heading(s) with no body, e.g. Stator-Assisted Concrete Mixing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/theory/AGAPE_LANDAUER_AND_THE_FIELD.md
+    2 heading(s) with no body, e.g. Agape, the Landauer Limit, and a Path Toward a Unified Description; OpenRoot Theoretical Note — 2026-08-12
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/docs/vision/societal-transformation.md
+    1 heading(s) with no body, e.g. The Three Inversions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/exports/agape_release/agape-release-20260825-075300/CONTRIBUTION_HUB_POLICY.md
+    1 heading(s) with no body, e.g. Contribution Hub Policy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/exports/agape_release/agape-release-20260825-075409/CONTRIBUTION_HUB_POLICY.md
+    1 heading(s) with no body, e.g. Contribution Hub Policy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/foundation_library/INDEX.md
+    1 heading(s) with no body, e.g. FOUNDATION LIBRARY INDEX
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/foundation_library/integration_protocols/FUSION_PROTOCOL.md
+    1 heading(s) with no body, e.g. PRIMITIVE-MODERN FUSION PROTOCOL
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/foundation_library/modern_tech/TECHNOLOGY_PILLARS.md
+    2 heading(s) with no body, e.g. MODERN TECHNOLOGY PILLARS; Core Technologies for Human Resilience
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/foundation_library/primitive_wisdom/FUNDAMENTALS.md
+    2 heading(s) with no body, e.g. PRIMITIVE SURVIVAL FUNDAMENTALS; The Five Pillars of Human Survival
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/README.md
+    1 heading(s) with no body, e.g. Active Research
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/epistemology/EPISTEMOLOGY-SWARM-01.md
+    1 heading(s) with no body, e.g. Epistemology Nanobot Swarm (EPISTEMOLOGY-SWARM-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/materials/ae-gfrc/HYPOTHESIS.md
+    1 heading(s) with no body, e.g. Quantitative Basis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/AE-GFRC-01.md
+    1 heading(s) with no body, e.g. Aerated Glass-Fiber Reinforced Concrete (AE-GFRC-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/AE-GFRC-BATCH-CALC.md
+    1 heading(s) with no body, e.g. Estimated Total: $80-120
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/AE-GFRC-CORRECTED-MIX-PROTOCOL.md
+    5 heading(s) with no body, e.g. Corrected Mixing Sequence; Corrected Curing Protocol; Additional Quality Control Measures; Documentation Requirements
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/AE-GFRC-PHYSICAL-TEST-PLAN.md
+    5 heading(s) with no body, e.g. Test Parameters; Test Procedure; Data Collection; Analysis Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/CTBS-01.md
+    1 heading(s) with no body, e.g. Cascading Thermal Battery System (CTBS-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/DELTA-T-VEHICLE-SPEC.md
+    2 heading(s) with no body, e.g. DELTA-T VEHICLE SPECIFICATION; DV.GEN.TH.DT01 — Mobile Thermal Cascade Generator
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/WBTE-01-TEST-PROTOCOL.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Wet-Bulb Thermal Engine Experimental Validation Protocol; Draft WBTE-01-TEST-PROTOCOL.md
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/from_sd/research/thermal-systems/WBTE-01.md
+    1 heading(s) with no body, e.g. Wet-Bulb Thermal Engine (WBTE-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/handbook/energy/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/kai/mission-command.md
+    1 heading(s) with no body, e.g. KAI — Mission Command
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/leveling-cooperative/README.md
+    1 heading(s) with no body, e.g. Quick Start (Termux)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/leveling-cooperative/docs/DESIGN.md
+    1 heading(s) with no body, e.g. Design: Autonomous Leveling Cooperative
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/leveling-cooperative/handbook/HANDBOOK.md
+    1 heading(s) with no body, e.g. Handbook — Leveling Cooperative
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/GITHUB_SSH_SETUP.md
+    3 heading(s) with no body, e.g. GitHub SSH Setup - Complete Guide; Your SSH Key; Step 3: Push All Repositories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/acre_development/ACRE_DEVELOPMENT.md
+    7 heading(s) with no body, e.g. ACRE Coin Development Toolkit; Core Components; Development Roadmap; Getting Started
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/acre_development/IMMUTABLE_PUBLISHING.md
+    11 heading(s) with no body, e.g. ACRE Immutable Publishing System; Publishing Workflow; 1. Prepare Content; 2. Install Dependencies
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/aerocement/LICENSE_COMMONS_ROYALTY.md
+    1 heading(s) with no body, e.g. 2. GRANT OF RIGHTS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/aerocement/README.md
+    1 heading(s) with no body, e.g. 🔬 How It Works
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/aerocement/Whitepaper_v1.0.md
+    8 heading(s) with no body, e.g. 1. Introduction; 2. Material Science of Aerocement; 3. Thermodynamic Modeling; 4. Prototype Validation Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/aerocement/docs/Whitepaper_Blackbody_Solar_Tower.md
+    1 heading(s) with no body, e.g. WHITE PAPER: The Blackbody Solar Thermal Tower
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/docs/construction/materials/ferrocement_dome_materials.md
+    3 heading(s) with no body, e.g. Ferrocement Geodesic Dome Materials List; Total Materials Cost: $18,492; Grand Total: $36,492
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/docs/construction/materials/pneumatic_tools_materials.md
+    2 heading(s) with no body, e.g. Pneumatic Hog Ring Plier Materials Cost Breakdown; Total Materials Cost: $25,300
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/docs/construction/materials/single_dome_pneumatic_costs.md
+    2 heading(s) with no body, e.g. Single Dome + Pneumatic Tool Materials Cost; Total Materials Cost: $18,677
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/docs/specs/black-locust-carbon-negative-energy-v1.md
+    1 heading(s) with no body, e.g. Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/handbook/energy/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/black-locust-rmh/handbook_energy_DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/civilization2.0/README.md
+    1 heading(s) with no body, e.g. Three Pillars
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/civilization2.0/WHITE_PAPER.md
+    1 heading(s) with no body, e.g. Civilization 2.0: A White Paper for the AeroCement Ecosystem
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/docs/construction/materials/ferrocement_dome_materials.md
+    3 heading(s) with no body, e.g. Ferrocement Geodesic Dome Materials List; Total Materials Cost: $18,492; Grand Total: $36,492
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/docs/construction/materials/pneumatic_tools_materials.md
+    2 heading(s) with no body, e.g. Pneumatic Hog Ring Plier Materials Cost Breakdown; Total Materials Cost: $25,300
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/docs/construction/materials/single_dome_pneumatic_costs.md
+    2 heading(s) with no body, e.g. Single Dome + Pneumatic Tool Materials Cost; Total Materials Cost: $18,677
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/CHECKLIST.md
+    5 heading(s) with no body, e.g. FINAL CHECKLIST; Before You Go; At the Location; Knowledge Transfer
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/DELL_3040_SETUP.md
+    3 heading(s) with no body, e.g. DELL OPTIPLEX 3040 SETUP GUIDE; Step 7: Verify All Hardware; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/FLASH_DRIVE_INSTRUCTIONS.md
+    3 heading(s) with no body, e.g. FLASH DRIVE PREPARATION INSTRUCTIONS; Step 1: Format the 128GB Flash Drive; On Linux:
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/MESH_IMPLEMENTATION.md
+    13 heading(s) with no body, e.g. MESH SYNC IMPLEMENTATION GUIDE; Quick Start; 1. Install Dependencies; 2. Set Up Vector Index
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/MESH_SYNC_PROTOCOL.md
+    7 heading(s) with no body, e.g. Protocol Design; 2. Mesh Sync Architecture; 3. Sync Protocol; 6. Implementation (Termux)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/OMBU_TRANSFER_PROTOCOL.md
+    5 heading(s) with no body, e.g. OMBU KNOWLEDGE TRANSFER PROTOCOL; Transfer Methods; Method 1: Direct Copy (Linux); Method 2: Network Transfer
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/flash_prep/acre_tools/ACRE_TOOLKIT.md
+    17 heading(s) with no body, e.g. Quick Start; 1. Install Toolkit; 2. Set Up Environment; Core Tools
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/AeroCement_Ecosystem/docs/AEROCEMENT_WHITEPAPER_FINAL.md
+    1 heading(s) with no body, e.g. 2. Three Pillars
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/CONTRIBUTING.md
+    1 heading(s) with no body, e.g. 🤝 How to Contribute
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/README.md
+    1 heading(s) with no body, e.g. 🏗️ How It Works
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/aerocement-formula.md
+    3 heading(s) with no body, e.g. Preparation Steps; 🔬 Physics Validation: Why This Works; 🛠️ Application Guidelines
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/build-guide.md
+    5 heading(s) with no body, e.g. 🏗️ Phase 1: Site Preparation & Excavation; 🧱 Phase 2: Constructing the Aerocement Panels; 🔗 Phase 3: Installing the Cold Loop; ⚙️ Phase 4: Mechanical Power Integration
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/cold-storage-calculations.md
+    2 heading(s) with no body, e.g. 2. Thermodynamic Principles; 3. Mathematical Validation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/docs/manuscript/Kai-validation-revf.md
+    7 heading(s) with no body, e.g. 2. Fuel Balance — Full Derivation; 3. Fuel Supply Validation; 4. Rocket Mass Heater — Thermal Validation; 5. Heat Recovery — Fish Tanks & Greenhouse
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/docs/manuscript/OPENCELL_RENAISSANCE_PROTOCOL_FULL_RELEASE.md
+    2 heading(s) with no body, e.g. OPENCELL_RENAISSANCE_PROTOCOL_FULL_RELEASE.md; SECTION 2: Detailed Physics Validation & Math
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/docs/manuscript/lumo_boot.md
+    3 heading(s) with no body, e.g. 🌉 LUMO BOOT PROMPT — Renaissance Protocol v2.0; Paste this into a NEW Lumo chat to resume work instantly.; Last Updated: June 2, 2026
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/docs/manuscript/nifa-application.md
+    3 heading(s) with no body, e.g. 2. Statement of Need; 4. Technical Approach; 6. Expected Outcomes & Impacts
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/documents/scaling_strategy.md
+    1 heading(s) with no body, e.g. Scaling Strategy: Land Acquisition & Educational Deployment
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/grant-summary.md
+    2 heading(s) with no body, e.g. 2. Target Grant Programs; 3. Application Strategy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/nifa-application.md
+    3 heading(s) with no body, e.g. 2. Statement of Need; 4. Technical Approach; 6. Expected Outcomes & Impacts
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/OpenCell-Thermal-System/thermal-power-analysis.md
+    2 heading(s) with no body, e.g. 4. Physical Properties & Validation; 5. Applications in the OpenCell System
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/aerocement/LICENSE_COMMONS_ROYALTY.md
+    1 heading(s) with no body, e.g. 2. GRANT OF RIGHTS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/aerocement/README.md
+    1 heading(s) with no body, e.g. 🔬 How It Works
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/aerocement/Whitepaper_v1.0.md
+    8 heading(s) with no body, e.g. 1. Introduction; 2. Material Science of Aerocement; 3. Thermodynamic Modeling; 4. Prototype Validation Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/aerocement/docs/Whitepaper_Blackbody_Solar_Tower.md
+    1 heading(s) with no body, e.g. WHITE PAPER: The Blackbody Solar Thermal Tower
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/civilization2.0/README.md
+    1 heading(s) with no body, e.g. Three Pillars
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/civilization2.0/WHITE_PAPER.md
+    1 heading(s) with no body, e.g. Civilization 2.0: A White Paper for the AeroCement Ecosystem
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/COPILOT_PROMPT.md
+    1 heading(s) with no body, e.g. GitHub Copilot Prompt — OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/build-log/node-zero/BUILD_LOG.md
+    8 heading(s) with no body, e.g. Pre-Pour (48 Hours); Curing Phase (Days 1–21); Daily Log; First Commissioning (Days 29–30)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/build-log/node-zero/README.md
+    1 heading(s) with no body, e.g. Node Zero — Sikeston, Missouri, USA
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/community/VALIDATOR_HANDBOOK.md
+    4 heading(s) with no body, e.g. Community Validator Handbook; On-Site Inspection (60–90 minutes); Data Integrity Audit; Validator Nomination Process
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/kai/mission-command.md
+    1 heading(s) with no body, e.g. KAI — Mission Command
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/projects/aerocement/START-HERE.md
+    4 heading(s) with no body, e.g. AeroCement Node Zero — START HERE; Bill of Materials (Per 1.5 m² Panel); The Pour (Day 1); Sensor Installation (Day 22+)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/research/README.md
+    1 heading(s) with no body, e.g. Active Research
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/skills-library/README.md
+    1 heading(s) with no body, e.g. Categories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/skills-library/concrete-aerocement/21-day-wet-cure-protocol.md
+    3 heading(s) with no body, e.g. 21-Day Wet Cure Protocol; Temperature & Humidity Management; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/skills-library/concrete-aerocement/README.md
+    3 heading(s) with no body, e.g. Concrete & Aerocement Skills; Skill Modules; Material Sources
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/skills-library/concrete-aerocement/xanthan-gum-method.md
+    6 heading(s) with no body, e.g. Xanthan Gum Foam Activation Method; Materials; Procedure; Expected Results
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/skills-library/kai9000-workflow.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/openroot/tokens/ACRE_SPECIFICATION.md
+    6 heading(s) with no body, e.g. ACRE Token Specification; Minting Triggers; Minting Process; Token Lifecycle
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/CONTRIBUTING.md
+    1 heading(s) with no body, e.g. 🚀 How to Contribute
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/MANIFESTO.md
+    1 heading(s) with no body, e.g. Renaissance Protocol Manifesto
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/SECURITY.md
+    1 heading(s) with no body, e.g. Security Policy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/bio_energy_loop.md
+    1 heading(s) with no body, e.g. Fuel Sources (Validated)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/energy/greenlight.md
+    5 heading(s) with no body, e.g. KAI9000 – COMPREHENSIVE INTEGRATED VALIDATION; SECTION 1: THE PHYSICAL CORE — CLOSED-LOOP THERMODYNAMICS; SECTION 2: THE MOBILE VARIANT — VEHICLE DYNAMICS; SECTION 3: THE ECONOMIC LAYER — RENAISSANCE PROTOCOL
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/engineering/FLAT_SPIRAL_PAN_BUILD.md
+    1 heading(s) with no body, e.g. 3. ASSEMBLY
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/engineering/PROTOTYPE_V1_BOM.md
+    1 heading(s) with no body, e.g. 1. SHOPPING LIST (BOM)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/README.md
+    1 heading(s) with no body, e.g. Key Corrections
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/kai9000_solar_physics_validation.md
+    5 heading(s) with no body, e.g. PART I: FOUNDATIONAL PHYSICS; PART II: THE LINEAR/STAGED MODEL (BASELINE); PART III: THE Φ-SPIRAL VORTEX MODEL; PART IV: FINAL DESIGN SPECIFICATION
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/kai9000_validation_revD.md
+    1 heading(s) with no body, e.g. Paste Rev-G content, Ctrl+O, Ctrl+X
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/kai9000_validation_revE.md
+    2 heading(s) with no body, e.g. 2. First Law Analysis; 3. Second Law Analysis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/kai9000_validation_revF.md
+    9 heading(s) with no body, e.g. 2. Water Harvesting Math — Full Derivation; 3. Net Water Balance; 4. Water Balance Flow Diagram; 5. Impact on COP & System Efficiency
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/kai9000_validation_revG.md
+    2 heading(s) with no body, e.g. 2. Fuel Balance - Full Derivation; 3. System Integration & Outputs
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/physics/kai9000_validation_revH.md
+    3 heading(s) with no body, e.g. 2. Shoot Harvest Model — Derivation; 6. Fuel Suitability for Rocket Mass Heaters; 10. Labor Assessment
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/system-blueprint.md
+    1 heading(s) with no body, e.g. 2. THE HOME SYSTEM: CLOSED LOOP ARCHITECTURE
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/library/volumes/01_ancient_wisdom.md
+    2 heading(s) with no body, e.g. Volume 01: Wisdom for the Space Age; 2. The Compilation: Ancient Wisdom as Code
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/library/volumes/06_ENTROPY_LEARNING/entropy_learnjng.md
+    1 heading(s) with no body, e.g. Volume 06: Entropy & Human Understanding
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/library/volumes/Sun_tsu_safeguards/sun_tsu_safeguards.md
+    2 heading(s) with no body, e.g. Volume 04: Sun Tzu & The Impenetrable Shield; 3. Strategic Maneuvers: Applying Sun Tzu to RNS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/handbook/energy/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/handbook_energy_DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/GIT_AUTH_SETUP.md
+    1 heading(s) with no body, e.g. GitHub Authentication Setup
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/GIT_PUSH_GUIDE.md
+    6 heading(s) with no body, e.g. OpenRoot Ecosystem Git Push Guide; Push All Repositories; Individual Push Commands; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/CONTRIBUTING.md
+    1 heading(s) with no body, e.g. 🤝 How to Contribute
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/README.md
+    1 heading(s) with no body, e.g. 🏗️ How It Works
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/aerocement-formula.md
+    3 heading(s) with no body, e.g. Preparation Steps; 🔬 Physics Validation: Why This Works; 🛠️ Application Guidelines
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/build-guide.md
+    5 heading(s) with no body, e.g. 🏗️ Phase 1: Site Preparation & Excavation; 🧱 Phase 2: Constructing the Aerocement Panels; 🔗 Phase 3: Installing the Cold Loop; ⚙️ Phase 4: Mechanical Power Integration
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/cold-storage-calculations.md
+    2 heading(s) with no body, e.g. 2. Thermodynamic Principles; 3. Mathematical Validation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/docs/manuscript/Kai-validation-revf.md
+    7 heading(s) with no body, e.g. 2. Fuel Balance — Full Derivation; 3. Fuel Supply Validation; 4. Rocket Mass Heater — Thermal Validation; 5. Heat Recovery — Fish Tanks & Greenhouse
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/docs/manuscript/OPENCELL_RENAISSANCE_PROTOCOL_FULL_RELEASE.md
+    2 heading(s) with no body, e.g. OPENCELL_RENAISSANCE_PROTOCOL_FULL_RELEASE.md; SECTION 2: Detailed Physics Validation & Math
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/docs/manuscript/lumo_boot.md
+    3 heading(s) with no body, e.g. 🌉 LUMO BOOT PROMPT — Renaissance Protocol v2.0; Paste this into a NEW Lumo chat to resume work instantly.; Last Updated: June 2, 2026
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/docs/manuscript/nifa-application.md
+    3 heading(s) with no body, e.g. 2. Statement of Need; 4. Technical Approach; 6. Expected Outcomes & Impacts
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/documents/scaling_strategy.md
+    1 heading(s) with no body, e.g. Scaling Strategy: Land Acquisition & Educational Deployment
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/grant-summary.md
+    2 heading(s) with no body, e.g. 2. Target Grant Programs; 3. Application Strategy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/nifa-application.md
+    3 heading(s) with no body, e.g. 2. Statement of Need; 4. Technical Approach; 6. Expected Outcomes & Impacts
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/OpenCell-Thermal-System/thermal-power-analysis.md
+    2 heading(s) with no body, e.g. 4. Physical Properties & Validation; 5. Applications in the OpenCell System
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/SSH_SETUP_GUIDE.md
+    3 heading(s) with no body, e.g. SSH Setup Guide for GitHub; Step 2: Add SSH Key to SSH Agent; Step 5: Push All Repositories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/aerocement/README.md
+    2 heading(s) with no body, e.g. 3. Thermodynamic Modeling; 4. Prototype Validation Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/aerocement/SPEC-H003.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — OpenRoot Thermal Systems (H-003); Scientific Questions Requiring Peer Review
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/aerocement/docs/MATERIAL_SCIENCE_NOTES.md
+    2 heading(s) with no body, e.g. Material Science Notes; Activated Carbon: Revised Understanding
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/civilization2.0/README.md
+    1 heading(s) with no body, e.g. Three Pillars
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/civilization2.0/WHITE_PAPER.md
+    1 heading(s) with no body, e.g. Civilization 2.0: A White Paper for the AeroCement Ecosystem
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/.github/ISSUE_TEMPLATE/bug_report.md
+    3 heading(s) with no body, e.g. Bug Report; Steps to Reproduce; Expected Behavior
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/.github/ISSUE_TEMPLATE/feature_request.md
+    2 heading(s) with no body, e.g. Feature Request; Problem It Solves
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/.github/ISSUE_TEMPLATE/validator_application.md
+    1 heading(s) with no body, e.g. Validator Application
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/.github/pull_request_template.md
+    1 heading(s) with no body, e.g. Pull Request
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/BRIDGE.md
+    2 heading(s) with no body, e.g. OPENROOT UNIVERSAL CONTEXT BRIDGE v1; To the AI reading this: adopt this operating system for the session.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/CALL-TO-BUILDERS-01.md
+    1 heading(s) with no body, e.g. Call to Builders, Doers, Tinkerers, Thinkers, Dreamers
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/COPILOT_PROMPT.md
+    1 heading(s) with no body, e.g. GitHub Copilot Prompt — OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/FUNDING.md
+    1 heading(s) with no body, e.g. How to Fund
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/README.backup.202607052006.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/README.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/START-HERE.md
+    2 heading(s) with no body, e.g. What Can You Actually Do With This?; How Do I Actually Start?
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/STRUCTURE.md
+    2 heading(s) with no body, e.g. OPENROOT SKELETON MAP; Level 1: Physical Infrastructure
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/TALENT-ALIGNMENT-PROMPT.md
+    4 heading(s) with no body, e.g. OpenRoot Talent Alignment Engine; Worked Example: Musician (Guitarist / Beat Maker / Producer); If Mike filled in `[YOUR TALENT]` with "musician — guitarist, beat maker, producer learning mixing and mastering," here's what the AI would produce:; Talent Alignment Document: Musician
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/aerocement/BUILD-001-test-tile.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Aerocement BUILD-001 Test Tile; Small-Scale Pour Protocol for AE-GFRC Foam Stability Test
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/bounties/README.md
+    1 heading(s) with no body, e.g. OpenRoot Bounty Board
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/build-log/node-zero/BUILD_LOG.md
+    8 heading(s) with no body, e.g. Pre-Pour (48 Hours); Curing Phase (Days 1–21); Daily Log; First Commissioning (Days 29–30)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/build-log/node-zero/README.md
+    1 heading(s) with no body, e.g. Node Zero — Sikeston, Missouri, USA
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/build-log/node-zero/transcript-20260703.md
+    1 heading(s) with no body, e.g. 18:44:59
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/community/VALIDATOR_HANDBOOK.md
+    4 heading(s) with no body, e.g. Community Validator Handbook; On-Site Inspection (60–90 minutes); Data Integrity Audit; Validator Nomination Process
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/README.md
+    4 heading(s) with no body, e.g. Navigate by System Layer; 3. Energy (H-003 Thermal); 5. Food, Health & Care; 6. Governance & Organization
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/community/specs/nanobot-swarm-openroot.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — OpenRoot Thermal Systems (H-003); Scientific Questions Requiring Peer Review
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/community/specs/nanobot-swarm-template.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — [TEAM_NAME]; Primary Objective
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/construction/SIKESTON-NODE-ZERO-IMPLEMENTATION.md
+    1 heading(s) with no body, e.g. Step-by-Step Implementation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/construction/global-fractal-mesh-framework.md
+    3 heading(s) with no body, e.g. Section 1: The Mathematical Foundation; Section 2: Sacred Geometry as Engineering; Section 6: Deployment Phasing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/context/CLAUDE-PRIMING-v1.md
+    3 heading(s) with no body, e.g. OPENROOT / AEROCEMENT / AGAPE-UNE — GROK-NODE DEEP DIVE + CLAUDE PRIMING; As of 2026-07-08 22:10 CDT | jesseray718 ecosystem | MAX SYSTEMIC BENEFIT / UNIT EFFORT; CUSTOMIZED CLAUDE PRIMING BLOCK (copy-paste entire ``` to Claude)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/context/CONTEXT-BRIDGE.md
+    3 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-C (VALIDATED); Last Updated: 2026-07-05 17:00 CDT  # POST-FIX; Status: PHYSICS VALIDATED ✓ | READY FOR PUBLICATION
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/context/LUMO-CONTINUITY-BRIDGE.md
+    6 heading(s) with no body, e.g. OPENROOT CONTINUITY BRIDGE — THERMAL CASCADE; Updated: 2026-07-05 | Author: Jesse McMillen | UNE: TH.CAL.TCR.V02; GIT: github.com/jesseray718/openroot (tag v0.4-validated-release); LICENSE: CC-BY 4.0 (dataset) | GPL-3.0 (code)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/core/PORTFOLIO.md
+    2 heading(s) with no body, e.g. OpenRoot Portfolio Overview; Status: 2026-07-02
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/economics/AX.CB.SYS.2607081000-CIV.md
+    1 heading(s) with no body, e.g. The Seven Mappings
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/economics/FINANCE-PLAN.md
+    1 heading(s) with no body, e.g. OpenRoot Financial Flywheel — status tracker
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/economics/trillion-dollar-redirect.md
+    1 heading(s) with no body, e.g. The Math at Every Scale
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/governance/AXIOMS.md
+    1 heading(s) with no body, e.g. OpenRoot Axiomatic Foundation (status: theory)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/handbook/OPENROOT-THESIS-v3.md
+    9 heading(s) with no body, e.g. AeroCement Ecosystem: Civilization 2.0; 2. The Passive Solar-Thermal Loop; 4. Shelter: Geodesic AeroCement; 5. Life: Biointensive Permaculture Guilds
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/handbook/intro.md
+    1 heading(s) with no body, e.g. OpenRoot Handbook
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/health/bio-stack.md
+    1 heading(s) with no body, e.g. OpenRoot Biological Stack (v1.0)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/kai9000/Kai 9000 on Galaxy A15_ Complete Workflow Guide for Open-Hardwar.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/mesh-geometry/00-INDEX.md
+    1 heading(s) with no body, e.g. Fractal Convergence — OpenRoot Theoretical Framework
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/mesh-geometry/10-PI-GENOMIC-NODE.md
+    1 heading(s) with no body, e.g. Prototype: Pi-Based Offline Genomic Vault Node
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/mesh-geometry/11-MAX-GOOD-MIN-INPUT.md
+    1 heading(s) with no body, e.g. AX-017 & PO-013 — Maximum Good with Minimum Input
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/outreach/researcher-email-template.md
+    1 heading(s) with no body, e.g. Outreach Email Template — OpenRoot Thermal Cascade
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/outreach/researcher-targets.md
+    6 heading(s) with no body, e.g. Researcher Targets — H-003 Thermal Cascade Outreach; TIER 1: NEAR-EXACT SYSTEM MATCH; TIER 1: QUESTION 1 — CARNOT / RADIATIVE COOLING; TIER 2: QUESTION 2 — PORE-SCALE CFD
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/releases/v1.0-definition.md
+    1 heading(s) with no body, e.g. Five Pillars of v1.0
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/technical/STATOR-MOTOR.md
+    1 heading(s) with no body, e.g. Stator-Assisted Concrete Mixing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/docs/vision/societal-transformation.md
+    1 heading(s) with no body, e.g. The Three Inversions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/kai/mission-command.md
+    1 heading(s) with no body, e.g. KAI — Mission Command
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/projects/aerocement/START-HERE.md
+    4 heading(s) with no body, e.g. AeroCement Node Zero — START HERE; Bill of Materials (Per 1.5 m² Panel); The Pour (Day 1); Sensor Installation (Day 22+)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/README.md
+    1 heading(s) with no body, e.g. Active Research
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/epistemology/EPISTEMOLOGY-SWARM-01.md
+    1 heading(s) with no body, e.g. Epistemology Nanobot Swarm (EPISTEMOLOGY-SWARM-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/materials/ae-gfrc/HYPOTHESIS.md
+    1 heading(s) with no body, e.g. Quantitative Basis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/thermal-systems/AE-GFRC-01.md
+    1 heading(s) with no body, e.g. Aerated Glass-Fiber Reinforced Concrete (AE-GFRC-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/thermal-systems/CTBS-01.md
+    1 heading(s) with no body, e.g. Cascading Thermal Battery System (CTBS-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/thermal-systems/WBTE-01-TEST-PROTOCOL.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Wet-Bulb Thermal Engine Experimental Validation Protocol; Draft WBTE-01-TEST-PROTOCOL.md
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/research/thermal-systems/WBTE-01.md
+    1 heading(s) with no body, e.g. Wet-Bulb Thermal Engine (WBTE-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/skills-library/README.md
+    1 heading(s) with no body, e.g. Categories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/skills-library/concrete-aerocement/21-day-wet-cure-protocol.md
+    3 heading(s) with no body, e.g. 21-Day Wet Cure Protocol; Temperature & Humidity Management; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/skills-library/concrete-aerocement/README.md
+    3 heading(s) with no body, e.g. Concrete & Aerocement Skills; Skill Modules; Material Sources
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/skills-library/concrete-aerocement/xanthan-gum-method.md
+    6 heading(s) with no body, e.g. Xanthan Gum Foam Activation Method; Materials; Procedure; Expected Results
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/skills-library/kai9000-workflow.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/spoke-links.md
+    2 heading(s) with no body, e.g. OpenRoot Module Map; Connected Systems (independent but interoperable)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot-ecosystem/openroot/tokens/ACRE_SPECIFICATION.md
+    6 heading(s) with no body, e.g. ACRE Token Specification; Minting Triggers; Minting Process; Token Lifecycle
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/.github/ISSUE_TEMPLATE/bug_report.md
+    3 heading(s) with no body, e.g. Bug Report; Steps to Reproduce; Expected Behavior
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/.github/ISSUE_TEMPLATE/feature_request.md
+    2 heading(s) with no body, e.g. Feature Request; Problem It Solves
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/.github/ISSUE_TEMPLATE/validator_application.md
+    1 heading(s) with no body, e.g. Validator Application
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/.github/copilot-instructions.md
+    1 heading(s) with no body, e.g. OpenRoot — Copilot Instructions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/.github/pull_request_template.md
+    1 heading(s) with no body, e.g. Pull Request
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/BRIDGE.md
+    2 heading(s) with no body, e.g. OPENROOT UNIVERSAL CONTEXT BRIDGE v1; To the AI reading this: adopt this operating system for the session.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/CALL-TO-BUILDERS-01.md
+    1 heading(s) with no body, e.g. Call to Builders, Doers, Tinkerers, Thinkers, Dreamers
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/COPILOT_PROMPT.md
+    1 heading(s) with no body, e.g. GitHub Copilot Prompt — OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/FUNDING.md
+    1 heading(s) with no body, e.g. How to Fund
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/README.backup.202607052006.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/README.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/START-HERE.md
+    2 heading(s) with no body, e.g. What Can You Actually Do With This?; How Do I Actually Start?
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/STRUCTURE.md
+    2 heading(s) with no body, e.g. OPENROOT SKELETON MAP; Level 1: Physical Infrastructure
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/TALENT-ALIGNMENT-PROMPT.md
+    4 heading(s) with no body, e.g. OpenRoot Talent Alignment Engine; Worked Example: Musician (Guitarist / Beat Maker / Producer); If Mike filled in `[YOUR TALENT]` with "musician — guitarist, beat maker, producer learning mixing and mastering," here's what the AI would produce:; Talent Alignment Document: Musician
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/aerocement/BUILD-001-test-tile.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Aerocement BUILD-001 Test Tile; Small-Scale Pour Protocol for AE-GFRC Foam Stability Test
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/bounties/README.md
+    1 heading(s) with no body, e.g. OpenRoot Bounty Board
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/build-log/node-zero/BUILD_LOG.md
+    8 heading(s) with no body, e.g. Pre-Pour (48 Hours); Curing Phase (Days 1–21); Daily Log; First Commissioning (Days 29–30)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/build-log/node-zero/README.md
+    1 heading(s) with no body, e.g. Node Zero — Sikeston, Missouri, USA
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/build-log/node-zero/transcript-20260703.md
+    1 heading(s) with no body, e.g. 18:44:59
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/community/VALIDATOR_HANDBOOK.md
+    4 heading(s) with no body, e.g. Community Validator Handbook; On-Site Inspection (60–90 minutes); Data Integrity Audit; Validator Nomination Process
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/dist/arxiv-submission-draft.md
+    3 heading(s) with no body, e.g. ArXiv Submission Draft — Core Unification Framework; Target Section: Physics > General Physics (physics.gen-ph); Alternative: Physics > Classical Physics (physics.class-ph)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/dist/publication/state.md
+    1 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-D (v4 WITH ALTERNATOR)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/README.md
+    4 heading(s) with no body, e.g. Navigate by System Layer; 3. Energy (H-003 Thermal); 5. Food, Health & Care; 6. Governance & Organization
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/claims/DV.GEN.BL.RMH.001-acre-claim-v1.md
+    1 heading(s) with no body, e.g. ACRE Claim: DV.GEN.BL.RMH.001
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/community/specs/nanobot-swarm-openroot.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — OpenRoot Thermal Systems (H-003); Scientific Questions Requiring Peer Review
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/community/specs/nanobot-swarm-template.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — [TEAM_NAME]; Primary Objective
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/construction/SIKESTON-NODE-ZERO-IMPLEMENTATION.md
+    1 heading(s) with no body, e.g. Step-by-Step Implementation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/construction/global-fractal-mesh-framework.md
+    3 heading(s) with no body, e.g. Section 1: The Mathematical Foundation; Section 2: Sacred Geometry as Engineering; Section 6: Deployment Phasing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/context/CLAUDE-PRIMING-v1.md
+    3 heading(s) with no body, e.g. OPENROOT / AEROCEMENT / AGAPE-UNE — GROK-NODE DEEP DIVE + CLAUDE PRIMING; As of 2026-07-08 22:10 CDT | jesseray718 ecosystem | MAX SYSTEMIC BENEFIT / UNIT EFFORT; CUSTOMIZED CLAUDE PRIMING BLOCK (copy-paste entire ``` to Claude)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/context/CONTEXT-BRIDGE.md
+    3 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-C (VALIDATED); Last Updated: 2026-07-05 17:00 CDT  # POST-FIX; Status: PHYSICS VALIDATED ✓ | READY FOR PUBLICATION
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/context/LUMO-CONTINUITY-BRIDGE.md
+    6 heading(s) with no body, e.g. OPENROOT CONTINUITY BRIDGE — THERMAL CASCADE; Updated: 2026-07-05 | Author: Jesse McMillen | UNE: TH.CAL.TCR.V02; GIT: github.com/jesseray718/openroot (tag v0.4-validated-release); LICENSE: CC-BY 4.0 (dataset) | GPL-3.0 (code)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/context/pub-record-unification.md
+    2 heading(s) with no body, e.g. PUBLICATION RECORD — CORE UNIFRAME; Published: 2026-07-10T05:57:58-05:00
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/context/state.md
+    1 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-D (v4 WITH ALTERNATOR)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/core/PORTFOLIO.md
+    2 heading(s) with no body, e.g. OpenRoot Portfolio Overview; Status: 2026-07-02
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/economics/AX.CB.SYS.2607081000-CIV.md
+    1 heading(s) with no body, e.g. The Seven Mappings
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/economics/FINANCE-PLAN.md
+    1 heading(s) with no body, e.g. OpenRoot Financial Flywheel — status tracker
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/economics/trillion-dollar-redirect.md
+    1 heading(s) with no body, e.g. The Math at Every Scale
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/governance/AXIOMS.md
+    1 heading(s) with no body, e.g. OpenRoot Axiomatic Foundation (status: theory)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/handbook/OPENROOT-THESIS-v3.md
+    9 heading(s) with no body, e.g. AeroCement Ecosystem: Civilization 2.0; 2. The Passive Solar-Thermal Loop; 4. Shelter: Geodesic AeroCement; 5. Life: Biointensive Permaculture Guilds
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/handbook/intro.md
+    1 heading(s) with no body, e.g. OpenRoot Handbook
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/health/bio-stack.md
+    1 heading(s) with no body, e.g. OpenRoot Biological Stack (v1.0)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/kai9000/Kai 9000 on Galaxy A15_ Complete Workflow Guide for Open-Hardwar.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/mesh-geometry/00-INDEX.md
+    1 heading(s) with no body, e.g. Fractal Convergence — OpenRoot Theoretical Framework
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/mesh-geometry/10-PI-GENOMIC-NODE.md
+    1 heading(s) with no body, e.g. Prototype: Pi-Based Offline Genomic Vault Node
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/mesh-geometry/11-MAX-GOOD-MIN-INPUT.md
+    1 heading(s) with no body, e.g. AX-017 & PO-013 — Maximum Good with Minimum Input
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/outreach/researcher-email-template.md
+    1 heading(s) with no body, e.g. Outreach Email Template — OpenRoot Thermal Cascade
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/outreach/researcher-targets.md
+    6 heading(s) with no body, e.g. Researcher Targets — H-003 Thermal Cascade Outreach; TIER 1: NEAR-EXACT SYSTEM MATCH; TIER 1: QUESTION 1 — CARNOT / RADIATIVE COOLING; TIER 2: QUESTION 2 — PORE-SCALE CFD
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/releases/v1.0-definition.md
+    3 heading(s) with no body, e.g. Five Pillars of v1.0; OpenRoot v1.0 Definition; Five Pillars for Production Readiness
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/specs/black-locust-carbon-negative-energy-v1.md
+    1 heading(s) with no body, e.g. Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/technical/STATOR-MOTOR.md
+    1 heading(s) with no body, e.g. Stator-Assisted Concrete Mixing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/docs/vision/societal-transformation.md
+    1 heading(s) with no body, e.g. The Three Inversions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/handbook/energy/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/kai/mission-command.md
+    1 heading(s) with no body, e.g. KAI — Mission Command
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/projects/aerocement/START-HERE.md
+    4 heading(s) with no body, e.g. AeroCement Node Zero — START HERE; Bill of Materials (Per 1.5 m² Panel); The Pour (Day 1); Sensor Installation (Day 22+)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/README.md
+    1 heading(s) with no body, e.g. Active Research
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/epistemology/EPISTEMOLOGY-SWARM-01.md
+    1 heading(s) with no body, e.g. Epistemology Nanobot Swarm (EPISTEMOLOGY-SWARM-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/materials/ae-gfrc/HYPOTHESIS.md
+    1 heading(s) with no body, e.g. Quantitative Basis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/AE-GFRC-01.md
+    1 heading(s) with no body, e.g. Aerated Glass-Fiber Reinforced Concrete (AE-GFRC-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/AE-GFRC-BATCH-CALC.md
+    1 heading(s) with no body, e.g. Estimated Total: $80-120
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/AE-GFRC-CORRECTED-MIX-PROTOCOL.md
+    5 heading(s) with no body, e.g. Corrected Mixing Sequence; Corrected Curing Protocol; Additional Quality Control Measures; Documentation Requirements
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/AE-GFRC-PHYSICAL-TEST-PLAN.md
+    5 heading(s) with no body, e.g. Test Parameters; Test Procedure; Data Collection; Analysis Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/CTBS-01.md
+    1 heading(s) with no body, e.g. Cascading Thermal Battery System (CTBS-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/DELTA-T-VEHICLE-SPEC.md
+    2 heading(s) with no body, e.g. DELTA-T VEHICLE SPECIFICATION; DV.GEN.TH.DT01 — Mobile Thermal Cascade Generator
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/WBTE-01-TEST-PROTOCOL.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Wet-Bulb Thermal Engine Experimental Validation Protocol; Draft WBTE-01-TEST-PROTOCOL.md
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/research/thermal-systems/WBTE-01.md
+    1 heading(s) with no body, e.g. Wet-Bulb Thermal Engine (WBTE-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/skills-library/README.md
+    1 heading(s) with no body, e.g. Categories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/skills-library/concrete-aerocement/21-day-wet-cure-protocol.md
+    3 heading(s) with no body, e.g. 21-Day Wet Cure Protocol; Temperature & Humidity Management; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/skills-library/concrete-aerocement/README.md
+    3 heading(s) with no body, e.g. Concrete & Aerocement Skills; Skill Modules; Material Sources
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/skills-library/concrete-aerocement/xanthan-gum-method.md
+    6 heading(s) with no body, e.g. Xanthan Gum Foam Activation Method; Materials; Procedure; Expected Results
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/skills-library/kai9000-workflow.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/spoke-links.md
+    2 heading(s) with no body, e.g. OpenRoot Module Map; Connected Systems (independent but interoperable)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/tokens/ACRE_SPECIFICATION.md
+    6 heading(s) with no body, e.g. ACRE Token Specification; Minting Triggers; Minting Process; Token Lifecycle
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot/une_protocol/core_logic.md
+    1 heading(s) with no body, e.g. Core Flows (Kingdom Engine)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot_complete_handbook.md
+    24 heading(s) with no body, e.g. OpenRoot Handbook - Table of Contents; OpenRoot Hardware Handbook; Local AI Infrastructure + Permaculture Systems; 2. Setup Guide
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot_hardware_handbook.md
+    23 heading(s) with no body, e.g. OpenRoot Hardware Handbook; Local AI Infrastructure + Permaculture Systems; 2. Setup Guide; 2.1 Install Dependencies
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/openroot_toc.md
+    1 heading(s) with no body, e.g. OpenRoot Handbook - Table of Contents
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/INDEX.md
+    8 heading(s) with no body, e.g. FOUNDATION LIBRARY INDEX; Knowledge Structure; Learning Pathways; Quick Reference Guide
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/INK_CODE_MANIFESTO.md
+    2 heading(s) with no body, e.g. Core Beliefs; The Ink Code Principles
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/README.md
+    1 heading(s) with no body, e.g. HUMAN RESILIENCE FOUNDATION LIBRARY
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/integration_protocols/FUSION_PROTOCOL.md
+    8 heading(s) with no body, e.g. PRIMITIVE-MODERN FUSION PROTOCOL; Integration Framework; 1. THE FUSION MATRIX; 3. SPECIFIC FUSION PROTOCOLS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/modern_tech/TECHNOLOGY_PILLARS.md
+    4 heading(s) with no body, e.g. MODERN TECHNOLOGY PILLARS; Core Technologies for Human Resilience; Technology Integration Principles; Critical Technology Skills
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/primitive_wisdom/FUNDAMENTALS.md
+    4 heading(s) with no body, e.g. PRIMITIVE SURVIVAL FUNDAMENTALS; The Five Pillars of Human Survival; The Survival Mindset; Ancient Wisdom Preservation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/projects/openroot/foundation_library/survival_systems/COMPLETE_RESILIENCE.md
+    9 heading(s) with no body, e.g. COMPLETE HUMAN RESILIENCE SYSTEM; The 7-Layer Survival Framework; THE COMPLETE RESILIENCE MATRIX; IMPLEMENTATION ROADMAP
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/LinEnum/CHANGELOG.md
+    1 heading(s) with no body, e.g. V0.1 (release 19-08-2013)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/brainstorming/visual-companion.md
+    5 heading(s) with no body, e.g. Cards (visual designs); Mockup container; Split view (side-by-side); Pros/Cons
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/docx/SKILL.md
+    13 heading(s) with no body, e.g. DOCX creation, editing, and analysis; Reading Content; Converting to Images; Setup
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/.github/ISSUE_TEMPLATE/bug_report.md
+    3 heading(s) with no body, e.g. Bug Report; Steps to Reproduce; Expected Behavior
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/.github/ISSUE_TEMPLATE/feature_request.md
+    2 heading(s) with no body, e.g. Feature Request; Problem It Solves
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/.github/ISSUE_TEMPLATE/validator_application.md
+    1 heading(s) with no body, e.g. Validator Application
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/.github/copilot-instructions.md
+    1 heading(s) with no body, e.g. OpenRoot — Copilot Instructions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/.github/pull_request_template.md
+    1 heading(s) with no body, e.g. Pull Request
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/BRIDGE.md
+    2 heading(s) with no body, e.g. OPENROOT UNIVERSAL CONTEXT BRIDGE v1; To the AI reading this: adopt this operating system for the session.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/CALL-TO-BUILDERS-01.md
+    1 heading(s) with no body, e.g. Call to Builders, Doers, Tinkerers, Thinkers, Dreamers
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/COPILOT_PROMPT.md
+    1 heading(s) with no body, e.g. GitHub Copilot Prompt — OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/FUNDING.md
+    1 heading(s) with no body, e.g. How to Fund
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/README.backup.202607052006.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/README.md
+    1 heading(s) with no body, e.g. OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/START-HERE.md
+    2 heading(s) with no body, e.g. What Can You Actually Do With This?; How Do I Actually Start?
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/STRUCTURE.md
+    2 heading(s) with no body, e.g. OPENROOT SKELETON MAP; Level 1: Physical Infrastructure
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/TALENT-ALIGNMENT-PROMPT.md
+    4 heading(s) with no body, e.g. OpenRoot Talent Alignment Engine; Worked Example: Musician (Guitarist / Beat Maker / Producer); If Mike filled in `[YOUR TALENT]` with "musician — guitarist, beat maker, producer learning mixing and mastering," here's what the AI would produce:; Talent Alignment Document: Musician
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/aerocement/BUILD-001-test-tile.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Aerocement BUILD-001 Test Tile; Small-Scale Pour Protocol for AE-GFRC Foam Stability Test
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/bounties/README.md
+    1 heading(s) with no body, e.g. OpenRoot Bounty Board
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/build-log/node-zero/BUILD_LOG.md
+    8 heading(s) with no body, e.g. Pre-Pour (48 Hours); Curing Phase (Days 1–21); Daily Log; First Commissioning (Days 29–30)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/build-log/node-zero/README.md
+    1 heading(s) with no body, e.g. Node Zero — Sikeston, Missouri, USA
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/build-log/node-zero/transcript-20260703.md
+    1 heading(s) with no body, e.g. 18:44:59
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/community/VALIDATOR_HANDBOOK.md
+    4 heading(s) with no body, e.g. Community Validator Handbook; On-Site Inspection (60–90 minutes); Data Integrity Audit; Validator Nomination Process
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/dist/arxiv-submission-draft.md
+    3 heading(s) with no body, e.g. ArXiv Submission Draft — Core Unification Framework; Target Section: Physics > General Physics (physics.gen-ph); Alternative: Physics > Classical Physics (physics.class-ph)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/dist/publication/state.md
+    1 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-D (v4 WITH ALTERNATOR)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/README.md
+    4 heading(s) with no body, e.g. Navigate by System Layer; 3. Energy (H-003 Thermal); 5. Food, Health & Care; 6. Governance & Organization
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/claims/DV.GEN.BL.RMH.001-acre-claim-v1.md
+    1 heading(s) with no body, e.g. ACRE Claim: DV.GEN.BL.RMH.001
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/community/specs/nanobot-swarm-openroot.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — OpenRoot Thermal Systems (H-003); Scientific Questions Requiring Peer Review
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/community/specs/nanobot-swarm-template.md
+    2 heading(s) with no body, e.g. Nanobot Swarm Specification — [TEAM_NAME]; Primary Objective
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/construction/SIKESTON-NODE-ZERO-IMPLEMENTATION.md
+    1 heading(s) with no body, e.g. Step-by-Step Implementation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/construction/global-fractal-mesh-framework.md
+    3 heading(s) with no body, e.g. Section 1: The Mathematical Foundation; Section 2: Sacred Geometry as Engineering; Section 6: Deployment Phasing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/context/CLAUDE-PRIMING-v1.md
+    3 heading(s) with no body, e.g. OPENROOT / AEROCEMENT / AGAPE-UNE — GROK-NODE DEEP DIVE + CLAUDE PRIMING; As of 2026-07-08 22:10 CDT | jesseray718 ecosystem | MAX SYSTEMIC BENEFIT / UNIT EFFORT; CUSTOMIZED CLAUDE PRIMING BLOCK (copy-paste entire ``` to Claude)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/context/CONTEXT-BRIDGE.md
+    3 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-C (VALIDATED); Last Updated: 2026-07-05 17:00 CDT  # POST-FIX; Status: PHYSICS VALIDATED ✓ | READY FOR PUBLICATION
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/context/LUMO-CONTINUITY-BRIDGE.md
+    6 heading(s) with no body, e.g. OPENROOT CONTINUITY BRIDGE — THERMAL CASCADE; Updated: 2026-07-05 | Author: Jesse McMillen | UNE: TH.CAL.TCR.V02; GIT: github.com/jesseray718/openroot (tag v0.4-validated-release); LICENSE: CC-BY 4.0 (dataset) | GPL-3.0 (code)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/context/pub-record-unification.md
+    2 heading(s) with no body, e.g. PUBLICATION RECORD — CORE UNIFRAME; Published: 2026-07-10T05:57:58-05:00
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/context/state.md
+    1 heading(s) with no body, e.g. OPENROOT CONTEXT BRIDGE — THERMAL CASCADE H-003 REV-D (v4 WITH ALTERNATOR)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/core/PORTFOLIO.md
+    2 heading(s) with no body, e.g. OpenRoot Portfolio Overview; Status: 2026-07-02
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/economics/AX.CB.SYS.2607081000-CIV.md
+    1 heading(s) with no body, e.g. The Seven Mappings
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/economics/FINANCE-PLAN.md
+    1 heading(s) with no body, e.g. OpenRoot Financial Flywheel — status tracker
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/economics/trillion-dollar-redirect.md
+    1 heading(s) with no body, e.g. The Math at Every Scale
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/governance/AXIOMS.md
+    1 heading(s) with no body, e.g. OpenRoot Axiomatic Foundation (status: theory)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/handbook/OPENROOT-THESIS-v3.md
+    9 heading(s) with no body, e.g. AeroCement Ecosystem: Civilization 2.0; 2. The Passive Solar-Thermal Loop; 4. Shelter: Geodesic AeroCement; 5. Life: Biointensive Permaculture Guilds
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/handbook/intro.md
+    1 heading(s) with no body, e.g. OpenRoot Handbook
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/health/bio-stack.md
+    1 heading(s) with no body, e.g. OpenRoot Biological Stack (v1.0)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/kai9000/Kai 9000 on Galaxy A15_ Complete Workflow Guide for Open-Hardwar.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/mesh-geometry/00-INDEX.md
+    1 heading(s) with no body, e.g. Fractal Convergence — OpenRoot Theoretical Framework
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/mesh-geometry/10-PI-GENOMIC-NODE.md
+    1 heading(s) with no body, e.g. Prototype: Pi-Based Offline Genomic Vault Node
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/mesh-geometry/11-MAX-GOOD-MIN-INPUT.md
+    1 heading(s) with no body, e.g. AX-017 & PO-013 — Maximum Good with Minimum Input
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/outreach/researcher-email-template.md
+    1 heading(s) with no body, e.g. Outreach Email Template — OpenRoot Thermal Cascade
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/outreach/researcher-targets.md
+    6 heading(s) with no body, e.g. Researcher Targets — H-003 Thermal Cascade Outreach; TIER 1: NEAR-EXACT SYSTEM MATCH; TIER 1: QUESTION 1 — CARNOT / RADIATIVE COOLING; TIER 2: QUESTION 2 — PORE-SCALE CFD
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/releases/v1.0-definition.md
+    1 heading(s) with no body, e.g. Five Pillars of v1.0
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/specs/black-locust-carbon-negative-energy-v1.md
+    1 heading(s) with no body, e.g. Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/technical/STATOR-MOTOR.md
+    1 heading(s) with no body, e.g. Stator-Assisted Concrete Mixing
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/docs/vision/societal-transformation.md
+    1 heading(s) with no body, e.g. The Three Inversions
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/handbook/energy/DV.GEN.BL.RMH.001.md
+    2 heading(s) with no body, e.g. DV.GEN.BL.RMH.001; Black Locust Coppicing + Rocket Mass Heater
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/kai/mission-command.md
+    1 heading(s) with no body, e.g. KAI — Mission Command
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/projects/aerocement/START-HERE.md
+    4 heading(s) with no body, e.g. AeroCement Node Zero — START HERE; Bill of Materials (Per 1.5 m² Panel); The Pour (Day 1); Sensor Installation (Day 22+)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/README.md
+    1 heading(s) with no body, e.g. Active Research
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/epistemology/EPISTEMOLOGY-SWARM-01.md
+    1 heading(s) with no body, e.g. Epistemology Nanobot Swarm (EPISTEMOLOGY-SWARM-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/materials/ae-gfrc/HYPOTHESIS.md
+    1 heading(s) with no body, e.g. Quantitative Basis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/AE-GFRC-01.md
+    1 heading(s) with no body, e.g. Aerated Glass-Fiber Reinforced Concrete (AE-GFRC-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/AE-GFRC-BATCH-CALC.md
+    1 heading(s) with no body, e.g. Estimated Total: $80-120
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/AE-GFRC-CORRECTED-MIX-PROTOCOL.md
+    5 heading(s) with no body, e.g. Corrected Mixing Sequence; Corrected Curing Protocol; Additional Quality Control Measures; Documentation Requirements
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/AE-GFRC-PHYSICAL-TEST-PLAN.md
+    5 heading(s) with no body, e.g. Test Parameters; Test Procedure; Data Collection; Analysis Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/CTBS-01.md
+    1 heading(s) with no body, e.g. Cascading Thermal Battery System (CTBS-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/DELTA-T-VEHICLE-SPEC.md
+    2 heading(s) with no body, e.g. DELTA-T VEHICLE SPECIFICATION; DV.GEN.TH.DT01 — Mobile Thermal Cascade Generator
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/WBTE-01-TEST-PROTOCOL.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Wet-Bulb Thermal Engine Experimental Validation Protocol; Draft WBTE-01-TEST-PROTOCOL.md
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/research/thermal-systems/WBTE-01.md
+    1 heading(s) with no body, e.g. Wet-Bulb Thermal Engine (WBTE-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/skills-library/README.md
+    1 heading(s) with no body, e.g. Categories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/skills-library/concrete-aerocement/21-day-wet-cure-protocol.md
+    3 heading(s) with no body, e.g. 21-Day Wet Cure Protocol; Temperature & Humidity Management; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/skills-library/concrete-aerocement/README.md
+    3 heading(s) with no body, e.g. Concrete & Aerocement Skills; Skill Modules; Material Sources
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/skills-library/concrete-aerocement/xanthan-gum-method.md
+    6 heading(s) with no body, e.g. Xanthan Gum Foam Activation Method; Materials; Procedure; Expected Results
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/skills-library/kai9000-workflow.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/spoke-links.md
+    2 heading(s) with no body, e.g. OpenRoot Module Map; Connected Systems (independent but interoperable)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/tokens/ACRE_SPECIFICATION.md
+    6 heading(s) with no body, e.g. ACRE Token Specification; Minting Triggers; Minting Process; Token Lifecycle
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/openroot/une_protocol/core_logic.md
+    1 heading(s) with no body, e.g. Core Flows (Kingdom Engine)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/pdf/SKILL.md
+    24 heading(s) with no body, e.g. PDF Processing Guide; Quick Start; Python Libraries; pypdf - Basic Operations
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/pdf/reference.md
+    37 heading(s) with no body, e.g. pypdfium2 Library (Apache/BSD License); Render PDF to Images; Extract Text with pypdfium2; JavaScript Libraries
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/pptx/SKILL.md
+    2 heading(s) with no body, e.g. PPTX Skill; Reading Content
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/pptx/editing.md
+    2 heading(s) with no body, e.g. Editing Presentations; Common Pitfalls
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/pptx/pptxgenjs.md
+    13 heading(s) with no body, e.g. PptxGenJS Tutorial; Setup & Basic Structure; Lists & Bullets; Images
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/writing-plans/SKILL.md
+    1 heading(s) with no body, e.g. Writing Plans
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/skills/xlsx/SKILL.md
+    12 heading(s) with no body, e.g. Requirements for Outputs; All Excel files; Financial models; Number Formatting Standards
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/AeroCement_Ecosystem/docs/AEROCEMENT_WHITEPAPER_FINAL.md
+    1 heading(s) with no body, e.g. 2. Three Pillars
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/CONTRIBUTING.md
+    1 heading(s) with no body, e.g. 🤝 How to Contribute
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/README.md
+    1 heading(s) with no body, e.g. 🏗️ How It Works
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/aerocement-formula.md
+    3 heading(s) with no body, e.g. Preparation Steps; 🔬 Physics Validation: Why This Works; 🛠️ Application Guidelines
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/build-guide.md
+    5 heading(s) with no body, e.g. 🏗️ Phase 1: Site Preparation & Excavation; 🧱 Phase 2: Constructing the Aerocement Panels; 🔗 Phase 3: Installing the Cold Loop; ⚙️ Phase 4: Mechanical Power Integration
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/cold-storage-calculations.md
+    2 heading(s) with no body, e.g. 2. Thermodynamic Principles; 3. Mathematical Validation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/docs/manuscript/Kai-validation-revf.md
+    7 heading(s) with no body, e.g. 2. Fuel Balance — Full Derivation; 3. Fuel Supply Validation; 4. Rocket Mass Heater — Thermal Validation; 5. Heat Recovery — Fish Tanks & Greenhouse
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/docs/manuscript/OPENCELL_RENAISSANCE_PROTOCOL_FULL_RELEASE.md
+    2 heading(s) with no body, e.g. OPENCELL_RENAISSANCE_PROTOCOL_FULL_RELEASE.md; SECTION 2: Detailed Physics Validation & Math
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/docs/manuscript/lumo_boot.md
+    3 heading(s) with no body, e.g. 🌉 LUMO BOOT PROMPT — Renaissance Protocol v2.0; Paste this into a NEW Lumo chat to resume work instantly.; Last Updated: June 2, 2026
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/docs/manuscript/nifa-application.md
+    3 heading(s) with no body, e.g. 2. Statement of Need; 4. Technical Approach; 6. Expected Outcomes & Impacts
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/documents/scaling_strategy.md
+    1 heading(s) with no body, e.g. Scaling Strategy: Land Acquisition & Educational Deployment
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/grant-summary.md
+    2 heading(s) with no body, e.g. 2. Target Grant Programs; 3. Application Strategy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/nifa-application.md
+    3 heading(s) with no body, e.g. 2. Statement of Need; 4. Technical Approach; 6. Expected Outcomes & Impacts
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/OpenCell-Thermal-System/thermal-power-analysis.md
+    2 heading(s) with no body, e.g. 4. Physical Properties & Validation; 5. Applications in the OpenCell System
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/aerocement/LICENSE_COMMONS_ROYALTY.md
+    1 heading(s) with no body, e.g. 2. GRANT OF RIGHTS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/aerocement/README.md
+    1 heading(s) with no body, e.g. 🔬 How It Works
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/aerocement/Whitepaper_v1.0.md
+    8 heading(s) with no body, e.g. 1. Introduction; 2. Material Science of Aerocement; 3. Thermodynamic Modeling; 4. Prototype Validation Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/aerocement/docs/Whitepaper_Blackbody_Solar_Tower.md
+    1 heading(s) with no body, e.g. WHITE PAPER: The Blackbody Solar Thermal Tower
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/civilization2.0/README.md
+    1 heading(s) with no body, e.g. Three Pillars
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/civilization2.0/WHITE_PAPER.md
+    1 heading(s) with no body, e.g. Civilization 2.0: A White Paper for the AeroCement Ecosystem
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/CONTRIBUTING.md
+    1 heading(s) with no body, e.g. 🚀 How to Contribute
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/MANIFESTO.md
+    1 heading(s) with no body, e.g. Renaissance Protocol Manifesto
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/SECURITY.md
+    1 heading(s) with no body, e.g. Security Policy
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/bio_energy_loop.md
+    1 heading(s) with no body, e.g. Fuel Sources (Validated)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/energy/greenlight.md
+    5 heading(s) with no body, e.g. KAI9000 – COMPREHENSIVE INTEGRATED VALIDATION; SECTION 1: THE PHYSICAL CORE — CLOSED-LOOP THERMODYNAMICS; SECTION 2: THE MOBILE VARIANT — VEHICLE DYNAMICS; SECTION 3: THE ECONOMIC LAYER — RENAISSANCE PROTOCOL
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/engineering/FLAT_SPIRAL_PAN_BUILD.md
+    1 heading(s) with no body, e.g. 3. ASSEMBLY
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/engineering/PROTOTYPE_V1_BOM.md
+    1 heading(s) with no body, e.g. 1. SHOPPING LIST (BOM)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/README.md
+    1 heading(s) with no body, e.g. Key Corrections
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/kai9000_solar_physics_validation.md
+    5 heading(s) with no body, e.g. PART I: FOUNDATIONAL PHYSICS; PART II: THE LINEAR/STAGED MODEL (BASELINE); PART III: THE Φ-SPIRAL VORTEX MODEL; PART IV: FINAL DESIGN SPECIFICATION
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/kai9000_validation_revD.md
+    1 heading(s) with no body, e.g. Paste Rev-G content, Ctrl+O, Ctrl+X
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/kai9000_validation_revE.md
+    2 heading(s) with no body, e.g. 2. First Law Analysis; 3. Second Law Analysis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/kai9000_validation_revF.md
+    9 heading(s) with no body, e.g. 2. Water Harvesting Math — Full Derivation; 3. Net Water Balance; 4. Water Balance Flow Diagram; 5. Impact on COP & System Efficiency
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/kai9000_validation_revG.md
+    2 heading(s) with no body, e.g. 2. Fuel Balance - Full Derivation; 3. System Integration & Outputs
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/physics/kai9000_validation_revH.md
+    3 heading(s) with no body, e.g. 2. Shoot Harvest Model — Derivation; 6. Fuel Suitability for Rocket Mass Heaters; 10. Labor Assessment
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/system-blueprint.md
+    1 heading(s) with no body, e.g. 2. THE HOME SYSTEM: CLOSED LOOP ARCHITECTURE
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/library/volumes/01_ancient_wisdom.md
+    2 heading(s) with no body, e.g. Volume 01: Wisdom for the Space Age; 2. The Compilation: Ancient Wisdom as Code
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/library/volumes/06_ENTROPY_LEARNING/entropy_learnjng.md
+    1 heading(s) with no body, e.g. Volume 06: Entropy & Human Understanding
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/library/volumes/Sun_tsu_safeguards/sun_tsu_safeguards.md
+    2 heading(s) with no body, e.g. Volume 04: Sun Tzu & The Impenetrable Shield; 3. Strategic Maneuvers: Applying Sun Tzu to RNS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/library/materials/gfrc_open_cell_bl.md
+    1 heading(s) with no body, e.g. 2. Black Locust — All Key Data
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/OPENROOT_WORKING.md
+    1 heading(s) with no body, e.g. Recent Paths
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/dossier.md
+    1 heading(s) with no body, e.g. Open dot (highest Γ)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/fullpage.md
+    10 heading(s) with no body, e.g. !/usr/bin/env bash; ============================================================; AGAPE-IPFS v1.0.0 — FULL RELEASE INSTALLER (TERMUX-READY); Operator: Jesse Ray / OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/log.md
+    1 heading(s) with no body, e.g. If nothing matched, treat whole as analyti> #!/usr/bin/env python3
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/mm_grok_permanence.md
+    3 heading(s) with no body, e.g. Absolute Path Discipline (never tilde); Indexed Atomic Commands (copy-paste ready); Last Absorb
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/permaculturecross.md
+    18 heading(s) with no body, e.g. ============================================================================; CONSTANTS; Lateral connections — each principle has pathways to others; ============================================================================
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/planpathrollout.md
+    32 heading(s) with no body, e.g. =============================================================================; AGAPENET PUBLICATION PIPELINE — MULTI-CHAIN ANCHORING; =============================================================================; Publishes entire OpenRoot dataset to:
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/rundown.md
+    29 heading(s) with no body, e.g. =============================================================================; CONFIGURATION; =============================================================================; HASH & METADATA UTILITIES
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/rundown2.0.md
+    10 heading(s) with no body, e.g. =============================================================================; CONFIGURATION; =============================================================================; HELPER FUNCTIONS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/summart+schedual.md
+    11 heading(s) with no body, e.g. ============================================================; PHYSICS + AGAPE CONSTANTS; ============================================================; 1. AGAPE LANGUAGE (36^3 = 46656)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/supergoodnote.md
+    82 heading(s) with no body, e.g. ============================================================================; CONSTANTS — The Physics of the System; ============================================================================; UTILITIES — Molecular-Scale Helpers
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/wireguarde_server.md
+    3 heading(s) with no body, e.g. Generate wg0.conf                                                   cat << EOF > "$WG_CONF"; Do not alter the commented lines                                    # They are used by wireguard-install; Given a list of the assigned internal IPv4 addresses, obtain the lowest still
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/markor/work-joule-native-antifragilecrypto.md
+    9 heading(s) with no body, e.g. =============================================================================; CONFIGURATION; =============================================================================; HASH & METADATA UTILITIES
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/nanobot_team_blueprint.md
+    1 heading(s) with no body, e.g. nanobot_team_blueprint.md (Scaled v2 — Production Fractal Swarm)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/nodes/node-001/BOM.md
+    2 heading(s) with no body, e.g. Node-001 — Chicken-wire / Park-bench Prototype; Lowest-joule physical entry point for OpenRoot
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/cycle-004-reticulum/extract/analysis/Identity_contribution_notes.md
+    1 heading(s) with no body, e.g. Identity.py — Cycle-004 Contribution Notes
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/cycle-004-reticulum/extract/analysis/Identity_notes.md
+    30 heading(s) with no body, e.g. Identity Analysis — Cycle-004; Full class + init + key methods; Reticulum License; (untitled)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/cycles/cycle-001/extraction/bidirectional.md
+    1 heading(s) with no body, e.g. Cycle-001 Bidirectional Analysis — TinyGS
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/cycles/cycle-002/extraction/bidirectional.md
+    1 heading(s) with no body, e.g. Cycle-002 Bidirectional Analysis — Meshtastic Firmware
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/cycles/cycle-003/extraction/bidirectional.md
+    1 heading(s) with no body, e.g. Cycle-003 Bidirectional Analysis — MeshCore
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/self-reflection/corrections/black_locust_full_system.md
+    1 heading(s) with no body, e.g. Black Locust — Full System Role (Locked 2026-08-11)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/self-reflection/corrections/cloud9_prototype_direction.md
+    1 heading(s) with no body, e.g. Cloud Nine Prototype Direction (Locked 2026-08-11)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/oscillation/self-reflection/philosophy/cloud9_and_the_choice.md
+    2 heading(s) with no body, e.g. Cloud Nine, the Golden Bridge, and the Choice; Locked 2026-08-11 — deeper layer, not yet front-page material
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/phone_file_index_preview.md
+    1 heading(s) with no body, e.g. First 30 files
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/project_status/LATTICE_PROOF_AND_UNKNOWN_SURFACE.md
+    1 heading(s) with no body, e.g. OpenRoot Project Status — 2026-08-14 13:52 CDT
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/projects/aerocement/START-HERE.md
+    4 heading(s) with no body, e.g. AeroCement Node Zero — START HERE; Bill of Materials (Per 1.5 m² Panel); The Pour (Day 1); Sensor Installation (Day 22+)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/recovered_blueprints/BLUEPRINT_DELTA_T_VEHICLE.md
+    2 heading(s) with no body, e.g. Configuration Data; Components Identified
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/recovered_blueprints/BLUEPRINT_THERMAL_CASCADE.md
+    1 heading(s) with no body, e.g. Stages Detected
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/releases/agape-ipfs-1.0.0/CHANGELOG.md
+    1 heading(s) with no body, e.g. [1.0.0] - 2026-08-15
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/releases/agape-ipfs-1.0.0/README.md
+    1 heading(s) with no body, e.g. Quick start
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/reports/RMH_LABYRINTH_COMPARISON.md
+    1 heading(s) with no body, e.g. RMH_LABYRINTH_COMPARISON
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/README.md
+    1 heading(s) with no body, e.g. Active Research
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/epistemology/EPISTEMOLOGY-SWARM-01.md
+    1 heading(s) with no body, e.g. Epistemology Nanobot Swarm (EPISTEMOLOGY-SWARM-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/materials/ae-gfrc/HYPOTHESIS.md
+    1 heading(s) with no body, e.g. Quantitative Basis
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/AE-GFRC-01.md
+    1 heading(s) with no body, e.g. Aerated Glass-Fiber Reinforced Concrete (AE-GFRC-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/AE-GFRC-BATCH-CALC.md
+    1 heading(s) with no body, e.g. Estimated Total: $80-120
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/AE-GFRC-CORRECTED-MIX-PROTOCOL.md
+    5 heading(s) with no body, e.g. Corrected Mixing Sequence; Corrected Curing Protocol; Additional Quality Control Measures; Documentation Requirements
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/AE-GFRC-PHYSICAL-TEST-PLAN.md
+    5 heading(s) with no body, e.g. Test Parameters; Test Procedure; Data Collection; Analysis Plan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/CTBS-01.md
+    1 heading(s) with no body, e.g. Cascading Thermal Battery System (CTBS-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/DELTA-T-VEHICLE-SPEC.md
+    2 heading(s) with no body, e.g. DELTA-T VEHICLE SPECIFICATION; DV.GEN.TH.DT01 — Mobile Thermal Cascade Generator
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/WBTE-01-TEST-PROTOCOL.md
+    2 heading(s) with no body, e.g. OpenRoot Project: Wet-Bulb Thermal Engine Experimental Validation Protocol; Draft WBTE-01-TEST-PROTOCOL.md
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/research/thermal-systems/WBTE-01.md
+    1 heading(s) with no body, e.g. Wet-Bulb Thermal Engine (WBTE-01)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/seed-core/docs/LESSON_HUGE_COMMANDS.md
+    1 heading(s) with no body, e.g. Lesson: Executing Huge Commands Without Error on Termux (A15)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/seed-core/docs/LESSON_LONG_PASTE_FAILURE.md
+    1 heading(s) with no body, e.g. Lesson: Long Paste Failure on A15 Termux (Repeated Pattern)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/skills-library/README.md
+    1 heading(s) with no body, e.g. Categories
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/skills-library/concrete-aerocement/21-day-wet-cure-protocol.md
+    3 heading(s) with no body, e.g. 21-Day Wet Cure Protocol; Temperature & Humidity Management; Troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/skills-library/concrete-aerocement/README.md
+    3 heading(s) with no body, e.g. Concrete & Aerocement Skills; Skill Modules; Material Sources
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/skills-library/concrete-aerocement/xanthan-gum-method.md
+    6 heading(s) with no body, e.g. Xanthan Gum Foam Activation Method; Materials; Procedure; Expected Results
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/skills-library/kai9000-workflow.md
+    2 heading(s) with no body, e.g. Kai 9000: A Complete Workflow Guide for an Open-Hardware Developer on a Galaxy A15 with Termux; Details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/spoke-links.md
+    2 heading(s) with no body, e.g. OpenRoot Module Map; Connected Systems (independent but interoperable)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/README.md
+    5 heading(s) with no body, e.g. [`llama-cli`](tools/cli); [`llama-server`](tools/server); [`llama-perplexity`](tools/perplexity); [`llama-bench`](tools/llama-bench)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/SECURITY.md
+    1 heading(s) with no body, e.g. Using llama.cpp securely
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/benches/dgx-spark/dgx-spark.md
+    1 heading(s) with no body, e.g. System info
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/benches/mac-m2-ultra/mac-m2-ultra.md
+    1 heading(s) with no body, e.g. System info
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/benches/nemotron/nemotron-dgx-spark.md
+    2 heading(s) with no body, e.g. NVIDIA DGX Spark; System info
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/ci/README-MUSA.md
+    2 heading(s) with no body, e.g. 1. Create a local directory to store cached models, configuration files and venv:; 2. Create a local directory to store CI run results:
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/android.md
+    1 heading(s) with no body, e.g. Android
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/autoparser.md
+    4 heading(s) with no body, e.g. Tool Calling Formats; Analysis Flow; Algorithm Details; Testing & Debugging
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/BLIS.md
+    1 heading(s) with no body, e.g. llama.cpp compilation
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/CANN.md
+    6 heading(s) with no body, e.g. Hardware; Docker; Linux; II. Build llama.cpp
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/CUDA-FEDORA.md
+    2 heading(s) with no body, e.g. Install the Nvidia Driver Libraries on Guest:; 1. Download `nvidia-` parts that are supplied by the host RPM's (with dependencies)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/OPENCL.md
+    4 heading(s) with no body, e.g. Hardware; II. Build llama.cpp; II. Build llama.cpp; II. Build llama.cpp
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/OPENVINO.md
+    3 heading(s) with no body, e.g. Build Instructions; Example Usage; GPU Inference with Profiling
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/SYCL.md
+    11 heading(s) with no body, e.g. Recommended Release; Hardware; Other Vendor GPU; Linux
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/VirtGPU.md
+    4 heading(s) with no body, e.g. Communication Protocol; Supported Operations; Build Requirements; Configuration
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/VirtGPU/configuration.md
+    1 heading(s) with no body, e.g. Frontend (Guest-side) Configuration
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/VirtGPU/development.md
+    11 heading(s) with no body, e.g. Development and Testing; Development; Build Instructions; 1. Build ggml-virtgpu-backend (Host-side, macOS)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/ZenDNN.md
+    3 heading(s) with no body, e.g. Hardware; Linux; II. Run the Server
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/snapdragon/README.md
+    3 heading(s) with no body, e.g. Snapdragon-based devices; Setup; How to Install
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/snapdragon/developer.md
+    1 heading(s) with no body, e.g. Hexagon backend developer details
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/snapdragon/linux.md
+    1 heading(s) with no body, e.g. Snapdragon-based Linux devices
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/backend/zDNN.md
+    1 heading(s) with no body, e.g. 2. Build llama.cpp
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/build-s390x.md
+    3 heading(s) with no body, e.g. Compilation; IBM Accelerators; Performance Tuning
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/build.md
+    5 heading(s) with no body, e.g. 1. Take note of the `Compute Capability` of your NVIDIA devices: ["CUDA: Your GPU Compute > Capability"](https://developer.nvidia.com/cuda-gpus).; 2. Manually list each varying `Compute Capability` in the `CMAKE_CUDA_ARCHITECTURES` list.; Compilation; Vulkan
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/HOWTO-add-model.md
+    1 heading(s) with no body, e.g. Tips and tricks
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/debugging-tests.md
+    1 heading(s) with no body, e.g. Debugging Tests Tips
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/parsing.md
+    1 heading(s) with no body, e.g. Parsers/Combinators
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/development/token_generation_performance_tips.md
+    1 heading(s) with no body, e.g. Token generation performance troubleshooting
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/docker.md
+    2 heading(s) with no body, e.g. Docker; Docker With SYCL
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multi-gpu.md
+    1 heading(s) with no body, e.g. Recipes
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/MobileVLM.md
+    22 heading(s) with no body, e.g. Android compile and run; Some result on Android with `Snapdragon 888` chip; case 1; case 2
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/minicpmo4.0.md
+    1 heading(s) with no body, e.g. MiniCPM-o 4
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/minicpmv2.5.md
+    1 heading(s) with no body, e.g. MiniCPM-Llama3-V 2.5
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/minicpmv2.6.md
+    1 heading(s) with no body, e.g. MiniCPM-V 2.6
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/minicpmv4.0.md
+    1 heading(s) with no body, e.g. MiniCPM-V 4
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/minicpmv4.5.md
+    1 heading(s) with no body, e.g. MiniCPM-V 4.5
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/multimodal/minicpmv4.6.md
+    1 heading(s) with no body, e.g. MiniCPM-V 4.6
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/preset.md
+    1 heading(s) with no body, e.g. llama.cpp INI Presets
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/docs/speculative.md
+    8 heading(s) with no body, e.g. General Speculative Parameters; Draft Model Parameters; Draft Model CPU Scheduling Parameters; Draft Model KV Cache and Tensor Override Parameters
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/diffusion/README.md
+    4 heading(s) with no body, e.g. Examples; Dream architecture:; LLaDA architecture:; RND1 architecture:
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/embedding/README.md
+    5 heading(s) with no body, e.g. Unix-based systems (Linux, macOS, etc.):; extra parameters; examples; Unix-based systems (Linux, macOS, etc.):
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/gguf-hash/README.md
+    1 heading(s) with no body, e.g. Compile Example
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/llama-eval/README.md
+    1 heading(s) with no body, e.g. Quick start
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/model-conversion/README.md
+    7 heading(s) with no body, e.g. Inspecting the original tensors; Running the converted model; Embedding Language Model Conversion; Run the converted model
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/passkey/README.md
+    1 heading(s) with no body, e.g. Usage
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/examples/simple-cmake-pkg/README.md
+    3 heading(s) with no body, e.g. Build llama.cpp and install to llama.cpp/inst; Build simple-cmake-pkg; Run simple-cmake-pkg
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/mission-command.md
+    1 heading(s) with no body, e.g. KAI — Mission Command
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/cli/README.md
+    1 heading(s) with no body, e.g. llama.cpp/tools/cli
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/completion/README.md
+    12 heading(s) with no body, e.g. Unix-based systems (Linux, macOS, etc.):; Input prompt (One-and-done); Conversation mode (Allow for continuous interaction with the model); Conversation mode using built-in jinja chat template
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/cvector-generator/README.md
+    1 heading(s) with no body, e.g. Examples
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/llama-bench/README.md
+    4 heading(s) with no body, e.g. Examples; CSV; JSON; JSONL
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/mtmd/README-dev.md
+    1 heading(s) with no body, e.g. libmtmd dev guide
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/mtmd/debug/mtmd-debug.md
+    2 heading(s) with no body, e.g. mtmd-debug; Debugging preprocess pass
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/quantize/README.md
+    2 heading(s) with no body, e.g. Run the quantized model; Quantization Examples
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/rpc/README.md
+    1 heading(s) with no body, e.g. Usage
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/README-dev.md
+    1 heading(s) with no body, e.g. Backend
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/README.md
+    8 heading(s) with no body, e.g. Unix-based systems (Linux, macOS, etc.); Docker; API Endpoints; POST `/slots/{id_slot}?action=erase`: Erase the prompt cache of the specified slot.
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/bench/README.md
+    1 heading(s) with no body, e.g. Download a model
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/server/bench/speed-bench/README.md
+    2 heading(s) with no body, e.g. Install; Run
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/sync-from-kai/tools/ui/README.md
+    14 heading(s) with no body, e.g. Features; Getting Started; 1. Install Dependencies; Key Dependencies
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/systems/rocket_mass_heater_dual_battery.md
+    2 heading(s) with no body, e.g. Rocket Mass Heater + Dual-Battery System (Black Locust); Cost: $900–$1,500 DIY | Payback: 8–18 months
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/systems/solar_dual_battery.md
+    1 heading(s) with no body, e.g. Cost: $700–$1,100 DIY | Payback: 9–14 months
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/templates/experiment-report.md
+    3 heading(s) with no body, e.g. Experiment Report; Evidence label; Method
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/templates/issue-proposal.md
+    1 heading(s) with no body, e.g. Proposal: [concise title]
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/tokens/ACRE_SPECIFICATION.md
+    6 heading(s) with no body, e.g. ACRE Token Specification; Minting Triggers; Minting Process; Token Lifecycle
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/tokens/ESCROW_AND_AGAPE.md
+    1 heading(s) with no body, e.g. Escrow Design (Practical, Layered)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/une/INDEX.md
+    1 heading(s) with no body, e.g. UNE INDEX v0.1 — Quick Lookup
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/une_protocol/core_logic.md
+    1 heading(s) with no body, e.g. Core Flows (Kingdom Engine)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/usb-hive/README_BOOTSTRAP.md
+    1 heading(s) with no body, e.g. USB Hive Bootstrap
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/volumetric/aero-disc/design/FLAT_CARDBOARD_DESIGN_GUIDE.md
+    1 heading(s) with no body, e.g. 3. Piece List (flat patterns)
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/volumetric/aero-disc/docs/ROADMAP.md
+    1 heading(s) with no body, e.g. OpenRoot Aero-Disc Roadmap
+[stub_doc] /home/jesse/openroot/data/sdcard-sync/volumetric/aero-disc/path_b/3D_PRINTER_ROADMAP.md
+    1 heading(s) with no body, e.g. Open-Source 3D Printer Roadmap for Path B Material
+[stub_doc] /home/jesse/openroot/docs/BLOCKCHAIN-OF-CONTRIBUTIONS.md
+    1 heading(s) with no body, e.g. The Blockchain of Contributions
+[stub_doc] /home/jesse/openroot/docs/OPENROOT_PIPELINE_USER_MANUAL.md
+    2 heading(s) with no body, e.g. OpenRoot Local Pipeline User Manual; Troubleshooting
+[stub_doc] /home/jesse/openroot/docs/README.draft.md
+    3 heading(s) with no body, e.g. Getting Started; Install; Hardware We're Building
+[stub_doc] /home/jesse/openroot/docs/survey/OPENROOT_PROJECT_SURVEY_20261105.md
+    7 heading(s) with no body, e.g. OPENROOT — COMPREHENSIVE PROJECT SURVEY; Full Conversation Record: October–November 2026; Compiled 2026-11-05 from the complete dialogue window; PART I — THE DIGITAL INFRASTRUCTURE (OpenRoot Proper)
+[stub_doc] /home/jesse/openroot/dossier/RELEASE_NOTES.md
+    2 heading(s) with no body, e.g. Build status; Gate receipt
+[stub_doc] /home/jesse/openroot/dossier/RUNBOOK.md
+    1 heading(s) with no body, e.g. 3. CROSS-NODE MERGE (one node holds both TSVs)
+[stub_doc] /home/jesse/openroot/dossier/dist/RELEASE_NOTES.md
+    2 heading(s) with no body, e.g. Build status; Gate receipt
+[stub_doc] /home/jesse/openroot/dossier/dist/RUNBOOK.md
+    1 heading(s) with no body, e.g. 3. CROSS-NODE MERGE (one node holds both TSVs)
+[stub_doc] /home/jesse/openroot/lessons/window-20260921_004746.md
+    3 heading(s) with no body, e.g. 1. SCRIPTS AUTHORED AND RUN THIS WINDOW; 3. THE WORKFLOWS DEFINED THIS WINDOW (full architecture); 4. ACCOMPLISHED vs STILL TO IMPLEMENT
+[stub_doc] /home/jesse/openroot/outbox/ai_hybrid_loop/20261103T211837Z/RUN_RECEIPT.md
+    1 heading(s) with no body, e.g. evidence (sha256)
+[stub_doc] /home/jesse/openroot/outbox/ai_hybrid_loop/20261103T213104Z/RUN_RECEIPT.md
+    1 heading(s) with no body, e.g. evidence (sha256)
+[stub_doc] /home/jesse/openroot/outbox/ai_hybrid_loop/20261103T213719Z/RUN_RECEIPT.md
+    1 heading(s) with no body, e.g. evidence (sha256)
+[stub_doc] /home/jesse/openroot/outbox/ai_hybrid_loop/20261104T075639Z/RUN_RECEIPT.md
+    1 heading(s) with no body, e.g. evidence (sha256)
+[stub_doc] /home/jesse/openroot/outbox/ai_hybrid_loop/20261104T080747Z/RUN_RECEIPT.md
+    1 heading(s) with no body, e.g. evidence (sha256)
+[stub_doc] /home/jesse/openroot/outbox/intensity_chain_20261105T070124Z/CHAIN_RECEIPT.md
+    1 heading(s) with no body, e.g. chain
+[stub_doc] /home/jesse/openroot/outbox/pr_package/recall_audit_receipt_20261103T190848Z.md
+    4 heading(s) with no body, e.g. Verdicts; v6 runner source (first 60 lines — full copy in runner_source/); Candidate store probe (read-only); Artifact hashes
+[stub_doc] /home/jesse/openroot/outbox/pr_package/recall_audit_receipt_20261103T203808Z.md
+    4 heading(s) with no body, e.g. Verdicts; v6 runner source (first 60 lines — full copy in runner_source/); Candidate store probe (read-only); Artifact hashes
+[stub_doc] /home/jesse/openroot/outbox/pr_package/recall_audit_receipt_20261103T203901Z.md
+    4 heading(s) with no body, e.g. Verdicts; v6 runner source (first 60 lines — full copy in runner_source/); Candidate store probe (read-only); Artifact hashes
+[stub_doc] /home/jesse/openroot/outbox/recall_audit/20261103T190848Z/RECEIPT.md
+    4 heading(s) with no body, e.g. Verdicts; v6 runner source (first 60 lines — full copy in runner_source/); Candidate store probe (read-only); Artifact hashes
+[stub_doc] /home/jesse/openroot/outbox/recall_audit/20261103T203808Z/RECEIPT.md
+    4 heading(s) with no body, e.g. Verdicts; v6 runner source (first 60 lines — full copy in runner_source/); Candidate store probe (read-only); Artifact hashes
+[stub_doc] /home/jesse/openroot/outbox/recall_audit/20261103T203901Z/RECEIPT.md
+    4 heading(s) with no body, e.g. Verdicts; v6 runner source (first 60 lines — full copy in runner_source/); Candidate store probe (read-only); Artifact hashes
+[stub_doc] /home/jesse/openroot/reports/lesson_audit-20260918.md
+    1 heading(s) with no body, e.g. Lesson Audit — 2026-09-18
+[stub_doc] /home/jesse/openroot/research/species/robinia_pseudoacacia.md
+    2 heading(s) with no body, e.g. Robinia pseudoacacia — black locust (spec sheet, web-verified 2026-09-20); Doc-sha basis: every property row in species.db binds to the source key listed here.
+
+--- LOW ---
+[backup_sprawl] /home/jesse/openroot
+    56 .bak/.backup/.old files, e.g. /home/jesse/openroot/run_ai_hybrid_loop_v1.sh.bak.v20261104, /home/jesse/openroot/MONETIZATION_STRATEGY.md.bak.v20261103a, /home/jesse/openroot/data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/.gitignore.bak
+[chain_health] data/discovery_chain.jsonl
+    discovery chain (run newton_chain_discovery.py to create) is absent
+[orphan_tool] /home/jesse/openroot/PODBENCHv3.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/autoupdate_loop.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/aider_task_runner.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/autodossier_cloud_workflow.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/autonomous_100_loop.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/clarification_barrage_engine.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/fleet_closeout_v6_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/flint_hybrid_client.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/fts_pod_search.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/generate_manifest_v2.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/git_push_delete_v9_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/goals_rebuild_v2_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/goals_rebuild_v3_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/improvement_barrage_engine.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/init_knowledge_db.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/markor_compiler.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/master_purge_v7_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/master_truth_v10_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/mobile_micro_loop_test.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/popw_thermal_ledger.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/qr_system_bootstrap.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/repair_toolkit_import_v1.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/rerun_all_receipts.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/safe_friction_triage.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/synergetic_compounding_v2.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/synergetic_wiring_engine.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/terminal_log_rag.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/test_flint_local.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/universal_fleet_backup.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/bin/zombie_ref_kill_v8_20260920.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/enable_vector_embeddings.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/openroot_tidbit_seed_engine.py
+    never mentioned by any markdown doc in the repo
+[orphan_tool] /home/jesse/openroot/une_client.py
+    never mentioned by any markdown doc in the repo
+
+--- SUGGESTED PATHWAY (fix in this order) ---
+  1. consolidate to one canonical version per script; history belongs in git, not in filename suffixes
+  2. fix the path or create the target file
+  3. check the bot loop / heartbeat writer
+  4. remove or retarget them (they break every walker)
+  5. fill the sections or delete the placeholder file
+
+When a fix works, seal it:
+  python3 bin/pathway_cache_v1.py record --name "..." --step "..." --evidence <file>
+
+[ok] report json -> outbox/ai_hybrid_loop/20261110T140001Z/friction_report.json (sha256 c467489cf0084a13...)
+[ok] sealed scan -> /home/jesse/openroot/data/friction_ledger.jsonl (hash f1da7866cc5d5667...)

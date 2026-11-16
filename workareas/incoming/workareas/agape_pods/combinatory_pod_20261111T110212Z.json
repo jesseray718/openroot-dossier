@@ -1,0 +1,212 @@
+{
+  "pod_id": "combinatory_pod_20261111T110212Z",
+  "timestamp": "20261111T110212Z",
+  "alignment_metrics": {
+    "R": 1.0,
+    "coordination_cost": 0.0
+  },
+  "tidbits_indexed": 50,
+  "combinatory_synergy_hash": "2a7c283033c013ba7edcb43306c9b567cba1447247974e0f2d6394e511fc979c",
+  "manifest": [
+    {
+      "path": "/data/data/com.termux/files/home/openroot/autoupdate_loop.py",
+      "size": 3095
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/enable_vector_embeddings.py",
+      "size": 2811
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/TASK.md",
+      "size": 257
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/setup-optiplex.sh",
+      "size": 5282
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/run-remote.sh",
+      "size": 3387
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/CONTRIBUTING.md",
+      "size": 230
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/GOALS.md",
+      "size": 10432
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/MASTER_TODO.md",
+      "size": 11154
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/CODE_OF_CONDUCT.md",
+      "size": 77
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/README.md",
+      "size": 12538
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/GOOD_FIRST_ISSUES.md",
+      "size": 4138
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/SECURITY.md",
+      "size": 108
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/LOOP_SPEC.md",
+      "size": 1855
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/logs_unify_20260920_142739.txt",
+      "size": 1276
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/unify_v2.py",
+      "size": 5798
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/bot_loop_v1.py",
+      "size": 4654
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/bot_stop.sh",
+      "size": 264
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/markor_compiler.py",
+      "size": 8143
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/RELEASE_v1.0.0.md",
+      "size": 962
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/data_bot_state.json",
+      "size": 343
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/SUPERLINEAR.md",
+      "size": 2832
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/compost_cycle_20261104_145505.json",
+      "size": 2396
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/run_ai_hybrid_loop_v1.sh",
+      "size": 12049
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/jesse@100.122.169.43:podbench_v31_relapse.sh",
+      "size": 0
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/ARCHITECTURE.md",
+      "size": 257
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/MONETIZATION_STRATEGY.md",
+      "size": 1002
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/PATHWAYS.md",
+      "size": 2780
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/PODBENCHv3.py",
+      "size": 14401
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/SESSION_STATE.md",
+      "size": 258
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/STARTHERE.md",
+      "size": 4034
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/WORKLOG.md",
+      "size": 1668
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/fleet_census_v1.sh",
+      "size": 9766
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/manifest.json",
+      "size": 6094744
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/run_ai_hybrid_loop_v2.sh",
+      "size": 9195
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/une_client.py",
+      "size": 4324
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/openhuman_eta_query.py",
+      "size": 2329
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/WORK_LOG.md",
+      "size": 838
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/openroot_sync_all_in_one.sh",
+      "size": 3089
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/openroot_tidbit_seed_engine.py",
+      "size": 5753
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/openroot_verify_push.sh",
+      "size": 1457
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/roll2.sh",
+      "size": 277390
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/roll_dynamic.sh",
+      "size": 1487
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/agape_pod_pipeline.sh",
+      "size": 3624
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/agape_combinatory_pipeline.sh",
+      "size": 4432
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/fix_and_merge_pr138.sh",
+      "size": 1588
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/fix_router_check.sh",
+      "size": 1351
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/bin/rescue_a15_unique.py",
+      "size": 2358
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/bin/relay_v1.py",
+      "size": 12972
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/bin/compound_v1.sh",
+      "size": 3619
+    },
+    {
+      "path": "/data/data/com.termux/files/home/openroot/bin/agent.sh",
+      "size": 992
+    }
+  ]
+}

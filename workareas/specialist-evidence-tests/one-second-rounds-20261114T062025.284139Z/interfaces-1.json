@@ -1,0 +1,43 @@
+{
+  "attempt": {
+    "role": "interfaces",
+    "model": "qwen2.5-coder:0.5b",
+    "attempt": 1,
+    "launch_round": 1,
+    "start_seconds": 0.00014400703366845846,
+    "first_text_seconds": 5.00013040995691,
+    "characters": 163,
+    "observed_finish_round": 8,
+    "observed_finish_seconds": 7.000357034965418,
+    "elapsed_seconds": 7.00021302793175,
+    "status": "contract_passed",
+    "error": null,
+    "generation": {
+      "done": true,
+      "done_reason": "stop",
+      "load_duration": 2243707,
+      "eval_count": 66,
+      "eval_duration": 1478658000,
+      "prompt_eval_count": 1696,
+      "prompt_eval_duration": 4959659000,
+      "finished_monotonic": 868112.618213091
+    }
+  },
+  "state": {
+    "attempts": 1,
+    "status": "contract_passed",
+    "partial": "{\n  \"status\": \"completed\",\n  \"source_ids\": [\"N2\", \"N643\", \"N3\"],\n  \"finding\": \"A15 reuse of OptiPlex work\",\n  \"next_action\": \"Identify cache/pathway interfaces.\"\n}",
+    "error": null,
+    "validated": {
+      "status": "completed",
+      "source_ids": [
+        "N2",
+        "N643",
+        "N3"
+      ],
+      "finding": "A15 reuse of OptiPlex work",
+      "next_action": "Identify cache/pathway interfaces."
+    },
+    "terminal": true
+  }
+}

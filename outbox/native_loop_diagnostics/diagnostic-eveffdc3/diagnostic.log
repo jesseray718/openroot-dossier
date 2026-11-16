@@ -1,0 +1,91 @@
+
+START: question_travel_v1.py
+PYTHON_STARTED: /home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/question_travel_v1.py
+Timeout (0:00:30)!
+Thread 0x00007b2e0755d080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/question_travel_v1.py", line 63 in main
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/question_travel_v1.py", line 87 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007b2e0755d080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/question_travel_v1.py", line 63 in main
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/question_travel_v1.py", line 87 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+  q0: empty terms, skip
+  recall@5 = 0/1  answered_ok = 0/1
+RESULT: {"step": "question_travel_v1.py", "returncode": 0}
+
+START: pods_fractal_v1.py
+PYTHON_STARTED: /home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f317791b080 (most recent call first):
+  File "/home/jesse/openroot/outbox/native_loop_diagnostics/diagnostic-eveffdc3/pods_fractal_v1.py", line 16 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 286 in run_path
+  File "<string>", line 8 in <module>
+RESULT: {"step": "pods_fractal_v1.py", "status": "TIME_LIMIT_REACHED", "seconds": 300}
+
+NATIVE_DIAGNOSTIC_FINISHED

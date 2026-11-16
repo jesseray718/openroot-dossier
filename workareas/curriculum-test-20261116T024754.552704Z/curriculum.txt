@@ -1,0 +1,7 @@
+Check the actual control flow:
+Recording stores steps, evidence paths/sizes/hashes, actor, notes and chain links; it does not execute steps.
+Verification checks sequence numbers, previous_hash linkage and hashes of ledger entries.
+It does not reopen evidence files or validate parent_seq existence.
+load_chain skips invalid JSON; an absent chain makes verify return zero.
+Integrity of a record is different from correctness of its substantive claims.
+Check these notes against the source. Cite E1 lines when useful; reasoning is not prohibited when citations are absent.

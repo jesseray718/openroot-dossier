@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/openroot/outbox/ai_hybrid_loop/20261105T033628Z/question_travel_v1.py", line 87, in <module>
+    main()
+    ~~~~^^
+  File "/data/data/com.termux/files/home/openroot/outbox/ai_hybrid_loop/20261105T033628Z/question_travel_v1.py", line 63, in main
+    n = cur.execute(f"SELECT count(*) FROM {tab}").fetchone()[0]
+        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: None

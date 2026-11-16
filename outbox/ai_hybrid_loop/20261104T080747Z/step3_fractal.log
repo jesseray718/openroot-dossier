@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T080747Z/pods_fractal_v1.py", line 10, in <module>
+    for name in sorted(os.listdir(ROOT)):
+                       ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '$HOME/pods'

@@ -1,85 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jesse Ray — OpenRoot</title>
+<meta charset="utf-8"/>
+<title>OpenRoot — offline-first shelter, heat, and compute</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
-  :root{--bg:#0c0c0c;--card:#161616;--border:#2a2a2a;--text:#e8e8e8;--muted:#999;--accent:#7dd3a0}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;padding:1.5rem;max-width:680px;margin:0 auto}
-  header{padding:1.5rem 0;border-bottom:1px solid var(--border);margin-bottom:2rem}
-  h1{font-size:2rem;font-weight:700;margin-bottom:.5rem}
-  .subtitle{color:var(--muted);font-size:1.1rem}
-  section{margin-bottom:2rem}
-  h2{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.8rem}
-  .grid{display:grid;gap:1rem}
-  a.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-decoration:none;color:var(--text)}
-  a.card:hover{border-color:var(--accent)}
-  a.card strong{display:block;font-size:1.1rem;margin-bottom:.3rem;color:var(--accent)}
-  a.card span{font-size:.9rem;color:var(--muted)}
-  .bio{background:var(--card);padding:1.2rem;border-radius:10px;border-left:3px solid var(--accent)}
-  footer{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid var(--border);font-size:.85rem;color:var(--muted)}
-  footer a{color:var(--accent);text-decoration:none}
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem; line-height: 1.6; }
+  header h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+  .tagline { opacity: 0.8; margin-top: 0; }
+  .eta { font-family: ui-monospace, monospace; font-size: 1.1rem; border-left: 3px solid #6d4aff; padding-left: 0.75rem; margin: 1.5rem 0; }
+  section { margin-top: 2.5rem; }
+  h2 { font-size: 1.25rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: #6d4aff; }
+  footer { margin-top: 3rem; opacity: 0.7; font-size: 0.9rem; }
+  @media (prefers-color-scheme: dark) { a { color: #9b8cff; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>Jesse Ray</h1>
-  <p class="subtitle">Independent Appropriate-Technology Inventor — OpenRoot</p>
+  <h1>OpenRoot</h1>
+  <p class="tagline">Offline-first shelter, heat, and compute — stood up on a phone and a used PC.</p>
+  <p class="eta">&eta; = useful_joules / human_joules</p>
 </header>
-
-<section class="bio">
-  <p><strong>Building decentralized infrastructure for food, energy, shelter, and community.</strong></p>
-  <p style="margin-top:.8rem">Working from a Samsung Galaxy A15 using Termux and open-source toolchains. Not affiliated with any institution. The entire OpenRoot framework is documented on-device and published to IPFS/Zenodo/Bitcoin.</p>
-</section>
-
 <section>
-  <h2>Primary Projects</h2>
-  <div class="grid">
-    <a class="card" href="https://github.com/jesseray718/openroot">
-      <strong>OpenRoot</strong>
-      <span>Thermodynamic commons — physical infrastructure + AI swarm. Thermal cascade, aerated concrete, ACRE token.</span>
-    </a>
-    <a class="card" href="https://github.com/jesseray718/agape-une">
-      <strong>Agape-UNE</strong>
-      <span>Theory layer — ethics, axioms, mathematics of cooperation.</span>
-    </a>
-    <a class="card" href="https://github.com/jesseray718/aerocement">
-      <strong>AeroCement</strong>
-      <span>Glass-fiber aerated concrete recipes + passive cooling systems.</span>
-    </a>
-    <a class="card" href="https://github.com/jesseray718/openroot-spoke-template">
-      <strong>Spoke Template</strong>
-      <span>Fork skeleton for new OpenRoot nodes. Ready for deployment.</span>
-    </a>
-  </div>
+  <h2>Compute</h2>
+  <ul>
+    <li>A local 7B coder runs on an OptiPlex; the phone is the client over an SSH tunnel. No cloud inference.</li>
+    <li>Every pathway is sealed: plan - execute - verify - seal into an append-only hash-linked ledger.</li>
+    <li>Seals verify in microseconds. Work is only recomputed on failure.</li>
+  </ul>
 </section>
-
 <section>
-  <h2>Publications & Proofs</h2>
-  <div class="grid">
-    <a class="card" href="https://doi.org/10.5281/zenodo.21225683">
-      <strong>Zenodo DOI</strong>
-      <span>Thermal system specifications (WBTE-01, CTBS-01, AE-GFRC-01)</span>
-    </a>
-    <a class="card" href="https://github.com/jesseray718/openroot/blob/main/THESIS.md">
-      <strong>OpenRoot Thesis v3.0</strong>
-      <span>Complete thermodynamic argument. Bitcoin-anchored.</span>
-    </a>
-  </div>
+  <h2>Heat</h2>
+  <ul>
+    <li>AeroCement open-cell panels — drill-and-bucket buildable.</li>
+    <li>Stirling on real delta-T. Carnot-bounded, flux-limited. No free-energy claims.</li>
+    <li>Black Locust rocket mass heater + earth battery. Capture heat once, route it, store it.</li>
+  </ul>
 </section>
-
 <section>
-  <h2>Contact</h2>
-  <p>Email: jrm8908@proton.me</p>
-  <p>SimpleX: <a href="https://smp9.simplex.im/a#vklZrSjZTQdgXBqW_sLK1h5FeajDoa7wTaSWGSw62Sw" style="color:var(--accent)">Join mesh channel</a></p>
-  <p>Location: Sikeston, Missouri</p>
+  <h2>Integrity</h2>
+  <ul>
+    <li>Gate before commit: syntax checks, compile checks, first-principles table drift checks.</li>
+    <li>Sealed receipts with every release: GATE_RECEIPT, BUILD_STATUS, append-only WORK_LOG.</li>
+    <li>Two-node mesh: payloads travel by Syncthing; truth travels by hash-linked ledger.</li>
+  </ul>
 </section>
-
 <footer>
-  <p>Licensed CC-BY-SA-4.0 (docs) / GPL-3.0 (code). No patents. Ever.</p>
-  <p style="margin-top:.4rem"><a href="https://github.com/jesseray718">GitHub Profile</a> · <a href="https://github.com/jesseray718/openroot">OpenRoot Repo</a></p>
+  <p>Hub: <a href="https://github.com/jesseray718/openroot">github.com/jesseray718/openroot</a> · GPL-3.0 · v1.2.1-popw-ledger</p>
+  <p>A public workshop, not a product funnel.</p>
 </footer>
 </body>
 </html>

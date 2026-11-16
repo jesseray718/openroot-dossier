@@ -1,0 +1,11 @@
+{
+  "file": "012-contradiction_checker-r2.json",
+  "role": "contradiction_checker",
+  "model": "granite4:1b",
+  "round": 2,
+  "budget_seconds": 30,
+  "prompt_sha256": "c4002d4b1870ba71226d9a386694f542b9bb70654a436b8192f509026c80704f",
+  "status": "time_limited_partial",
+  "partial_text": "",
+  "elapsed_seconds": 30.02
+}

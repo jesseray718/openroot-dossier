@@ -1,0 +1,25 @@
+{
+  "attempt": {
+    "role": "coder",
+    "model": "qwen2.5-coder:7b",
+    "attempt": 1,
+    "launch_round": 172,
+    "start_seconds": 171.00181934901047,
+    "first_text_seconds": 286.00014504103456,
+    "characters": 121,
+    "observed_finish_round": 293,
+    "observed_finish_seconds": 292.001763348002,
+    "elapsed_seconds": 120.99994399899151,
+    "status": "attempt_timeout",
+    "error": null,
+    "generation": {}
+  },
+  "state": {
+    "attempts": 1,
+    "status": "attempt_timeout",
+    "partial": "{\n  \"status\": \"completed\",\n  \"source_ids\": [\"N2\", \"N643\", \"N3\"],\n  \"finding\": \"The native pathway/cache interfaces for A1",
+    "error": null,
+    "validated": null,
+    "terminal": false
+  }
+}

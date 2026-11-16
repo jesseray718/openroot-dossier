@@ -1,0 +1,24 @@
+[
+  {
+    "role": "task_splitter",
+    "model": "qwen3:0.6b",
+    "round": 1,
+    "status": "failed_or_timed_out",
+    "request_timeout_seconds": 100,
+    "prompt_sha256": "05e90698161a96d731f2525981f2c48f6d7c1b2946c52d08d49b625350ba4d8d",
+    "raw_response": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt...\",\n      \"source_ids\": [126, 127, 620],\n      \"quote\": \"A manifest-gated transfer staged 20 files on the A15. All 20 passed post-transfer SHA-256 verification against the generated manifest.\"\n    },\n    {\n      \"claim\": \"The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt...\",\n      \"source_ids\": [126, 127, 620],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway.\"\n    },\n    {\n      \"claim\": \"L0 is exact reuse. It does not...\",\n      \"source_ids\": [620],\n      \"quote\": \"L0 is exact reuse. It does not ...\"\n    }\n  ],\n  \"questions\": [\n    \"Is there evidence that the staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt...\",\n    \"Are all the staged artifacts verified against the generated manifest?\",\n    \"Is L0 considered exact reuse based on the provided evidence?\"\n  ]\n}",
+    "error": "Unknown source IDs",
+    "elapsed_seconds": 23.88
+  },
+  {
+    "role": "evidence_selector",
+    "model": "qwen2.5-coder:0.5b",
+    "round": 1,
+    "status": "failed_or_timed_out",
+    "request_timeout_seconds": 100,
+    "prompt_sha256": "95d5827cb9b7af0d050ed56e0fe99d2e82fe5e895e35abbd742906fefbe54680",
+    "raw_response": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"at_most\": 3,\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work already completed on the OptiPlex is documented in the `knowledge_fts` table. The evidence is provided in the `data/fts_index.db` database. The documentation is verified using the `assert_a15` function.\"\n    }\n  ],\n  \"questions\": [\n    \"What is the purpose of the `knowledge_fts` table in the OptiPlex?\"\n  ]\n}",
+    "error": "Missing claim",
+    "elapsed_seconds": 9.17
+  }
+]

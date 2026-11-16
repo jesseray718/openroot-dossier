@@ -1,0 +1,34 @@
+{
+  "assets": [
+    {
+      "blake3": "fallback_sha3_3c7fdec370bda0ec5571df4ecd6faed6bab1ac3a21e2bce4a1bd42ef769e4aef",
+      "file_path": "MONETIZATION_STRATEGY.md",
+      "sha256": "faa010138906673975427e910ef1466c758f5300450f4bfcaf431aa48e26ab85",
+      "size_bytes": 1002
+    },
+    {
+      "blake3": "fallback_sha3_ef90da0c6f0fb5a7a2cdb7e4f21a207223a32fed7f658593be27b27592a0b28b",
+      "file_path": "PATHWAYS.md",
+      "sha256": "8216532d7c7f81a50aae63e01a46f76591b12a9590119cc9c6da1136b2d9ed62",
+      "size_bytes": 936
+    },
+    {
+      "blake3": "fallback_sha3_566cf183f6a7ced5e74c946a9045d56a31eeb64c52ffc4c1967b942b8feec3b3",
+      "file_path": "WORKLOG.md",
+      "sha256": "4353b6abf0740dffd785c1baef852bac2d18cb8c48169a68568989630b552411",
+      "size_bytes": 412
+    },
+    {
+      "blake3": "fallback_sha3_6fee519b163af372600f52b323fa470d012946ef0a2c59195754db61ec2f485d",
+      "file_path": "friction_report.json",
+      "sha256": "316c2a896960206d9d20ec71872e70d90da2680e3a2f51fa56c572c38736d72a",
+      "size_bytes": 444951
+    }
+  ],
+  "errors": 0,
+  "hash_mode": "sha3_fallback",
+  "root": "pr_package",
+  "schema": "openroot_manifest_v2",
+  "total_bytes": 447301,
+  "total_files": 4
+}

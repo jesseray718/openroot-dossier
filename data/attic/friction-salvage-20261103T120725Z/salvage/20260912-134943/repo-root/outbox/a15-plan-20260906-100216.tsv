@@ -1,0 +1,16 @@
+path	class	action	dest	n14_risk	title	reason
+/data/data/com.termux/files/home/ARCHIVE_REDIRECT.md	archive_candidate	archive_copy	same_or_relative	False	ARCHIVE_REDIRECT.md	Content has been moved to openroot repository.
+/data/data/com.termux/files/home/context-bridge.md	markor_note	keep	same_or_relative	False	CONTEXT BRIDGE — July 13, 2026 06:00 CDT	This is a project note and should be kept for reference.
+/data/data/com.termux/files/home/welcome-discussion.md	markor_note	keep	same_or_relative	False	Welcome Discussion	Important document for new contributors
+/data/data/com.termux/files/home/tmp_issue_body.md	markor_note	keep	same_or_relative	False	Call to Builders	This is an important project note for the OpenRoot initiative.
+/data/data/com.termux/files/home/groq-status.json	active_source	keep	same_or_relative	False	groq-status.json	Contains status information that may be needed for system monitoring or configuration.
+/data/data/com.termux/files/home/groq_cycle_state.json	generated_log	archive_copy	same_or_relative	False	groq_cycle_state.json	Contains model state data, likely a generated log file.
+/data/data/com.termux/files/home/onsat-data.json	generated_log	archive_copy	same_or_relative	False	onsat-data.json	Generated log file containing operational data and API URLs.
+/data/data/com.termux/files/home/openroot-github-deepdive.md	markor_note	keep	same_or_relative	False	OPENROOT GITHUB DEEP DIVE	Technical documentation and project overview
+/data/data/com.termux/files/home/openroot-claude-priming.md	markor_note	keep	same_or_relative	False	OPENROOT / AEROCEMENT / AGAPE-UNE — GROK-NODE DEEP DIVE + CLAUDE PRIMING	Contains important technical and research information.
+/data/data/com.termux/files/home/black-locust-carbon-negative-energy-v1.md	markor_note	keep	same_or_relative	False	Black Locust Coppicing + Rocket Mass Heater	Technical documentation and hypothesis about a carbon-negative energy system.
+/data/data/com.termux/files/home/openroot_full.txt	mesh_share	archive_copy	/storage/emulated/0/openroot	False	OpenRoot Full Export	Project documentation and source code for the AeroCement Ecosystem.
+/data/data/com.termux/files/home/usb-manifest.txt	active_source	keep	same_or_relative	False	usb-manifest.txt	Contains a manifest of USB contents, which is useful for tracking and inventory purposes.
+/data/data/com.termux/files/home/openroot-system-prompt.md	markor_note	keep	same_or_relative	False	OpenRoot System Prompt	This document contains important mission and module details for OpenRoot, an open-source appropriate-technology ecosystem. It should be kept for reference and further development.
+/data/data/com.termux/files/home/termux-install-log.txt	generated_log	archive_copy	same_or_relative	False	termux-install-log.txt	Log file from Termux installation process
+/data/data/com.termux/files/home/backup-path.txt	archive_candidate	archive_copy	/storage/emulated/0/openroot/archive	False	termux-backup-20260713_0751	Backup file, not needed in active source

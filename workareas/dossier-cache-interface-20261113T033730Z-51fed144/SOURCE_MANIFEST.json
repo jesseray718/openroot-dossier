@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/home/jesse/bin/openroot-fulltext",
+    "bytes": 317,
+    "sha256": "0daca5fe67332552180978c303579ac571719b3ee4568e3751d4dd77a2761bc3"
+  },
+  {
+    "path": "/home/jesse/.local/share/openroot-fulltext-v2/openroot_ask-45a33797724a.py",
+    "bytes": 13088,
+    "sha256": "45a33797724ad4d46d6fd635399287993e604c4a927d371bc9a1c541765be3f6"
+  },
+  {
+    "path": "/home/jesse/.local/share/openroot-fulltext-v2/openroot_fulltext_v2-e82244d3f46d.py",
+    "bytes": 25604,
+    "sha256": "e82244d3f46dfd5489f9d67d124cfdb4bcff0f3ee599990debaa946b62e84d56"
+  }
+]

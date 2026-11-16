@@ -1,0 +1,9 @@
+{
+  "role": "contradiction_checker",
+  "model": "granite4:1b",
+  "round": 1,
+  "execution_status": "failed",
+  "prompt_sha256": "f86980037f4df808471f008029bdc115426aea0fb2ceae563bfb2e274033886e",
+  "error": "timed out",
+  "elapsed_seconds": 100.1
+}

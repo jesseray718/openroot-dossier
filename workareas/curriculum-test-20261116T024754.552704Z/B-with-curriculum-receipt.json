@@ -1,0 +1,20 @@
+{
+  "label": "B-with-curriculum",
+  "question": "What does OpenRoot's pathway cache record and verify, and does it automatically execute recorded steps?",
+  "question_sha256": "060194d83bfe095af84a4a812170f1c4a845ed956ee9ca842efb053b8b3ae49c",
+  "evidence_sha256": "99b8f65f8e306a258465cdb26b99205b8c245b1de88c5a47a74457b7366d1a1d",
+  "wall_seconds": 46.32825082100317,
+  "error": null,
+  "status": "ANSWER_GENERATED_UNGRADED",
+  "model_requested": "qwen2.5-coder:7b",
+  "model_returned": "qwen2.5-coder:7b",
+  "telemetry": {
+    "done_reason": "stop",
+    "load_duration": 1933542,
+    "prompt_eval_count": 1574,
+    "prompt_eval_duration": 4916547000,
+    "eval_count": 236,
+    "eval_duration": 41222488000,
+    "total_duration": 46319687652
+  }
+}

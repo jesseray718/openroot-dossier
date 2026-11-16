@@ -1,0 +1,5 @@
+{
+  "status": "needs_evidence",
+  "selected_ids": ["N2", "N643", "N3"],
+  "note": "The A15 could reuse completed OptiPlex work by identifying native pathway/cache interfaces, distinguishing source-code behavior from demonstrated execution, identifying missing acceptance tests, and conducting validation of cache hits, transfers, and successful replay.",
+  "next_query": "To validate the cache hits, transfers, and successful replay, you can use the following commands:\n\n1. Run the following command to generate a report of cache hits:\n\n   python3 bin/pathway_cache_v1.py export-md PATHWAYS.md\n\n2. Run the following command to replay the cache:\n\n   python3 bin/pathway_cache_v1.py record --name ... --step ... --evidence <file>\n\n3. Run the following command to validate the cache hits, transfers, and successful replay:\n\n   python3

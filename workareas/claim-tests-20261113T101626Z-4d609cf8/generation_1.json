@@ -1,0 +1,5 @@
+{
+  "url": "http://127.0.0.1:8080/v1/chat/completions",
+  "error": "TimeoutError: timed out",
+  "wall_seconds": 90.1103719449602
+}

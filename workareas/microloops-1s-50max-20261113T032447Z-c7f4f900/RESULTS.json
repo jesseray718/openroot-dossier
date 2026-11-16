@@ -1,0 +1,11 @@
+[
+  {
+    "loop": 1,
+    "task": "scan_pattern",
+    "model": "qwen2.5-coder:0.5b",
+    "client_elapsed_seconds": 1.0361,
+    "curl_exit": 28,
+    "stderr": "curl: (28) Operation timed out after 1002 milliseconds with 0 bytes received\n",
+    "status": "deadline_missed"
+  }
+]

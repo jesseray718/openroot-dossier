@@ -1,0 +1,43 @@
+{
+  "attempt": {
+    "role": "a15",
+    "model": "qwen2.5-coder:0.5b",
+    "attempt": 1,
+    "launch_round": 54,
+    "start_seconds": 53.00379900995176,
+    "first_text_seconds": 77.00012147205416,
+    "characters": 367,
+    "observed_finish_round": 80,
+    "observed_finish_seconds": 79.00034160597716,
+    "elapsed_seconds": 25.996542596025392,
+    "status": "contract_passed",
+    "error": null,
+    "generation": {
+      "done": true,
+      "done_reason": "stop",
+      "load_duration": 18375522613,
+      "eval_count": 91,
+      "eval_duration": 1883273000,
+      "prompt_eval_count": 1699,
+      "prompt_eval_duration": 4936505000,
+      "finished_monotonic": 868184.36186945
+    }
+  },
+  "state": {
+    "attempts": 1,
+    "status": "contract_passed",
+    "partial": "{\n  \"status\": \"completed\",\n  \"source_ids\": [\"N2\", \"N643\", \"N3\"],\n  \"finding\": \"The native pathway/cache interfaces for A15 reuse of OptiPlex work are documented, separated from proven execution and identified missing acceptance tests.\",\n  \"next_action\": \"Review the documentation for A15 requirements and ensure that the cache interfaces are correctly implemented.\"\n}",
+    "error": null,
+    "validated": {
+      "status": "completed",
+      "source_ids": [
+        "N2",
+        "N643",
+        "N3"
+      ],
+      "finding": "The native pathway/cache interfaces for A15 reuse of OptiPlex work are documented, separated from proven execution and identified missing acceptance tests.",
+      "next_action": "Review the documentation for A15 requirements and ensure that the cache interfaces are correctly implemented."
+    },
+    "terminal": true
+  }
+}

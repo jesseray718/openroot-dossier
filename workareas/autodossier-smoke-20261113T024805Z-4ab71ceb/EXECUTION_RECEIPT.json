@@ -1,0 +1,59 @@
+{
+  "schema": "openroot_autodossier_smoke_v1",
+  "started_at": "2026-11-13T02:48:05.569740+00:00",
+  "question": "What does the indexed OpenRoot documentation say about autodossier workflows, pathway receipts, and verification? Distinguish documented intentions from demonstrated execution.",
+  "query": "\"autodossier\" OR \"pathway\" OR \"receipt\"",
+  "database": "/home/jesse/openroot/data/fts_index.db",
+  "table": "knowledge_fts",
+  "model_requested": "qwen2.5-coder:1.5b",
+  "retrieval_status": "HIT",
+  "generation_status": "response_received",
+  "answer_validation_status": "not_performed",
+  "execution_status": "completed_unverified_answer",
+  "canonical_promotion": false,
+  "ledger_writers_invoked": false,
+  "evidence_count": 5,
+  "model_returned": "qwen2.5-coder:1.5b",
+  "model_elapsed_seconds": 74.386,
+  "model_done": true,
+  "finished_at": "2026-11-13T02:49:19.958252+00:00",
+  "elapsed_seconds": 74.389,
+  "exit_code": 0,
+  "artifacts": [
+    {
+      "name": "DOSSIER.md",
+      "bytes": 4154,
+      "sha256": "de09d0adad12c3b492a2e5474342b998a89d321280fb543587a954b8a27bc9f3"
+    },
+    {
+      "name": "EVIDENCE.json",
+      "bytes": 9246,
+      "sha256": "23fd2f300bf3590943c96cf79290c3df4e0a12028bbfb1e3639e754175011b03"
+    },
+    {
+      "name": "MODEL_REQUEST.json",
+      "bytes": 10366,
+      "sha256": "d15b9f727b3dc28c6f02d782e686c1116d2950cb9b326c0d35184e61f95a28fb"
+    },
+    {
+      "name": "MODEL_RESPONSE.json",
+      "bytes": 32944,
+      "sha256": "f611ffc955cafb53b214ef277ff2a0ae1b2bbb8e6fd543d2fff9138075da2c46"
+    },
+    {
+      "name": "MODEL_RESPONSE.raw",
+      "bytes": 17512,
+      "sha256": "62043005c0fbdd501ac5e594277530bad07a8123cd04851dca5e8d1947e2f678"
+    },
+    {
+      "name": "PROMPT.txt",
+      "bytes": 9774,
+      "sha256": "f80b6002c26e3d9fdb1ce597f4e311ebe48c3ff6c50ed7bd8544348f41639423"
+    },
+    {
+      "name": "TASK.json",
+      "bytes": 382,
+      "sha256": "86147f945d25204c8199f97f84060c6b613cee039d03be30345aad54d4dff9b6"
+    }
+  ]
+}

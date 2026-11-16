@@ -1,0 +1,11 @@
+{
+  "file": "007-coder_integrator-r1.json",
+  "role": "coder_integrator",
+  "model": "qwen2.5-coder:7b",
+  "round": 1,
+  "budget_seconds": 90,
+  "prompt_sha256": "8c0db0e6cf0257e80aac2fe6c9475768d06bd8bbb297ca317d04b233ca87af71",
+  "status": "time_limited_partial",
+  "partial_text": "",
+  "elapsed_seconds": 90.09
+}

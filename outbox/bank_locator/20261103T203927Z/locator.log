@@ -1,0 +1,59 @@
+bank_locator_v20261104 @ 20261103T203927Z
+root: /home/jesse/openroot   evidence: /home/jesse/openroot/outbox/bank_locator/20261103T203927Z
+
+== 0. configured expectations (grep of ~/recall_audit_v20261104.sh) ==
+  L102:  echo "$BANK_STATS" > "$EV/custom_bank_stats.json"
+  L106:    verdict CUSTOM_BANK_VALID OK "$BANK_FILE ($CNT questions)"
+  L108:    verdict CUSTOM_BANK_VALID FAIL "$BANK_FILE parsed to 0 questions"; bad
+  L111:  verdict CUSTOM_BANK_VALID MISSING "no bank file found; configured path needs human confirmation"
+  L126:  verdict BANK_132_INPUT OK "$INPUT_132 (sha256 matches 7937f7c9 fingerprint)"
+  L128:  verdict BANK_132_INPUT NOT_FOUND "132-row input not relocated; check outbox staging dir"
+  L325:  { echo "## Custom bank"; echo '```json'; echo "$BANK_STATS"; echo '```'; echo; } >> "$R"
+  [absent] /custom_bank_stats.json
+
+== 1. candidate sweep (bank/question/quiz/broad) ==
+  name-hits: 112   flagged: 112  (line-count 99-133 or name hint)
+  [24765 L, 2372942B] /home/jesse/pods/staging/a15-shared-20261014T144928Z/openroot/thermo_ledger/mesh_broadcast.log
+      sha16=36ad65d04dccf0c6  head: [INFO] [2f129002] 2026-09-15T22:05:00.464853+00:00: Cycle 1: broadcast 60s [INFO] [c8ccf1df] 2026-09-15T22:05:
+  [1362 L, 42273B] /home/jesse/pods/_repo_sources/ruvnet_ruflo/v3/@claude-flow/neural/src/reasoning-bank.ts
+      sha16=70fa24c02a623074  head: /**  * ReasoningBank Integration with AgentDB  *  * Implements the 4-step learning pipeline with real vector s
+  [762 L, 23077B] /home/jesse/pods/_repo_sources/anomalyco_opencode/packages/app/src/session/requests/session-question-dock.tsx
+      sha16=1605b13945a3c83d  head: import { For, Show, createEffect, createMemo, onCleanup, onMount, type Component } from "solid-js" import { cr
+  [697 L, 20507B] /home/jesse/pods/_repo_sources/ruvnet_ruflo/v3/@claude-flow/neural/src/reasoningbank-adapter.ts
+      sha16=8c7ca9e8d425f09c  head: /**  * V3 ReasoningBank Adapter  *  * Provides agentic-flow@alpha compatible ReasoningBank interface:  * - 4-s
+  [657 L, 21566B] /home/jesse/pods/_repo_sources/ruvnet_ruflo/v3/@claude-flow/plugins/examples/ruvector-plugins/reasoning-bank.ts
+      sha16=c517ea2add2d982b  head: /**  * ReasoningBank Integration Plugin  *  * Stores successful reasoning trajectories and retrieves them for 
+  [625 L, 19356B] /home/jesse/pods/_repo_sources/stablyai_orca/src/renderer/src/components/native-chat/NativeChatQuestionCard.test.tsx
+      sha16=d28ba50a6e5a3135  head: // @vitest-environment happy-dom  import { act } from 'react' import { createRoot } from 'react-dom/client' im
+  [563 L, 18319B] /home/jesse/pods/_repo_sources/stablyai_orca/src/main/ipc/workspace-cleanup-broad-scan.test.ts
+      sha16=60e12885ee2094b6  head: import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest' import path from 'node:path' import t
+  [537 L, 35161B] /home/jesse/openroot/data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/github-repos/renaissance-protocol/docs/case_studies/CASE_STUDY_004_banking_monopoly.md
+      sha16=c64763529c29f3ac  head: Open navigation Favorite  New chat  renaissance coin Anonymized by DuckDuckGo. Zero data retention for this ch
+  [537 L, 35161B] /home/jesse/openroot/data/attic/friction-salvage-20261103T120725Z/salvage/20260912-134943/repo-root/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/case_studies/CASE_STUDY_004_banking_monopoly.md
+      sha16=c64763529c29f3ac  head: Open navigation Favorite  New chat  renaissance coin Anonymized by DuckDuckGo. Zero data retention for this ch
+  [537 L, 35161B] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/github-repos/renaissance-protocol/docs/case_studies/CASE_STUDY_004_banking_monopoly.md
+      sha16=c64763529c29f3ac  head: Open navigation Favorite  New chat  renaissance coin Anonymized by DuckDuckGo. Zero data retention for this ch
+  [537 L, 35161B] /home/jesse/openroot/data/sdcard-sync/library/kai-sandbox/volumetric-project/renaissance-protocol/docs/case_studies/CASE_STUDY_004_banking_monopoly.md
+      sha16=c64763529c29f3ac  head: Open navigation Favorite  New chat  renaissance coin Anonymized by DuckDuckGo. Zero data retention for this ch
+  [453 L, 18848B] /home/jesse/pods/_repo_sources/stablyai_orca/src/renderer/src/components/native-chat/NativeChatQuestionCard.tsx
+      sha16=fef3ec2ccdbeb83e  head: import { ImeInput } from '@/lib/ime-text-field' import { Textarea } from '@/components/ui/textarea' import { u
+  [439 L, 10258B] /home/jesse/pods/_repo_sources/anomalyco_opencode/packages/session-ui/src/components/question-prompt.css
+      sha16=413e8235048528f0  head: [data-component="dock-prompt"][data-kind="question"] {   --v2-question-answer-bg-selected: light-dark(#f5f8ff,
+  [436 L, 14334B] /home/jesse/pods/_repo_sources/ruvnet_ruflo/v3/@claude-flow/hooks/src/__tests__/reasoningbank.test.ts
+      sha16=695dc45f2f918991  head: /**  * ReasoningBank Tests  *  * Unit tests for the V3 ReasoningBank pattern learning system.  */  import { de
+  [372 L, 11693B] /home/jesse/pods/_repo_sources/stablyai_orca/src/main/runtime/rpc/orchestration-legacy-question-takeover.test.ts
+      sha16=fcd3e464979d5167  head: import './unused-default-rpc-methods.test-fixture' import { createHash } from 'node:crypto' import { mkdtempSy
+  … remaining in /home/jesse/openroot/outbox/bank_locator/20261103T203927Z/flagged.tsv
+
+== 2. outbox staging sweep (BANK_132_INPUT) ==
+
+== 3. receipt ==
+  receipt : /home/jesse/openroot/outbox/bank_locator/20261103T203927Z/LOCATOR.md
+  pr copy : /home/jesse/openroot/outbox/pr_package/bank_locator_receipt_20261103T203927Z.md
+  MANIFEST_OK files=4
+
+== F. status delta ==
+CUSTOM_BANK_CANDIDATES=112 | confirm the real 100q bank, then re-run recall_audit without --plan-only (or RUN_HARNESS=1)
+BANK_132_NAME_HITS=112 | staging sweep in section 2
+
+RESULT=PROBE_ONLY (1s) — proposal only; nothing committed, nothing pushed

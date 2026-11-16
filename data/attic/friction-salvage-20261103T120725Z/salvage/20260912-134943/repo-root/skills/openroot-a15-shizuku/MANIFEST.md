@@ -1,0 +1,22 @@
+# Manifest
+- name: openroot-a15-shizuku
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: A15
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-a15-shizuku
+  - /home/workdir/.grok/skills/openroot-a15-shizuku/scripts/hive_entry.py
+  - /home/workdir/.grok/skills/openroot-a15-shizuku/references/field-manual.md
+- sisters:
+  - une-joule-native
+  - openroot-two-pane
+  - openroot-seed-oracle
+  - openroot-integration
+- trigger_ids:
+  - rish
+  - Shizuku
+  - shell UID
+  - current_now
+  - hive_ask
+- status: live

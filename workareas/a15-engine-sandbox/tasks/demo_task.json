@@ -1,0 +1,12 @@
+{
+  "name": "sandbox lattice compatibility probe",
+  "base_eta": 55.0,
+  "energy": "grid",
+  "observation_days": 0,
+  "feedback": false,
+  "human_input": 6,
+  "involves_compute": true,
+  "compute_joules": 0,
+  "outputs": [],
+  "recommendations": []
+}

@@ -1,0 +1,22 @@
+--- Q1 [final:CORRECT draft:REFUSED_HONEST 74.0s 444.79J] ---
+DRAFT:
+not in the ledger
+FINAL:
+Based on the provided PROJECT_EVIDENCE:
+
+1. The Merkle root of the genesis block is `361dd5d6c53a90af61864d7695e1e79f828e4a1012c6e82e4a5d1f054487e4e8`.
+2. The genesis block hash is `91204ba14572d1c9bc7b7ef51bd352cc7b6c629184caeedebf29c08d6c5864c3`.
+3. The question about which commit merged the sealed genesis and the PR number is not provided in the evidence. The evidence does not contain this information.
+4. The genesis block contains 125 records, split as 59 axioms and 66 theorems.
+5. The question about which commit sealed the Commons Constitution v1.0 is not provided in the evidence. The evidence does not contain this information.
+6. The question about the number of lines in COMMONS_CONSTITUTION.md and BOUNTY_BOARD.md is not provided in the evidence. The evidence does not contain this information.
+7. The name of the statute-as-code file is not provided in the evidence. The evidence does not contain this information.
+
+For the final part of your question, the evidence does not provide information about the Merkle root of the OpenRoot genesis block. Therefore, I cannot provide an answer to that specific question based on the given evidence.
+--- Q2 [final:CORRECT draft:CORRECT 38.4s 230.79J] ---
+DRAFT:
+`91204ba14572d1c9bc7b7ef51bd352cc7b6c629184caeedebf29c08d6c5864c3`
+FINAL:
+Based on the provided evidence, the block hash of the genesis block is:
+
+`91204ba14572d1c9bc7b7ef51bd352cc7b6c629184caeedebf29c08d6c5864c3`

@@ -1,0 +1,92 @@
+===== bin/autodossier_compiler.py =====
+--- lines: 66
+#!/usr/bin/env python3
+"""
+Autodossier Compiler & AI Loop Daemon
+Integrates local SQLite/FTS5 metadata cataloging with automated loop execution,
+zero-heap allocation verification, and thermodynamic Joule logging.
+"""
+
+import os
+import sys
+import sqlite3
+import hashlib
+import time
+from pathlib import Path
+
+DB_PATH = Path("analysis/autodossier.db")
+
+def init_db():
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS dossier_nodes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            node_hash TEXT UNIQUE,
+            filepath TEXT,
+            content TEXT,
+            timestamp REAL
+        )
+    """)
+    cursor.execute("CREATE VIRTUAL TABLE IF NOT EXISTS dossier_fts USING fts5(content, content=dossier_nodes)")
+    conn.commit()
+    conn.close()
+
+def compile_dossier():
+    init_db()
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    
+    print("[*] Compiling autodossier across workspace...")
+    count = 0
+--- --help (timeout 10) ---
+[*] Compiling autodossier across workspace...
+[✔] Compiled 6 nodes into autodossier database.
+
+===== /home/jesse/pods/ask_pod_v1.py =====
+--- lines: 80
+#!/usr/bin/env python3
+"""ask_pod v1 - full stack: retrieval -> 7B synthesis -> cited answer. Provenance-logged."""
+import sqlite3, json, sys, time, urllib.request, hashlib, re, struct
+
+DB = "/home/jesse/pods/github-docs/pod.db"
+Q = sys.argv[1] if len(sys.argv) > 1 else "how do GitHub Actions use secrets securely"
+MODEL = "qwen2.5-coder:7b"
+
+def ollama(endpoint, payload, timeout=600):
+    req = urllib.request.Request("http://localhost:11434" + endpoint,
+        data=json.dumps(payload).encode(), headers={"Content-Type":"application/json"})
+    return json.loads(urllib.request.urlopen(req, timeout=timeout).read())
+
+db = sqlite3.connect(DB)
+db.executescript("""
+CREATE TABLE IF NOT EXISTS ask_runs(
+  rid INTEGER PRIMARY KEY, ts TEXT, question TEXT, model TEXT,
+  evidence_cids TEXT, answer TEXT, eval_tokens INTEGER, elapsed_ms INTEGER);
+""")
+root = db.execute("SELECT merkle_root FROM seals ORDER BY seal_id DESC LIMIT 1").fetchone()
+assert root and root[0], "[held] unsealed pod"
+print("[gate] seal ok:", root[0][:32]); print()
+t0 = time.time()
+
+# --- retrieve (v1.1 engine) ---
+toks = re.findall(r"[A-Za-z0-9_]+", Q)
+match_expr = " OR ".join('"%s"' % t for t in toks) or '""'
+fts = db.execute(
+    "SELECT c.chunk_id, c.doc_sha256, l.path, c.section_path, c.text "
+    "FROM chunks_fts f JOIN chunks c ON c.chunk_id=f.rowid "
+    "LEFT JOIN ledger l ON l.sha256=c.doc_sha256 "
+    "WHERE chunks_fts MATCH ? ORDER BY bm25(chunks_fts) LIMIT 8", (match_expr,)).fetchall()
+
+qvec = ollama("/api/embeddings", {"model":"nomic-embed-text","prompt":Q})["embedding"]
+def tovec(b):
+    if isinstance(b, bytes) and len(b)%4==0:
+        try: return struct.unpack("<%df"%(len(b)//4), b)
+        except Exception: pass
+    return json.loads(b.decode()) if isinstance(b, bytes) else b
+def cos(a,b):
+--- --help (timeout 10) ---
+
+===== 'travel' mentions in code =====
+(empty = 'travels' is the question->retrieval->answer journey, recorded as evidence below)

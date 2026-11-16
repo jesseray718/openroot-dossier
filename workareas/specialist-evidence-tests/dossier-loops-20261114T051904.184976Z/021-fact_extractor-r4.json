@@ -1,0 +1,11 @@
+{
+  "file": "021-fact_extractor-r4.json",
+  "role": "fact_extractor",
+  "model": "qwen3.5:0.8b",
+  "round": 4,
+  "budget_seconds": 30,
+  "prompt_sha256": "a3d5485061a6dff72cdc4fbe072d3b46313ba34630cebfff9675252fca59803c",
+  "status": "time_limited_partial",
+  "partial_text": "",
+  "elapsed_seconds": 30.03
+}

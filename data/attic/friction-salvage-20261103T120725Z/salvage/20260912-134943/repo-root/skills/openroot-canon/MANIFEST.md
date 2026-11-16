@@ -1,0 +1,22 @@
+# Manifest
+- name: openroot-canon
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-canon
+  - /home/workdir/artifacts/openroot-foundation/
+  - /data/data/com.termux/files/home/openroot/canon/src/canon.py
+- sisters:
+  - une-joule-native
+  - openroot-two-pane
+  - openroot-integration
+  - agape-engine
+- trigger_ids:
+  - canon
+  - newton
+  - need_gate
+  - N14
+  - chain.jsonl
+- status: live

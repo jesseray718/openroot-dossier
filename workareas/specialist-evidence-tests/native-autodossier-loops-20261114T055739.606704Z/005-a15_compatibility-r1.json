@@ -1,0 +1,25 @@
+{
+  "file": "005-a15_compatibility-r1.json",
+  "role": "a15_compatibility",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 1,
+  "budget_seconds": 45,
+  "status": "validated_structure",
+  "prompt_sha256": "34a3bd6cc0088ac625ec39603635555594d529646b5b9b216945a6f664981766",
+  "generation": {
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 105
+  },
+  "validated_output": {
+    "status": "needs_evidence",
+    "selected_ids": [
+      "N2",
+      "N643",
+      "N3"
+    ],
+    "note": "The A15 could reuse completed OptiPlex work by identifying the existing native pathway/cache interfaces by which it could reuse completed OptiPlex work. Distinguish source-code behavior from demonstrated execution. Identify the missing acceptance tests. Do not invent cache hits, transfers, or successful replay.",
+    "next_query": "Replay ... "
+  },
+  "elapsed_seconds": 10.81
+}

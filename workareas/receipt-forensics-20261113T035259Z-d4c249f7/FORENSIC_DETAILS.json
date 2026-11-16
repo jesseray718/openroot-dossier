@@ -1,0 +1,2320 @@
+{
+  "scan_limits": {
+    "max_files": 12000,
+    "max_file_bytes": 2000000,
+    "max_seconds": 90,
+    "max_depth": 7
+  },
+  "limit_reason": null,
+  "errors": [],
+  "runs": [
+    {
+      "family": "source-extraction",
+      "run_directory": "/home/jesse/openroot/workareas/tiny-source-loops-20261113T031542Z-8d130525",
+      "evidence_tier": 4,
+      "evidence_description": "At least one explicit extraction contract matched",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 132.263,
+      "models": "granite4:1b; qwen2.5-coder:0.5b; qwen3.5:0.8b",
+      "statuses": "audit_contract_matched; held_interrupted; held_run_stopped; source_pattern_checks_passed",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": true,
+        "structural_pass": false,
+        "source_pattern_pass": true,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "SUMMARY.json",
+          "sha256": "74df00f8be83acfb3903a867d5c6027523d5454c21bbb4309c2e241e460ccfb3",
+          "bytes": 776
+        },
+        {
+          "name": "RESULTS.json",
+          "sha256": "e7eac6558bbc12266d30e590c0ad188f35205a11dfc63784873b4474d1a9b738",
+          "bytes": 3563
+        }
+      ],
+      "reported_errors": [
+        "Halt: Request timed out; no further requests will be submitted. Server-side cancellation is not established.",
+        "ValueError: Audit-contract mismatch: human_value_measured, useful_is_binary",
+        "ValueError: Audit-contract mismatch: verifies_answer_support"
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "retrieval-generation-smoke",
+      "run_directory": "/home/jesse/openroot/workareas/autodossier-smoke-20261113T024805Z-4ab71ceb",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 74.389,
+      "models": "qwen2.5-coder:1.5b",
+      "statuses": "completed_unverified_answer",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "What does the indexed OpenRoot documentation say about autodossier workflows, pathway receipts, and verification? Distinguish documented intentions from demonstrated execution.",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": true,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "EXECUTION_RECEIPT.json",
+          "sha256": "c73dd5a81dcda3b30b37d8738afd5f847f7d44f7cd6440f17af1e030dc408ec6",
+          "bytes": 2008
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-sh7j_mxh",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "qwen2.5:7b",
+      "statuses": "ANSWER_GENERATED; IDENTIFIERS_VALID",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "describe aerocement and  what makes it special?",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": true,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "b37861f82b2d7181df9396ed92fec51e7d7a6fb161293c902202327690648fd3",
+          "bytes": 1712
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-ac11_oy4",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "qwen2.5:3b",
+      "statuses": "ANSWER_GENERATED; NEEDS_REVIEW",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "OpenRoot repository audit, question 1 of 100.\n\nWhat exact commit, branch, and working-tree state does this audit examine?\n\nAnswer from supplied indexed evidence only. Give the finding, source references, uncertainties, proposed minimal repair if justified, and an acceptance test. Do not claim to have run tests, inspected live GitHub warnings, resolved a warning, or applied a repair. If current-state evidence is absent, say UNKNOWN. Keep observed facts separate from proposals.",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": true,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "39b08f13ec277ca4d1831a8fac81e9217413b430dbe401e5e981cec9790f88f5",
+          "bytes": 3480
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "original-tiny-specialists",
+      "run_directory": "/home/jesse/.local/share/openroot-tiny-specialists/schema-test-zis93mxg/run-n53ng6f8",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 403.71456813198165,
+      "models": "granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b",
+      "statuses": "failed; proposal_with_supplied_identifiers",
+      "receipt_files": 7,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": true,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "round-1-cache_validity_checker-result.json",
+          "sha256": "47674dbdccef659f71ef27cb034df8c6f286e5ef6f0f0738cd8104a4d892e0ac",
+          "bytes": 318
+        },
+        {
+          "name": "round-1-provenance_checker-result.json",
+          "sha256": "517fe09e5a00515df9c5ca2b272d4cdefc17ce0d84f8ceb8e182ab4860df7075",
+          "bytes": 1917
+        },
+        {
+          "name": "round-1-a15_compatibility_checker-result.json",
+          "sha256": "48ef909760d223736470c820da438e0608e7f4dd344515f519006435f40e9c91",
+          "bytes": 367
+        },
+        {
+          "name": "results.json",
+          "sha256": "487442389850f8bff09b4a3e906a4ebdd51b8996592e352c8ad14f367a09ad4d",
+          "bytes": 4371
+        },
+        {
+          "name": "summary.json",
+          "sha256": "be06229b016de92ad99e3fdcb5b8cf0df077f8230bc6508fe25cc640b422da08",
+          "bytes": 359
+        },
+        {
+          "name": "round-1-acceptance_test_designer-result.json",
+          "sha256": "cb9221ba7526c23882ed1008bd698266b4c4d775152a878e426adf02b2d8d7f0",
+          "bytes": 1232
+        },
+        {
+          "name": "round-1-pathway_finder-result.json",
+          "sha256": "aba292b95afc23bb4b8a4e891a892dff16d0399b71419c0a79f08d2cba73e5df",
+          "bytes": 335
+        }
+      ],
+      "reported_errors": [
+        "JSONDecodeError: Unterminated string starting at: line 2 column 14 (char 15)",
+        "TimeoutError: timed out",
+        "ValueError: Rejected clarification contract echo."
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "original-tiny-specialists",
+      "run_directory": "/home/jesse/.local/share/openroot-tiny-specialists/run-wgf5zi1o",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 850.923941984016,
+      "models": "granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b",
+      "statuses": "failed; proposal_requires_evidence_review; proposal_with_supplied_identifiers",
+      "receipt_files": 12,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": true,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "round-1-cache_validity_checker-result.json",
+          "sha256": "c1f816ec7ba96b521a89d74c1a8ca228c611f3b18726648295d8b64b7dcfd503",
+          "bytes": 372
+        },
+        {
+          "name": "round-1-provenance_checker-result.json",
+          "sha256": "87e54246b85615cb57cdbd8287e7d32686fb587af174e0b14b50946a96b4abd9",
+          "bytes": 2273
+        },
+        {
+          "name": "round-2-a15_compatibility_checker-result.json",
+          "sha256": "50de1dfcc3997d0946f608edfa6f74947b3bc0c09304a76b52b666dba0e6dd58",
+          "bytes": 1540
+        },
+        {
+          "name": "round-1-a15_compatibility_checker-result.json",
+          "sha256": "87649ab51e2a5b449e3147f51d349d7598ec1cbb214636666f2af79896d130cb",
+          "bytes": 1149
+        },
+        {
+          "name": "round-2-pathway_finder-result.json",
+          "sha256": "4e3d93841d14f6ed6fc24a771a9cd5750eb4711b3302918fa8757b96e691f836",
+          "bytes": 1031
+        },
+        {
+          "name": "results.json",
+          "sha256": "2832ef9bfef1b387a2c9ced066a3e0a8523a5c4fd8696ebaa57a8771f79b2066",
+          "bytes": 12196
+        },
+        {
+          "name": "round-2-provenance_checker-result.json",
+          "sha256": "e201482d045fba7e39c8552bbd0cb496d915990c7bac61ad09f791255503b60b",
+          "bytes": 1603
+        },
+        {
+          "name": "summary.json",
+          "sha256": "7f47db23a7f826117706b2276efa3a0252a1515f451ac6277a8ef719dbcbf499",
+          "bytes": 358
+        },
+        {
+          "name": "round-2-cache_validity_checker-result.json",
+          "sha256": "fd93bf242e923a0afce8b4850719ca1ad168a1459930817fc8d46ca5fa4dd8ab",
+          "bytes": 371
+        },
+        {
+          "name": "round-1-acceptance_test_designer-result.json",
+          "sha256": "023911af467cf6fe7b7655a9287e3fa27997b1b340533ac31bd1968a6a27c3a7",
+          "bytes": 1139
+        },
+        {
+          "name": "round-2-acceptance_test_designer-result.json",
+          "sha256": "c7cf81616af17efac1745769ce059801a27cccdd39c53d9aa79e1f59a9694bfe",
+          "bytes": 1105
+        },
+        {
+          "name": "round-1-pathway_finder-result.json",
+          "sha256": "1ea397dd713f2454ac95a1b631dc6d0d25cbc27daa7210f52d1370eab57f3a93",
+          "bytes": 1031
+        }
+      ],
+      "reported_errors": [
+        "JSONDecodeError: Unterminated string starting at: line 6 column 15 (char 295)",
+        "JSONDecodeError: Unterminated string starting at: line 6 column 15 (char 626)"
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "original-tiny-specialists",
+      "run_directory": "/home/jesse/.local/share/openroot-tiny-specialists/run-hw4orzmf",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 1009.5531979700027,
+      "models": "granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b",
+      "statuses": "failed; proposal_requires_evidence_review; proposal_with_supplied_identifiers",
+      "receipt_files": 12,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": true,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "round-1-cache_validity_checker-result.json",
+          "sha256": "527e9fb78325a00ea4fa86dee4d5c2d8e25116ecb1ba5bfa25e2a5f0eaca63b3",
+          "bytes": 1580
+        },
+        {
+          "name": "round-1-provenance_checker-result.json",
+          "sha256": "2162f8ecfc5a4de13b15448727668138c5500f3a57df28d4f6bd31cc6f193359",
+          "bytes": 340
+        },
+        {
+          "name": "round-2-a15_compatibility_checker-result.json",
+          "sha256": "a768de959d72f069b43ab205e93911013d68203d3ee6172cd5e39613e0d1bf8e",
+          "bytes": 314
+        },
+        {
+          "name": "round-1-a15_compatibility_checker-result.json",
+          "sha256": "fc2405af4cd7cad6f85eddb7467889601950982b95617960269118921ca2e569",
+          "bytes": 314
+        },
+        {
+          "name": "round-2-pathway_finder-result.json",
+          "sha256": "e245921fc42f6ddfd625c983984f2ad4afc101cc1e08804ea6bef8272cd588ee",
+          "bytes": 1260
+        },
+        {
+          "name": "results.json",
+          "sha256": "dc6ab57cec5e85b8416b92180ea10958fc90b07b347cbff7ffa08c54358b3819",
+          "bytes": 8717
+        },
+        {
+          "name": "round-2-provenance_checker-result.json",
+          "sha256": "52b8f3d934def05361731eb0802dfcfd03ce702d434f83a7374a2e21aba8049d",
+          "bytes": 340
+        },
+        {
+          "name": "summary.json",
+          "sha256": "b319292beacb4fca578dc1fff056f17de94c5a4c2f04f218afbc2d94676fc7fd",
+          "bytes": 360
+        },
+        {
+          "name": "round-2-cache_validity_checker-result.json",
+          "sha256": "5ef531f299a741a1647de6b742bbe7264ef6c575e954f70a85134b2414ed24f2",
+          "bytes": 364
+        },
+        {
+          "name": "round-1-acceptance_test_designer-result.json",
+          "sha256": "8883f9a882c9eb9c0483c798d42bda7e95007508b580c425cc413fc3260fbb67",
+          "bytes": 1462
+        },
+        {
+          "name": "round-2-acceptance_test_designer-result.json",
+          "sha256": "166b36ffab74b9c4d3414b78f2290dd90a3e37724d19343ada769b6a5a662fcd",
+          "bytes": 1254
+        },
+        {
+          "name": "round-1-pathway_finder-result.json",
+          "sha256": "a8a19669e0e7e7c85b1e7f06de46cfc85e57828beb184a4501a5303f448aaadb",
+          "bytes": 1037
+        }
+      ],
+      "reported_errors": [
+        "JSONDecodeError: Invalid \\uXXXX escape: line 6 column 618 (char 1227)",
+        "TimeoutError: timed out",
+        "ValueError: Clarification query exceeds 240 characters."
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "original-tiny-specialists",
+      "run_directory": "/home/jesse/.local/share/openroot-tiny-specialists/run-9ea_8prl",
+      "evidence_tier": 1,
+      "evidence_description": "Model output recorded; support not established",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 1131.2163996740128,
+      "models": "granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b",
+      "statuses": "failed; proposal_requires_evidence_review",
+      "receipt_files": 12,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": true,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "round-1-cache_validity_checker-result.json",
+          "sha256": "f573b8139a7a9469ad0bc2bdfa6900c5e768201d5fb46400eac9924758957f06",
+          "bytes": 371
+        },
+        {
+          "name": "round-1-provenance_checker-result.json",
+          "sha256": "4d53c2a60ee9b6049fa5efeef7f5c4c1c819db9d21f3913d6058178aac884407",
+          "bytes": 1566
+        },
+        {
+          "name": "round-2-a15_compatibility_checker-result.json",
+          "sha256": "d82b3d1678c7755ddaf6cc08d50e3adae6edb2d09cd670b70a467749e99f6f07",
+          "bytes": 314
+        },
+        {
+          "name": "round-1-a15_compatibility_checker-result.json",
+          "sha256": "26c0c5eb800ae4eb0d6044db185f396f329051b492b162cb8c6a55969c86c81e",
+          "bytes": 326
+        },
+        {
+          "name": "round-2-pathway_finder-result.json",
+          "sha256": "58bab12e696277f835f91abb65bd15f9469814ce02b0878be0aa78942ef96c35",
+          "bytes": 1085
+        },
+        {
+          "name": "results.json",
+          "sha256": "e74b2971827a8e872a844e443ae1caf3320ad51a95acb947080a28c1bbb223eb",
+          "bytes": 9185
+        },
+        {
+          "name": "round-2-provenance_checker-result.json",
+          "sha256": "d12138bd44a4df1cfb1247ae377dc33fd6544e6973efe1ee3bb31cd991628ad2",
+          "bytes": 1678
+        },
+        {
+          "name": "summary.json",
+          "sha256": "bde6eaa9fd1ce5dfdcd638686a6c9fca931f57a037663758062a2cb20837a72a",
+          "bytes": 360
+        },
+        {
+          "name": "round-2-cache_validity_checker-result.json",
+          "sha256": "2ad3070a10a390ce1a47e6c0ff27dc44d9347c5f2992870af90c3608ce9f0df7",
+          "bytes": 317
+        },
+        {
+          "name": "round-1-acceptance_test_designer-result.json",
+          "sha256": "ea21b072b55cc69c97c4e33c541d9324d769c1d824a8efe49251413213eeb49e",
+          "bytes": 325
+        },
+        {
+          "name": "round-2-acceptance_test_designer-result.json",
+          "sha256": "f487518abdb9fc8a590f7af2cee3a8bc8d2f951489845ad01f4ecc7373d5b93d",
+          "bytes": 1733
+        },
+        {
+          "name": "round-1-pathway_finder-result.json",
+          "sha256": "60d372f64953616b182df005e88a4907345c01c295ece1a319bee852e8404a64",
+          "bytes": 1030
+        }
+      ],
+      "reported_errors": [
+        "JSONDecodeError: Unterminated string starting at: line 2 column 14 (char 15)",
+        "TimeoutError: timed out",
+        "ValueError: Missing string finding."
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-fqc566z9",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "A15 OptiPlex pathway cache reuse",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "7e2ae49286c0a84f0246fe4359e1a1bd28ac79cb75f6964aebb4c6b2d8aa5ed6",
+          "bytes": 978
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-l1d5uxb1",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "Which files define OpenRoot's purpose, and do they agree?",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "dd7d2255de70b5f8d849a702b32b60be4e2f32b01e76589476675d9ef15aa2a1",
+          "bytes": 1052
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-qw09b900",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "Which documented instructions govern changes to this repository?",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "206a136bffc57fdaa685563cb5993add2e5c9a5e5a6f360c6111096fe1060826",
+          "bytes": 1045
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-lurirksz",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "one short evidence search empty string",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "bdfdbf6bc0794fac1deca87a5736f43a60e9bc13a069dfcb0edd802831709fdc",
+          "bytes": 1011
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-b3tp0dqn",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "one short evidence search empty string no provided",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "b42f8d1f337d57867a2f5636cdab0cc582c32a495addea7da25691bae8f23ab5",
+          "bytes": 1076
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-3p8yullr",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "one short evidence search empty string",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "e263b74ca24bc2c01090b4190109000cd40d1c343f240002959e2b6be03f96c6",
+          "bytes": 1012
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-_nn1csso",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "What exact commit, branch, and working-tree state does this audit examine?",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "d18f711633b3732091aedb8f346755e56e585d81a6ff31004510f553312c64a7",
+          "bytes": 1102
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-yly40bzk",
+      "evidence_tier": 0,
+      "evidence_description": "Retrieval dossier recorded",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "DOSSIER_READY",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "A15 OptiPlex pathway cache reuse",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": true,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "7a32ee841f8c64c5a7238d16f7e2e320b2eae52503973ec3ebfd63e470306eb5",
+          "bytes": 978
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "original-tiny-specialists",
+      "run_directory": "/home/jesse/.local/share/openroot-tiny-specialists/run-zgjhx03a",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 75.61592921099509,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "results.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "bytes": 2
+        },
+        {
+          "name": "summary.json",
+          "sha256": "8ed2de237b89c1d0c492cedf70a95d719f7c56c1b0929ee6457ba50efae676f6",
+          "bytes": 245
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "other",
+      "run_directory": "/home/jesse/openroot/workareas/a15-engine-sandbox",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "not_executed_static_wrapper; passed",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "lattice_sandbox_receipt.json",
+          "sha256": "7bdf830b5f5ddf60082a975c5d137d26ec3e68c375997046599699810b86769c",
+          "bytes": 460
+        },
+        {
+          "name": "SANDBOX_LEDGER_VERIFICATION_RECEIPT.json",
+          "sha256": "40ac5bee6236e938d29018e124130f403cf537d436a3b0d33d6b677ee4b0eda7",
+          "bytes": 865
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "other",
+      "run_directory": "/home/jesse/openroot/workareas/a15-engine-sandbox/workflow-tests-v2-vt8tlamz",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "passed",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "WORKFLOW_TEST_RECEIPT.json",
+          "sha256": "8b1c6b525d6286c83967ee4fc2a36599ff561c41b4be4a4a1dc773bdbc6d27a1",
+          "bytes": 987
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "review-tool-release",
+      "run_directory": "/home/jesse/openroot/workareas/a15-engine-sandbox/review-tool-v2-KUzhQL4W",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "local_tests_passed",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "INSTALL_RECEIPT.json",
+          "sha256": "c65f13f0d2d26c0aa8cb89374ed35141f81293a750f734210f478b7c8a739370",
+          "bytes": 677
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "other",
+      "run_directory": "/home/jesse/openroot/workareas/a15-engine-sandbox/promotion",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "stage_receipt.json",
+          "sha256": "a29b4b1262a46d9230325f336682784b160fb31e0dae457bd2871d519ac94911",
+          "bytes": 483
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "tiny-autodossier",
+      "run_directory": "/home/jesse/openroot/workareas/tiny-autodossier-candidate-20261113T030609Z-d8dc6d96",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "PREPARATION_RECEIPT.json",
+          "sha256": "9f7937501d8eff6507319efc2affc886255093d8a078c5d5e60c582f0eebd2e7",
+          "bytes": 846
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "other",
+      "run_directory": "/home/jesse/openroot/workareas/agape_pods",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "synthesized",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "hybrid_synthesis_receipt.json",
+          "sha256": "f417d2bb81aba1ae33c1802b81fddeec177abbf1e4628066e33d38e6119ac383",
+          "bytes": 137
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "other",
+      "run_directory": "/home/jesse/openroot/workareas/archive-extract-test",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "not_executed",
+      "receipt_files": 5,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "A15_RESCUE_REDUNDANCY_RECEIPT.json",
+          "sha256": "f2f5118194ca70e5e15144c3af53966fe8e9c2f7fcfbed3a7ca544e312a7bc0c",
+          "bytes": 709
+        },
+        {
+          "name": "A15_CORE_TRIAGE_RECEIPT.json",
+          "sha256": "c67f6176c18c3452f7a2e76455625d90440d98ce7894b7d939b5b58d938ee8a1",
+          "bytes": 535
+        },
+        {
+          "name": "A15_FINAL_TRIAGE_RECEIPT.json",
+          "sha256": "6eb847c6ef4ae03121d3488cb38c03acf6f2007bc5528cffe73c82c633938871",
+          "bytes": 950
+        },
+        {
+          "name": "A15_REFERENCE_CODE_RECEIPT.json",
+          "sha256": "6637a87485b2edb156cc983c443337e7718d1db10b7e14706f646443e437215b",
+          "bytes": 2255
+        },
+        {
+          "name": "A15_OPTIPLEX_NODE_COMPARISON_RECEIPT.json",
+          "sha256": "5e77cfb92bf19b18f531be5464002825aa41cfe6b8dc3f9dac8c63eff162d022",
+          "bytes": 834
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "other",
+      "run_directory": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "extracted_isolated",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "EXTRACTION_RECEIPT.json",
+          "sha256": "2f6c807fd29ce8ac76b669917d33eaae2db09de86d49be3001484be2fa234631",
+          "bytes": 31000
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "review-tool-release",
+      "run_directory": "/home/jesse/openroot/workareas/release/review-tool-v2-20261111T135730Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "local_tests_passed; passed",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "WORKFLOW_TEST_RECEIPT.json",
+          "sha256": "8b1c6b525d6286c83967ee4fc2a36599ff561c41b4be4a4a1dc773bdbc6d27a1",
+          "bytes": 987
+        },
+        {
+          "name": "INSTALL_RECEIPT.json",
+          "sha256": "c65f13f0d2d26c0aa8cb89374ed35141f81293a750f734210f478b7c8a739370",
+          "bytes": 677
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "review-tool-release",
+      "run_directory": "/home/jesse/openroot/workareas/release/review-tool-v2-20261111T135624Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "local_tests_passed; passed",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "WORKFLOW_TEST_RECEIPT.json",
+          "sha256": "8b1c6b525d6286c83967ee4fc2a36599ff561c41b4be4a4a1dc773bdbc6d27a1",
+          "bytes": 987
+        },
+        {
+          "name": "INSTALL_RECEIPT.json",
+          "sha256": "c65f13f0d2d26c0aa8cb89374ed35141f81293a750f734210f478b7c8a739370",
+          "bytes": 677
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "0681abe1dbb4d5fb5dca0ab3d78d03d42d8a67e24fe75c7f6915baa32c193249",
+          "bytes": 1769
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T001954Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "a5fd0bf37ecfa0f82846976a716c39cf98f9f46f43931aea45bee86bb8902475",
+          "bytes": 1018
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T001519Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "b86cafd114f7715ee8792cc95d0f4b514abde2f3ea784724883e22cc6f609927",
+          "bytes": 1018
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T001035Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "d6421670595c1e3400a7afac2979ca4ba05a355da3afb71ee3847b1a41408cdc",
+          "bytes": 480
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T002204Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "d07f4808af948231a9385e8b39462a0c4a717e5c6a47267692fa49766c68d451",
+          "bytes": 1018
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "specialist100",
+      "run_directory": "/home/jesse/.local/share/openroot-specialist100/run-20261106T120429569209Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "summary.json",
+          "sha256": "5b5a2de0d95c891846393ffbb0cfb23ba543fe48108b6550867190335f2cb09a",
+          "bytes": 257
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "native-dossier",
+      "run_directory": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-4006uvm1",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "NO_INDEXED_EVIDENCE",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "descrjbe",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "receipt.json",
+          "sha256": "ce4bc1aa9588cfd83eb87beec6f11912801bfddc34e509f29f4cd3efa5022a58",
+          "bytes": 782
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "one-second-experiment",
+      "run_directory": "/home/jesse/openroot/workareas/microloops-1s-50max-20261113T032447Z-c7f4f900",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": true,
+      "reported_elapsed_seconds": 1.037,
+      "models": "qwen2.5-coder:0.5b",
+      "statuses": "deadline_missed; pending",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "scan_pattern",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": true,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "SUMMARY.json",
+          "sha256": "96f0d899928d959b4b2cd12f5acee053dd0585449bdf879ad204950e9e74feb4",
+          "bytes": 419
+        },
+        {
+          "name": "RESULTS.json",
+          "sha256": "f01816d3eb235e46ee1e8c5179437498739ab2610ab8ae4170039fdb2b8272bb",
+          "bytes": 277
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "microtick-experiment",
+      "run_directory": "/home/jesse/openroot/workareas/microticks-50-20261113T033141Z-de11f02b",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": false,
+      "has_unfinished_work": true,
+      "reported_elapsed_seconds": 50.454,
+      "models": "granite4:1b; qwen2.5-coder:0.5b",
+      "statuses": "needs_revision; pending; saved_unfinished",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": false,
+        "partial_or_pending": true,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "SUMMARY.json",
+          "sha256": "ea0bdedd5a2bafb495b642450a3b55b3fb06c61194758560f5b1842ee5284aec",
+          "bytes": 623
+        },
+        {
+          "name": "STATE.json",
+          "sha256": "e0d0280b5d019457de9d222ba9b4c5529076c51073e4bb7ddad2c4457e5fa3ad",
+          "bytes": 1798
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "tiny-autodossier",
+      "run_directory": "/home/jesse/openroot/workareas/tiny-autodossier-sixround-20261113T031141Z-56cd3764",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 25.512,
+      "models": "qwen2.5-coder:0.5b",
+      "statuses": "held_interrupted; held_run_stopped; interrupted",
+      "receipt_files": 2,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "SUMMARY.json",
+          "sha256": "0e810fb2c300f88ae2d6a8cd6188fba297d7854f1d3cbdda631c3303f3084965",
+          "bytes": 420
+        },
+        {
+          "name": "RESULTS.json",
+          "sha256": "f4d31b2fc27136f135c6e7aa8a4aa1bba79f34411d8b2d25cd556001cc1b60ad",
+          "bytes": 958
+        }
+      ],
+      "reported_errors": [
+        "RequestTimeout: timed out"
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "grounded-source-analysis",
+      "run_directory": "/home/jesse/openroot/workareas/autodossier-grounded-packet-20261113T025355Z-393cef4d/analysis-20261113T025505Z-3c9b8dac",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": 300.129,
+      "models": "qwen2.5-coder:7b",
+      "statuses": "held; not_performed",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "EXECUTION_RECEIPT.json",
+          "sha256": "3f950fd0b66c9040cc12c82c75ef814aa8f0c5970a78f375f163ca9971021e9a",
+          "bytes": 339
+        }
+      ],
+      "reported_errors": [
+        "TimeoutError: timed out"
+      ],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T075639Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "37dd1767fabd6dd6b9404efb798976cb69f0f4e844acb3265e7bbb38c1eb3e8e",
+          "bytes": 2201
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "976b14dcd381cbe0a0dc84adc868242b37b25c7710c4a46d1722ca8d00c7df37",
+          "bytes": 798
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261111T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "e4afae2871ee02bc9d57794a5a2d815b9392ab9fd4686cf83d8b81ac33b3e2b2",
+          "bytes": 799
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T122521Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "d7e9a0739259ed2bbc79c3cc1e67b53eec683c181da6a7e90a4ede51be6ec008",
+          "bytes": 1097
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "5a09615d2067a4cb814927234b9520ba61fa3ca3bb3652e52eb3f0e8709577c8",
+          "bytes": 926
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261103T213104Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "d5c7197a618082f410a6f24223c9d01853f74e1aeab694c47a9ba69dc317fd82",
+          "bytes": 2065
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T033628Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "e010b6730bc7adcc37676aa927986828f721deed3074ac6bb2a51480b1737ff8",
+          "bytes": 1073
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T054020Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "976ca76a76dc7ebfb329c41d9317831dcb4f97320f7a27e8b4a0271539f92d3d",
+          "bytes": 768
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261103T211837Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "190611a59e9773a2bb4620c2d19b42d8f7bec3e7d358d705e6ed098a9ec5b7f7",
+          "bytes": 2303
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T122631Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "8f3f70b709e7ffb170d7fc3bc52ef0613c48d9101fb846d180b99c9cdb0abc4b",
+          "bytes": 1097
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261110T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "5db12676813043dfb7f2e10a0e3f5bdfe78a8386525eaf1428b465bf03970781",
+          "bytes": 799
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261107T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "7660dd299099ef427b4729982313754eabf5107fdd9874d0d25f605dbb7a66f4",
+          "bytes": 798
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T065632Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "39d1ae21a2a1bb7054c7c864265cdb63eccf37dd7a27e081323a1ec833bbf7e7",
+          "bytes": 915
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261103T213719Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "4462c78700becbcdebfad9551957c7f20f62e98aba0ee0d055f0a1fd007b04c6",
+          "bytes": 2065
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T043733Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "ff81564023d0e66cf06662622189a9cc539849e426b7e4e7339a5f3d244686d5",
+          "bytes": 926
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261108T140002Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "b7beda8481f8e19ce919f10adc162688cb39f248a46c34e0f6412e2588cf3d10",
+          "bytes": 800
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T124203Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "b4bd06964ce72466002787b1826d882cd76a146897c2c377bdd37f093478d6bf",
+          "bytes": 894
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T080747Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "909dd72673cbd1d8d514e5b8a9ce34058289b30463f7247d4bca2336c0204db6",
+          "bytes": 2201
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "e93e587bdd9333ab77a1be6fdead006dd5b612c9390717bd223ec16944ca7169",
+          "bytes": 1896
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    },
+    {
+      "family": "hybrid-loop",
+      "run_directory": "/home/jesse/openroot/outbox/ai_hybrid_loop/20261109T140001Z",
+      "evidence_tier": -1,
+      "evidence_description": "No recognized positive completion evidence",
+      "has_failures": true,
+      "has_unfinished_work": false,
+      "reported_elapsed_seconds": null,
+      "models": "",
+      "statuses": "",
+      "receipt_files": 1,
+      "semantic_verification": "not_established",
+      "question": "",
+      "flags": {
+        "contract_match": false,
+        "structural_pass": false,
+        "source_pattern_pass": false,
+        "unverified_answer": false,
+        "dossier_ready": false,
+        "model_output": false,
+        "held_or_failed": true,
+        "partial_or_pending": false,
+        "semantic_claim_reported": false
+      },
+      "receipt_manifest": [
+        {
+          "name": "RUN_RECEIPT.md",
+          "sha256": "a17855a0f8f2689d782c3eaa754ee51766367dbea4ee42f09977e78f9dbb48cb",
+          "bytes": 799
+        }
+      ],
+      "reported_errors": [],
+      "reported_question_counts": [],
+      "reported_answer_counts": []
+    }
+  ]
+}

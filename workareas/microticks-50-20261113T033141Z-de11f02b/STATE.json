@@ -1,0 +1,70 @@
+{
+  "scan_pattern": {
+    "status": "needs_revision",
+    "attempts": [
+      {
+        "attempt": 1,
+        "started_at": "2026-11-13T03:31:41.132819+00:00",
+        "model": "qwen2.5-coder:0.5b",
+        "status": "needs_revision",
+        "text": "bin",
+        "wall_seconds": 8.15,
+        "curl_exit": 0,
+        "telemetry": {
+          "done_reason": "stop",
+          "load_duration": 7846338880,
+          "prompt_eval_count": 97,
+          "prompt_eval_duration": 255797000,
+          "eval_count": 2,
+          "eval_duration": 15719000,
+          "total_duration": 8120825604
+        }
+      }
+    ]
+  },
+  "insert_table": {
+    "status": "needs_revision",
+    "attempts": [
+      {
+        "attempt": 1,
+        "started_at": "2026-11-13T03:31:50.133270+00:00",
+        "model": "qwen2.5-coder:0.5b",
+        "status": "needs_revision",
+        "text": "```sql\nINSERT OR IGNORE INTO dossier_nodes (node_hash, filepath, content",
+        "wall_seconds": 0.452,
+        "curl_exit": 0,
+        "telemetry": {
+          "done_reason": "length",
+          "load_duration": 2350794,
+          "prompt_eval_count": 109,
+          "prompt_eval_duration": 165149000,
+          "eval_count": 16,
+          "eval_duration": 226208000,
+          "total_duration": 396111178
+        }
+      }
+    ]
+  },
+  "parent_value": {
+    "status": "saved_unfinished",
+    "attempts": [
+      {
+        "attempt": 1,
+        "started_at": "2026-11-13T03:31:51.134910+00:00",
+        "model": "granite4:1b",
+        "status": "saved_unfinished",
+        "text": "",
+        "wall_seconds": 40.001,
+        "server_cancellation": "not_verified"
+      }
+    ]
+  },
+  "human_value": {
+    "status": "pending",
+    "attempts": []
+  },
+  "verify_calls_init": {
+    "status": "pending",
+    "attempts": []
+  }
+}

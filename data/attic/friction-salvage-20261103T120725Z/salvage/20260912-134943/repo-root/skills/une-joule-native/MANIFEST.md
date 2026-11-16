@@ -1,0 +1,22 @@
+# Manifest
+- name: une-joule-native
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/une-joule-native
+  - /sdcard/openroot/session_seeds/current_seed.json
+  - /home/workdir/artifacts/context_bridge/agape_context_bridge.json
+- sisters:
+  - openroot-canon
+  - openroot-two-pane
+  - openroot-a15-shizuku
+  - openroot-integration
+- trigger_ids:
+  - UNE
+  - eta
+  - computational_flow
+  - structure enforcer
+  - ACRE
+- status: live

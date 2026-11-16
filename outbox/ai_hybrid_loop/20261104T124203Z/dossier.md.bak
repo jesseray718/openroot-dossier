@@ -1,0 +1,56 @@
+# Dossier 2026-08-27T21:48:46Z
+
+wave: **standing**  coherence=0.2052  η-hint-tail=0.342
+in: 61 files / 173560 lines   out: 1938 seeds, 135 Γ, 0 cashpaths
+secrets redacted: 56
+
+## Open dot (highest Γ)
+`axiom|acre`
+
+## Cross-window couplings
+- Γ=2.0  `axiom|acre`  sessions=42 hits=474
+- Γ=2.0  `axiom|une`  sessions=40 hits=285
+- Γ=2.0  `axiom|h-003`  sessions=35 hits=376
+- Γ=2.0  `money|91 kwh`  sessions=35 hits=69
+- Γ=2.0  `error|error`  sessions=33 hits=1347
+- Γ=2.0  `error|no such file`  sessions=21 hits=658
+- Γ=2.0  `cmd|python3`  sessions=21 hits=180
+- Γ=2.0  `axiom|r=1.0`  sessions=20 hits=315
+- Γ=2.0  `axiom|agape`  sessions=20 hits=287
+- Γ=2.0  `axiom|η`  sessions=19 hits=377
+- Γ=2.0  `path|/data/data/com.termux/files/usr/bin/bash`  sessions=17 hits=59
+- Γ=2.0  `path|/data/data/com.termux/files/home`  sessions=17 hits=40
+- Γ=2.0  `path|/sdcard/openroot`  sessions=16 hits=87
+- Γ=2.0  `error|traceback`  sessions=16 hits=41
+- Γ=2.0  `cmd|git`  sessions=15 hits=104
+
+## Latest seeds
+- `efbc9213c9cd` - If the same event also produced new knowledge (design improvement, new climate data, new failure mode documented), it can claim ACRE under existing rules, with the η gain acting 
+- `393698822566` print(f"  • η = useful_joules / human_joules")
+- `2b7378f30552` "metadata_file": "/storage/emulated/0/Documents/markor/knowledge_bundle_metadata.json"
+- `60251bbb2c00` def save_metadata(all_files_data: List[Dict[str, Any]], output_path: str):
+- `7a43277a02a0` """Save JSON metadata about the bundle."""
+- `605db0228f29` json.dump(metadata, f, indent=2)
+- `b1cfe2ac99f8` print(f"[✓] Metadata saved: {output_path}")
+- `b3d644022bbf` print("\n[PHASE 4] Saving Metadata...")
+- `304672b9edc9` save_metadata(all_files_data, CONFIG["metadata_file"])
+- `0da0d7ad66cc` print(f"  • Metadata location: {CONFIG['metadata_file']}")
+- `5dcbed68bac0` /sdcard/openroot/agape_kb/STANDING_WAVE_AXIOM.md
+- `da042391aa08` /sdcard/openroot/agape_kb/STANDING_WAVE_TRANSLATION_AXIOM.md
+- `2c7b1caf043f` 3. (B) First measured η entry under Standing Wave Axiom
+- `85351847a715` - η = useful_joules / human_joules
+- `0c6ce5e3f6c0` η = useful_joules / human_joules
+
+## Cashpaths (DOI/CID/money only)
+
+_none. Monetization is not a mood. It waits for a claim artifact._
+
+## Ash (digested, eligible to leave hot storage)
+61 files hashed. Move to `/storage/emulated/0/OpenRoot/cold/compost` then delete the hot copy.
+Do not delete until `raw_hash/` has the sha256.
+
+## How to use this
+1. Open this dossier when a window dies. The open dot is the stitch.
+2. Paste `current_seed.json` into the next model call. That is context, not slurry.
+3. OptiPlex embeds `session_seeds/compost_*.jsonl` into agape_vector_index.db.
+4. Markets need market data. This file will not hedge a fund.

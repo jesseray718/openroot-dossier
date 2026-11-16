@@ -1,0 +1,15 @@
+{
+  "file": "005-a15_compatibility-r1.json",
+  "role": "a15_compatibility",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 1,
+  "budget_seconds": 30,
+  "prompt_sha256": "26f002e1baf935aac9e4dd48374d239bfdeae5350ccdac5936f3b0076f9171c6",
+  "status": "token_limited_partial",
+  "partial_text": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 to reuse work already completed on the OptiPlex is a viable pathway for the A15 to reuse work already completed on the OptiPlex.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work already completed on the OptiPlex is a viable pathway for the A15 to reuse work already completed on the OptiPlex.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work already completed on the OptiPlex is a viable pathway for the A15 to reuse work already completed on the OptiPlex.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work already completed on the OptiPlex is a viable pathway for the A15 to reuse work already completed on the OptiPlex.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work already completed on the OptiPlex is a viable pathway for the A15 to reuse work already completed on the OptiPlex.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work already completed on the OptiPlex is a viable pathway for the A15 to reuse work already completed on the OptiPlex.\"\n    }\n  ],\n  \"questions\": [\n    \"What L0 does?\",\n    \"What L0 does?\",\n    \"",
+  "generation": {
+    "done_reason": "length",
+    "eval_count": 400
+  },
+  "elapsed_seconds": 17.36
+}

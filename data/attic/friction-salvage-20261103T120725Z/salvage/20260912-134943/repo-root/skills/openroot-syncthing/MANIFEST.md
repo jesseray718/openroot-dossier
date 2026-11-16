@@ -1,0 +1,21 @@
+# Manifest
+- name: openroot-syncthing
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-syncthing
+  - /home/jesse/openroot
+  - /storage/emulated/0/openroot
+- sisters:
+  - openroot-two-pane
+  - openroot-mesh-recovery
+  - une-joule-native
+  - openroot-integration
+- trigger_ids:
+  - syncthing
+  - mesh folders
+  - 9wa5l-2o8fl
+  - context_bridge
+- status: live

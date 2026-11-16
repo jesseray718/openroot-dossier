@@ -1,0 +1,16 @@
+{
+  "pod_id": "pod-aerocement-2.0-dome",
+  "domain": "physical_infrastructure",
+  "inputs": [
+    "xanthan_gum_slurry",
+    "alkali_resistant_glass_fibers",
+    "hemp_fibers",
+    "triangular_wire_cloth_panels"
+  ],
+  "executable_instructions": "Mix slurry at 1200 RPM high-speed stator agitation to force micro-bubbles into compression-dominant sphere matrix. Apply over modular wire-cloth formwork with bolted perimeter flanges.",
+  "synergy_hooks": [
+    "une_canonical_db",
+    "thermal_mass_copper_coil"
+  ],
+  "proof_of_physical_work_ref": "popw-2026-10-18-01"
+}

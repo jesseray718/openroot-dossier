@@ -1,0 +1,4 @@
+  File "/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z/question_travel_v1.py", line 8
+    for c in ("universal_lattice_fts5.db", ""$HOME/pods"/clone_universal_20261016T083202Z/pod.db"):
+                                             ^
+SyntaxError: invalid syntax

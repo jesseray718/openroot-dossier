@@ -1,0 +1,3 @@
+2026-11-13T03:47:03.329404+00:00 RUN_DIR=/home/jesse/openroot/workareas/dossier-tiny-coder-20261113T034703Z-17118a5f
+2026-11-13T03:47:03.330022+00:00 DOSSIER: existing FTS5/BM25 retrieval and pruning; no model yet
+2026-11-13T04:06:26.035878+00:00 TINY START interface_extractor [qwen2.5-coder:0.5b]

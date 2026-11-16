@@ -1,0 +1,10 @@
+{
+  "file": "025-provenance_reviewer-r4.json",
+  "role": "provenance_reviewer",
+  "model": "granite4:1b",
+  "round": 4,
+  "budget_seconds": 45,
+  "status": "time_limited_partial",
+  "prompt_sha256": "cc7f708f498c23203b9a969c0e2b3fcd8e418654cc43b4aacf8440e0899bc3d6",
+  "elapsed_seconds": 45.05
+}

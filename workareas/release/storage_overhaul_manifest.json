@@ -1,0 +1,27 @@
+{
+  "total_files": 14272,
+  "file_sample": [
+    "openroot_bin_rescue_a15_unique.py",
+    "openroot_bin_relay_v1.py",
+    "openroot_bin_compound_v1.sh",
+    "openroot_bin_agent.sh",
+    "openroot_bin_gh_audit_v2.sh",
+    "openroot_bin_mobile_audit_trigger.sh",
+    "openroot_bin_hygiene_fixes_v1.sh",
+    "openroot_bin_hygiene_fix_driver_v1.sh",
+    "openroot_bin_need_gate.py",
+    "openroot_bin_h003_log.py",
+    "openroot_bin_popw_hang.py",
+    "openroot_bin_triage100.py",
+    "openroot_bin_run_triage.py",
+    "openroot_bin_openroot_master_deploy.py",
+    "openroot_bin_sync_to_optiplex.sh",
+    "openroot_bin_abstract_grade.sh",
+    "openroot_bin_agape_node_bridge.sh",
+    "openroot_bin_agape_qa_engine.py",
+    "openroot_bin_asset_assign_pipeline.py",
+    "openroot_bin_asset_preclassify.py"
+  ],
+  "status": "ingested_and_staged",
+  "timestamp": "2026-11-11T18:17:33Z"
+}

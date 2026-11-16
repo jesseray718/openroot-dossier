@@ -1,0 +1,9 @@
+/.git
+/index.db
+*.db-wal
+*.db-shm
+/node_modules
+/archive
+/consolidation-backups
+/attic
+/tmp

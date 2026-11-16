@@ -1,0 +1,10 @@
+{
+  "approve_write": false,
+  "execution_status": "not_executed_static_wrapper",
+  "live_root": "/home/jesse/openroot",
+  "original_a15_sha256": "8600f822418cae4f86cf749ba56756bd7f0c6f56ec42e78445085f2c94bd5e0f",
+  "sandbox_root": "/home/jesse/openroot/workareas/a15-engine-sandbox",
+  "task_sha256": "f4dbfdad7d2d75a83dc00c28b07b280261f725dc33be71d5510ebd168a0819f2",
+  "timestamp": "2026-11-11T13:12:43.848501+00:00",
+  "tool": "lattice_sandbox_runner_v1"
+}

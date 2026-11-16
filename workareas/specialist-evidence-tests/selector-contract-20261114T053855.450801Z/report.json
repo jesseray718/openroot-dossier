@@ -1,0 +1,14 @@
+{
+  "model": "qwen2.5-coder:0.5b",
+  "status": "contract_passed",
+  "source_packet": "/home/jesse/openroot/workareas/specialist-evidence-tests/20261114T050711.111834Z/evidence.json",
+  "selection_relevance": "requires_review",
+  "selected_ids": [
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "needs_more_evidence": false,
+  "excerpts_attached_by": "deterministic lookup, not model reproduction",
+  "elapsed_seconds": 7.15
+}

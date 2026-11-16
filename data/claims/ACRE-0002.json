@@ -1,0 +1,8 @@
+{
+  "claim_id": "ACRE-0002",
+  "timestamp": "2026-11-03T00:06:47.668615+00:00",
+  "metric_type": "thermal_energy",
+  "value": "1250.5",
+  "unit": "joules",
+  "notes": "Aero-Disc test run"
+}

@@ -1,0 +1,22 @@
+# Manifest
+- name: openroot-integration
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: sandbox
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-integration
+  - /home/workdir/.grok/skills/openroot-integration/assets/INTEGRATION_CHECKLIST.md
+  - /home/workdir/attachments/INTEGRATION_CHECKLIST.md
+- sisters:
+  - une-joule-native
+  - openroot-canon
+  - openroot-two-pane
+  - openroot-stack
+  - agape-engine
+- trigger_ids:
+  - INTEGRATION_CHECKLIST
+  - manifest present
+  - claims registry
+  - add to skills
+- status: live

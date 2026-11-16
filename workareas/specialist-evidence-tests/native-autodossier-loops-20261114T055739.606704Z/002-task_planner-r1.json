@@ -1,0 +1,25 @@
+{
+  "file": "002-task_planner-r1.json",
+  "role": "task_planner",
+  "model": "qwen3:0.6b",
+  "round": 1,
+  "budget_seconds": 45,
+  "status": "validated_structure",
+  "prompt_sha256": "e438e2f5eb3c6e19ee045cd460f2cc75020bb85d6ce96b985123c739c485abca",
+  "generation": {
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 85
+  },
+  "validated_output": {
+    "status": "needs_evidence",
+    "selected_ids": [
+      "N2",
+      "N643",
+      "N3"
+    ],
+    "note": "The existing native pathway interfaces for A15 are identified in the provided source code. However, evidence is needed to independently verify their behavior.",
+    "next_query": "Identify the missing acceptance tests for the A15 pathway cache interfaces."
+  },
+  "elapsed_seconds": 20.96
+}

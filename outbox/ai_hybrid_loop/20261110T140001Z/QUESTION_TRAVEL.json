@@ -1,0 +1,42 @@
+{
+  "ts": "2026-11-10T14:00:02Z",
+  "db": "/home/jesse/pods/clone_universal_20261016T083202Z/pod.db",
+  "questions": [],
+  "fts_table": "chunks_fts",
+  "text_col": "text",
+  "rows": 515396,
+  "ollama_models_available": [
+    "deepseek-r1:1.5b",
+    "gemma3:1b",
+    "gemma4:31b-cloud",
+    "granite3.3:2b",
+    "granite4:1b",
+    "llama3.2:1b",
+    "llama3.2:3b",
+    "minimax-m3.1-flash:cloud",
+    "nomic-embed-text:latest",
+    "openroot-assistant:latest",
+    "openroot-coder:latest",
+    "openroot-instruct:7b",
+    "phi4-mini:latest",
+    "phi4-router:latest",
+    "qwen2.5-coder:0.5b",
+    "qwen2.5-coder:1.5b",
+    "qwen2.5-coder:3b",
+    "qwen2.5-coder:7b",
+    "qwen2.5:1.5b",
+    "qwen2.5:3b",
+    "qwen2.5:7b",
+    "qwen2.5:7b-instruct",
+    "qwen3.5:0.8b",
+    "qwen3.5:9b",
+    "qwen3:0.6b",
+    "qwen3:1.7b",
+    "smollm2:1.7b"
+  ],
+  "summary": {
+    "questions": 1,
+    "recall_hits": 0,
+    "answered": 0
+  }
+}

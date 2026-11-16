@@ -1,0 +1,10 @@
+{
+  "file": "016-task_planner-r3.json",
+  "role": "task_planner",
+  "model": "qwen3:0.6b",
+  "round": 3,
+  "budget_seconds": 45,
+  "status": "time_limited_partial",
+  "prompt_sha256": "826eca64caa449e1efdd1ab51683ef9fabb471a928de3e899387a6153f6ded89",
+  "elapsed_seconds": 45.05
+}

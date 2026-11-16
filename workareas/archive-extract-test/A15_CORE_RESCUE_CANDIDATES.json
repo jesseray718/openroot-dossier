@@ -1,0 +1,239 @@
+{
+  "archive": "data/a15_only_canonical.tar.gz",
+  "candidate_count": 33,
+  "candidates": [
+    {
+      "bytes": 26622,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_one.py",
+      "sha256": "72e6cb1cd3fa722fa0da33160acfb9996f8a6bf0141c853a9b42e7cb470bb134",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0000_agape_one.py"
+    },
+    {
+      "bytes": 5296,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_clean.py",
+      "sha256": "580b07aa739550b0e08e74014ddddfd99b5bbd9954309a27d134620b8c48ebde",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0003_agape_clean.py"
+    },
+    {
+      "bytes": 5132,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/une_client.py",
+      "sha256": "356b4b21977513a1a67126d2f3fd6124d950aacae32d1cf6eaf019661f9652ab",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0004_une_client.py"
+    },
+    {
+      "bytes": 831,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/test_une_full.py",
+      "sha256": "ade0da42e6aca3bad7a912c5965266291576ab2bbb4b7b3b2605428ec12c086b",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0005_test_une_full.py"
+    },
+    {
+      "bytes": 2968,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_slim.py",
+      "sha256": "97be438750b12233ab85bc02e01035151e3b0a3520f0a2ba1d938dc0cbe2da47",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0006_agape_slim.py"
+    },
+    {
+      "bytes": 5267,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/faiss_search.py",
+      "sha256": "ab698bb8da909a89f2a056e9b0f96f1e4ea40ab65842f085bdef9efb33792175",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0007_faiss_search.py"
+    },
+    {
+      "bytes": 4366,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/raise_to_6n6.py",
+      "sha256": "4b7a677436a63aa092f6ab44b3fce0da94f39fc008ca3327cdc236c430b23973",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0008_raise_to_6n6.py"
+    },
+    {
+      "bytes": 33076,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/newton_chain.py",
+      "sha256": "0cd3a6176896cf7c009240268d71d9256e713141d5e0f5264f29aae5635cfd94",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0012_newton_chain.py"
+    },
+    {
+      "bytes": 2609,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/local_rag_search.py",
+      "sha256": "c41aea80e79e9f05e731276d5b823ce94773301408d918bbe3cfea92bb355f11",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0013_local_rag_search.py"
+    },
+    {
+      "bytes": 8796,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_hierarchical_raising.py",
+      "sha256": "80bdef56a6cae1efbcffec9813516f63e05098e3045793a85be66df4f8407541",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0014_agape_hierarchical_raising.py"
+    },
+    {
+      "bytes": 15748,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/lattice_cli.py",
+      "sha256": "8600f822418cae4f86cf749ba56756bd7f0c6f56ec42e78445085f2c94bd5e0f",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0015_lattice_cli.py"
+    },
+    {
+      "bytes": 7102,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/openroot.py",
+      "sha256": "d6303f2256a3174a0532d51685393226427bb52893167d81109ea1e1199b48f3",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0016_openroot.py"
+    },
+    {
+      "bytes": 3678,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/mdpipe.py",
+      "sha256": "1ceaf592f02be2a0b3fc4320e526ccfaee951c2f3b651b1544300b78d9063024",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0017_mdpipe.py"
+    },
+    {
+      "bytes": 14911,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_init.py",
+      "sha256": "9a63d9c013a3d06a34dc20c8670c28de867d6e49fc94d9a804afc119cd4c339f",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0022_agape_init.py"
+    },
+    {
+      "bytes": 7785,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/openroot_hub.py",
+      "sha256": "971f6d638bdf99314515acc3f686acdfb249172fb0d87f54208c1e6a005290d9",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0026_openroot_hub.py"
+    },
+    {
+      "bytes": 12182,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_frequency.py",
+      "sha256": "bc1234dfe2c73080681886d2f12d6648aa1f2af9356c2cbf78ae1dade8c7cf4a",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0027_agape_frequency.py"
+    },
+    {
+      "bytes": 57388,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_neurogenic_kernel.py",
+      "sha256": "c2bccfd9e316e5a1526ad7c08267e290eecfdf00ad5df7fbdc6f26b08e3daacd",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0028_agape_neurogenic_kernel.py"
+    },
+    {
+      "bytes": 12321,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_evolution_v2.py",
+      "sha256": "a36fce85f9dc35024a5221c88163eff4b7b0a4a3d6741aaa58cf59285dc03a9d",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0029_agape_evolution_v2.py"
+    },
+    {
+      "bytes": 163,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/openroot_archiver.py",
+      "sha256": "221e3008d121d314ae45451034de9878701149fae6c8bb670f3d0ff39a99277a",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0030_openroot_archiver.py"
+    },
+    {
+      "bytes": 54973,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/unified_agape_engine.py",
+      "sha256": "77667a63c4f6f743b902958329644a60ad4c4d24334b1b809e83e53aac7d1c67",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0031_unified_agape_engine.py"
+    },
+    {
+      "bytes": 39285,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/permaculture_lattice_engine.py",
+      "sha256": "4f2652a5a0a39c3f557a088cc42b50bd0c564ee5144a65483522dce480e8ad54",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0032_permaculture_lattice_engine.py"
+    },
+    {
+      "bytes": 11847,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_farm_os.py",
+      "sha256": "d871e9c40bf9c9ce3c469182b806e3d018919fc127ef5bf26bccd37337a2197c",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0050_agape_farm_os.py"
+    },
+    {
+      "bytes": 1455,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/une_max_efficiency_lang.py",
+      "sha256": "88ce4853e5e3a9e0097f9e42c46c22c727f83ef6899486def4be4e528210bcbe",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0051_une_max_efficiency_lang.py"
+    },
+    {
+      "bytes": 4282,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/une_atomic_library.py",
+      "sha256": "39b6b32c60f144b1f3bc7f0da71e30c51344d0345c97ab771b7849ebbff2152e",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0052_une_atomic_library.py"
+    },
+    {
+      "bytes": 14503,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_kernel_v2.py",
+      "sha256": "c54cd37678a16457d4d5b342537c52c95f5575fb75a557bf7ced61519acf6d75",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0053_agape_kernel_v2.py"
+    },
+    {
+      "bytes": 14576,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_ledger_chain.py",
+      "sha256": "e169e8f6f177d8627ee44d141402aa121e47ffed34611bde5880874a32299271",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0054_agape_ledger_chain.py"
+    },
+    {
+      "bytes": 4473,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_node_bootstrap.py",
+      "sha256": "fdc87757b7da44b0f1de597b558227630615b203de220f14ab9cb702122b16b1",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0056_agape_node_bootstrap.py"
+    },
+    {
+      "bytes": 44875,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_primitive_forge.py",
+      "sha256": "0070c19cfb50608838864e9dec62a4e6634740f1bc51e09e8686afe0e3f2dbb7",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0057_agape_primitive_forge.py"
+    },
+    {
+      "bytes": 12309,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agapenet_unified_setup.py",
+      "sha256": "307eb605bb8dde8de6f94b4e8f9b576a3a1e2c23a4f53fd7290608182efa5504",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0065_agapenet_unified_setup.py"
+    },
+    {
+      "bytes": 15859,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_net_setup.py",
+      "sha256": "3716cadbe304d415aa8c830e2ada43ce03c29a94b84bc9c6c37af0a2c8456b51",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0068_agape_net_setup.py"
+    },
+    {
+      "bytes": 16733,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/agape_net_full_integration.py",
+      "sha256": "ac42da68fa8d315d42ca570720c64c83948b0357dfd20f5878018f21c67be154",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0069_agape_net_full_integration.py"
+    },
+    {
+      "bytes": 5908,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/une_fix.py",
+      "sha256": "0ad0e4d40e08f8a2e6032f049dd08412111058bd0f06ca6b1c3e52c0b82128c1",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0071_une_fix.py"
+    },
+    {
+      "bytes": 4774,
+      "category": "core_candidate",
+      "original_path": "/data/data/com.termux/files/home/src/une_atomic_library.py",
+      "sha256": "478336f02d1c3e408867dcd29d5a6c7637c55b043a19cbfff3eb4453c853dd23",
+      "staged_path": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR/0090_une_atomic_library.py"
+    }
+  ],
+  "selection_rule": "exact filename match against core candidate list",
+  "timestamp": "2026-11-11T06:29:31.756277+00:00"
+}

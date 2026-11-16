@@ -1,0 +1,56 @@
+{
+  "files": [
+    {
+      "bytes": 33076,
+      "classification": "reference_only_quarantined",
+      "execution_status": "not_executed",
+      "filename": "newton_chain.py",
+      "live_ledger_write_risk": "high",
+      "restore_status": "not_approved",
+      "sha256": "0cd3a6176896cf7c009240268d71d9256e713141d5e0f5264f29aae5635cfd94",
+      "staged_path": "workareas/archive-extract-test/extract-YTyNf6HR/0012_newton_chain.py"
+    },
+    {
+      "bytes": 15748,
+      "classification": "reference_only_quarantined",
+      "execution_status": "not_executed",
+      "filename": "lattice_cli.py",
+      "live_ledger_write_risk": "high",
+      "restore_status": "not_approved",
+      "sha256": "8600f822418cae4f86cf749ba56756bd7f0c6f56ec42e78445085f2c94bd5e0f",
+      "staged_path": "workareas/archive-extract-test/extract-YTyNf6HR/0015_lattice_cli.py"
+    },
+    {
+      "bytes": 7785,
+      "classification": "reference_only_quarantined",
+      "execution_status": "not_executed",
+      "filename": "openroot_hub.py",
+      "live_ledger_write_risk": "unknown",
+      "restore_status": "not_approved",
+      "sha256": "971f6d638bdf99314515acc3f686acdfb249172fb0d87f54208c1e6a005290d9",
+      "staged_path": "workareas/archive-extract-test/extract-YTyNf6HR/0026_openroot_hub.py"
+    },
+    {
+      "bytes": 7102,
+      "classification": "reference_only_quarantined",
+      "execution_status": "not_executed",
+      "filename": "openroot.py",
+      "live_ledger_write_risk": "unknown",
+      "restore_status": "not_approved",
+      "sha256": "d6303f2256a3174a0532d51685393226427bb52893167d81109ea1e1199b48f3",
+      "staged_path": "workareas/archive-extract-test/extract-YTyNf6HR/0016_openroot.py"
+    },
+    {
+      "bytes": 2609,
+      "classification": "reference_only_quarantined",
+      "execution_status": "not_executed",
+      "filename": "local_rag_search.py",
+      "live_ledger_write_risk": "unknown",
+      "restore_status": "not_approved",
+      "sha256": "c41aea80e79e9f05e731276d5b823ce94773301408d918bbe3cfea92bb355f11",
+      "staged_path": "workareas/archive-extract-test/extract-YTyNf6HR/0013_local_rag_search.py"
+    }
+  ],
+  "policy": "quarantine_only_no_live_restore_no_execution",
+  "timestamp": "2026-11-11T13:07:24.059736+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "original_runner": "/home/jesse/.local/share/openroot-tiny-specialists/run.py",
+  "original_sha256": "236c618ae071eb9e376567657abba41ed102c460c6b74af09223e3e144e057ff",
+  "candidate_sha256": "099c3f0714c610aacd4ecf68bb46ee4d652e05faa6de9137543a2b6dbaf713c1",
+  "candidate_directory": "/home/jesse/openroot/workareas/tiny-autodossier-candidate-20261113T030609Z-d8dc6d96",
+  "launched": false,
+  "original_runner_modified": false,
+  "original_stop_markers_modified": false,
+  "known_remaining_gaps": [
+    "Retrieval adapter behavior has not been audited here",
+    "Workers still share a dossier rather than role-specific excerpts",
+    "Completed roles are not yet excluded from later rounds",
+    "No whole-run deadline",
+    "HTTP timeout does not establish server-side cancellation",
+    "Hash checks do not verify semantic support"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "absent_from_known_hashes": 0,
+  "already_present_on_optiplex": 1352,
+  "archive": "data/a15_only_canonical.tar.gz",
+  "archive_bytes": 3748677,
+  "archive_sha256": "9535263a7d1e3db29a8552a041634463c05cc55ba4ef25dc7f24527e35221018",
+  "decision": "archive_is_hash_redundant_against_mesh_index",
+  "extraction_root": "/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR",
+  "hash_database": "data/mesh_index.db",
+  "integration_status": "not_required",
+  "known_hashes_checked": 2324,
+  "live_tree_modified": false,
+  "manifest_entries": 1352,
+  "missing_staged_files": 0,
+  "test": "a15_only_canonical_archive_redundancy_verification",
+  "timestamp": "2026-11-11T06:20:35.334000+00:00"
+}

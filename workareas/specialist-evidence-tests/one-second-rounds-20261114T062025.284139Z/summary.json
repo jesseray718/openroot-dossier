@@ -1,0 +1,18 @@
+{
+  "scheduler_rounds": 300,
+  "actual_model_requests": 11,
+  "phase": "coder",
+  "elapsed_seconds": 300.07,
+  "contract_passes": 3,
+  "unfinished_or_failed_roles": [
+    "saved_work",
+    "provenance",
+    "contradictions",
+    "coder"
+  ],
+  "coder_output": null,
+  "reviewer_output": null,
+  "semantic_correctness": "requires_independent_review",
+  "execution_or_replay": "not_tested",
+  "database_writes": false
+}

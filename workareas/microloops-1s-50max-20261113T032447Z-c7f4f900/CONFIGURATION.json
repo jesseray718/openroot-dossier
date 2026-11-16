@@ -1,0 +1,70 @@
+{
+  "max_model_calls": 50,
+  "client_request_limit_seconds": 1,
+  "max_output_tokens": 12,
+  "warmup_requests": 0,
+  "tasks": [
+    {
+      "id": "scan_pattern",
+      "model": "qwen2.5-coder:0.5b",
+      "source": "E4",
+      "range": [
+        41,
+        43
+      ],
+      "question": "What filename glob is scanned? Return only the glob.",
+      "expected": "*.py"
+    },
+    {
+      "id": "insert_table",
+      "model": "qwen2.5-coder:0.5b",
+      "source": "E4",
+      "range": [
+        45,
+        48
+      ],
+      "question": "What SQL table receives the INSERT? Return only its name.",
+      "expected": "dossier_nodes"
+    },
+    {
+      "id": "parent_value",
+      "model": "granite4:1b",
+      "source": "E2",
+      "range": [
+        199,
+        206
+      ],
+      "question": "What numeric value follows --parent? Return only the number.",
+      "expected": "1"
+    },
+    {
+      "id": "assigned_human_value",
+      "model": "granite4:1b",
+      "source": "E3",
+      "range": [
+        189,
+        192
+      ],
+      "question": "What value is assigned to human? Return only the number.",
+      "expected": "0.9"
+    },
+    {
+      "id": "verify_calls_init",
+      "model": "qwen3.5:0.8b",
+      "source": "E5",
+      "range": [
+        71,
+        74
+      ],
+      "question": "Does verify call init? Return only YES or NO.",
+      "expected": "YES"
+    }
+  ],
+  "acceptance": "Exact answer to human-authored source extraction test",
+  "limitations": [
+    "Not independent semantic verification",
+    "Cold load is included in the one-second transfer limit",
+    "Timeout does not establish server cancellation",
+    "Prompt roles do not establish trained specialization"
+  ]
+}

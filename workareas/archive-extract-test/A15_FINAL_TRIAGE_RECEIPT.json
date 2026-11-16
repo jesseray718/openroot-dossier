@@ -1,0 +1,23 @@
+{
+  "bulk_restore_approved": false,
+  "candidate_count": 33,
+  "classifications": {
+    "faiss_search.py": "variant_review",
+    "lattice_cli.py": "high_value_reference_high_write_risk",
+    "local_rag_search.py": "read_only_local_search_reference",
+    "mdpipe.py": "variant_review",
+    "newton_chain.py": "high_value_reference_high_write_risk",
+    "openroot.py": "sandbox_only_reference",
+    "openroot_hub.py": "sandbox_only_reference",
+    "permaculture_lattice_engine.py": "variant_review",
+    "une_client.py": "variant_review"
+  },
+  "exact_hash_matches": 0,
+  "forbidden": "execute_a15_originals_against_live_openroot",
+  "live_tree_modified": false,
+  "next_action": "build_openroot_compatible_sandboxed_lattice_evaluator",
+  "sandbox_receipt": "workareas/a15-engine-sandbox/lattice_sandbox_receipt.json",
+  "sandbox_wrapper_verified": true,
+  "test": "a15_core_candidate_final_triage",
+  "timestamp": "2026-11-11T13:15:10.776901+00:00"
+}

@@ -1,0 +1,63 @@
+family,run_directory,evidence_tier,evidence_description,has_failures,has_unfinished_work,reported_elapsed_seconds,models,statuses,receipt_files,semantic_verification,question
+source-extraction,/home/jesse/openroot/workareas/tiny-source-loops-20261113T031542Z-8d130525,4,At least one explicit extraction contract matched,True,False,132.263,granite4:1b; qwen2.5-coder:0.5b; qwen3.5:0.8b,audit_contract_matched; held_interrupted; held_run_stopped; source_pattern_checks_passed,2,not_established,
+retrieval-generation-smoke,/home/jesse/openroot/workareas/autodossier-smoke-20261113T024805Z-4ab71ceb,1,Model output recorded; support not established,False,False,74.389,qwen2.5-coder:1.5b,completed_unverified_answer,1,not_established,"What does the indexed OpenRoot documentation say about autodossier workflows, pathway receipts, and verification? Distinguish documented intentions from demonstrated execution."
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-sh7j_mxh,1,Model output recorded; support not established,False,False,,qwen2.5:7b,ANSWER_GENERATED; IDENTIFIERS_VALID,1,not_established,describe aerocement and  what makes it special?
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-ac11_oy4,1,Model output recorded; support not established,False,False,,qwen2.5:3b,ANSWER_GENERATED; NEEDS_REVIEW,1,not_established,"OpenRoot repository audit, question 1 of 100.
+
+What exact commit, branch, and working-tree state does this audit examine?
+
+Answer from supplied indexed evidence only. Give the finding, source references, uncertainties, proposed minimal repair if justified, and an acceptance test. Do not claim to have run tests, inspected live GitHub warnings, resolved a warning, or applied a repair. If current-state evidence is absent, say UNKNOWN. Keep observed facts separate from proposals."
+original-tiny-specialists,/home/jesse/.local/share/openroot-tiny-specialists/schema-test-zis93mxg/run-n53ng6f8,1,Model output recorded; support not established,True,False,403.71456813198165,granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b,failed; proposal_with_supplied_identifiers,7,not_established,
+original-tiny-specialists,/home/jesse/.local/share/openroot-tiny-specialists/run-wgf5zi1o,1,Model output recorded; support not established,True,False,850.923941984016,granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b,failed; proposal_requires_evidence_review; proposal_with_supplied_identifiers,12,not_established,
+original-tiny-specialists,/home/jesse/.local/share/openroot-tiny-specialists/run-hw4orzmf,1,Model output recorded; support not established,True,False,1009.5531979700027,granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b,failed; proposal_requires_evidence_review; proposal_with_supplied_identifiers,12,not_established,
+original-tiny-specialists,/home/jesse/.local/share/openroot-tiny-specialists/run-9ea_8prl,1,Model output recorded; support not established,True,False,1131.2163996740128,granite4:1b; qwen2.5-coder:0.5b; qwen2.5-coder:1.5b; qwen2.5:1.5b; qwen3.5:0.8b,failed; proposal_requires_evidence_review,12,not_established,
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-fqc566z9,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,A15 OptiPlex pathway cache reuse
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-l1d5uxb1,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,"Which files define OpenRoot's purpose, and do they agree?"
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-qw09b900,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,Which documented instructions govern changes to this repository?
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-lurirksz,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,one short evidence search empty string
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-b3tp0dqn,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,one short evidence search empty string no provided
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-3p8yullr,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,one short evidence search empty string
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-_nn1csso,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,"What exact commit, branch, and working-tree state does this audit examine?"
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-yly40bzk,0,Retrieval dossier recorded,False,False,,,DOSSIER_READY,1,not_established,A15 OptiPlex pathway cache reuse
+original-tiny-specialists,/home/jesse/.local/share/openroot-tiny-specialists/run-zgjhx03a,-1,No recognized positive completion evidence,False,False,75.61592921099509,,,2,not_established,
+other,/home/jesse/openroot/workareas/a15-engine-sandbox,-1,No recognized positive completion evidence,False,False,,,not_executed_static_wrapper; passed,2,not_established,
+other,/home/jesse/openroot/workareas/a15-engine-sandbox/workflow-tests-v2-vt8tlamz,-1,No recognized positive completion evidence,False,False,,,passed,1,not_established,
+review-tool-release,/home/jesse/openroot/workareas/a15-engine-sandbox/review-tool-v2-KUzhQL4W,-1,No recognized positive completion evidence,False,False,,,local_tests_passed,1,not_established,
+other,/home/jesse/openroot/workareas/a15-engine-sandbox/promotion,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+tiny-autodossier,/home/jesse/openroot/workareas/tiny-autodossier-candidate-20261113T030609Z-d8dc6d96,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+other,/home/jesse/openroot/workareas/agape_pods,-1,No recognized positive completion evidence,False,False,,,synthesized,1,not_established,
+other,/home/jesse/openroot/workareas/archive-extract-test,-1,No recognized positive completion evidence,False,False,,,not_executed,5,not_established,
+other,/home/jesse/openroot/workareas/archive-extract-test/extract-YTyNf6HR,-1,No recognized positive completion evidence,False,False,,,extracted_isolated,1,not_established,
+review-tool-release,/home/jesse/openroot/workareas/release/review-tool-v2-20261111T135730Z,-1,No recognized positive completion evidence,False,False,,,local_tests_passed; passed,2,not_established,
+review-tool-release,/home/jesse/openroot/workareas/release/review-tool-v2-20261111T135624Z,-1,No recognized positive completion evidence,False,False,,,local_tests_passed; passed,2,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T001954Z,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T001519Z,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T001035Z,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/data/outbox/ai_hybrid_loop/20261107T002204Z,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+specialist100,/home/jesse/.local/share/openroot-specialist100/run-20261106T120429569209Z,-1,No recognized positive completion evidence,False,False,,,,1,not_established,
+native-dossier,/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-4006uvm1,-1,No recognized positive completion evidence,False,False,,,NO_INDEXED_EVIDENCE,1,not_established,descrjbe
+one-second-experiment,/home/jesse/openroot/workareas/microloops-1s-50max-20261113T032447Z-c7f4f900,-1,No recognized positive completion evidence,False,True,1.037,qwen2.5-coder:0.5b,deadline_missed; pending,2,not_established,scan_pattern
+microtick-experiment,/home/jesse/openroot/workareas/microticks-50-20261113T033141Z-de11f02b,-1,No recognized positive completion evidence,False,True,50.454,granite4:1b; qwen2.5-coder:0.5b,needs_revision; pending; saved_unfinished,2,not_established,
+tiny-autodossier,/home/jesse/openroot/workareas/tiny-autodossier-sixround-20261113T031141Z-56cd3764,-1,No recognized positive completion evidence,True,False,25.512,qwen2.5-coder:0.5b,held_interrupted; held_run_stopped; interrupted,2,not_established,
+grounded-source-analysis,/home/jesse/openroot/workareas/autodossier-grounded-packet-20261113T025355Z-393cef4d/analysis-20261113T025505Z-3c9b8dac,-1,No recognized positive completion evidence,True,False,300.129,qwen2.5-coder:7b,held; not_performed,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T075639Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261111T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T122521Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261103T213104Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T033628Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T054020Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261103T211837Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T122631Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261110T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261107T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T065632Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261103T213719Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T043733Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261108T140002Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T124203Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T080747Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261104T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,
+hybrid-loop,/home/jesse/openroot/outbox/ai_hybrid_loop/20261109T140001Z,-1,No recognized positive completion evidence,True,False,,,,1,not_established,

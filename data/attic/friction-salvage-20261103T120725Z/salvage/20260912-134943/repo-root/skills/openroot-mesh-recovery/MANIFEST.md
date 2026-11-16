@@ -1,0 +1,19 @@
+# Manifest
+- name: openroot-mesh-recovery
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-mesh-recovery
+- sisters:
+  - openroot-syncthing
+  - openroot-two-pane
+  - une-joule-native
+  - openroot-integration
+- trigger_ids:
+  - syncthing is dead
+  - device ID collision
+  - unique ID
+  - connection refused on 8384
+- status: live

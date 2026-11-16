@@ -1,0 +1,77 @@
+{
+  "source_sha256": "1c148b1c6f9a4474c3b1840ba0819de6fa343457d2681bec1812ae9107cffc5c",
+  "evaluates_lesson_id": "12a90dd1720ef00d7570d8b95c80c1b7b392ba5400e2aed1c32bb45981530aae",
+  "evaluates_answer_sha256": "cb70779fe729c881a88f9c91a732b3dd06c0abefa6b549b1146ff1ecc2f5a597",
+  "model_answer_verdict": "FAIL_CAUSAL_REGRESSION",
+  "observed_model_error": "Attributes cmd_record's read_bytes to cmd_verify, then claims changed external bytes alter the unchanged stored entry hash",
+  "counterexample_reproduced": true,
+  "fixture_results": [
+    {
+      "case": "1-original-evidence-valid-ledger",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matches_expected_behavior": true,
+      "file_reads": [
+        {
+          "path": "/home/jesse/openroot/workareas/executable-curriculum-20261116T031305.479233Z/FIXTURE-ledger.jsonl",
+          "mode": "r"
+        }
+      ],
+      "external_evidence_reads": 0,
+      "native_output": "[ok] chain verified: 1 entries, tip 419b56deb6b8098f...\n"
+    },
+    {
+      "case": "2-evidence-changed-ledger-unchanged",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matches_expected_behavior": true,
+      "file_reads": [
+        {
+          "path": "/home/jesse/openroot/workareas/executable-curriculum-20261116T031305.479233Z/FIXTURE-ledger.jsonl",
+          "mode": "r"
+        }
+      ],
+      "external_evidence_reads": 0,
+      "native_output": "[ok] chain verified: 1 entries, tip 419b56deb6b8098f...\n"
+    },
+    {
+      "case": "3-evidence-changed-plus-invalid-json",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "matches_expected_behavior": true,
+      "file_reads": [
+        {
+          "path": "/home/jesse/openroot/workareas/executable-curriculum-20261116T031305.479233Z/FIXTURE-ledger.jsonl",
+          "mode": "r"
+        }
+      ],
+      "external_evidence_reads": 0,
+      "native_output": "[ok] chain verified: 1 entries, tip 419b56deb6b8098f...\n"
+    },
+    {
+      "case": "4-ledger-entry-tampered",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "matches_expected_behavior": true,
+      "file_reads": [
+        {
+          "path": "/home/jesse/openroot/workareas/executable-curriculum-20261116T031305.479233Z/FIXTURE-ledger.jsonl",
+          "mode": "r"
+        }
+      ],
+      "external_evidence_reads": 0,
+      "native_output": "[fail] hash mismatch at seq 1 \u2014 entry was tampered\n"
+    }
+  ],
+  "correction": "No called function opens the external evidence file during cmd_verify. entry_hash serializes the stored entry excluding its hash field. Invalid JSON lines are skipped.",
+  "model_calls": 0,
+  "index_rescans": 0,
+  "production_source_edits": 0,
+  "production_ledger_writes": 0,
+  "canonical_database_writes": 0,
+  "previous_lesson_table_result": {
+    "status": "ARTIFACT_ONLY",
+    "reason": "Existing lessons database absent or empty"
+  },
+  "pathway_promoted": false
+}

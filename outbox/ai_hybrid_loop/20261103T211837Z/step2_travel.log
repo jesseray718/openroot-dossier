@@ -1,0 +1,4 @@
+  q0: rowid=2380182 recall@5=HIT answer=OK model=qwen3.5:9b
+  q1: rowid=7158059 recall@5=MISS answer=OK model=qwen3.5:9b
+  q2: rowid=7470007 recall@5=HIT answer=OK model=qwen3.5:9b
+  recall@5 = 2/3  answered_ok = 3/3

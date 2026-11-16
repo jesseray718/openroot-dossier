@@ -1,0 +1,35 @@
+{
+  "lesson_id": "12a90dd1720ef00d7570d8b95c80c1b7b392ba5400e2aed1c32bb45981530aae",
+  "mistake": "Correct conclusion with invented file-I/O mechanism and contradiction of the changed-file premise",
+  "root_cause": "Model inferred behavior from the word verify instead of tracing the actual data dependencies",
+  "correction": "cmd_verify does not read current evidence-file bytes. It calls entry_hash(e), which serializes the stored entry except its hash field. Stored evidence metadata is part of that entry, but referenced files are not reopened. A changed external file can therefore coexist with a matching entry hash. Preserve the premise that the external file changed. load_chain skips invalid JSON lines before verification.",
+  "source_sha256": "1c148b1c6f9a4474c3b1840ba0819de6fa343457d2681bec1812ae9107cffc5c",
+  "previous_run": "/home/jesse/openroot/workareas/curriculum-test-20261116T024754.552704Z",
+  "previous_answer_sha256": "6fb6abca160c122fb7602c042671cad61e932f03fa78e5433ff1e222eb2cafb4",
+  "status": "REGRESSION_ANSWER_SAVED_AWAITING_REVIEW",
+  "verified": false,
+  "lesson_table_result": {
+    "status": "ARTIFACT_ONLY",
+    "reason": "Existing lessons database absent or empty"
+  },
+  "regression_receipt": {
+    "label": "D-causal-correction",
+    "question": "An external evidence file changes after recording, while the stored ledger entry remains unchanged. Identify the exact function or expression that reads the file's new bytes during cmd_verify. If none does, say none and explain exactly what entry_hash hashes. If an invalid JSON line is added, does that necessarily make verification fail? Preserve the stated changed-file premise.",
+    "question_sha256": "1c29ee177c19a00feb53c9ac815f3a30b89450186867ed407efbc505fe6abf8e",
+    "evidence_sha256": "99b8f65f8e306a258465cdb26b99205b8c245b1de88c5a47a74457b7366d1a1d",
+    "wall_seconds": 220.83918518499559,
+    "error": null,
+    "status": "ANSWER_GENERATED_UNGRADED",
+    "model_requested": "qwen2.5-coder:7b",
+    "model_returned": "qwen2.5-coder:7b",
+    "telemetry": {
+      "done_reason": "stop",
+      "load_duration": 7077919843,
+      "prompt_eval_count": 1607,
+      "prompt_eval_duration": 48775432000,
+      "eval_count": 435,
+      "eval_duration": 164858277000,
+      "total_duration": 220733271086
+    }
+  }
+}

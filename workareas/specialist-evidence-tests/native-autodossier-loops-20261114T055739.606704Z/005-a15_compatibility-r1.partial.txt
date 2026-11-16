@@ -1,0 +1,6 @@
+{
+  "status": "needs_evidence",
+  "selected_ids": ["N2", "N643", "N3"],
+  "note": "The A15 could reuse completed OptiPlex work by identifying the existing native pathway/cache interfaces by which it could reuse completed OptiPlex work. Distinguish source-code behavior from demonstrated execution. Identify the missing acceptance tests. Do not invent cache hits, transfers, or successful replay.",
+  "next_query": "Replay ... "
+}

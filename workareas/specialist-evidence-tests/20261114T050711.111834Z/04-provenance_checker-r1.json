@@ -1,0 +1,38 @@
+{
+  "role": "provenance_checker",
+  "model": "granite4:1b",
+  "round": 1,
+  "execution_status": "passed",
+  "prompt_sha256": "9b411d11f86159fced16d512e2ac62b846b58af4c2ff374379df62fd48b6f31f",
+  "raw_response": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"A15 can reuse work from the OptiPlex\",\n      \"source_ids\": [\"S5\"],\n      \"quote\": \"L0 is exact reuse. It does not infer semantic equivalence.\"\n    },\n    {\n      \"claim\": \"Verified provenance for one local pathway\",\n      \"source_ids\": [\"S5\"],\n      \"quote\": \"L0 exact reuse is verified for one local pathway.\"\n    },\n    {\n      \"claim\": \"OpenRoot exact cache pathway evidence is contained in this directory\",\n      \"source_ids\": [\"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway.\"\n    }\n  ],\n  \"questions\": []\n}",
+  "output": {
+    "status": "completed",
+    "findings": [
+      {
+        "claim": "A15 can reuse work from the OptiPlex",
+        "source_ids": [
+          "S5"
+        ],
+        "quote": "L0 is exact reuse. It does not infer semantic equivalence."
+      },
+      {
+        "claim": "Verified provenance for one local pathway",
+        "source_ids": [
+          "S5"
+        ],
+        "quote": "L0 exact reuse is verified for one local pathway."
+      },
+      {
+        "claim": "OpenRoot exact cache pathway evidence is contained in this directory",
+        "source_ids": [
+          "S6"
+        ],
+        "quote": "This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway."
+      }
+    ],
+    "questions": []
+  },
+  "eval_count": 173,
+  "prompt_eval_count": 1662,
+  "elapsed_seconds": 98.81
+}

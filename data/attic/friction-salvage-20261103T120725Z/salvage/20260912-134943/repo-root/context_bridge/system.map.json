@@ -1,0 +1,23 @@
+{
+  "archives": {
+    "termux-home-20260906.tar.zst": {
+      "path": "/storage/emulated/0/openroot/archive/termux-home-20260906.tar.zst",
+      "bytes": 1697906240,
+      "sha256": "21cf54424c833adac77d3bb44781dfa893675b593e489993d5b7805aee827bb7",
+      "zstd_test": "OK",
+      "member_count": 116734,
+      "oracle_ingest_status": "pending",
+      "delete_originals": false
+    },
+    "markor-20260906.tar.zst": {
+      "path": "/storage/emulated/0/openroot/archive/markor-20260906.tar.zst",
+      "bytes": 774873,
+      "sha256": "fbe52dc28b2655ad391e197fbc23dc5d4e95a7108ec840b7f83266b37a3cc577",
+      "zstd_test": "OK",
+      "member_count": 122,
+      "oracle_ingest_status": "pending",
+      "delete_originals": false
+    }
+  },
+  "updated": "2026-09-06T16:37:55"
+}

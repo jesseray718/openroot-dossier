@@ -1,0 +1,27 @@
+# Manifest
+- name: openroot-fts5-hybrid
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: SSH
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-fts5-hybrid
+  - /home/workdir/artifacts/wisdom-pipeline
+  - /home/jesse/wisdom-scaffold/data/optiplex_index.db
+  - /home/jesse/wisdom-scaffold/scripts/rag
+- sisters:
+  - une-joule-native
+  - openroot-two-pane
+  - openroot-stack
+  - openroot-canon
+  - agape-resonance-wisdom
+  - openroot-integration
+- trigger_ids:
+  - FTS5
+  - hybrid_rag_router
+  - optiplex_index.db
+  - nomic-embed-text
+  - BM25
+  - locate_pipeline
+  - master_codebase_orchestrator
+- status: live

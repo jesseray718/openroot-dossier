@@ -1,0 +1,62 @@
+{
+  "max_ticks": 50,
+  "tick_seconds": 1.0,
+  "one_active_request_maximum": true,
+  "request_inference_limit_seconds": null,
+  "tasks": [
+    {
+      "id": "scan_pattern",
+      "model": "qwen2.5-coder:0.5b",
+      "source": "E4",
+      "start": 41,
+      "end": 43,
+      "question": "Return only the filename glob passed to rglob.",
+      "expected": "*.py"
+    },
+    {
+      "id": "insert_table",
+      "model": "qwen2.5-coder:0.5b",
+      "source": "E4",
+      "start": 45,
+      "end": 48,
+      "question": "Return only the SQL table receiving the INSERT.",
+      "expected": "dossier_nodes"
+    },
+    {
+      "id": "parent_value",
+      "model": "granite4:1b",
+      "source": "E2",
+      "start": 199,
+      "end": 206,
+      "question": "Return only the numeric argument following --parent.",
+      "expected": "1"
+    },
+    {
+      "id": "human_value",
+      "model": "granite4:1b",
+      "source": "E3",
+      "start": 189,
+      "end": 192,
+      "question": "Return only the numeric value assigned to human.",
+      "expected": "0.9"
+    },
+    {
+      "id": "verify_calls_init",
+      "model": "qwen3.5:0.8b",
+      "source": "E5",
+      "start": 71,
+      "end": 74,
+      "question": "Does verify call init? Return only YES or NO.",
+      "expected": "YES"
+    }
+  ],
+  "evidence_packet": "/home/jesse/openroot/workareas/autodossier-grounded-packet-20261113T025355Z-393cef4d/EVIDENCE.json",
+  "acceptance": "Exact source-extraction test; not semantic proof",
+  "limitations": [
+    "Scheduler ticks are not model-compute time slices",
+    "A request can span multiple ticks",
+    "No automatic retry of interrupted server requests",
+    "Saved partial text is not a resumable model KV cache",
+    "Model loading is included in request wall time"
+  ]
+}

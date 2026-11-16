@@ -1,0 +1,4 @@
+  File "/home/jesse/openroot/outbox/ai_hybrid_loop/20261106T043733Z/pods_fractal_v1.py", line 3
+    ROOT = ""$HOME/pods""
+             ^
+SyntaxError: invalid syntax

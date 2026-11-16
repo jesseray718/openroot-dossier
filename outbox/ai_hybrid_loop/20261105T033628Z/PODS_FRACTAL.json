@@ -1,0 +1,11 @@
+{
+  "ts": "2026-11-05T03:36:29Z",
+  "root": "/data/data/com.termux/files/home/pods",
+  "pod_count": 0,
+  "signature_groups": [],
+  "self_similar": {
+    "max_group_size": 0,
+    "max_group_sig": null,
+    "distinct_signatures": 0
+  }
+}

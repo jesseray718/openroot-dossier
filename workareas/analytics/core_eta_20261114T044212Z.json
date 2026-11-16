@@ -1,0 +1,16 @@
+{
+  "timestamp": "20261114T044212Z",
+  "node": "optiplex_core",
+  "core_ip": "100.122.169.43",
+  "density": {
+    "scripts_root": 264,
+    "bin_scripts": 222,
+    "pods": 5,
+    "release_artifacts": 140
+  },
+  "size_kb": 1884068,
+  "protocol": {
+    "R": 1.0,
+    "c": 0.0
+  }
+}

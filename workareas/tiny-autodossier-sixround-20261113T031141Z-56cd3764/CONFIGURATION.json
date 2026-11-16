@@ -1,0 +1,60 @@
+{
+  "max_rounds_per_task": 6,
+  "no_progress_limit": 2,
+  "call_seconds": 40,
+  "whole_run_seconds": 360,
+  "models": [
+    "qwen2.5-coder:0.5b",
+    "granite4:1b",
+    "qwen3.5:0.8b"
+  ],
+  "tasks": [
+    {
+      "id": "compiler",
+      "model": "qwen2.5-coder:0.5b",
+      "source": "E4",
+      "start": 34,
+      "end": 53,
+      "question": "What does compile_dossier actually store?"
+    },
+    {
+      "id": "inference",
+      "model": "granite4:1b",
+      "source": "E3",
+      "start": 151,
+      "end": 167,
+      "question": "Identify the actual local model request in this code."
+    },
+    {
+      "id": "pathway_write",
+      "model": "qwen3.5:0.8b",
+      "source": "E2",
+      "start": 194,
+      "end": 215,
+      "question": "Identify a live pathway or documentation write target."
+    },
+    {
+      "id": "energy_inputs",
+      "model": "qwen2.5-coder:0.5b",
+      "source": "E3",
+      "start": 187,
+      "end": 204,
+      "question": "Are the energy inputs measured here or assigned values?"
+    },
+    {
+      "id": "verification_side_effect",
+      "model": "granite4:1b",
+      "source": "E5",
+      "start": 23,
+      "end": 43,
+      "question": "What files can init create? Do not claim execution."
+    }
+  ],
+  "evidence_packet": "/home/jesse/openroot/workareas/autodossier-grounded-packet-20261113T025355Z-393cef4d/EVIDENCE.json",
+  "limitations": [
+    "Clock deadlines checked between streamed response lines",
+    "Socket reads may wait up to their timeout",
+    "Disconnect does not prove server-side cancellation",
+    "Checker verdicts are model opinions, not proof"
+  ]
+}

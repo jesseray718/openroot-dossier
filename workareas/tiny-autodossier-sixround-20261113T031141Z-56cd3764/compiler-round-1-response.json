@@ -1,0 +1,6 @@
+{
+  "text": "{\n  \"finding\": \"compile_dossier\",\n  \"line\": 34,\n  \"quote\": \"def compile_dossier():\"\n}",
+  "done_reason": "stop",
+  "eval_count": 32,
+  "load_duration": 8897382289
+}

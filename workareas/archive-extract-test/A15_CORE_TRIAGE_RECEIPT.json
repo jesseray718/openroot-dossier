@@ -1,0 +1,22 @@
+{
+  "bulk_restore_approved": false,
+  "candidate_count": 33,
+  "exact_hash_matches": 0,
+  "integration_status": "quarantined_pending_review",
+  "live_tree_modified": false,
+  "priority_review": [
+    "newton_chain.py",
+    "local_rag_search.py",
+    "openroot.py",
+    "openroot_hub.py",
+    "lattice_cli.py"
+  ],
+  "same_name_conflicts": [
+    "une_client.py",
+    "faiss_search.py",
+    "mdpipe.py",
+    "permaculture_lattice_engine.py"
+  ],
+  "test": "a15_core_candidate_triage",
+  "timestamp": "2026-11-11T06:39:36.914608+00:00"
+}

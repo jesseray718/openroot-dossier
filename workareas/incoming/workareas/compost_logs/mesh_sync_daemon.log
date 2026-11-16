@@ -1,0 +1,288 @@
+nohup: ignoring input
+[18:19:58] [SYNC-LOOP] Probing core 100.122.169.43
+[18:19:58] [ok] Core online — staging
+[18:20:01] [ok] transmitted
+[18:21:01] [SYNC-LOOP] Probing core 100.122.169.43
+[18:21:02] [ok] Core online — staging
+[18:21:07] [ok] transmitted
+[18:22:07] [SYNC-LOOP] Probing core 100.122.169.43
+[18:22:07] [ok] Core online — staging
+[18:22:12] [ok] transmitted
+[18:23:12] [SYNC-LOOP] Probing core 100.122.169.43
+[18:23:13] [ok] Core online — staging
+[18:23:16] [ok] transmitted
+[18:24:17] [SYNC-LOOP] Probing core 100.122.169.43
+[18:24:17] [ok] Core online — staging
+[18:24:20] [ok] transmitted
+[18:25:20] [SYNC-LOOP] Probing core 100.122.169.43
+[18:25:20] [ok] Core online — staging
+[18:25:23] [ok] transmitted
+[18:26:23] [SYNC-LOOP] Probing core 100.122.169.43
+[18:26:24] [ok] Core online — staging
+[18:26:27] [ok] transmitted
+[18:27:27] [SYNC-LOOP] Probing core 100.122.169.43
+[18:27:27] [ok] Core online — staging
+[18:27:30] [ok] transmitted
+[18:28:30] [SYNC-LOOP] Probing core 100.122.169.43
+[18:28:31] [ok] Core online — staging
+[18:28:34] [ok] transmitted
+[18:29:34] [SYNC-LOOP] Probing core 100.122.169.43
+[18:29:34] [ok] Core online — staging
+[18:29:37] [ok] transmitted
+[18:30:37] [SYNC-LOOP] Probing core 100.122.169.43
+[18:30:37] [ok] Core online — staging
+[18:30:41] [ok] transmitted
+[18:31:41] [SYNC-LOOP] Probing core 100.122.169.43
+[18:31:42] [ok] Core online — staging
+[18:31:45] [ok] transmitted
+[18:32:46] [SYNC-LOOP] Probing core 100.122.169.43
+[18:32:46] [ok] Core online — staging
+[18:32:50] [ok] transmitted
+[18:33:51] [SYNC-LOOP] Probing core 100.122.169.43
+[18:33:51] [ok] Core online — staging
+[18:33:53] [ok] transmitted
+[18:34:53] [SYNC-LOOP] Probing core 100.122.169.43
+[18:34:54] [ok] Core online — staging
+[18:34:57] [ok] transmitted
+[18:35:57] [SYNC-LOOP] Probing core 100.122.169.43
+[18:35:58] [ok] Core online — staging
+[18:36:01] [ok] transmitted
+[18:37:02] [SYNC-LOOP] Probing core 100.122.169.43
+[18:37:02] [ok] Core online — staging
+[18:37:05] [ok] transmitted
+[18:38:05] [SYNC-LOOP] Probing core 100.122.169.43
+[18:38:05] [ok] Core online — staging
+[18:38:10] [ok] transmitted
+[18:39:10] [SYNC-LOOP] Probing core 100.122.169.43
+[18:39:10] [ok] Core online — staging
+[18:39:13] [ok] transmitted
+[18:40:13] [SYNC-LOOP] Probing core 100.122.169.43
+[18:40:14] [ok] Core online — staging
+[18:40:17] [ok] transmitted
+[18:41:17] [SYNC-LOOP] Probing core 100.122.169.43
+[18:41:19] [info] Core offline — holding
+[18:42:19] [SYNC-LOOP] Probing core 100.122.169.43
+[18:42:21] [info] Core offline — holding
+[18:43:21] [SYNC-LOOP] Probing core 100.122.169.43
+[18:43:23] [info] Core offline — holding
+[18:44:23] [SYNC-LOOP] Probing core 100.122.169.43
+[18:44:25] [info] Core offline — holding
+[18:45:25] [SYNC-LOOP] Probing core 100.122.169.43
+[18:45:27] [info] Core offline — holding
+[18:46:27] [SYNC-LOOP] Probing core 100.122.169.43
+[18:46:30] [info] Core offline — holding
+[18:47:30] [SYNC-LOOP] Probing core 100.122.169.43
+[18:47:32] [info] Core offline — holding
+[18:48:32] [SYNC-LOOP] Probing core 100.122.169.43
+[18:48:34] [info] Core offline — holding
+[18:49:34] [SYNC-LOOP] Probing core 100.122.169.43
+[18:49:36] [info] Core offline — holding
+[18:50:36] [SYNC-LOOP] Probing core 100.122.169.43
+[18:50:38] [info] Core offline — holding
+[18:51:38] [SYNC-LOOP] Probing core 100.122.169.43
+[18:51:40] [info] Core offline — holding
+[18:52:40] [SYNC-LOOP] Probing core 100.122.169.43
+[18:52:42] [info] Core offline — holding
+[18:53:42] [SYNC-LOOP] Probing core 100.122.169.43
+[18:53:44] [info] Core offline — holding
+[18:55:43] [SYNC-LOOP] Probing core 100.122.169.43
+[18:55:45] [info] Core offline — holding
+[18:56:45] [SYNC-LOOP] Probing core 100.122.169.43
+[18:56:45] [ok] Core online — staging
+[18:56:47] [ok] transmitted
+[18:57:47] [SYNC-LOOP] Probing core 100.122.169.43
+[18:57:49] [info] Core offline — holding
+[18:58:49] [SYNC-LOOP] Probing core 100.122.169.43
+[18:58:50] [ok] Core online — staging
+[18:58:51] [ok] transmitted
+[18:59:51] [SYNC-LOOP] Probing core 100.122.169.43
+[18:59:51] [ok] Core online — staging
+[18:59:54] [ok] transmitted
+[19:00:54] [SYNC-LOOP] Probing core 100.122.169.43
+[19:00:54] [ok] Core online — staging
+[19:00:57] [ok] transmitted
+[19:01:57] [SYNC-LOOP] Probing core 100.122.169.43
+[19:01:59] [info] Core offline — holding
+[19:02:59] [SYNC-LOOP] Probing core 100.122.169.43
+[19:02:59] [ok] Core online — staging
+[19:03:01] [ok] transmitted
+[19:04:01] [SYNC-LOOP] Probing core 100.122.169.43
+[19:04:01] [ok] Core online — staging
+[19:04:03] [ok] transmitted
+[19:05:03] [SYNC-LOOP] Probing core 100.122.169.43
+[19:05:03] [ok] Core online — staging
+[19:05:05] [ok] transmitted
+[19:06:05] [SYNC-LOOP] Probing core 100.122.169.43
+[19:06:05] [ok] Core online — staging
+[19:06:07] [ok] transmitted
+[19:07:07] [SYNC-LOOP] Probing core 100.122.169.43
+[19:07:07] [ok] Core online — staging
+[19:07:09] [ok] transmitted
+[19:08:09] [SYNC-LOOP] Probing core 100.122.169.43
+[19:08:10] [ok] Core online — staging
+[19:08:11] [ok] transmitted
+[19:09:11] [SYNC-LOOP] Probing core 100.122.169.43
+[19:09:12] [ok] Core online — staging
+[19:09:14] [ok] transmitted
+[19:10:15] [SYNC-LOOP] Probing core 100.122.169.43
+[19:10:15] [ok] Core online — staging
+[19:10:17] [ok] transmitted
+[19:11:17] [SYNC-LOOP] Probing core 100.122.169.43
+[19:11:17] [ok] Core online — staging
+[19:11:19] [ok] transmitted
+[19:12:19] [SYNC-LOOP] Probing core 100.122.169.43
+[19:12:19] [ok] Core online — staging
+[19:12:21] [ok] transmitted
+[19:13:21] [SYNC-LOOP] Probing core 100.122.169.43
+[19:13:21] [ok] Core online — staging
+[19:13:24] [ok] transmitted
+[19:14:24] [SYNC-LOOP] Probing core 100.122.169.43
+[19:14:24] [ok] Core online — staging
+[19:14:26] [ok] transmitted
+[19:15:26] [SYNC-LOOP] Probing core 100.122.169.43
+[19:15:26] [ok] Core online — staging
+[19:15:29] [ok] transmitted
+[19:16:29] [SYNC-LOOP] Probing core 100.122.169.43
+[19:16:29] [ok] Core online — staging
+[19:16:31] [ok] transmitted
+[19:17:31] [SYNC-LOOP] Probing core 100.122.169.43
+[19:17:31] [ok] Core online — staging
+[19:17:33] [ok] transmitted
+[19:18:33] [SYNC-LOOP] Probing core 100.122.169.43
+[19:18:34] [ok] Core online — staging
+[19:18:36] [ok] transmitted
+[19:19:36] [SYNC-LOOP] Probing core 100.122.169.43
+[19:19:36] [ok] Core online — staging
+[19:19:40] [ok] transmitted
+[19:20:40] [SYNC-LOOP] Probing core 100.122.169.43
+[19:20:40] [ok] Core online — staging
+[19:20:42] [ok] transmitted
+[19:21:42] [SYNC-LOOP] Probing core 100.122.169.43
+[19:21:42] [ok] Core online — staging
+[19:21:44] [ok] transmitted
+[19:22:44] [SYNC-LOOP] Probing core 100.122.169.43
+[19:22:44] [ok] Core online — staging
+[19:22:48] [ok] transmitted
+[19:23:48] [SYNC-LOOP] Probing core 100.122.169.43
+[19:23:48] [ok] Core online — staging
+[19:23:50] [ok] transmitted
+[19:24:50] [SYNC-LOOP] Probing core 100.122.169.43
+[19:24:50] [ok] Core online — staging
+[19:24:52] [ok] transmitted
+[19:25:52] [SYNC-LOOP] Probing core 100.122.169.43
+[19:25:52] [ok] Core online — staging
+[19:25:55] [ok] transmitted
+[19:26:55] [SYNC-LOOP] Probing core 100.122.169.43
+[19:26:55] [ok] Core online — staging
+[19:26:57] [ok] transmitted
+[19:27:57] [SYNC-LOOP] Probing core 100.122.169.43
+[19:27:57] [ok] Core online — staging
+[19:28:01] [ok] transmitted
+[19:29:01] [SYNC-LOOP] Probing core 100.122.169.43
+[19:29:01] [ok] Core online — staging
+[19:29:03] [ok] transmitted
+[19:30:03] [SYNC-LOOP] Probing core 100.122.169.43
+[19:30:05] [info] Core offline — holding
+[19:31:05] [SYNC-LOOP] Probing core 100.122.169.43
+[19:31:05] [ok] Core online — staging
+[19:31:08] [ok] transmitted
+[19:32:08] [SYNC-LOOP] Probing core 100.122.169.43
+[19:32:08] [ok] Core online — staging
+[19:32:10] [ok] transmitted
+[19:33:10] [SYNC-LOOP] Probing core 100.122.169.43
+[19:33:11] [ok] Core online — staging
+[19:33:13] [ok] transmitted
+[19:34:13] [SYNC-LOOP] Probing core 100.122.169.43
+[19:34:14] [ok] Core online — staging
+[19:34:16] [ok] transmitted
+[19:35:16] [SYNC-LOOP] Probing core 100.122.169.43
+[19:35:16] [ok] Core online — staging
+[19:35:18] [ok] transmitted
+[19:36:18] [SYNC-LOOP] Probing core 100.122.169.43
+[19:36:18] [ok] Core online — staging
+[19:36:21] [ok] transmitted
+[19:37:21] [SYNC-LOOP] Probing core 100.122.169.43
+[19:37:21] [ok] Core online — staging
+[19:37:23] [ok] transmitted
+[19:38:23] [SYNC-LOOP] Probing core 100.122.169.43
+[19:38:24] [ok] Core online — staging
+[19:38:28] [ok] transmitted
+[19:39:28] [SYNC-LOOP] Probing core 100.122.169.43
+[19:39:29] [ok] Core online — staging
+[19:39:31] [ok] transmitted
+[19:40:31] [SYNC-LOOP] Probing core 100.122.169.43
+[19:40:31] [ok] Core online — staging
+[19:40:33] [ok] transmitted
+[19:41:33] [SYNC-LOOP] Probing core 100.122.169.43
+[19:41:33] [ok] Core online — staging
+[19:41:36] [ok] transmitted
+[19:42:36] [SYNC-LOOP] Probing core 100.122.169.43
+[19:42:36] [ok] Core online — staging
+[19:42:38] [ok] transmitted
+[19:43:38] [SYNC-LOOP] Probing core 100.122.169.43
+[19:43:38] [ok] Core online — staging
+[19:43:42] [ok] transmitted
+[19:44:42] [SYNC-LOOP] Probing core 100.122.169.43
+[19:44:42] [ok] Core online — staging
+[19:44:44] [ok] transmitted
+[19:45:44] [SYNC-LOOP] Probing core 100.122.169.43
+[19:45:44] [ok] Core online — staging
+[19:45:46] [ok] transmitted
+[19:46:46] [SYNC-LOOP] Probing core 100.122.169.43
+[19:46:46] [ok] Core online — staging
+[19:46:50] [ok] transmitted
+[19:47:50] [SYNC-LOOP] Probing core 100.122.169.43
+[19:47:50] [ok] Core online — staging
+[19:47:53] [ok] transmitted
+[19:48:53] [SYNC-LOOP] Probing core 100.122.169.43
+[19:48:53] [ok] Core online — staging
+[19:48:56] [ok] transmitted
+[19:49:56] [SYNC-LOOP] Probing core 100.122.169.43
+[19:49:56] [ok] Core online — staging
+[19:49:58] [ok] transmitted
+[19:50:58] [SYNC-LOOP] Probing core 100.122.169.43
+[19:50:58] [ok] Core online — staging
+[19:51:01] [ok] transmitted
+[19:52:01] [SYNC-LOOP] Probing core 100.122.169.43
+[19:52:01] [ok] Core online — staging
+[19:52:03] [ok] transmitted
+[19:53:03] [SYNC-LOOP] Probing core 100.122.169.43
+[19:53:05] [info] Core offline — holding
+[19:54:05] [SYNC-LOOP] Probing core 100.122.169.43
+[19:54:05] [ok] Core online — staging
+[19:54:08] [ok] transmitted
+[19:55:08] [SYNC-LOOP] Probing core 100.122.169.43
+[19:55:08] [ok] Core online — staging
+[19:55:12] [ok] transmitted
+[19:56:12] [SYNC-LOOP] Probing core 100.122.169.43
+[19:56:12] [ok] Core online — staging
+[19:56:14] [ok] transmitted
+[19:57:14] [SYNC-LOOP] Probing core 100.122.169.43
+[19:57:14] [ok] Core online — staging
+[19:57:16] [ok] transmitted
+[19:58:16] [SYNC-LOOP] Probing core 100.122.169.43
+[19:58:16] [ok] Core online — staging
+[19:58:19] [ok] transmitted
+[19:59:19] [SYNC-LOOP] Probing core 100.122.169.43
+[19:59:20] [ok] Core online — staging
+[19:59:23] [ok] transmitted
+[20:00:23] [SYNC-LOOP] Probing core 100.122.169.43
+[20:00:23] [ok] Core online — staging
+[20:00:25] [ok] transmitted
+[20:01:26] [SYNC-LOOP] Probing core 100.122.169.43
+[20:01:26] [ok] Core online — staging
+[20:01:28] [ok] transmitted
+[20:02:28] [SYNC-LOOP] Probing core 100.122.169.43
+[20:02:28] [ok] Core online — staging
+[20:02:31] [ok] transmitted
+[20:03:31] [SYNC-LOOP] Probing core 100.122.169.43
+[20:03:31] [ok] Core online — staging
+[20:03:33] [ok] transmitted
+[20:04:33] [SYNC-LOOP] Probing core 100.122.169.43
+[20:04:33] [ok] Core online — staging
+[20:04:35] [ok] transmitted
+[20:05:35] [SYNC-LOOP] Probing core 100.122.169.43
+[20:05:36] [ok] Core online — staging
+[20:05:46] [ok] transmitted
+[20:06:46] [SYNC-LOOP] Probing core 100.122.169.43
+[20:06:46] [ok] Core online — staging

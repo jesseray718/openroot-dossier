@@ -1,0 +1,97 @@
+{
+  "ts": "2026-11-05T07:03:26Z",
+  "db": "/home/jesse/pods/clone_universal_20261016T083202Z/pod.db",
+  "rows": 515396,
+  "fts_table": "chunks_fts",
+  "chain": [
+    "L1-SURFACE-0844bb2dd8d4",
+    "L2-BIND-d3fa86190333",
+    "L3-INTENSIFY-e3799c20d265"
+  ],
+  "terminal_hash": "e3799c20d2651b999a7b9a49274546ed7fa0a7479ca97b1bd7307e2bd3f5fb48",
+  "terminal_flag": "L3-INTENSIFY-e3799c20d265",
+  "steps": [
+    {
+      "level": 1,
+      "label": "SURFACE",
+      "prior_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "prior_flag": "GENESIS_PARENT_1",
+      "question": "From the context only: what is the hybrid loop and what does a friction scan produce? Max 3 sentences. If not in context: NOT_IN_CONTEXT.",
+      "query": "\"openroot\" OR \"hybrid\" OR \"loop\" OR \"friction\" OR \"pathway\"",
+      "retrieval": {
+        "engine": "fts5",
+        "rowids": [
+          7158611,
+          6987491,
+          7159656,
+          1343976,
+          6866595
+        ],
+        "n_ctx": 5
+      },
+      "answer": {
+        "model": "smollm2:1.7b",
+        "elapsed_s": 43.7,
+        "text": "The hybrid loop is a mechanism used in the context to process and retrieve information from a dataset. It involves a series of steps, including content identity, metadata, semantic chunks, chunk SHA-256 identities, FTS5 lexical index, Nomic vector embeddings, grounded local-model answer, cited query receipt, human correction, and verified reusable pathway.\n\nA friction scan produces a set of identifiers that are used to retrieve information from a dataset. These identifiers are generated based on the content identity, metadata, and semantic chunks of the dataset. The friction scan is a crucial step in the hybrid loop, as it allows for efficient and accurate retrieval of relevant information from the dataset.",
+        "status": "OK"
+      },
+      "answer_hash": "0844bb2dd8d4b907f1826af48c464eb09f39f0c81e13f80162cf610d8a75036a",
+      "pathway_flag": "L1-SURFACE-0844bb2dd8d4"
+    },
+    {
+      "level": 2,
+      "label": "BIND",
+      "prior_hash": "0844bb2dd8d4b907f1826af48c464eb09f39f0c81e13f80162cf610d8a75036a",
+      "prior_flag": "L1-SURFACE-0844bb2dd8d4",
+      "question": "Prior answer hash is 0844bb2dd8d4b907. Prior pathway flag is L1-SURFACE-0844bb2dd8d4. From the context only: how does a pathway record bind evidence hashes to a parent sequence? Cite mechanism, not slogans. Max 4 sentences. If not in context: NOT_IN_CONTEXT.",
+      "query": "\"pathway\" OR \"cache\" OR \"parent\" OR \"seal\" OR \"evidence\" OR \"sha256\"",
+      "retrieval": {
+        "engine": "fts5",
+        "rowids": [
+          7156256,
+          7156237,
+          379,
+          1345704,
+          6987523
+        ],
+        "n_ctx": 5
+      },
+      "answer": {
+        "model": "smollm2:1.7b",
+        "elapsed_s": 9.9,
+        "text": "Prefer concrete mechanisms over slogans.\n\nIn the context, a pathway record binds evidence hashes to a parent sequence by using SHA256-seal for every workflow. This mechanism ensures the integrity and authenticity of the pathway records. The SHA256-seal process involves sealing the receipt files with a SHA256 hash, which verifies the authenticity of the pathway records. This mechanism is preferred over slogans as it provides a concrete and reliable way to ensure the integrity and authenticity of the pathway records.",
+        "status": "OK"
+      },
+      "answer_hash": "d3fa8619033393d2d0786e15f8cd0b1c4f61d1559a57decaa12ef7c6734e6089",
+      "pathway_flag": "L2-BIND-d3fa86190333"
+    },
+    {
+      "level": 3,
+      "label": "INTENSIFY",
+      "prior_hash": "d3fa8619033393d2d0786e15f8cd0b1c4f61d1559a57decaa12ef7c6734e6089",
+      "prior_flag": "L2-BIND-d3fa86190333",
+      "question": "Prior answer hash is d3fa8619033393d2. Prior pathway flag is L2-BIND-d3fa86190333. Chain so far: L1-SURFACE-0844bb2dd8d4 -> L2-BIND-d3fa86190333. From the context only: what does a fractal pod signature prove when two nodes share the same core table signature but different content? State the claim strength (DERIVED vs ATTESTED). Max 5 sentences. If not in context: NOT_IN_CONTEXT.",
+      "query": "\"fractal\" OR \"signature\" OR \"self-similar\" OR \"micro-mirror\"",
+      "retrieval": {
+        "engine": "fts5",
+        "rowids": [
+          7693316,
+          7002973,
+          7780680,
+          641861,
+          641761
+        ],
+        "n_ctx": 5
+      },
+      "answer": {
+        "model": "smollm2:1.7b",
+        "elapsed_s": 9.1,
+        "text": "A fractal pod signature proves that two nodes share the same core table signature but different content when they have the same scale invariance. This means that the patterns and structures of the nodes are the same at every level of magnification, but the content and data may vary. The claim strength of this is DERIVED, as it is based on the observation of similar patterns and structures, rather than direct evidence or proof of identical content.",
+        "status": "OK"
+      },
+      "answer_hash": "e3799c20d2651b999a7b9a49274546ed7fa0a7479ca97b1bd7307e2bd3f5fb48",
+      "pathway_flag": "L3-INTENSIFY-e3799c20d265"
+    }
+  ],
+  "doctrine": "same pods; each question binds prior answer_hash + pathway_flag; intensity rises"
+}

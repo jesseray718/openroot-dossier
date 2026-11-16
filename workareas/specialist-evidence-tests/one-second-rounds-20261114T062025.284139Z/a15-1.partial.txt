@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "source_ids": ["N2", "N643", "N3"],
+  "finding": "The native pathway/cache interfaces for A15 reuse of OptiPlex work are documented, separated from proven execution and identified missing acceptance tests.",
+  "next_action": "Review the documentation for A15 requirements and ensure that the cache interfaces are correctly implemented."
+}

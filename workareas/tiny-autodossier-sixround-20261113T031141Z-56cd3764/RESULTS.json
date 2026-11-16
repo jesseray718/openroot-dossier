@@ -1,0 +1,44 @@
+{
+  "compiler": {
+    "status": "held_interrupted",
+    "attempts": [
+      {
+        "round": 1,
+        "model": "qwen2.5-coder:0.5b",
+        "proposal": {
+          "finding": "compile_dossier",
+          "line": 34,
+          "quote": "def compile_dossier():"
+        },
+        "status": "interrupted",
+        "wall_seconds": 25.376
+      }
+    ],
+    "same_failure_count": 0,
+    "last_failure": null
+  },
+  "inference": {
+    "status": "held_run_stopped",
+    "attempts": [],
+    "same_failure_count": 0,
+    "last_failure": null
+  },
+  "pathway_write": {
+    "status": "held_run_stopped",
+    "attempts": [],
+    "same_failure_count": 0,
+    "last_failure": null
+  },
+  "energy_inputs": {
+    "status": "held_run_stopped",
+    "attempts": [],
+    "same_failure_count": 0,
+    "last_failure": null
+  },
+  "verification_side_effect": {
+    "status": "held_run_stopped",
+    "attempts": [],
+    "same_failure_count": 0,
+    "last_failure": null
+  }
+}

@@ -1,0 +1,8 @@
+CUSTOM_BANK_VALID=MISSING | no bank file found; configured path needs human confirmation
+BANK_132_INPUT=NOT_FOUND | 132-row input not relocated; check outbox staging dir
+RUNNER_SOURCE_CAPTURED=OK | /home/jesse/openloom-build/bin/universal_fts5_lattice_indexer.py (sha256 99a3eeaed0b98890…, 189 lines)
+DB_EXPECTED_PATH=NOTED | /home/jesse/openroot/universal_lattice_fts5.db
+DB_LINKED=OK | /home/jesse/openroot/universal_lattice_fts5.db -> /home/jesse/pods/clone_universal_20261016T083202Z/pod.db
+DB_VERIFY=OK | read-only open through /home/jesse/openroot/universal_lattice_fts5.db works
+HARNESS=SKIPPED | --plan-only; re-run without it (or RUN_HARNESS=1)
+RECEIPT=OK | /home/jesse/openroot/outbox/recall_audit/20261103T190848Z/RECEIPT.md (+ copy in /home/jesse/openroot/outbox/pr_package)

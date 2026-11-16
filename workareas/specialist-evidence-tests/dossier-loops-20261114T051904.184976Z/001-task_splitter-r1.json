@@ -1,0 +1,48 @@
+{
+  "file": "001-task_splitter-r1.json",
+  "role": "task_splitter",
+  "model": "qwen3:0.6b",
+  "round": 1,
+  "budget_seconds": 30,
+  "prompt_sha256": "5831f8b844199a2d7c5b0a0a954090f9cfab69abe07c12031264fbb4c2b29b77",
+  "status": "validated_structure",
+  "partial_text": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"S1\",\n      \"source_ids\": [\"S1\"],\n      \"quote\": \"Evolution, not revolution.\"\n    },\n    {\n      \"claim\": \"S2\",\n      \"source_ids\": [\"S2\"],\n      \"quote\": \"Connect LLM for detailed implementation.\"\n    },\n    {\n      \"claim\": \"S3\",\n      \"source_ids\": [\"S3\"],\n      \"quote\": \"Product Quantization (PQ) variants\"\n    }\n  ],\n  \"questions\": [\n    \"What is the smallest evidence-supported pathway for the A15 to reuse work already completed on the OptiPlex?\",\n    \"Distinguish documented procedures from demonstrated execution.\",\n    \"Identify missing evidence and concrete acceptance tests.\"\n  ],\n  \"next_action\": \"partial\",\n  \"verdict\": \"acceptable\"\n}",
+  "generation": {
+    "done_reason": "stop",
+    "eval_count": 202
+  },
+  "validated_output": {
+    "status": "completed",
+    "findings": [
+      {
+        "claim": "S1",
+        "source_ids": [
+          "S1"
+        ],
+        "quote": "Evolution, not revolution."
+      },
+      {
+        "claim": "S2",
+        "source_ids": [
+          "S2"
+        ],
+        "quote": "Connect LLM for detailed implementation."
+      },
+      {
+        "claim": "S3",
+        "source_ids": [
+          "S3"
+        ],
+        "quote": "Product Quantization (PQ) variants"
+      }
+    ],
+    "questions": [
+      "What is the smallest evidence-supported pathway for the A15 to reuse work already completed on the OptiPlex?",
+      "Distinguish documented procedures from demonstrated execution.",
+      "Identify missing evidence and concrete acceptance tests."
+    ],
+    "next_action": "partial",
+    "verdict": "acceptable"
+  },
+  "elapsed_seconds": 21.12
+}

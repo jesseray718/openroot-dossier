@@ -1,0 +1,56 @@
+2026-11-13T03:31:41.131920+00:00 RUN_DIR=/home/jesse/openroot/workareas/microticks-50-20261113T033141Z-de11f02b
+2026-11-13T03:31:41.132017+00:00 50 one-second ticks; unfinished requests remain active across ticks.
+2026-11-13T03:31:41.132091+00:00 No automatic resubmission of timed-out or unfinished server work.
+2026-11-13T03:31:41.132956+00:00 START scan_pattern [qwen2.5-coder:0.5b]
+2026-11-13T03:31:42.133135+00:00 TICK 01/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:43.132997+00:00 TICK 02/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:44.133101+00:00 TICK 03/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:45.132984+00:00 TICK 04/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:46.132305+00:00 TICK 05/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:47.133166+00:00 TICK 06/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:48.133168+00:00 TICK 07/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:49.132138+00:00 TICK 08/50 scan_pattern status=running received_chars=0
+2026-11-13T03:31:49.282997+00:00 END scan_pattern: needs_revision answer='bin'
+2026-11-13T03:31:50.133690+00:00 START insert_table [qwen2.5-coder:0.5b]
+2026-11-13T03:31:50.585927+00:00 END insert_table: needs_revision answer='```sql\nINSERT OR IGNORE INTO dossier_nodes (node_hash, filepath, content'
+2026-11-13T03:31:51.135930+00:00 START parent_value [granite4:1b]
+2026-11-13T03:31:52.133170+00:00 TICK 11/50 parent_value status=running received_chars=0
+2026-11-13T03:31:53.133144+00:00 TICK 12/50 parent_value status=running received_chars=0
+2026-11-13T03:31:54.213547+00:00 TICK 13/50 parent_value status=running received_chars=0
+2026-11-13T03:31:55.133237+00:00 TICK 14/50 parent_value status=running received_chars=0
+2026-11-13T03:31:56.133199+00:00 TICK 15/50 parent_value status=running received_chars=0
+2026-11-13T03:31:57.133243+00:00 TICK 16/50 parent_value status=running received_chars=0
+2026-11-13T03:31:58.133197+00:00 TICK 17/50 parent_value status=running received_chars=0
+2026-11-13T03:31:59.133326+00:00 TICK 18/50 parent_value status=running received_chars=0
+2026-11-13T03:32:00.133296+00:00 TICK 19/50 parent_value status=running received_chars=0
+2026-11-13T03:32:01.133259+00:00 TICK 20/50 parent_value status=running received_chars=0
+2026-11-13T03:32:02.341270+00:00 TICK 21/50 parent_value status=running received_chars=0
+2026-11-13T03:32:03.133174+00:00 TICK 22/50 parent_value status=running received_chars=0
+2026-11-13T03:32:04.133397+00:00 TICK 23/50 parent_value status=running received_chars=0
+2026-11-13T03:32:05.133325+00:00 TICK 24/50 parent_value status=running received_chars=0
+2026-11-13T03:32:06.133313+00:00 TICK 25/50 parent_value status=running received_chars=0
+2026-11-13T03:32:07.133668+00:00 TICK 26/50 parent_value status=running received_chars=0
+2026-11-13T03:32:08.133078+00:00 TICK 27/50 parent_value status=running received_chars=0
+2026-11-13T03:32:09.132562+00:00 TICK 28/50 parent_value status=running received_chars=0
+2026-11-13T03:32:10.151783+00:00 TICK 29/50 parent_value status=running received_chars=0
+2026-11-13T03:32:11.557052+00:00 TICK 30/50 parent_value status=running received_chars=0
+2026-11-13T03:32:12.206720+00:00 TICK 31/50 parent_value status=running received_chars=0
+2026-11-13T03:32:13.303770+00:00 TICK 32/50 parent_value status=running received_chars=0
+2026-11-13T03:32:14.274119+00:00 TICK 33/50 parent_value status=running received_chars=0
+2026-11-13T03:32:15.209893+00:00 TICK 34/50 parent_value status=running received_chars=0
+2026-11-13T03:32:16.134915+00:00 TICK 35/50 parent_value status=running received_chars=0
+2026-11-13T03:32:17.191813+00:00 TICK 36/50 parent_value status=running received_chars=0
+2026-11-13T03:32:18.133157+00:00 TICK 37/50 parent_value status=running received_chars=0
+2026-11-13T03:32:19.198564+00:00 TICK 38/50 parent_value status=running received_chars=0
+2026-11-13T03:32:20.244735+00:00 TICK 39/50 parent_value status=running received_chars=0
+2026-11-13T03:32:21.133149+00:00 TICK 40/50 parent_value status=running received_chars=0
+2026-11-13T03:32:22.133166+00:00 TICK 41/50 parent_value status=running received_chars=0
+2026-11-13T03:32:23.133158+00:00 TICK 42/50 parent_value status=running received_chars=0
+2026-11-13T03:32:24.133167+00:00 TICK 43/50 parent_value status=running received_chars=0
+2026-11-13T03:32:25.188298+00:00 TICK 44/50 parent_value status=running received_chars=0
+2026-11-13T03:32:26.133190+00:00 TICK 45/50 parent_value status=running received_chars=0
+2026-11-13T03:32:27.132885+00:00 TICK 46/50 parent_value status=running received_chars=0
+2026-11-13T03:32:28.133336+00:00 TICK 47/50 parent_value status=running received_chars=0
+2026-11-13T03:32:29.133303+00:00 TICK 48/50 parent_value status=running received_chars=0
+2026-11-13T03:32:30.133531+00:00 TICK 49/50 parent_value status=running received_chars=0
+2026-11-13T03:32:31.133255+00:00 TICK 50/50 parent_value status=running received_chars=0

@@ -1,0 +1,17 @@
+{
+  "timestamp": "20261114T044210Z",
+  "node": "optiplex_core",
+  "density": {
+    "scripts_root": 264,
+    "bin_scripts": 222,
+    "pods": 5,
+    "release_artifacts": 140,
+    "reply_cache_lines": 186
+  },
+  "size_kb": 1884144,
+  "protocol": {
+    "R": 1.0,
+    "c": 0.0,
+    "mode": "local_loop"
+  }
+}

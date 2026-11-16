@@ -1,0 +1,12 @@
+{
+  "schema": "openroot_final_mesh_sync_manifest_v1",
+  "node_id": "a15_mobile_edge",
+  "timestamp": "20261113T042117Z",
+  "payload_file": "final_dedup_sync_payload_20261113T042117Z.tar.gz",
+  "bytes": 3113,
+  "sha256": "38049db15047dde547e18fc104069a98a27aabaa74e796e74ec37145edcad8a0",
+  "protocol_alignment": {
+    "R": 1.0,
+    "c": 0.0
+  }
+}

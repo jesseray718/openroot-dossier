@@ -1,0 +1,25 @@
+{
+  "attempt": {
+    "role": "saved_work",
+    "model": "qwen3.5:0.8b",
+    "attempt": 2,
+    "launch_round": 80,
+    "start_seconds": 79.00090690597426,
+    "first_text_seconds": null,
+    "characters": 0,
+    "observed_finish_round": 126,
+    "observed_finish_seconds": 125.0035640009446,
+    "elapsed_seconds": 46.002657094970345,
+    "status": "attempt_timeout",
+    "error": null,
+    "generation": {}
+  },
+  "state": {
+    "attempts": 2,
+    "status": "attempt_timeout",
+    "partial": "",
+    "error": null,
+    "validated": null,
+    "terminal": true
+  }
+}

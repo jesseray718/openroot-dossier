@@ -1,0 +1,106 @@
+{
+  "ts": "2026-11-04T14:02:34Z",
+  "root": "/home/jesse/pods",
+  "pod_count": 24,
+  "signature_groups": [
+    {
+      "sig": "chunk_paths,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,files,seals",
+      "pods": [
+        "pod_android_skills",
+        "pod_anomalyco_opencode",
+        "pod_awesome-selfhosted_awesome-selfhosted",
+        "pod_ruvnet_ruflo",
+        "pod_stablyai_orca",
+        "pod_trimstray_the-book-of-secret-knowledge",
+        "pod_vinta_awesome-python"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corrections,dossiers,embed_cache,files,pathways,seals,sqlite_stat1",
+      "pods": [
+        "clone_universal_20261016T083202Z",
+        "lab_universal"
+      ]
+    },
+    {
+      "sig": "ask_runs,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corrections,embed_cache,facets,ledger,pathways,queries,seals,vec_chunks",
+      "pods": [
+        "github-docs",
+        "github-docs-clone"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,files,vec_chunks",
+      "pods": [
+        "grants_pod",
+        "sare_grants"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,embed_cache,facets,ledger,seals,vec_chunks",
+      "pods": [
+        "pod_a15-mobile",
+        "pod_github-history"
+      ]
+    },
+    {
+      "sig": "ask_runs,chunk_paths,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corrections,embed_cache,facets,ledger,pathways,queries,seals,vec_chunks",
+      "pods": [
+        "chunkhash_github-docs"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corrections,dossiers,embed_cache,files,pathways,seals,sqlite_stat1,vec_sample",
+      "pods": [
+        "exp_universal_20261016T090321Z"
+      ]
+    },
+    {
+      "sig": "chunks,ledger,seals,sqlite_sequence",
+      "pods": [
+        "openroot"
+      ]
+    },
+    {
+      "sig": "ask_runs,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,ledger,pathways,queries,seals",
+      "pods": [
+        "pod_dossier-bench"
+      ]
+    },
+    {
+      "sig": "answer_evaluations,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,compiled_gate_dossiers_v2,dossier_compilations_v1,github_bench_items,ledger,runs,single_gate_tests_v1",
+      "pods": [
+        "pod_interactions"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,ledger,seals,snapshot_provenance,sqlite_sequence",
+      "pods": [
+        "pod_openroot_fts"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,facets,ledger,source_bytes",
+      "pods": [
+        "pod_openroot_live_v1"
+      ]
+    },
+    {
+      "sig": "artifacts,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,embed_cache,facets,ledger,seals,vec_chunks",
+      "pods": [
+        "pod_self-corpus"
+      ]
+    },
+    {
+      "sig": "chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corrections,dossier_runs_v1,dossiers,embed_cache,files,pathways,seals,sqlite_stat1,vocab_col,vocab_row",
+      "pods": [
+        "pod_universal"
+      ]
+    }
+  ],
+  "self_similar": {
+    "max_group_size": 7,
+    "max_group_sig": "chunk_paths,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,files,seals",
+    "distinct_signatures": 14
+  }
+}

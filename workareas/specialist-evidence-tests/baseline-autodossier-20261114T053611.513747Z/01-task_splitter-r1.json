@@ -1,0 +1,11 @@
+{
+  "role": "task_splitter",
+  "model": "qwen3:0.6b",
+  "round": 1,
+  "status": "failed_or_timed_out",
+  "request_timeout_seconds": 100,
+  "prompt_sha256": "05e90698161a96d731f2525981f2c48f6d7c1b2946c52d08d49b625350ba4d8d",
+  "raw_response": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt...\",\n      \"source_ids\": [126, 127, 620],\n      \"quote\": \"A manifest-gated transfer staged 20 files on the A15. All 20 passed post-transfer SHA-256 verification against the generated manifest.\"\n    },\n    {\n      \"claim\": \"The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt...\",\n      \"source_ids\": [126, 127, 620],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway.\"\n    },\n    {\n      \"claim\": \"L0 is exact reuse. It does not...\",\n      \"source_ids\": [620],\n      \"quote\": \"L0 is exact reuse. It does not ...\"\n    }\n  ],\n  \"questions\": [\n    \"Is there evidence that the staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt...\",\n    \"Are all the staged artifacts verified against the generated manifest?\",\n    \"Is L0 considered exact reuse based on the provided evidence?\"\n  ]\n}",
+  "error": "Unknown source IDs",
+  "elapsed_seconds": 23.88
+}

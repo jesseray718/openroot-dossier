@@ -1,0 +1,21 @@
+# Manifest
+- name: openroot-seed-oracle
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: A15
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-seed-oracle
+  - /home/workdir/.grok/skills/openroot-seed-oracle/scripts
+  - /sdcard/openroot/session_seeds/current_seed.json
+- sisters:
+  - agape-engine
+  - une-joule-native
+  - openroot-a15-shizuku
+  - openroot-integration
+- trigger_ids:
+  - seed oracle
+  - twelfth axiom
+  - harvest before cleanup
+  - negentropy
+- status: live

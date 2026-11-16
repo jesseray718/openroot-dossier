@@ -1,0 +1,2 @@
+NAME                  ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+qwen2.5-coder:0.5b    4ff64a7f502a    678 MB    100% CPU     4096       44 minutes from now    

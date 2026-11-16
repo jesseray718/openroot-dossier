@@ -1,0 +1,14 @@
+{
+  "elapsed_seconds": 25.512,
+  "abort": "RequestTimeout: timed out",
+  "task_statuses": {
+    "compiler": "held_interrupted",
+    "inference": "held_run_stopped",
+    "pathway_write": "held_run_stopped",
+    "energy_inputs": "held_run_stopped",
+    "verification_side_effect": "held_run_stopped"
+  },
+  "canonical_promotion": false,
+  "live_ledger_writers_invoked": false,
+  "semantic_acceptance": "not_established"
+}

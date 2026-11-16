@@ -1,0 +1,20 @@
+{
+  "label": "C-transfer",
+  "question": "An evidence file changes after recording and an invalid JSON line is added to the ledger. Could verify still return success? Explain the control flow and the limits of that success.",
+  "question_sha256": "12fac7e8f2ca68beeb1a3c4f5c20e127b13a07e4c8c12032b6bffdf1652dfd49",
+  "evidence_sha256": "99b8f65f8e306a258465cdb26b99205b8c245b1de88c5a47a74457b7366d1a1d",
+  "wall_seconds": 99.86232381599984,
+  "error": null,
+  "status": "ANSWER_GENERATED_UNGRADED",
+  "model_requested": "qwen2.5-coder:7b",
+  "model_returned": "qwen2.5-coder:7b",
+  "telemetry": {
+    "done_reason": "stop",
+    "load_duration": 2579043,
+    "prompt_eval_count": 1589,
+    "prompt_eval_duration": 1722668000,
+    "eval_count": 534,
+    "eval_duration": 98045485000,
+    "total_duration": 99853835752
+  }
+}

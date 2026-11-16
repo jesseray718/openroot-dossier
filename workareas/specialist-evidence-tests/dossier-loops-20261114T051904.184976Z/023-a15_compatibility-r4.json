@@ -1,0 +1,11 @@
+{
+  "file": "023-a15_compatibility-r4.json",
+  "role": "a15_compatibility",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 4,
+  "budget_seconds": 30,
+  "prompt_sha256": "a80798e95bc6c8997819130e71af5938de7a40f0a08815f609e347cc331ce0df",
+  "status": "time_limited_partial",
+  "partial_text": "",
+  "elapsed_seconds": 30.03
+}

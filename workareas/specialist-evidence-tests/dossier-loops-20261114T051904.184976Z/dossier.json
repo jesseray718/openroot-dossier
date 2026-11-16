@@ -1,0 +1,257 @@
+{
+  "task": "Identify the smallest evidence-supported pathway for the A15 to reuse work already completed on the OptiPlex. Distinguish documented procedures from demonstrated execution. Identify missing evidence and concrete acceptance tests.",
+  "scope": "Bounded experimental dossier, not canonical pod/cache writes",
+  "acceptance": [
+    "Evidence retrieved before model dispatch",
+    "Source identities retained",
+    "Partial attempts checkpointed and carried forward",
+    "Proposals distinguished from actual execution"
+  ],
+  "evidence": [
+    {
+      "id": "S1",
+      "database": "data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 54,
+      "source_path": "attic/rescue_staging_vendor/0032_permaculture_lattice_engine.py",
+      "excerpt": " ... Evolution, not revolution.\",\n     \"computational\": \"Adaptive routing, dynamic reconfiguration, evolutionary algorithms, mutation\",\n     \"agape_role\": \"The DNA \u2014 encodes the capacity to evolve the lattice itself\"},\n]\n\n\ndef complete_pathways():\n    \"\"\"Under Agape every principle is connected to every other principle.\"\"\"\n    return {i: [j for j in range(1, 13) if j != i] for ... ",
+      "sha256": "ad34a755ca00aed2b6c45b20c477252bb76c4e501b345bc668bcbd3236c61df7"
+    },
+    {
+      "id": "S2",
+      "database": "data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 53,
+      "source_path": "attic/rescue_staging_vendor/0031_unified_agape_engine.py",
+      "excerpt": " ... Connect LLM for detailed implementation.\n\"\"\"\n\n\n# ============================================================================\n# LATTICE ENGINE \u2014 The Core Orchestrator\n# ============================================================================\n\nclass PermacultureLatticeEngine:\n    \"\"\"\n    The main engine that orchestrates the fractal lattice.\n    Each of the 12 permaculture principles is a 6^6 spoke.\n    All 12 interconnect laterally (pathways between principles).\n    The ring of 12 is itself a spoke at the next ... ",
+      "sha256": "7034f9a9414de83f1c9a06f8848f15bd6d55828870ee3446dc5876b9783f1f32"
+    },
+    {
+      "id": "S3",
+      "database": "data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 29,
+      "source_path": "attic/rescue_staging_vendor/0007_faiss_search.py",
+      "excerpt": " ... Product Quantization (PQ) variants\n#    - IndexPQ, IndexIVFPQ, IndexHNSWPQ\n#    - Compresses vectors (very important on phone RAM).\n#    - Trade accuracy for much lower memory footprint.\n\n# 5. Scalar Quantizer\n#    - IndexScalarQuantizer (float16 or int8)\n#    - Simple compression, low overhead.\n\n# Recommendation for your A15 + nomic 768-dim embeddings:\n#   Start with IndexFlatIP (exact + simple)\n#   Move to IndexHNSWFlat when you ... ",
+      "sha256": "5c875bda543717ca759bbec576d36b0cc7ecbe42e2fb50fe75022df78546fbe2"
+    },
+    {
+      "id": "S4",
+      "database": "data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 336,
+      "source_path": "/data/data/com.termux/files/home/openroot/a15/inbox/friction_triage/b40ed83fcbfe_CACHED_PATHWAY_L0.md",
+      "excerpt": " ... for one local pathway.**\n\nThis package documents a bounded vertical slice:\n\n```text\ncandidate \u2192 Turing Tidbit identity \u2192 verified provenance\n          \u2192 reviewed cache promotion \u2192 exact cache lookup\n          \u2192 local verified response, no model dispatch\n```\n\n## What L0 does\n\nL0 is exact reuse. It does not infer semantic equivalence.\n\nA route is eligible only when the ... ",
+      "sha256": "80063dabb1071fcd28aef74176e7099d942c375195c93fd7abb2f3091540e834"
+    },
+    {
+      "id": "S5",
+      "database": "data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 6,
+      "source_path": "/data/data/com.termux/files/home/openroot/README.md",
+      "excerpt": " ... This collaboration is not yet validated end to end.\n\n### Verified results \u2014 2026-11-03\n\nA manifest-gated transfer staged 20 files on the A15. All 20 passed\npost-transfer SHA-256 verification against the generated manifest.\n\nThe staged artifacts include the auto-dossier compiler, pathway-cache\ntooling and ledger, receipt ... ",
+      "sha256": "7f44f4f156a43141a69ee7a82877a8f1964a54e9873b5be2a2d1d5bc95c94f64"
+    },
+    {
+      "id": "S6",
+      "database": "data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 73,
+      "source_path": "/data/data/com.termux/files/home/openroot/a15/README.md",
+      "excerpt": " ... a family of\nappropriate-technology concepts for capturing, transferring, storing, and using\nthermal energy.\n\nThe current public Thermal Cascade packet is at **L0: concept and intake**.\nIt does not establish physical performance, safety, certification, code\ncompliance, cost savings, durability, field readiness, or suitability for any\nspecific use.\n\nCurrent work may ... ",
+      "sha256": "af4c05823b2742a6679536a88a3b1e949f50f3a8c06f780598456e86f9ebdb53"
+    }
+  ],
+  "role_states": {
+    "task_splitter": {
+      "model": "qwen3:0.6b",
+      "last_attempt_file": "001-task_splitter-r1.json",
+      "last_attempt_status": "validated_structure",
+      "partial_text": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"S1\",\n      \"source_ids\": [\"S1\"],\n      \"quote\": \"Evolution, not revolution.\"\n    },\n    {\n      \"claim\": \"S2\",\n      \"source_ids\": [\"S2\"],\n      \"quote\": \"Connect LLM for detailed implementation.\"\n    },\n    {\n      \"claim\": \"S3\",\n      \"source_ids\": [\"S3\"],\n      \"quote\": \"Product Quantization (PQ) variants\"\n    }\n  ],\n  \"questions\": [\n    \"What is the smallest evidence-supported pathway for the A15 to reuse work already completed on the OptiPlex?\",\n    \"Distinguish documented procedures from demonstrated execution.\",\n    \"Identify missing evidence and concrete acceptance tests.\"\n  ],\n  \"next_action\": \"partial\",\n  \"verdict\": \"acceptable\"\n}",
+      "validated_output": {
+        "status": "completed",
+        "findings": [
+          {
+            "claim": "S1",
+            "source_ids": [
+              "S1"
+            ],
+            "quote": "Evolution, not revolution."
+          },
+          {
+            "claim": "S2",
+            "source_ids": [
+              "S2"
+            ],
+            "quote": "Connect LLM for detailed implementation."
+          },
+          {
+            "claim": "S3",
+            "source_ids": [
+              "S3"
+            ],
+            "quote": "Product Quantization (PQ) variants"
+          }
+        ],
+        "questions": [
+          "What is the smallest evidence-supported pathway for the A15 to reuse work already completed on the OptiPlex?",
+          "Distinguish documented procedures from demonstrated execution.",
+          "Identify missing evidence and concrete acceptance tests."
+        ],
+        "next_action": "partial",
+        "verdict": "acceptable"
+      },
+      "error": null
+    },
+    "evidence_selector": {
+      "model": "qwen2.5-coder:0.5b",
+      "last_attempt_file": "026-evidence_selector-r5.json",
+      "last_attempt_status": "running",
+      "partial_text": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\"\n    },\n    {\n      \"claim\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\"\n    },\n    {\n      \"claim\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\"\n    }\n  ],\n  \"questions\": [\n    \"What L0 does?\",\n    \"What",
+      "validated_output": null,
+      "error": null
+    },
+    "fact_extractor": {
+      "model": "qwen3.5:0.8b",
+      "last_attempt_file": "021-fact_extractor-r4.json",
+      "last_attempt_status": "time_limited_partial",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "provenance_checker": {
+      "model": "granite4:1b",
+      "last_attempt_file": "022-provenance_checker-r4.json",
+      "last_attempt_status": "time_limited_partial",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "a15_compatibility": {
+      "model": "qwen2.5-coder:0.5b",
+      "last_attempt_file": "023-a15_compatibility-r4.json",
+      "last_attempt_status": "time_limited_partial",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "contradiction_checker": {
+      "model": "granite4:1b",
+      "last_attempt_file": "024-contradiction_checker-r4.json",
+      "last_attempt_status": "time_limited_partial",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "coder_integrator": {
+      "model": "qwen2.5-coder:7b",
+      "last_attempt_file": "025-coder_integrator-r4.json",
+      "last_attempt_status": "time_limited_partial",
+      "partial_text": "{\n  \"status\": \"partial\",\n  \"findings",
+      "validated_output": null,
+      "error": null
+    }
+  },
+  "attempt_files": [
+    "001-task_splitter-r1.json",
+    "002-evidence_selector-r1.json",
+    "003-fact_extractor-r1.json",
+    "004-provenance_checker-r1.json",
+    "005-a15_compatibility-r1.json",
+    "006-contradiction_checker-r1.json",
+    "007-coder_integrator-r1.json",
+    "008-evidence_selector-r2.json",
+    "009-fact_extractor-r2.json",
+    "010-provenance_checker-r2.json",
+    "011-a15_compatibility-r2.json",
+    "012-contradiction_checker-r2.json",
+    "013-coder_integrator-r2.json",
+    "014-evidence_selector-r3.json",
+    "015-fact_extractor-r3.json",
+    "016-provenance_checker-r3.json",
+    "017-a15_compatibility-r3.json",
+    "018-contradiction_checker-r3.json",
+    "019-coder_integrator-r3.json",
+    "020-evidence_selector-r4.json",
+    "021-fact_extractor-r4.json",
+    "022-provenance_checker-r4.json",
+    "023-a15_compatibility-r4.json",
+    "024-contradiction_checker-r4.json",
+    "025-coder_integrator-r4.json",
+    "026-evidence_selector-r5.json"
+  ],
+  "retrieval": [
+    {
+      "reason": "initial autodossier",
+      "database": "data/fts_index.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "initial autodossier",
+      "database": "data/md_fts_v1.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 2 dossier refresh",
+      "database": "data/fts_index.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 2 dossier refresh",
+      "database": "data/md_fts_v1.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 3 dossier refresh",
+      "database": "data/fts_index.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 3 dossier refresh",
+      "database": "data/md_fts_v1.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 4 dossier refresh",
+      "database": "data/fts_index.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 4 dossier refresh",
+      "database": "data/md_fts_v1.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 5 dossier refresh",
+      "database": "data/fts_index.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    },
+    {
+      "reason": "round 5 dossier refresh",
+      "database": "data/md_fts_v1.db",
+      "query": "\"the\" OR \"pathway\" OR \"for\" OR \"a15\" OR \"reuse\" OR \"work\"",
+      "status": "executed",
+      "returned_rows": 3
+    }
+  ],
+  "remaining_seconds": 864.3
+}

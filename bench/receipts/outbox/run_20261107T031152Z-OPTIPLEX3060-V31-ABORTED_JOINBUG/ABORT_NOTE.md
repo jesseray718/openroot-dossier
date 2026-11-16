@@ -1,0 +1,1 @@
+ABORTED mid-run 2026-11-07: constant evidence (6092/6164 chars across Q1-Q4, term counts 5/3/7/10) — Cartesian-join retrieval defect; telemetry string-expansion defect. Sealed as aborted, never hidden.

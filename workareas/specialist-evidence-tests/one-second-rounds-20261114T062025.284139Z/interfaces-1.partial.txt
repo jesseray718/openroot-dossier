@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "source_ids": ["N2", "N643", "N3"],
+  "finding": "A15 reuse of OptiPlex work",
+  "next_action": "Identify cache/pathway interfaces."
+}

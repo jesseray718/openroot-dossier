@@ -1,0 +1,18 @@
+[
+  {
+    "database": "data/fts_index.db",
+    "query": "\"A15\" OR \"pathway\" OR \"cache\" OR \"mesh\"",
+    "reason": "initial question",
+    "rows_returned": 3,
+    "status": "executed",
+    "elapsed_ms": 233.03
+  },
+  {
+    "database": "data/md_fts_v1.db",
+    "query": "\"A15\" OR \"pathway\" OR \"cache\" OR \"mesh\"",
+    "reason": "initial question",
+    "rows_returned": 3,
+    "status": "executed",
+    "elapsed_ms": 92.66
+  }
+]

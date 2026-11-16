@@ -1,0 +1,16 @@
+{
+  "timestamp": "20261111T190427Z",
+  "node": "a15_edge",
+  "core_ip": "100.122.169.43",
+  "density": {
+    "scripts_root": 264,
+    "pods": 4,
+    "reply_cache_lines": 46,
+    "release_payloads": 59
+  },
+  "protocol": {
+    "R": 1.0,
+    "c": 0.0,
+    "mode": "local_loop"
+  }
+}

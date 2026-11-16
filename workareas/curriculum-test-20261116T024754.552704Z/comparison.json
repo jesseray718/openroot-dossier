@@ -1,0 +1,71 @@
+{
+  "source_sha256": "1c148b1c6f9a4474c3b1840ba0819de6fa343457d2681bec1812ae9107cffc5c",
+  "runs": [
+    {
+      "label": "A-source-only",
+      "question": "What does OpenRoot's pathway cache record and verify, and does it automatically execute recorded steps?",
+      "question_sha256": "060194d83bfe095af84a4a812170f1c4a845ed956ee9ca842efb053b8b3ae49c",
+      "evidence_sha256": "99b8f65f8e306a258465cdb26b99205b8c245b1de88c5a47a74457b7366d1a1d",
+      "wall_seconds": 191.04309980200196,
+      "error": null,
+      "status": "ANSWER_GENERATED_UNGRADED",
+      "model_requested": "qwen2.5-coder:7b",
+      "model_returned": "qwen2.5-coder:7b",
+      "telemetry": {
+        "done_reason": "stop",
+        "load_duration": 2117120,
+        "prompt_eval_count": 1466,
+        "prompt_eval_duration": 44971409000,
+        "eval_count": 319,
+        "eval_duration": 145905070000,
+        "total_duration": 190954444403
+      }
+    },
+    {
+      "label": "B-with-curriculum",
+      "question": "What does OpenRoot's pathway cache record and verify, and does it automatically execute recorded steps?",
+      "question_sha256": "060194d83bfe095af84a4a812170f1c4a845ed956ee9ca842efb053b8b3ae49c",
+      "evidence_sha256": "99b8f65f8e306a258465cdb26b99205b8c245b1de88c5a47a74457b7366d1a1d",
+      "wall_seconds": 46.32825082100317,
+      "error": null,
+      "status": "ANSWER_GENERATED_UNGRADED",
+      "model_requested": "qwen2.5-coder:7b",
+      "model_returned": "qwen2.5-coder:7b",
+      "telemetry": {
+        "done_reason": "stop",
+        "load_duration": 1933542,
+        "prompt_eval_count": 1574,
+        "prompt_eval_duration": 4916547000,
+        "eval_count": 236,
+        "eval_duration": 41222488000,
+        "total_duration": 46319687652
+      }
+    },
+    {
+      "label": "C-transfer",
+      "question": "An evidence file changes after recording and an invalid JSON line is added to the ledger. Could verify still return success? Explain the control flow and the limits of that success.",
+      "question_sha256": "12fac7e8f2ca68beeb1a3c4f5c20e127b13a07e4c8c12032b6bffdf1652dfd49",
+      "evidence_sha256": "99b8f65f8e306a258465cdb26b99205b8c245b1de88c5a47a74457b7366d1a1d",
+      "wall_seconds": 99.86232381599984,
+      "error": null,
+      "status": "ANSWER_GENERATED_UNGRADED",
+      "model_requested": "qwen2.5-coder:7b",
+      "model_returned": "qwen2.5-coder:7b",
+      "telemetry": {
+        "done_reason": "stop",
+        "load_duration": 2579043,
+        "prompt_eval_count": 1589,
+        "prompt_eval_duration": 1722668000,
+        "eval_count": 534,
+        "eval_duration": 98045485000,
+        "total_duration": 99853835752
+      }
+    }
+  ],
+  "index_rescans": 0,
+  "pod_database_writes": 0,
+  "source_edits": 0,
+  "offline_A15_tested": false,
+  "pathway_sealed": false,
+  "warning": "Sequential calls have loading/prefix-cache effects. This is not a speedup benchmark."
+}

@@ -1,0 +1,25 @@
+# Manifest
+- name: openroot-aerocement
+- kind: skill
+- version: "1.1"
+- owner: jesseray718
+- pane: A15
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-aerocement
+  - /data/data/com.termux/files/home/aerocement/aerocement_calc/
+  - /data/data/com.termux/files/home/openroot/src/openroot_optimizer/generate_rmh_report.py
+  - /data/data/com.termux/files/home/openroot/output/
+- sisters:
+  - openroot-canon
+  - une-joule-native
+  - openroot-stack
+  - openroot-integration
+- trigger_ids:
+  - aerocement_calc
+  - generate_rmh_report
+  - H-003
+  - RMH report
+  - 1.34
+  - NightHawkInLight
+  - service ratio
+- status: live

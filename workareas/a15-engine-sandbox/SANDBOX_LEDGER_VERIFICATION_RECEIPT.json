@@ -1,0 +1,18 @@
+{
+  "canonical_status": "not_canonical",
+  "claim_eligible": false,
+  "eta_score": 35.0,
+  "first_previous_hash": "genesis",
+  "last_entry_hash": "b55de9169fec8076a2466db62dbdf441475143848cf0a8da152a7d047fd3cc14",
+  "ledger_entries": 1,
+  "ledger_sha256": "719065bb627e3d5f9cc7c458ccd45341e54d0e97c5b0a0d1c984c3b5ebc73168",
+  "live_acre_ledger_present": false,
+  "live_tree_modified": false,
+  "merkle_root": "d9bf7ce76b1fcb34e2d3722b66d2bde7d027658a2a80fc8b3126dcceeba527f5",
+  "result_sha256": "6d3939ebc153505fc64b158f7234ab0a6f77f686c4ec6851fcec0d8a45e91db0",
+  "status": "passed",
+  "task_sha256": "f4dbfdad7d2d75a83dc00c28b07b280261f725dc33be71d5510ebd168a0819f2",
+  "test": "sandboxed_lattice_evaluator_gated_append_v1",
+  "timestamp": "2026-11-11T13:24:18.031955+00:00",
+  "tool_sha256": "245e30fd4142684d87e1e656db0adbe06401096e5544a25e8811ffc9f112e961"
+}

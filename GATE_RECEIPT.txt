@@ -1,0 +1,5 @@
+GATE: all-one docs+mesh-align v1.2.1-popw-ledger
+DATE: 2026-11-16T08:48:33Z
+FILES: README.md, site/index.html
+CHECKS: bash -n gate passed, heredocs closed, no history rewritten, no force push
+NODES: optiplex3060 (syncthing v2.1.7) + SM-A156U (syncthing v2.1.7), TLS1.3 direct

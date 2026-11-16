@@ -1,0 +1,254 @@
+{
+  "task": "Identify the existing native pathway/cache interfaces by which an A15 could reuse completed OptiPlex work. Distinguish source-code behavior from demonstrated execution. Identify the missing acceptance tests. Do not invent cache hits, transfers, or successful replay.",
+  "database": "/home/jesse/openroot/analysis/autodossier.db",
+  "evidence": {
+    "N2": {
+      "id": "N2",
+      "node_hash": "93973fddbe5563a0bef416bfca8e1233",
+      "filepath": "bin/pathway_cache_v1.py",
+      "timestamp": 1793740719.3823578,
+      "source_state": "current_content_match",
+      "excerpt": "#!/usr/bin/env python3\n\"\"\"pathway_cache_v1.py \u2014 sealed, replayable pathways for the OpenRoot commons.\n\nA pathway is a recorded, working way to accomplish a recurring task: the\nexact steps, the evidence they produced, and hashes sealing both. Pathways\nchain linearly (each entry links to its parent), so refinements compound:\nthe next person replays a cached pathway instead of rediscovering it, then\nrecords the refinement ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N643": {
+      "id": "N643",
+      "node_hash": "8b5fac01d1fb3f87187d8213e9b42714",
+      "filepath": "bin/pods_sync.py",
+      "timestamp": 1794060387.2470438,
+      "source_state": "current_content_match",
+      "excerpt": " ... pass\n        save_state(r, post[r], pre_states[r], stale)\n        for rel in sorted(stale):\n            gone_rows.append({\"pair\": \"STATE\", \"rel\": rel,\n                              \"action\": \"GONE_ALL_SITES\", \"result\": \"PURGED_STATE\"})\n            log(\"EXEC PURGED_STATE GONE_ALL_SITES STATE \" + r + \" \" + rel)\n    exec_log.extend(gone_rows)\n    self_sha = sha256_file(Path(__file__))\n    pc = {\"A15\": Path(A15_HOME) / \"openroot/bin/pathway_cache_v1.py\",\n          \"SSH\": Path(BOX_HOME ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N3": {
+      "id": "N3",
+      "node_hash": "ffcea24473d7703d6040f52fe4dc77ad",
+      "filepath": "bin/friction_observer_v1.py",
+      "timestamp": 1793740719.3825088,
+      "source_state": "current_content_match",
+      "excerpt": " ... out = []\n    for name, sev in ENTRY_POINTS.items():\n        if not (root / name).exists():\n            out.append({\n                \"kind\": \"missing_entry_point\", \"severity\": sev, \"path\": name,\n                \"detail\": f\"expected anchor file {name} is absent\",\n                \"hint\": f\"create {name} (STARTHERE.md is the newcomer front door)\",\n            })\n    return out\n\n\ndef check_broken_links(docs):\n    out = []\n    for p, text in docs:\n        for m in LINK_RE.finditer(text):\n            target = m.group ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N168": {
+      "id": "N168",
+      "node_hash": "60731561a820d5cad44c52a567295a63",
+      "filepath": "bin/qa_fts5.py",
+      "timestamp": 1793861797.6158686,
+      "source_state": "current_content_match",
+      "excerpt": " ... index | ask \"<q>\" | stage <file> | cache-report\nProvider order: GEMINI_API_KEY -> OPENROUTER_API_KEY -> local qwen2.5:3b.\"\"\"\nimport hashlib, json, os, re, sqlite3, subprocess, sys, time, urllib.request\nfrom pathlib import Path\nROOT=\"/home/jesse/openroot\"; DB=f\"{ROOT}/data/qa_corpus.db\"\nS=\"\"\"CREATE TABLE IF NOT EXISTS chunks(id INTEGER PRIMARY KEY,path TEXT,heading TEXT,body TEXT,sig TEXT);\nCREATE ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N164": {
+      "id": "N164",
+      "node_hash": "99c48acb87639b89398b6bb6be90427a",
+      "filepath": "bin/need_gate.py",
+      "timestamp": 1793861797.6135428,
+      "source_state": "current_content_match",
+      "excerpt": " ... FTS5 probe \u2014 no nomic until FTS5 hits\",\n]\nREJECT = [\n    \"7B on A15\",\n    \"nomic on A15\",\n    \"syncthing serve on Termux\",\n    \"ACRE without hang\",\n    \"1.34 as MEASURED\",\n    \"2500-4000 psi\",\n    \"xanthan/Dawn as NightHawk gel\",\n]\n\ndef pane():\n    home = str(Path.home())\n    if home.startswith(\"/data/data/com.termux\"):\n        return \"A15\"\n    if home == \"/home/jesse\":\n        return \"SSH\"\n    return \"OTHER\"\n\ndef probe(paths):\n    out = []\n    for p in paths:\n        pp ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N161": {
+      "id": "N161",
+      "node_hash": "88aa92015bbaa00f32f441c2e0232359",
+      "filepath": "bin/doc_compile.py",
+      "timestamp": 1793861797.6113765,
+      "source_state": "current_content_match",
+      "excerpt": "#!/usr/bin/env python3\n\"\"\"doc_compile.py \u2014 Cross-device document compiler (A15/Termux + OptiPlex)\nScans ALL new/modified .md/.txt docs in past 24h for the detected machine,\ncompiles into one timestamped doc in ~/openroot/context_bridge/.\nUsage: python3 doc_compile.py [--hours 48] [--dry-run]\n\"\"\"\n\nimport os\nimport sys\nimport json\nimport socket\nimport argparse\nfrom datetime import datetime\nfrom pathlib import Path\nfrom ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N111": {
+      "id": "N111",
+      "node_hash": "8fdee4af00ecfb0bd44ef819862b4cc3",
+      "filepath": "bin/rescue_a15_unique.py",
+      "timestamp": 1793861797.5318823,
+      "source_state": "current_content_match",
+      "excerpt": " ... Path(os.path.expanduser(\"~/openroot/data/a15_only_canonical.tar.gz\"))\n\nconn = sqlite3.connect(DB)\nc = conn.cursor()\n\n# canonical a15 files whose hash appears NOWHERE on optiplex\nrows = c.execute(\"\"\"\n    SELECT path FROM files\n    WHERE is_canonical=1 AND node='a15'\n    AND hash NOT IN (SELECT hash FROM files WHERE node='optiplex')\n\"\"\").fetchall()\npaths = [Path(r[0]) for r in rows]\nprint(f\"[rescue] {len ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N5": {
+      "id": "N5",
+      "node_hash": "a16340e0b07d2c55eb4a89e9bbd99a10",
+      "filepath": "bin/genesis_chain_v1.py",
+      "timestamp": 1793740719.3826451,
+      "source_state": "current_content_match",
+      "excerpt": "#!/usr/bin/env python3\n\"\"\"OpenRoot Genesis Chain v1 - compresses cache states and anchors a second genesis block.\"\"\"\nimport argparse, hashlib, json, os, sqlite3, sys, time\nfrom pathlib import Path\n\nREPO = Path(os.environ.get(\"OPENROOT_REPO\", \"/home/jesse/openroot\"))\nCACHE_DB = REPO / \"data\" / \"receipt_cache.db\"\nGENESIS_LEDGER = REPO / \"data\" / \"genesis_chain.jsonl\"\n\ndef get_latest_merkle_root(conn):\n    \"\"\"Compute a Merkle root over all ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N108": {
+      "id": "N108",
+      "node_hash": "739c1483aaf705335f8ea533924f2dad",
+      "filepath": "bin/clarification_barrage_engine.py",
+      "timestamp": 1793861797.530027,
+      "source_state": "current_content_match",
+      "excerpt": " ... 1.0} for i, q in enumerate(questions, 1)]\n    \n    report = {\n        \"timestamp\": timestamp,\n        \"engine\": \"clarification_barrage_engine_v1\",\n        \"metrics\": {\"R\": 1, \"C\": 0},\n        \"total_clarifications\": len(evaluated_tests),\n        \"evaluations\": evaluated_tests\n    }\n    \n    block_hash = compute_hash(report)\n    \n    receipt = {\n        \"block_hash\": block_hash,\n        \"ots_timestamp\": timestamp,\n        \"popw_thermo_ledger\": {\"mean_eta\": 2.145, \"coordination_overhead\": 0.0},\n        \"analytical_data\": report\n    }\n    \n    out_path = Path(\"data/thermodynamics/clarification_barrage_receipt ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N126": {
+      "id": "N126",
+      "node_hash": "1f852ef940813be401be9aaad5233e3a",
+      "filepath": "bin/triage100.py",
+      "timestamp": 1793861797.542925,
+      "source_state": "current_content_match",
+      "excerpt": " ... return \"A15\"\n    if h == \"/home/jesse\": return \"SSH\"\n    return \"OTHER\"\n\ndef die(msg): print(f\"[gate] REFUSE: {msg}\", file=sys.stderr); sys.exit(1)\n\nP = pane()\nROOT = Path(\"/data/data/com.termux/files/home/openroot\") if P == \"A15\" else Path(\"/home/jesse/openroot\")\nOUTDIR = Path(\"/storage/emulated/0/openroot/outbox\") if P == \"A15\" else ROOT / \"outbox\"\nDATADIR = ROOT / \"data\"\nfor d in (ROOT / \"bin\", OUTDIR ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    },
+    "N133": {
+      "id": "N133",
+      "node_hash": "4bed584a6301497cb0db757a4684f312",
+      "filepath": "bin/improvement_barrage_engine.py",
+      "timestamp": 1793861797.5840378,
+      "source_state": "current_content_match",
+      "excerpt": " ... 0}, \"total_tests\": len(test_suite), \"test_results\": test_suite}\n    block_hash = compute_hash(report)\n    final_receipt = {\"block_hash\": block_hash, \"ots_timestamp\": timestamp, \"popw_thermo_ledger\": {\"mean_eta\": sum(t[\"eta_ratio\"] for t in test_suite) / len(test_suite), \"coordination_overhead\": 0.0}, \"analytical_data\": report}\n    out_path = Path(\"data/thermodynamics/improvement_barrage_receipt.json\")\n    out_path.parent.mkdir(parents=True, exist_ok ... ",
+      "evidence_kind": "indexed_source_record_not_execution_receipt"
+    }
+  },
+  "role_states": {
+    "interface_selector": {
+      "model": "qwen2.5-coder:0.5b",
+      "last_attempt_status": "running",
+      "last_attempt_file": "028-interface_selector-r5.json",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "task_planner": {
+      "model": "qwen3:0.6b",
+      "last_attempt_status": "validated_structure",
+      "last_attempt_file": "023-task_planner-r4.json",
+      "partial_text": "{\n  \"status\": \"needs_evidence\",\n  \"selected_ids\": [\"N2\", \"N643\", \"N3\"],\n  \"note\": \"The existing native pathway interfaces for A15 are identified in the provided source code. However, evidence is needed to independently verify their behavior.\",\n  \"next_query\": \"Identify the missing acceptance tests for the A15 pathway cache interfaces.\"\n}",
+      "validated_output": {
+        "status": "needs_evidence",
+        "selected_ids": [
+          "N2",
+          "N643",
+          "N3"
+        ],
+        "note": "The existing native pathway interfaces for A15 are identified in the provided source code. However, evidence is needed to independently verify their behavior.",
+        "next_query": "Identify the missing acceptance tests for the A15 pathway cache interfaces."
+      },
+      "error": null
+    },
+    "record_selector": {
+      "model": "qwen3.5:0.8b",
+      "last_attempt_status": "time_limited_partial",
+      "last_attempt_file": "024-record_selector-r4.json",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "provenance_reviewer": {
+      "model": "granite4:1b",
+      "last_attempt_status": "time_limited_partial",
+      "last_attempt_file": "025-provenance_reviewer-r4.json",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    },
+    "a15_compatibility": {
+      "model": "qwen2.5-coder:0.5b",
+      "last_attempt_status": "validated_structure",
+      "last_attempt_file": "026-a15_compatibility-r4.json",
+      "partial_text": "{\n  \"status\": \"needs_evidence\",\n  \"selected_ids\": [\"N2\", \"N643\", \"N3\"],\n  \"note\": \"The A15 could reuse completed OptiPlex work by identifying the existing native pathway/cache interfaces by which it could reuse completed OptiPlex work. Distinguish source-code behavior from demonstrated execution. Identify the missing acceptance tests. Do not invent cache hits, transfers, or successful replay.\",\n  \"next_query\": \"Replay ... \"\n}",
+      "validated_output": {
+        "status": "needs_evidence",
+        "selected_ids": [
+          "N2",
+          "N643",
+          "N3"
+        ],
+        "note": "The A15 could reuse completed OptiPlex work by identifying the existing native pathway/cache interfaces by which it could reuse completed OptiPlex work. Distinguish source-code behavior from demonstrated execution. Identify the missing acceptance tests. Do not invent cache hits, transfers, or successful replay.",
+        "next_query": "Replay ... "
+      },
+      "error": null
+    },
+    "contradiction_reviewer": {
+      "model": "granite4:1b",
+      "last_attempt_status": "validated_structure",
+      "last_attempt_file": "020-contradiction_reviewer-r3.json",
+      "partial_text": "{\"status\": \"ready\", \"selected_ids\": [\"N2\", \"N643\", \"N3\"], \"note\": \"The existing native pathway/cache interfaces for A15 reuse completed OptiPlex work include pathway_cache_v1.py, pods_sync.py, and friction_observer_v1.py. These interfaces handle ledger path management, chain loading, and pathway refinement.\", \"next_query\": \"Identify the missing acceptance tests.\"}",
+      "validated_output": {
+        "status": "ready",
+        "selected_ids": [
+          "N2",
+          "N643",
+          "N3"
+        ],
+        "note": "The existing native pathway/cache interfaces for A15 reuse completed OptiPlex work include pathway_cache_v1.py, pods_sync.py, and friction_observer_v1.py. These interfaces handle ledger path management, chain loading, and pathway refinement.",
+        "next_query": "Identify the missing acceptance tests."
+      },
+      "error": null
+    },
+    "coder_integrator": {
+      "model": "qwen2.5-coder:7b",
+      "last_attempt_status": "time_limited_partial",
+      "last_attempt_file": "027-coder_integrator-r4.json",
+      "partial_text": "",
+      "validated_output": null,
+      "error": null
+    }
+  },
+  "retrieval": [
+    {
+      "reason": "initial",
+      "query": "\"pathway\" OR \"route_cache\" OR \"cache\" OR \"replay\" OR \"a15\"",
+      "status": "executed",
+      "rows": 8
+    },
+    {
+      "reason": "round 2",
+      "query": "\"missing\" OR \"acceptance\" OR \"tests\" OR \"for\" OR \"a15\" OR \"pathway\"",
+      "status": "executed",
+      "rows": 8
+    },
+    {
+      "reason": "round 3",
+      "query": "\"missing\" OR \"acceptance\" OR \"tests\" OR \"for\" OR \"a15\" OR \"pathway\"",
+      "status": "executed",
+      "rows": 8
+    },
+    {
+      "reason": "round 4",
+      "query": "\"missing\" OR \"acceptance\" OR \"tests\" OR \"for\" OR \"a15\" OR \"pathway\"",
+      "status": "executed",
+      "rows": 8
+    },
+    {
+      "reason": "round 5",
+      "query": "\"missing\" OR \"acceptance\" OR \"tests\" OR \"for\" OR \"a15\" OR \"pathway\"",
+      "status": "executed",
+      "rows": 8
+    }
+  ],
+  "attempt_files": [
+    "001-interface_selector-r1.json",
+    "002-task_planner-r1.json",
+    "003-record_selector-r1.json",
+    "004-provenance_reviewer-r1.json",
+    "005-a15_compatibility-r1.json",
+    "006-contradiction_reviewer-r1.json",
+    "007-coder_integrator-r1.json",
+    "008-interface_selector-r2.json",
+    "009-task_planner-r2.json",
+    "010-record_selector-r2.json",
+    "011-provenance_reviewer-r2.json",
+    "012-a15_compatibility-r2.json",
+    "013-contradiction_reviewer-r2.json",
+    "014-coder_integrator-r2.json",
+    "015-interface_selector-r3.json",
+    "016-task_planner-r3.json",
+    "017-record_selector-r3.json",
+    "018-provenance_reviewer-r3.json",
+    "019-a15_compatibility-r3.json",
+    "020-contradiction_reviewer-r3.json",
+    "021-coder_integrator-r3.json",
+    "022-interface_selector-r4.json",
+    "023-task_planner-r4.json",
+    "024-record_selector-r4.json",
+    "025-provenance_reviewer-r4.json",
+    "026-a15_compatibility-r4.json",
+    "027-coder_integrator-r4.json",
+    "028-interface_selector-r5.json"
+  ],
+  "execution_evidence": "not_established_by_code_records",
+  "remaining_seconds": 508.9
+}

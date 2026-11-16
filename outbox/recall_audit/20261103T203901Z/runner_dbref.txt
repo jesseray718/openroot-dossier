@@ -1,0 +1,1 @@
+22:INDEX_DB_PATH = PRIVATE_DIR / "universal_lattice_fts5.db"

@@ -1,0 +1,138 @@
+[
+  {
+    "role": "task_splitter",
+    "model": "qwen3:0.6b",
+    "round": 1,
+    "execution_status": "failed",
+    "prompt_sha256": "24b8b09e82904f2639d1d5e4bc21915a74fb636d9b648564a783f2bfd1817463",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The smallest evidence-supported pathway for an A15 to reuse work from the OptiPlex\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\"],\n      \"quote\": \"assert_a15()\\n    print(\\\"pane\\\", \\\"A15\\\")\\n    print(\\\"host\\\", os.uname().nodename)\\n    print(\\\"uid\\\", os.getuid())\\n    print(\\\"cwd\\\", os.getcwd())\\n    print(\\\"termux_home\\\", TERMUX_HOME.exists())\\n    print(\\\"mesh\\\", MESH.exists(), \\\"outbox\\\", MESH_OUT.exists())\\n    for r in ROOTS:\\n        print(\\\"root\\\", str(r), \\\"exists\\\", r.is_dir())\\n    HOME_OUT.mkdir(parents=True, exist_ok=True)\\n    print(\\\"home_out ... \\\", \\\"excerpt_sha256\\\": \\\"626678fa8e9be8e50185dbf9da57f1114cea17bbd654e26f6ec57dd4b6912e35\\\")\"\n    },\n    {\n      \"claim\": \"Documented procedures from the OptiPlex\",\n      \"source_ids\": [\"S2\", \"S3\"],\n      \"quote\": \"MESH_OUT = MESH / \\\"outbox\\\"\\nVERSION = \\\"a15-v2-20260906\\\"\\n\\nROOTS_DEFAULT = [\\n    Path(\\\"/storage/emulated/0/Download\\\"),\\n    Path(\\\"/storage/emulated/0/Documents/Markor\\\"),\\n    Path(\\\"/storage/emulated/0/Markor\\\"),\\n    MESH / \\\"outbox\\\",\\n]\"\n    },\n    {\n      \"claim\": \"Missing evidence for the pathway\",\n      \"source_ids\": [\"S4\", \"S5\", \"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first",
+    "error": "Generation hit token limit",
+    "elapsed_seconds": 35.3
+  },
+  {
+    "role": "evidence_selector",
+    "model": "qwen2.5-coder:0.5b",
+    "round": 1,
+    "execution_status": "failed",
+    "prompt_sha256": "c09f0f606ddd40f3bfbe9f048459b68cfff3ff04b3a11070ddac106a49f7664d",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented as a bounded vertical slice.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented as a bounded vertical slice.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented as a bounded vertical slice.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented as a bounded vertical slice.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented as a bounded vertical slice.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented as a bounded vertical slice.\"\n    }\n  ],\n  \"questions\": [\n    \"What evidence is directly addressed reuse and retrieval?\",\n    \"What evidence is documented as a bounded vertical slice?\",\n    \"What evidence is documented as a bounded vertical slice?\"\n  ]\n}",
+    "error": "Quotation not found in cited excerpt",
+    "elapsed_seconds": 21.71
+  },
+  {
+    "role": "fact_extractor",
+    "model": "qwen3.5:0.8b",
+    "round": 1,
+    "execution_status": "failed",
+    "prompt_sha256": "d54c69cccda8e704e660e7d01e940587cc8882b1de9ce0f9441bfeb8c8754173",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The documented procedure for A15 reuse from OptiPlex is the 'L0 Cached Pathway' (S6), which explicitly excludes live SQLite databases and Turing Tidbit object storage.\",\n      \"source_ids\": [\"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway. It intentionally excludes: - live SQLite databases, - Turing Tidbit object storage,\"\n    },\n    {\n      \"claim\": \"The execution of this procedure is not yet validated end-to-end in the current system state.\",\n      \"source_ids\": [\"S4\"],\n      \"quote\": \"This collaboration is not yet validated end to end. The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt-cache database, genesis-chain artifact...\"\n    }\n  ],\n  \"questions\": [\n    \"What specific execution steps are required for L0 to be considered 'demonstrated' rather than just documented?\",\n    \"Are there any other pathways in the indexed records that also exclude live SQLite databases or Turing Tidbit object storage?\"\n  ]\n}",
+    "error": "Quotation not found in cited excerpt",
+    "elapsed_seconds": 95.13
+  },
+  {
+    "role": "provenance_checker",
+    "model": "granite4:1b",
+    "round": 1,
+    "execution_status": "passed",
+    "prompt_sha256": "9b411d11f86159fced16d512e2ac62b846b58af4c2ff374379df62fd48b6f31f",
+    "raw_response": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"A15 can reuse work from the OptiPlex\",\n      \"source_ids\": [\"S5\"],\n      \"quote\": \"L0 is exact reuse. It does not infer semantic equivalence.\"\n    },\n    {\n      \"claim\": \"Verified provenance for one local pathway\",\n      \"source_ids\": [\"S5\"],\n      \"quote\": \"L0 exact reuse is verified for one local pathway.\"\n    },\n    {\n      \"claim\": \"OpenRoot exact cache pathway evidence is contained in this directory\",\n      \"source_ids\": [\"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway.\"\n    }\n  ],\n  \"questions\": []\n}",
+    "output": {
+      "status": "completed",
+      "findings": [
+        {
+          "claim": "A15 can reuse work from the OptiPlex",
+          "source_ids": [
+            "S5"
+          ],
+          "quote": "L0 is exact reuse. It does not infer semantic equivalence."
+        },
+        {
+          "claim": "Verified provenance for one local pathway",
+          "source_ids": [
+            "S5"
+          ],
+          "quote": "L0 exact reuse is verified for one local pathway."
+        },
+        {
+          "claim": "OpenRoot exact cache pathway evidence is contained in this directory",
+          "source_ids": [
+            "S6"
+          ],
+          "quote": "This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway."
+        }
+      ],
+      "questions": []
+    },
+    "eval_count": 173,
+    "prompt_eval_count": 1662,
+    "elapsed_seconds": 98.81
+  },
+  {
+    "role": "a15_compatibility_checker",
+    "model": "qwen2.5-coder:0.5b",
+    "round": 1,
+    "execution_status": "failed",
+    "prompt_sha256": "a1c5af889080e6c23ec9b80632c4cce2e7c77e3f987248e8df965ab2d3effda1",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\"\n    }\n  ],\n  \"questions\": [\n    \"What evidence is missing for the A15 to reuse work from the OptiPlex?\",\n    \"What evidence is missing for the A15 to reuse work from the OptiPlex?\",\n    \"What evidence is missing for the A15 to reuse work from the OptiPlex?\"\n  ]\n}",
+    "error": "Quotation not found in cited excerpt",
+    "elapsed_seconds": 22.13
+  },
+  {
+    "role": "contradiction_checker",
+    "model": "granite4:1b",
+    "round": 1,
+    "execution_status": "failed",
+    "prompt_sha256": "f86980037f4df808471f008029bdc115426aea0fb2ceae563bfb2e274033886e",
+    "error": "timed out",
+    "elapsed_seconds": 100.1
+  },
+  {
+    "role": "task_splitter",
+    "model": "qwen3:0.6b",
+    "round": 2,
+    "execution_status": "failed",
+    "prompt_sha256": "ea6fe7650317fa3ae72c5bcb5d2dd49b95c2c27f0383a0087c919ecd73dc4be2",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The smallest evidence-supported pathway for an A15 to reuse work from the OptiPlex\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\"],\n      \"quote\": \"assert_a15()\\n    print(\\\"pane\\\", \\\"A15\\\")\\n    print(\\\"host\\\", os.uname().nodename)\\n    print(\\\"uid\\\", os.getuid())\\n    print(\\\"cwd\\\", os.getcwd())\\n    print(\\\"termux_home\\\", TERMUX_HOME.exists())\\n    print(\\\"mesh\\\", MESH.exists(), \\\"outbox\\\", MESH_OUT.exists())\\n    for r in ROOTS:\\n        print(\\\"root\\\", str(r), \\\"exists\\\", r.is_dir())\\n    HOME_OUT.mkdir(parents=True, exist_ok=True)\\n    print(\\\"home_out ... \\\", \\\"excerpt_sha256\\\": \\\"626678fa8e9be8e50185dbf9da57f1114cea17bbd654e26f6ec57dd4b6912e35\\\")\"\n    },\n    {\n      \"claim\": \"Documented procedures from the OptiPlex\",\n      \"source_ids\": [\"S2\", \"S3\"],\n      \"quote\": \"MESH_OUT = MESH / \\\"outbox\\\"\\nVERSION = \\\"a15-v2-20260906\\\"\\n\\nROOTS_DEFAULT = [\\n    Path(\\\"/storage/emulated/0/Download\\\"),\\n    Path(\\\"/storage/emulated/0/Documents/Markor\\\"),\\n    Path(\\\"/storage/emulated/0/Markor\\\"),\\n    MESH / \\\"outbox\\\",\\n]\"\n    },\n    {\n      \"claim\": \"Missing evidence for the pathway\",\n      \"source_ids\": [\"S4\", \"S5\", \"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for",
+    "error": "Generation hit token limit",
+    "elapsed_seconds": 83.41
+  },
+  {
+    "role": "evidence_selector",
+    "model": "qwen2.5-coder:0.5b",
+    "round": 2,
+    "execution_status": "failed",
+    "prompt_sha256": "60e967cac4dca9649ed04f74ebbce999ffe7b3e0705cdc70cf1d404ec818f4ed",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex is documented in the `knowledge_fts` table.\"\n    }\n  ],\n  \"questions\": [\n    \"What evidence is directly addressed reuse and retrieval?\",\n    \"What evidence is documented in the `knowledge_fts` table?\",\n    \"What evidence is documented in the `knowledge_fts` table?\"\n  ]\n}",
+    "error": "Quotation not found in cited excerpt",
+    "elapsed_seconds": 20.85
+  },
+  {
+    "role": "fact_extractor",
+    "model": "qwen3.5:0.8b",
+    "round": 2,
+    "execution_status": "failed",
+    "prompt_sha256": "17956e079c37dbbd36a3934b2428685856c73a52b8d47f8a8533cebbdc927b2c",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The documented procedure for A15 reuse from OptiPlex is the 'L0 Cached Pathway' (S6), which explicitly excludes live SQLite databases and Turing Tidbit object storage.\",\n      \"source_ids\": [\"S6\"],\n      \"quote\": \"This directory contains only reviewed source copies and sealed evidence receipts for the first documented OpenRoot exact cache pathway. It intentionally excludes: - live SQLite databases, - Turing Tidbit object storage,\"\n    },\n    {\n      \"claim\": \"The execution of this reuse is not yet validated end-to-end in the current system state.\",\n      \"source_ids\": [\"S4\"],\n      \"quote\": \"This collaboration is not yet validated end to end. The staged artifacts include the auto-dossier compiler, pathway-cache tooling and ledger, receipt-cache database, genesis-chain artifact...\"\n    }\n  ],\n  \"questions\": [\n    \"What specific execution steps are required for L0 to be considered 'demonstrated' rather than just documented?\",\n    \"Are there any other pathways in the indexed records that demonstrate A15 reuse from OptiPlex besides S6?\"\n  ]\n}",
+    "error": "Quotation not found in cited excerpt",
+    "elapsed_seconds": 91.05
+  },
+  {
+    "role": "a15_compatibility_checker",
+    "model": "qwen2.5-coder:0.5b",
+    "round": 2,
+    "execution_status": "failed",
+    "prompt_sha256": "26bb001cd5a494b911ceeda015d5019d77c174708f7d9ed349d451356f38027d",
+    "raw_response": "{\n  \"status\": \"needs_evidence\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\"\n    },\n    {\n      \"claim\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\",\n      \"source_ids\": [\"S1\", \"S2\", \"S3\", \"S4\", \"S5\"],\n      \"quote\": \"The A15 to reuse work from the OptiPlex does not support the documented A15 requirements and missing compatibility tests.\"\n    }\n  ],\n  \"questions\": [\n    \"What evidence is missing for the A15 to reuse work from the OptiPlex?\",\n    \"What evidence is missing for the A15 to reuse work from the OptiPlex?\",\n    \"What evidence is missing for the A15 to reuse work from the OptiPlex?\"\n  ]\n}",
+    "error": "Quotation not found in cited excerpt",
+    "elapsed_seconds": 16.41
+  },
+  {
+    "role": "contradiction_checker",
+    "model": "granite4:1b",
+    "round": 2,
+    "execution_status": "failed",
+    "prompt_sha256": "60d4e7a43e172baa07588659b6d3c3ed22b4c8c9196b81d832e6666860ac6637",
+    "error": "timed out",
+    "elapsed_seconds": 100.1
+  }
+]

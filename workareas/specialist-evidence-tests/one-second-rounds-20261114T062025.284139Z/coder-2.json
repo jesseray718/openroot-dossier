@@ -1,0 +1,25 @@
+{
+  "attempt": {
+    "role": "coder",
+    "model": "qwen2.5-coder:7b",
+    "attempt": 2,
+    "launch_round": 293,
+    "start_seconds": 292.00211014796514,
+    "first_text_seconds": null,
+    "characters": 0,
+    "observed_finish_round": 300,
+    "observed_finish_seconds": 300.0011329520494,
+    "elapsed_seconds": 7.999022804084234,
+    "status": "experiment_end",
+    "error": null,
+    "generation": {}
+  },
+  "state": {
+    "attempts": 2,
+    "status": "experiment_end",
+    "partial": "",
+    "error": null,
+    "validated": null,
+    "terminal": true
+  }
+}

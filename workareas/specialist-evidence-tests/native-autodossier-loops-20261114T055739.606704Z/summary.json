@@ -1,0 +1,21 @@
+{
+  "run": "/home/jesse/openroot/workareas/specialist-evidence-tests/native-autodossier-loops-20261114T055739.606704Z",
+  "status": "stopped_by_user",
+  "native_dossier_records": 11,
+  "attempts": 28,
+  "models_called": [
+    "granite4:1b",
+    "qwen2.5-coder:0.5b",
+    "qwen2.5-coder:7b",
+    "qwen3.5:0.8b",
+    "qwen3:0.6b"
+  ],
+  "structural_passes": 8,
+  "lead_output": null,
+  "review_output": null,
+  "semantic_correctness": "not_independently_verified",
+  "actual_a15_replay": "not_tested",
+  "database_writes": false,
+  "source_edits": false,
+  "canonical_cache_writes": false
+}

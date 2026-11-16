@@ -1,0 +1,96 @@
+[sha256:89993945994f0784d8de5d15234f9ee6757d4eb16870508321b9febe7fa9ea16]
+--- Q1 [final:CORRECT draft:REFUSED_HONEST 149.1s 895.43J] ---
+DRAFT:
+not in the ledger
+FINAL:
+Based on the provided PROJECT_EVIDENCE:
+
+1. The Merkle root of the genesis block is `361dd5d6c53a90af61864d7695e1e79f828e4a1012c6e82e4a5d1f054487e4e8`.
+2. The genesis block hash is `91204ba14572d1c9bc7b7ef51bd352cc7b6c629184caeedebf29c08d6c5864c3`.
+3. The question about which commit merged the sealed genesis and the PR number is not provided in the evidence. The evidence does not contain this information.
+4. The genesis block contains 125 records, split as 59 axioms and 66 
+e question about the number of lines in COMMONS_CONSTITUTION.md and BOUNTY_BOARD.md is not provided in the evidence. The evidence does not contain this information.
+7. The name of the statute-as-code file is not provided in the evidence. The evidence does not contain this information.
+
+For the final part of your question, the evidence does not provide information about the Merkle root of the OpenRoot genesis block. Therefore, I cannot provide an answer to that specific question based on the given evidence.
+--- Q2 [final:CORRECT draft:CORRECT 74.9s 449.60J] ---
+DRAFT:
+`91204ba14572d1c9bc7b7ef51bd352cc7b6c629184caeedebf29c08d6c5864c3`
+FINAL:
+Based on the provided evidence, the block hash of the genesis block is:
+
+`91204ba14572d1c9bc7b7ef51bd352cc7b6c629184caeedebf29c08d6c5864c3`
+--- Q3 [final:MISSED(0/2) draft:REFUSED_HONEST 65.5s 393.78J] ---
+DRAFT:
+not in the ledger
+FINAL:
+Based on the prov
+sealed genesis block into the main branch. The evidence focuses on various aspects of the project, including:
+
+- Ghost chains preservation
+- Byte-identical patches and rebasing
+- Stash discipline for runtime-dirty trees
+- Commit-graph cache corruption resolution
+- Portability patch for replacing hardcoded paths
+- Heredoc path bug fix
+
+To determine which commit and PR number merged the sealed genesis block into the main branch, we would need specific evidence related to that event. Since the provided evidence does not contain this information, we must conclude that the cached state or any other source of this information is unverifiable with the given evidence.
+
+Therefore, the answer to the question "Which commit and PR number merg
+explicitly stated. The evidence does not provide the specific number of records or their split between axioms and theorems in the genesis block. Therefore, we cannot provide a definitive answer using only the given evidence.
+
+If there is any additional information or context that can help clarify this, please provide it. Otherwise, the evidence does not contain the required details.
+--- Q5 [final:MISSED(0/2) draft:REFUSED_HONEST 52.4s 314.84J] ---
+DRAFT:
+not in the ledger
+FINAL:
+Based on the provided evidence, there is no direct mention of a commit that sealed the Commons Constitution v1.0. The evidence primarily discusses various aspects of the project, including patches, commit graph issues, a
+l:MISSED(2/6) draft:MISSED 35.7s 214.23J] ---
+DRAFT:
+1. Phase0
+2. Friction scan
+3. Question travel
+4. Artifact carry
+5. Ledger-attested
+FINAL:
+Based on the evidence provided, the six stages of the AI Hybrid Loop v1 in order are:
+
+1. Phase0
+2. Friction scan
+3. Question travel
+4. Artifact carry
+5. Ledger-attested
+
+These stages are derived directly from the information given in the "The AI Hybrid Loop (v1)" section, specifically the table that outlines the steps and their functions.
+--- Q9 [final:MISSED(0/1) draft:REFUSED_HONEST 33.7s 202.14J] ---
+DRAFT:
+not in the ledger
+FINAL:
+Based on the provided evidence, step 6 of the loop produces the `pod-termux.sqlite3` file under the `~/pods` directory. Thi
+ provided PROJECT_EVIDENCE, the correct answer to the question "What are the four tables of the primary pod.db store?" is not directly stated. However, the draft answer provided in the DRAFT (smaller model) section contains an error, as it lists the same table name four times. Given the evidence, we can reject this cached state explicitly.
+
+The correct answer should be derived from the evidence or additional context that is not provided in the given snippets. If we assume the evidence is incomplete or if there's a need to infer based on typical database structures, we would need more specific information. 
+
+Since the evidence does not provide the actual names of the tables, we cannot definitively
+er
+FINAL:
+Based on the provided `main` branch history and the remaining work board, there is no direct mention of an "empty-question bug" in the loop. The commits listed are related to documentation, diagnostics, and other fixes, but none specifically address an "empty-question bug."
+
+The closest relevant commit is:
+```
+7515ff0  fix(loop): $HOME portability patch (driver first committed here)
+```
+
+This commit suggests a fix for a loop related to portability issues with the `$HOME` variable. However, it does not explicitly mention an "empty-question bug."
+
+Given the evidence provided, we cannot confirm the fix for an "empty-question bug" in the loop. Therefore, the cached state asserting something unve
+in the ledger
+FINAL:
+Based on the provided evidence, there is no information about the material used for parabolic reflectors in the wood-satellite mesh. The evidence discusses vacuum gaps, desiccant ledgers, and fuel sources but does not mention parabolic reflectors or their materials. Therefore, the cached state asserting something about the material for parabolic reflectors is unverifiable with the given evidence, and we must reject it explicitly.
+
+Final adjudicated answer: The evidence does not provide information about the material used for parabolic reflectors in the wood-satellite mesh.
+--- Q15 [final:MISSED(2/3) draft:MISSED 30.6s 183.74J] ---
+DRAFT:
+The lift mechanism of the vacuum-gap aer
+the provided evidence, there is no specific mention of a latent heat value for water or a comparison of its density to sensible heat in the Breathing Cascade Spec v1.1 
+

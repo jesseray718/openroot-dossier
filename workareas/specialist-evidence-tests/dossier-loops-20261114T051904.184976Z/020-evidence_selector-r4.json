@@ -1,0 +1,11 @@
+{
+  "file": "020-evidence_selector-r4.json",
+  "role": "evidence_selector",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 4,
+  "budget_seconds": 30,
+  "prompt_sha256": "a78b4d91d0bdc3533a70d021d4abfb5ba4a3d8f04b80215e11e1cb7496f3c2ca",
+  "status": "time_limited_partial",
+  "partial_text": "",
+  "elapsed_seconds": 30.03
+}

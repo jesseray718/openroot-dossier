@@ -1,0 +1,24 @@
+{
+  "dossier": "/home/jesse/.local/state/openroot-fulltext-v2/ask-runs/ask-5s2e1rtq/full-dossier.jsonl",
+  "record": 2,
+  "locations": [
+    {
+      "source": "/home/jesse/openroot/analysis/autodossier.db::table=dossier_fts::row=2::column=content",
+      "part": 0,
+      "source_status": "indexed",
+      "secret_refs": []
+    },
+    {
+      "source": "/home/jesse/openroot/analysis/autodossier.db::table=dossier_nodes::row=2::column=content",
+      "part": 0,
+      "source_status": "indexed",
+      "secret_refs": []
+    },
+    {
+      "source": "/home/jesse/openroot/bin/pathway_cache_v1.py",
+      "part": 0,
+      "source_status": "indexed",
+      "secret_refs": []
+    }
+  ]
+}

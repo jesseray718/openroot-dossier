@@ -1,0 +1,128 @@
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261104T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+  wrote /home/jesse/openroot/outbox/ai_hybrid_loop/20261104T140001Z/PODS_FRACTAL.json
+    sig[7 pods]: chunk_paths,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_  e.g. ['pod_android_skills', 'pod_anomalyco_opencode', 'pod_awesome-selfhosted_awesome-selfhosted']
+    sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corr  e.g. ['clone_universal_20261016T083202Z', 'lab_universal']
+    sig[2 pods]: ask_runs,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts  e.g. ['github-docs', 'github-docs-clone']
+    sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,file  e.g. ['grants_pod', 'sare_grants']
+    sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,embe  e.g. ['pod_a15-mobile', 'pod_github-history']
+    verdict: 24 pods, 14 distinct signatures, largest self-similar group 7
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261104T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    File "/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z/question_travel_v1.py", line 8
+      for c in ("universal_lattice_fts5.db", ""$HOME/pods"/clone_universal_20261016T083202Z/pod.db"):
+                                               ^
+  SyntaxError: invalid syntax
+[loop] step3: fractal pod verification
+    File "/home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z/pods_fractal_v1.py", line 3
+      ROOT = ""$HOME/pods""
+               ^
+  SyntaxError: invalid syntax
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261105T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261106T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261106T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261107T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261107T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261108T140002Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+[loop] step3: fractal pod verification
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261108T140002Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261109T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261109T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261110T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261110T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261111T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261111T140001Z/RUN_RECEIPT.md
+[loop] exit_code=1
+[loop] run dir: /home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z
+[loop] phase0: interface discovery
+[loop] step1: friction scan
+[loop] step2: question travel
+    q0: empty terms, skip
+    recall@5 = 0/1  answered_ok = 0/1
+[loop] step3: fractal pod verification
+  wrote /home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z/PODS_FRACTAL.json
+    sig[7 pods]: chunk_paths,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_  e.g. ['pod_android_skills', 'pod_anomalyco_opencode', 'pod_awesome-selfhosted_awesome-selfhosted']
+    sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corr  e.g. ['clone_universal_20261016T083202Z', 'lab_universal']
+    sig[2 pods]: ask_runs,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts  e.g. ['github-docs', 'github-docs-clone']
+    sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,file  e.g. ['grants_pod', 'sare_grants']
+    sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,embe  e.g. ['pod_a15-mobile', 'pod_github-history']
+    verdict: 24 pods, 14 distinct signatures, largest self-similar group 7
+[loop] step4: pathway record
+[loop] step5: PATHWAYS.md
+[loop] step6: auto dossier
+[loop] receipt: /home/jesse/openroot/outbox/ai_hybrid_loop/20261112T140001Z/RUN_RECEIPT.md
+[loop] exit_code=0
+bash: run_ai_hybrid_loop_v1.sh: No such file or directory
+bash: run_ai_hybrid_loop_v1.sh: No such file or directory

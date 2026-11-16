@@ -1,0 +1,10 @@
+{
+  "file": "028-interface_selector-r5.json",
+  "role": "interface_selector",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 5,
+  "budget_seconds": 45,
+  "status": "running",
+  "prompt_sha256": "f55abe2575a8efaf4f2d09a521437b2dc6f05fde622cd5dac903b333400aef10",
+  "elapsed_seconds": 17.47
+}

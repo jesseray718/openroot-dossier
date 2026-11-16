@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-11-13T02:55:05.747810+00:00",
+  "model": "qwen2.5-coder:7b",
+  "execution_status": "held",
+  "structural_validation": "not_performed",
+  "semantic_support": "not_verified",
+  "canonical_promotion": false,
+  "model_requests": 1,
+  "error": "TimeoutError: timed out",
+  "elapsed_seconds": 300.129,
+  "exit_code": 1
+}

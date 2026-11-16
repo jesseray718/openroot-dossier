@@ -1,0 +1,100 @@
+{
+  "ts": "2026-11-04T07:56:54Z",
+  "db": "/home/jesse/pods/clone_universal_20261016T083202Z/pod.db",
+  "db_bytes": 905707520,
+  "label": "SELF-DERIVED PROBE from pod chunks \u2014 NOT the 132-bank",
+  "questions": [
+    {
+      "idx": 0,
+      "source_rowid": 2423131,
+      "source_excerpt": "The configuration doesn't detach from the repositories it's been applied to, and all other functionality continues as normal.",
+      "question": "What does the corpus say about configuration, doesn, detach?",
+      "query_terms": [
+        "configuration",
+        "doesn",
+        "detach",
+        "repositories"
+      ],
+      "retrieval": {
+        "engine": "fts5-match",
+        "top5_rowids": [
+          2423131,
+          2423133,
+          2418547,
+          2418553,
+          2418554
+        ],
+        "source_in_top5": true
+      },
+      "answer": {
+        "model": "qwen3.5:9b",
+        "elapsed_s": 190.1,
+        "text": "",
+        "status": "OK"
+      }
+    },
+    {
+      "idx": 1,
+      "source_rowid": 7427056,
+      "source_excerpt": "cmake_force:\n.PHONY : cmake_force",
+      "question": "What does the corpus say about cmake, force, phony?",
+      "query_terms": [
+        "cmake",
+        "force",
+        "phony"
+      ],
+      "retrieval": {
+        "engine": "fts5-match",
+        "top5_rowids": [
+          7397391,
+          7399594,
+          7401037,
+          7401186,
+          7404391
+        ],
+        "source_in_top5": false
+      },
+      "answer": {
+        "model": "qwen3.5:9b",
+        "elapsed_s": 49.2,
+        "text": "",
+        "status": "OK"
+      }
+    }
+  ],
+  "fts_table": "chunks_fts",
+  "text_col": "text",
+  "rows": 515396,
+  "ollama_models_available": [
+    "deepseek-r1:1.5b",
+    "gemma3:1b",
+    "gemma4:31b-cloud",
+    "granite3.3:2b",
+    "llama3.2:1b",
+    "llama3.2:3b",
+    "minimax-m3.1-flash:cloud",
+    "nomic-embed-text:latest",
+    "openroot-assistant:latest",
+    "openroot-coder:latest",
+    "openroot-instruct:7b",
+    "phi4-mini:latest",
+    "phi4-router:latest",
+    "qwen2.5-coder:0.5b",
+    "qwen2.5-coder:1.5b",
+    "qwen2.5-coder:3b",
+    "qwen2.5-coder:7b",
+    "qwen2.5:1.5b",
+    "qwen2.5:3b",
+    "qwen2.5:7b-instruct",
+    "qwen3.5:9b",
+    "qwen3:0.6b",
+    "qwen3:1.7b",
+    "smollm2:1.7b"
+  ],
+  "summary": {
+    "questions": 2,
+    "recall_hits": 1,
+    "recall_at_5": 0.5,
+    "answered": 2
+  }
+}

@@ -1,0 +1,21 @@
+# Manifest
+- name: openroot-stack
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-stack
+- sisters:
+  - openroot-two-pane
+  - openroot-syncthing
+  - openroot-aerocement
+  - agape-resonance-wisdom
+  - openroot-integration
+- trigger_ids:
+  - GOVERNOR-01
+  - OptiPlex
+  - DUNS
+  - Mercury
+  - ACRE claims
+- status: live

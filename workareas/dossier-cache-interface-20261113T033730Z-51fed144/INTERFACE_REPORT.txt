@@ -1,0 +1,170 @@
+=== ORIGINAL DOSSIER WRAPPER ===
+   1: #!/usr/bin/env bash
+   2: set -Eeuo pipefail
+   3: STATE="$HOME/.local/state/openroot-fulltext-v2"
+   4: PY=$(cat "$STATE/python-path.txt")
+   5: TOOL=$(cat "$STATE/tool-path.txt")
+   6: if [ "${1:-}" = ask ]; then
+   7:     shift
+   8:     exec "$PY" /home/jesse/.local/share/openroot-fulltext-v2/openroot_ask-45a33797724a.py "$@"
+   9: fi
+  10: exec "$PY" "$TOOL" "$@"
+
+=== EXISTING INDEX TOOL POINTER ===
+/home/jesse/.local/share/openroot-fulltext-v2/openroot_fulltext_v2-e82244d3f46d.py
+
+=== ACTUAL ADAPTER FUNCTIONS ===
+ADAPTER=/home/jesse/.local/share/openroot-fulltext-v2/openroot_ask-45a33797724a.py
+
+--- save: lines 9-11 ---
+   9: def save(path,obj):
+  10:     temp=path.with_name(path.name+'.tmp')
+  11:     temp.write_text(json.dumps(obj,indent=2,ensure_ascii=False)); temp.replace(path)
+
+--- query_terms: lines 18-21 ---
+  18: def query_terms(question):
+  19:     terms=list(dict.fromkeys(t for t in re.findall(r'[^\W_]+',question.casefold()) if t not in STOP))
+  20:     aliases={'aeeocement':'aerocement','protorype':'prototype'}
+  21:     return list(dict.fromkeys(aliases.get(t,t) for t in terms))
+
+--- trim_record: lines 23-39 ---
+  23: def trim_record(record,terms,limit):
+  24:     body=record['body']; lower=body.casefold(); intervals=[]
+  25:     # Offsets use original text. Regex IGNORECASE avoids casefold length changes.
+  26:     for term in terms:
+  27:         match=re.search(re.escape(term),body,re.I)
+  28:         if match: intervals.append((max(0,match.start()-200),min(len(body),match.end()+500)))
+  29:     if not intervals: intervals=[(0,min(len(body),700))]
+  30:     merged=[]
+  31:     for a,b in sorted(intervals):
+  32:         if merged and a<=merged[-1][1]:merged[-1]=(merged[-1][0],max(merged[-1][1],b))
+  33:         else:merged.append((a,b))
+  34:     excerpts=[]
+  35:     for a,b in merged:
+  36:         if limit<=0:break
+  37:         b=min(b,a+limit)
+  38:         excerpts.append({'start':a,'end':b,'text':body[a:b]});limit-=b-a
+  39:     return excerpts
+
+--- collect: lines 41-106 ---
+  41: def collect(module,state,question,budget,candidates=256):
+  42:     terms=query_terms(question)
+  43:     if not terms:raise ValueError('Question has no searchable terms after removing common question words.')
+  44:     expression=' OR '.join('"'+t.replace('"','""')+'"' for t in terms)
+  45:     folder=state/'ask-runs';folder.mkdir(exist_ok=True,mode=0o700)
+  46:     out=Path(tempfile.mkdtemp(prefix='ask-',dir=folder))
+  47:     raw=out/'full-dossier.jsonl'; heap=[]; serial=0; seen=set(); errors=[]; totals=collections.Counter()
+  48:     started=time.perf_counter()
+  49:     with raw.open('w') as stream:
+  50:         for pod,c in module['pod_connections'](state,'all'):
+  51:             try:
+  52:                 cursor=c.execute('SELECT c.id,c.sha256,c.body,bm25(words) FROM words JOIN chunks c ON c.id=words.rowid WHERE words MATCH ? ORDER BY rank',(expression,))
+  53:                 for ordinal,(cid,identity,body,bm25) in enumerate(cursor,1):
+  54:                     locations=module['refs'](c,cid)
+  55:                     if not locations:continue
+  56:                     valid=hashlib.sha256(body.encode()).hexdigest()==identity
+  57:                     record={'pod':pod,'chunk_sha256':identity,'hash_verified':valid,'bm25':bm25,
+  58:                             'pod_rank':ordinal,'body':body,'locations':locations}
+  59:                     stream.write(json.dumps(record,ensure_ascii=False)+'\n')
+  60:                     totals['matching_records']+=1;totals['matching_source_segments']+=len(locations)
+  61:                     if not valid:
+  62:                         totals['hash_mismatches']+=1;continue
+  63:                     if identity in seen:continue
+  64:                     seen.add(identity);serial+=1
+  65:                     # BM25 values are not treated as globally calibrated across independent pods.
+  66:                     coverage=sum(bool(re.search(re.escape(t),body,re.I)) for t in terms)
+  67:                     entry=(coverage,-ordinal,serial,record)
+  68:                     if len(heap)<candidates:heapq.heappush(heap,entry)
+  69:                     elif entry[:3]>heap[0][:3]:heapq.heapreplace(heap,entry)
+  70:             except Exception as exc:
+  71:                 errors.append({'pod':pod,'error':type(exc).__name__+': '+str(exc)})
+  72:             finally:c.close()
+  73:         stream.flush();os.fsync(stream.fileno())
+  74:     core=[];blocks=[];remaining=budget
+  75:     for coverage,rank,serial,record in sorted(heap,key=lambda x:x[:3],reverse=True):
+  76:         if remaining<=0:break
+  77:         header='[sha256:'+record['chunk_sha256']+']\n'
+  78:         available=remaining-len(header)-2
+  79:         if available<=0:break
+  80:         excerpts=trim_record(record,terms,available)
+  81:         if not excerpts:continue
+  82:         text='\n'.join(x['text'] for x in excerpts)
+  83:         # Joining excerpt boundaries also consumes budget.
+  84:         if len(header)+len(text)+2>remaining:
+  85:             text=text[:max(0,remaining-len(header)-2)]
+  86:             used=0;fixed=[]
+  87:             for x in excerpts:
+  88:                 if used>=len(text):break
+  89:                 take=min(len(x['text']),len(text)-used)
+  90:                 fixed.append({'start':x['start'],'end':x['start']+take,'text':x['text'][:take]})
+  91:                 used+=take+1
+  92:             excerpts=fixed
+  93:         block=header+text+'\n\n';remaining-=len(block);blocks.append(block)
+  94:         core.append({'chunk_sha256':record['chunk_sha256'],'hash_verified':True,'pod':record['pod'],
+  95:                      'bm25':record['bm25'],'pod_rank':record['pod_rank'],'locations':record['locations'],'excerpts':excerpts})
+  96:     dossier=''.join(blocks)
+  97:     assert len(dossier)<=budget
+  98:     save(out/'core.json',core);(out/'core.txt').write_text(dossier)
+  99:     receipt={'question':question,'retrieval_terms':terms,'fts_expression':expression,'character_budget':budget,
+ 100:              'core_characters':len(dossier),'core_chunks':len(core),'counts':dict(totals),'retrieval_errors':errors,
+ 101:              'retrieval_seconds':time.perf_counter()-started,'full_dossier':str(raw),'core':str(out/'core.json'),
+ 102:              'ranking':'BM25 within each pod; cross-pod trim priority uses term coverage then within-pod rank',
+ 103:              'scope':'committed currently available ordinary indexes; secrets file is not opened',
+ 104:              'coverage':'provisional if ingestion is still active','status':'DOSSIER_READY','claim_support_verified':False}
+ 105:     save(out/'receipt.json',receipt)
+ 106:     return out,dossier,core,receipt
+
+--- ADAPTER CACHE / OUTPUT / EXECUTION REFERENCES ---
+   2: """Add OpenRoot ask: prompt -> full dossier -> automatic trimming -> local AI."""
+   3: import argparse, collections, hashlib, heapq, json, os, re, runpy, shutil
+   4: import subprocess, sys, tempfile, time, urllib.request
+  11:     temp.write_text(json.dumps(obj,indent=2,ensure_ascii=False)); temp.replace(path)
+  47:     raw=out/'full-dossier.jsonl'; heap=[]; serial=0; seen=set(); errors=[]; totals=collections.Counter()
+  96:     dossier=''.join(blocks)
+  97:     assert len(dossier)<=budget
+  98:     save(out/'core.json',core);(out/'core.txt').write_text(dossier)
+  99:     receipt={'question':question,'retrieval_terms':terms,'fts_expression':expression,'character_budget':budget,
+ 100:              'core_characters':len(dossier),'core_chunks':len(core),'counts':dict(totals),'retrieval_errors':errors,
+ 101:              'retrieval_seconds':time.perf_counter()-started,'full_dossier':str(raw),'core':str(out/'core.json'),
+ 104:              'coverage':'provisional if ingestion is still active','status':'DOSSIER_READY','claim_support_verified':False}
+ 105:     save(out/'receipt.json',receipt)
+ 106:     return out,dossier,core,receipt
+ 116: def answer(args,out,dossier,core,receipt):
+ 121:     if model is None:raise RuntimeError('No requested/preferred model is installed. Dossier is saved; no model was downloaded.')
+ 129:     payload={'model':model,'system':system,'prompt':'QUESTION:\n'+receipt['question']+'\n\nINDEXED EVIDENCE:\n'+dossier,
+ 131:     (out/'prompt.txt').write_text(system+'\n'+payload['prompt'])
+ 135:     text=response['response'];(out/'answer.md').write_text(text)
+ 137:     receipt.update(status='ANSWER_GENERATED',model=model,model_digest=installed[model],citation_validation=validation,
+ 141:     save(out/'receipt.json',receipt)
+ 170:     check=subprocess.run(['bash','-n'],input=wrapper,text=True,capture_output=True)
+ 172:     temp=cli.with_name('openroot-fulltext.ask-tmp');temp.write_text(wrapper);temp.chmod(0o700);temp.replace(cli)
+ 173:     print('ASK_INSTALLED: retrieve -> save full dossier -> auto-trim -> local AI -> citation-ID check')
+ 184:     p.add_argument('--no-ai',action='store_true',help='Save full and trimmed dossiers without inference')
+ 191:     module=runpy.run_path(str(tool),run_name='openroot_ask_index_adapter')
+ 201:     out,dossier,core,receipt=collect(module,state,question,budget)
+ 202:     print('FULL_DOSSIER:',out/'full-dossier.jsonl',flush=True)
+ 205:         receipt['status']='NO_INDEXED_EVIDENCE';save(out/'receipt.json',receipt)
+ 208:         try:answer(args,out,dossier,core,receipt)
+ 210:             receipt.update(status='AI_ERROR_DOSSIER_SAVED',error=str(exc));save(out/'receipt.json',receipt)
+ 211:             print('AI unavailable/failed:',exc,'; both dossiers retained.')
+ 212:     print('RECEIPT:',out/'receipt.json')
+
+=== INDEX TOOL CACHE REFERENCES ===
+ 334: def search(args,state):
+
+=== KNOWN PATHWAY LEDGER LOCATIONS: METADATA ONLY ===
+/home/jesse/openroot/data/pathway_cache.jsonl: exists=True bytes=4270
+/home/jesse/openroot/PATHWAYS.md: exists=True bytes=3498
+/home/jesse/openroot/bin/pathway_cache_v1.py: exists=True bytes=13855
+
+=== CURRENT SOURCE PACKET ===
+/home/jesse/openroot/workareas/autodossier-grounded-packet-20261113T025355Z-393cef4d/EVIDENCE.json: exists=True
+
+=== BOUNDARY ===
+MODEL_CALLS=0
+ADAPTER_EXECUTED=NO
+INDEX_TOOL_EXECUTED=NO
+LIVE_LEDGERS_MODIFIED=NO
+INSTALLED_RUNNERS_MODIFIED=NO
+STOP_MARKERS_MODIFIED=NO
+REPORT_DIR=/home/jesse/openroot/workareas/dossier-cache-interface-20261113T033730Z-51fed144

@@ -1,0 +1,9 @@
+{
+  "canonical_status": "not_canonical",
+  "hash": "ffd39c471dab217605f8d49247c092a5187dbd58cb3cb9b28d14f9b11d119a44",
+  "operation": "stage",
+  "sandbox_entry_hash": "5c2bc0fc84d5093a00afff91fc27c8e6434eff6b993cd395099301f48713feeb",
+  "staging_entry_hash": "a2e03f8691ffd9ecb1a7770204b79a2b7359986210ff25a9b604caf5b264645d",
+  "staging_ledger": "/home/jesse/openroot/workareas/a15-engine-sandbox/promotion/staging_ledger.jsonl",
+  "timestamp": "2026-11-11T13:40:32.855900+00:00"
+}

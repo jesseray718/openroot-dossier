@@ -1,0 +1,12 @@
+.git
+**/.git
+__pycache__
+**/*.pyc
+node_modules
+.syncthing.*.tmp
+*.gguf
+*.bin
+models/
+archive/
+archive/**
+*.log

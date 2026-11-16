@@ -1,0 +1,19 @@
+{
+  "archive": "data/a15_only_canonical.tar.gz",
+  "archive_bytes": 3748677,
+  "archive_sha256": "9535263a7d1e3db29a8552a041634463c05cc55ba4ef25dc7f24527e35221018",
+  "finding": "all archive payload hashes are absent from optiplex node records",
+  "hash_database": "data/mesh_index.db",
+  "integration_status": "candidate_for_selective_review",
+  "live_tree_modified": false,
+  "manifest_entries": 1352,
+  "matched_optiplex_hashes": 0,
+  "missing_staged_files": 0,
+  "optiplex_distinct_hashes": 972,
+  "optiplex_node_records": 972,
+  "prior_receipt": "workareas/archive-extract-test/A15_RESCUE_REDUNDANCY_RECEIPT.json",
+  "prior_receipt_status": "superseded_interpretation_only",
+  "test": "a15_only_canonical_archive_optiplex_node_comparison",
+  "timestamp": "2026-11-11T06:27:01.018368+00:00",
+  "unmatched_optiplex_hashes": 1352
+}

@@ -1,0 +1,7 @@
+{
+  "role": "fact_extractor",
+  "model": "qwen3.5:0.8b",
+  "round": 1,
+  "status": "running",
+  "request_timeout_seconds": 100
+}

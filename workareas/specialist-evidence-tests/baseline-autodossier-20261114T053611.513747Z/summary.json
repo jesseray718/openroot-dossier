@@ -1,0 +1,19 @@
+{
+  "experiment": "first_version_retry_with_autodossier_first",
+  "run": "/home/jesse/openroot/workareas/specialist-evidence-tests/baseline-autodossier-20261114T053611.513747Z",
+  "model_calls": 3,
+  "models_called": [
+    "qwen2.5-coder:0.5b",
+    "qwen3.5:0.8b",
+    "qwen3:0.6b"
+  ],
+  "validated_structure_calls": 0,
+  "evidence_records": 6,
+  "lead_output": null,
+  "review_output": null,
+  "semantic_correctness": "requires_independent_review",
+  "timeout_partial_text": "not_available_in_nonstreaming_baseline",
+  "database_writes": false,
+  "source_edits": false,
+  "canonical_cache_writes": false
+}

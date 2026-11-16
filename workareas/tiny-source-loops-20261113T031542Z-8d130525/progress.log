@@ -1,0 +1,14 @@
+2026-11-13T03:15:42.998352+00:00 RUN_DIR=/home/jesse/openroot/workareas/tiny-source-loops-20261113T031542Z-8d130525
+2026-11-13T03:15:42.998490+00:00 STOP_FILE=/home/jesse/openroot/workareas/tiny-source-loops-20261113T031542Z-8d130525/STOP
+2026-11-13T03:15:42.998577+00:00 Compiler handled by explicit source checks; no model call.
+2026-11-13T03:15:42.998690+00:00 Expected outputs are human-authored audit tests, not independent proof.
+2026-11-13T03:15:43.042171+00:00 ROUND 1: 4 unresolved tasks
+2026-11-13T03:15:43.042503+00:00 START inference [qwen2.5-coder:0.5b]
+2026-11-13T03:15:54.633312+00:00 END inference: needs_revision 11.591s
+2026-11-13T03:15:54.633554+00:00 START pathway_write [qwen2.5-coder:0.5b]
+2026-11-13T03:15:56.488288+00:00 END pathway_write: audit_contract_matched 1.855s
+2026-11-13T03:15:56.488526+00:00 START energy_inputs [granite4:1b]
+2026-11-13T03:16:55.196267+00:00 END energy_inputs: needs_revision 58.707s
+2026-11-13T03:16:55.196588+00:00 START verification_side_effect [qwen3.5:0.8b]
+2026-11-13T03:17:55.258726+00:00 END verification_side_effect: held_interrupted 60.061s
+2026-11-13T03:17:55.259054+00:00 STOPPING: Halt: Request timed out; no further requests will be submitted. Server-side cancellation is not established.

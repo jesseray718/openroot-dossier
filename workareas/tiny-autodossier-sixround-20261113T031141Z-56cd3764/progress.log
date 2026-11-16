@@ -1,0 +1,7 @@
+2026-11-13T03:11:41.745930+00:00 RUN_DIR=/home/jesse/openroot/workareas/tiny-autodossier-sixround-20261113T031141Z-56cd3764
+2026-11-13T03:11:41.746020+00:00 Sequential tiny workers; proposals remain noncanonical.
+2026-11-13T03:11:41.877662+00:00 ROUND 1: 5 unresolved tasks
+2026-11-13T03:11:41.878888+00:00 START compiler [qwen2.5-coder:0.5b]
+2026-11-13T03:11:52.239537+00:00 CHECK compiler [granite4:1b]
+2026-11-13T03:12:07.256426+00:00 END compiler: held_interrupted 25.376s
+2026-11-13T03:12:07.256774+00:00 STOPPING: RequestTimeout: timed out

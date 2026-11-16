@@ -1,0 +1,111 @@
+{
+  "inference": {
+    "status": "held_run_stopped",
+    "attempts": [
+      {
+        "round": 1,
+        "model": "qwen2.5-coder:0.5b",
+        "telemetry": {
+          "done": true,
+          "done_reason": "stop",
+          "load_duration": 9514847220,
+          "prompt_eval_count": 568,
+          "eval_count": 34,
+          "total_duration": 11587487328
+        },
+        "output": {
+          "endpoint": "http://localhost:11434/api/generate",
+          "sends_model_request": true,
+          "verifies_answer_support": true
+        },
+        "error": "ValueError: Audit-contract mismatch: verifies_answer_support",
+        "wall_seconds": 11.591
+      }
+    ],
+    "last_signature": "{\"error\": \"ValueError: Audit-contract mismatch: verifies_answer_support\", \"output\": {\"endpoint\": \"http://localhost:11434/api/generate\", \"sends_model_request\": true, \"verifies_answer_support\": true}}",
+    "repeated_failure": 1,
+    "feedback": "Re-read the source for these fields: verifies_answer_support"
+  },
+  "pathway_write": {
+    "status": "audit_contract_matched",
+    "attempts": [
+      {
+        "round": 1,
+        "model": "qwen2.5-coder:0.5b",
+        "telemetry": {
+          "done": true,
+          "done_reason": "stop",
+          "load_duration": 2678104,
+          "prompt_eval_count": 578,
+          "eval_count": 27,
+          "total_duration": 1851685162
+        },
+        "output": {
+          "ledger": "data/pathway_cache.jsonl",
+          "export_target": "PATHWAYS.md",
+          "parent": 1
+        },
+        "wall_seconds": 1.855
+      }
+    ],
+    "last_signature": null,
+    "repeated_failure": 0,
+    "output": {
+      "ledger": "data/pathway_cache.jsonl",
+      "export_target": "PATHWAYS.md",
+      "parent": 1
+    },
+    "support_status": "Matches explicit source-audit expectations; not independent semantic or runtime verification"
+  },
+  "energy_inputs": {
+    "status": "held_run_stopped",
+    "attempts": [
+      {
+        "round": 1,
+        "model": "granite4:1b",
+        "telemetry": {
+          "done": true,
+          "done_reason": "stop",
+          "load_duration": 52249452290,
+          "prompt_eval_count": 393,
+          "eval_count": 31,
+          "total_duration": 58704734544
+        },
+        "output": {
+          "human_value": 0.9,
+          "human_value_measured": true,
+          "useful_is_binary": false
+        },
+        "error": "ValueError: Audit-contract mismatch: human_value_measured, useful_is_binary",
+        "wall_seconds": 58.707
+      }
+    ],
+    "last_signature": "{\"error\": \"ValueError: Audit-contract mismatch: human_value_measured, useful_is_binary\", \"output\": {\"human_value\": 0.9, \"human_value_measured\": true, \"useful_is_binary\": false}}",
+    "repeated_failure": 1,
+    "feedback": "Re-read the source for these fields: human_value_measured, useful_is_binary"
+  },
+  "verification_side_effect": {
+    "status": "held_interrupted",
+    "attempts": [
+      {
+        "round": 1,
+        "model": "qwen3.5:0.8b",
+        "wall_seconds": 60.061
+      }
+    ],
+    "last_signature": null,
+    "repeated_failure": 0
+  },
+  "compiler": {
+    "status": "source_pattern_checks_passed",
+    "checks": {
+      "scans_bin_python": true,
+      "reads_source_text": true,
+      "inserts_expected_columns": true
+    },
+    "source": "E4",
+    "finding": "The inspected compiler reads Python files under bin/ and inserts hash, path, source content, and timestamp into SQLite.",
+    "attempts": [],
+    "limitation": "Pattern checks only; not runtime verification."
+  }
+}

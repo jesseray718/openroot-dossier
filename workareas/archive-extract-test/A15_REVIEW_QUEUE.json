@@ -1,0 +1,149 @@
+{
+  "assessment": {
+    "lattice_cli.py": {
+      "classification": "high_value_reference",
+      "components": [
+        "Lattice",
+        "postulate_constructor",
+        "task_parser",
+        "h003_ledger_loader",
+        "cli"
+      ],
+      "integration": "deferred_pending_ledger_compatibility_review",
+      "lines": 367
+    },
+    "local_rag_search.py": {
+      "classification": "medium_reference",
+      "components": [
+        "query_embedding",
+        "local_search"
+      ],
+      "integration": "deferred_pending_embedding_review",
+      "lines": 81
+    },
+    "newton_chain.py": {
+      "classification": "high_value_reference",
+      "components": [
+        "postulates",
+        "NewtonChainEngine",
+        "question_parser",
+        "flask_api",
+        "batch_runner"
+      ],
+      "integration": "deferred_pending_schema_and_dependency_review",
+      "lines": 389
+    },
+    "openroot.py": {
+      "classification": "medium_reference",
+      "components": [
+        "query",
+        "json_load_save",
+        "id_generation",
+        "cli"
+      ],
+      "integration": "deferred",
+      "lines": 103
+    },
+    "openroot_hub.py": {
+      "classification": "medium_high_reference",
+      "components": [
+        "event_log",
+        "context_store",
+        "wisdom_query",
+        "stamp",
+        "status",
+        "main_loop"
+      ],
+      "integration": "deferred_pending_assumption_review",
+      "lines": 224
+    }
+  },
+  "live_tree_modified": false,
+  "policy": "quarantine_only_no_live_restore",
+  "queue": [
+    {
+      "a15_bytes": 33076,
+      "a15_sha256": "0cd3a6176896cf7c009240268d71d9256e713141d5e0f5264f29aae5635cfd94",
+      "filename": "newton_chain.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/newton_chain.py",
+      "restore_status": "not_approved",
+      "review_class": "high_value_review"
+    },
+    {
+      "a15_bytes": 2609,
+      "a15_sha256": "c41aea80e79e9f05e731276d5b823ce94773301408d918bbe3cfea92bb355f11",
+      "filename": "local_rag_search.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/local_rag_search.py",
+      "restore_status": "not_approved",
+      "review_class": "high_value_review"
+    },
+    {
+      "a15_bytes": 7102,
+      "a15_sha256": "d6303f2256a3174a0532d51685393226427bb52893167d81109ea1e1199b48f3",
+      "filename": "openroot.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/openroot.py",
+      "restore_status": "not_approved",
+      "review_class": "high_value_review"
+    },
+    {
+      "a15_bytes": 7785,
+      "a15_sha256": "971f6d638bdf99314515acc3f686acdfb249172fb0d87f54208c1e6a005290d9",
+      "filename": "openroot_hub.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/openroot_hub.py",
+      "restore_status": "not_approved",
+      "review_class": "high_value_review"
+    },
+    {
+      "a15_bytes": 15748,
+      "a15_sha256": "8600f822418cae4f86cf749ba56756bd7f0c6f56ec42e78445085f2c94bd5e0f",
+      "filename": "lattice_cli.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/lattice_cli.py",
+      "restore_status": "not_approved",
+      "review_class": "high_value_review"
+    },
+    {
+      "a15_bytes": 5132,
+      "a15_sha256": "356b4b21977513a1a67126d2f3fd6124d950aacae32d1cf6eaf019661f9652ab",
+      "filename": "une_client.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/une_client.py",
+      "restore_status": "not_approved",
+      "review_class": "variant_review"
+    },
+    {
+      "a15_bytes": 5267,
+      "a15_sha256": "ab698bb8da909a89f2a056e9b0f96f1e4ea40ab65842f085bdef9efb33792175",
+      "filename": "faiss_search.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/faiss_search.py",
+      "restore_status": "not_approved",
+      "review_class": "variant_review"
+    },
+    {
+      "a15_bytes": 3678,
+      "a15_sha256": "1ceaf592f02be2a0b3fc4320e526ccfaee951c2f3b651b1544300b78d9063024",
+      "filename": "mdpipe.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/mdpipe.py",
+      "restore_status": "not_approved",
+      "review_class": "variant_review"
+    },
+    {
+      "a15_bytes": 39285,
+      "a15_sha256": "4f2652a5a0a39c3f557a088cc42b50bd0c564ee5144a65483522dce480e8ad54",
+      "filename": "permaculture_lattice_engine.py",
+      "live_tree_modified": false,
+      "original_path": "/data/data/com.termux/files/home/permaculture_lattice_engine.py",
+      "restore_status": "not_approved",
+      "review_class": "variant_review"
+    }
+  ],
+  "queue_count": 9,
+  "restore_status": "not_approved",
+  "timestamp": "2026-11-11T13:04:56.591529+00:00"
+}

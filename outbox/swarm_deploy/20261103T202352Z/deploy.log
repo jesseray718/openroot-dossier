@@ -1,0 +1,5 @@
+== swarm deploy 20261103T202352Z ==
+[repo] main @ 9375027 dirty=31
+[MISS] context_bridge/mistake_solutions absent
+[proc] no orchestrator currently running
+RESULT=ABORTED — preflight failed; nothing written, nothing restarted

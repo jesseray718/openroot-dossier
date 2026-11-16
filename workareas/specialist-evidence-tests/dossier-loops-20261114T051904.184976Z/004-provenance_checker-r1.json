@@ -1,0 +1,11 @@
+{
+  "file": "004-provenance_checker-r1.json",
+  "role": "provenance_checker",
+  "model": "granite4:1b",
+  "round": 1,
+  "budget_seconds": 30,
+  "prompt_sha256": "e0dda0016eed9a8e0eaff8973565b80faaf055ec77ddbd199eb9ab6f3bb1d6d2",
+  "status": "time_limited_partial",
+  "partial_text": "",
+  "elapsed_seconds": 30.01
+}

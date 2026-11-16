@@ -1,0 +1,16 @@
+{
+  "file": "008-evidence_selector-r2.json",
+  "role": "evidence_selector",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 2,
+  "budget_seconds": 30,
+  "prompt_sha256": "fb2c8b708b10e93f6486b3b70e3b26358f7fdd5bc1c94bcf90c99cc72b386666",
+  "status": "invalid_output",
+  "partial_text": "{\n  \"status\": \"completed\",\n  \"findings\": [\n    {\n      \"claim\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\",\n      \"source_ids\": [ \"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\" ],\n      \"quote\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\"\n    },\n    {\n      \"claim\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\",\n      \"source_ids\": [ \"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\" ],\n      \"quote\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\"\n    },\n    {\n      \"claim\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\",\n      \"source_ids\": [ \"S1\", \"S2\", \"S3\", \"S4\", \"S5\", \"S6\" ],\n      \"quote\": \"The A15 can reuse work from the OptiPlex on the OptiPlex.\"\n    }\n  ],\n  \"questions\": [\n    \"What L0 does?\",\n    \"What L0 does?\",\n    \"What L0 does?\"\n  ],\n  \"next_action\": \"Review the documentation for the A15 + nomic 768-dim embeddings to ensure it is correct and reliable.\",\n  \"verdict\": \"not_applicable\"\n}",
+  "generation": {
+    "done_reason": "stop",
+    "eval_count": 343
+  },
+  "error": "Quote absent from cited excerpt",
+  "elapsed_seconds": 20.58
+}

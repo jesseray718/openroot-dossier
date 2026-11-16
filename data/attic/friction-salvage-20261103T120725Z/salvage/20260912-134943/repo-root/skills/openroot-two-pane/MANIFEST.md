@@ -1,0 +1,23 @@
+# Manifest
+- name: openroot-two-pane
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/openroot-two-pane
+  - /home/jesse/openroot
+  - /storage/emulated/0/openroot
+  - /data/data/com.termux/files/home
+- sisters:
+  - openroot-syncthing
+  - une-joule-native
+  - openroot-mesh-recovery
+  - openroot-integration
+- trigger_ids:
+  - A15
+  - optiplex3060
+  - WD53PPW
+  - JW5PQXV
+  - wrong pane
+- status: live

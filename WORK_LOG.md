@@ -15,3 +15,4 @@ Published `review-tool-v2-20261111T140058Z` to
 - Legacy A15 sandbox chain and defective staging chain preserved unchanged
 - No live ledger, pod schema, Newton chain, or POPW ledger modified
 - Noncanonical sandbox workflow; no canonical promotion performed
+2026-11-16T08:48:33Z GATE PASS all-one docs+mesh-align v1.2.1-popw-ledger

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "inference",
+    "model": "qwen2.5-coder:0.5b",
+    "source": "E3",
+    "start": 151,
+    "end": 167,
+    "instruction": "Extract the URL used for generation into endpoint. Set sends_model_request true only if the excerpt sends an HTTP request. Set verifies_answer_support true only if it checks the answer against evidence.",
+    "fields": {
+      "endpoint": "string",
+      "sends_model_request": "boolean",
+      "verifies_answer_support": "boolean"
+    },
+    "expected": {
+      "endpoint": "http://localhost:11434/api/generate",
+      "sends_model_request": true,
+      "verifies_answer_support": false
+    },
+    "excerpt": "151:     ctx = \"\\n\\n---\\n\\n\".join(f\"[chunk {r[0]}] {(r[1] or '')[:500]}\" for r in res[:3])\n152:     prompt = f\"Answer strictly from the context. If missing reply exactly: NOT_IN_CONTEXT.\\n\\nQuestion: {q}\\n\\nContext:\\n{ctx}\\n\\nAnswer (max 3 sentences):\"\n153:     ans = {\"status\": \"UNAVAILABLE\", \"model\": None, \"text\": \"\", \"elapsed_s\": None}\n154:     for m in MODELS:\n155:         if m not in avail:\n156:             continue\n157:         body = json.dumps({\"model\": m, \"prompt\": prompt, \"stream\": False, \"options\": {\"num_predict\": 120, \"temperature\": 0.15}}).encode()\n158:         req = urllib.request.Request(\"http://localhost:11434/api/generate\", data=body, headers={\"Content-Type\": \"application/json\"})\n159:         t0 = time.time()\n160:         try:\n161:             with urllib.request.urlopen(req, timeout=90) as r:\n162:                 out = json.load(r)\n163:             ans = {\"status\": \"OK\", \"model\": m, \"text\": (out.get(\"response\") or \"\").strip()[:400], \"elapsed_s\": round(time.time() - t0, 1)}\n164:             break\n165:         except Exception as e:\n166:             ans = {\"status\": f\"ERR {type(e).__name__}\", \"model\": m, \"text\": \"\", \"elapsed_s\": None}\n167:     doc[\"questions\"].append({\"idx\": i, \"source_rowid\": src_rid, \"question\": q, \"recall_hit\": hit, \"answer\": ans})"
+  },
+  {
+    "id": "pathway_write",
+    "model": "qwen2.5-coder:0.5b",
+    "source": "E2",
+    "start": 194,
+    "end": 215,
+    "instruction": "Extract the ledger path into ledger, the export destination into export_target, and the numeric --parent argument into parent. Report source code only, not execution.",
+    "fields": {
+      "ledger": "string",
+      "export_target": "string",
+      "parent": "integer"
+    },
+    "expected": {
+      "ledger": "data/pathway_cache.jsonl",
+      "export_target": "PATHWAYS.md",
+      "parent": 1
+    },
+    "excerpt": "194: # step4 pathway\n195: echo \"[loop] step4: pathway record\"\n196: S4=\"SKIP(no-evidence)\"\n197: if [ -f \"$RUN/QUESTION_TRAVEL.json\" ] && [ -f \"$RUN/PODS_FRACTAL.json\" ] && [ -f \"$RUN/friction_report.json\" ]; then\n198:   S4=\"FAIL\"\n199:   if python3 bin/pathway_cache_v1.py --root \"$PWD\" --ledger data/pathway_cache.jsonl record \\\n200:       --name \"ai-hybrid-${TS}\" --actor jesse \\\n201:       --step \"friction_observer\" --step \"question_travel\" --step \"pods_fractal\" \\\n202:       --evidence \"${ABS_RUN}/friction_report.json\" \\\n203:       --evidence \"${ABS_RUN}/QUESTION_TRAVEL.json\" \\\n204:       --evidence \"${ABS_RUN}/PODS_FRACTAL.json\" \\\n205:       --parent 1 --notes \"absolute-path fractal fix; NQ=${NQ}\" \\\n206:       > \"$RUN/step4_pathway.log\" 2>&1; then S4=\"OK\"; fi\n207: fi\n208: mark step4-pathway-record \"$S4\" \"see step4_pathway.log\"\n209: \n210: # step5 PATHWAYS.md\n211: echo \"[loop] step5: PATHWAYS.md\"\n212: S5=\"FAIL\"\n213: cp PATHWAYS.md \"$RUN/PATHWAYS.md.bak\" 2>/dev/null || true\n214: if timeout 60 python3 bin/pathway_cache_v1.py --root \"$PWD\" --ledger data/pathway_cache.jsonl export-md PATHWAYS.md > \"$RUN/step5_export.log\" 2>&1; then S5=\"OK\"; fi\n215: mark step5-pathways-md \"$S5\" \"see step5_export.log\""
+  },
+  {
+    "id": "energy_inputs",
+    "model": "granite4:1b",
+    "source": "E3",
+    "start": 187,
+    "end": 204,
+    "instruction": "Extract the assigned human value into human_value. Set human_value_measured true only if measurement is shown. Set useful_is_binary true if useful is assigned 1.0 or 0.0.",
+    "fields": {
+      "human_value": "number",
+      "human_value_measured": "boolean",
+      "useful_is_binary": "boolean"
+    },
+    "expected": {
+      "human_value": 0.9,
+      "human_value_measured": false,
+      "useful_is_binary": true
+    },
+    "excerpt": "187: travel = json.load(open(travel_path))\n188: summary = travel.get(\"summary\", {})\n189: hits = summary.get(\"recall_hits\", 0)\n190: ok = summary.get(\"answered_ok\", 0)\n191: useful = 1.0 if (hits > 0 or ok > 0) else 0.0\n192: human = 0.9\n193: payload = {\n194:     \"cycle_id\": os.environ[\"TS\"],\n195:     \"models\": travel.get(\"models_tried\", []),\n196:     \"recall_hits\": hits,\n197:     \"questions\": summary.get(\"questions\"),\n198:     \"evidence\": [str(travel_path)],\n199:     \"pod_root\": travel.get(\"pod_root\"),\n200:     \"db_used\": travel.get(\"db\"),\n201: }\n202: subprocess.check_call([\"python3\", str(ROOT / \"bin\" / \"popw_thermal_ledger.py\"), \"add\",\n203:                        json.dumps(payload), str(human), str(useful)])\n204: print(f\"PoPW sealed: hits={hits} ok={ok} useful={useful} db={travel.get('db')}\")"
+  },
+  {
+    "id": "verification_side_effect",
+    "model": "qwen3.5:0.8b",
+    "source": "E5",
+    "start": 23,
+    "end": 85,
+    "instruction": "Does verify call init? Does init contain code that creates LEDGER if missing or empty, and NEWTON if missing? Return those three booleans. Do not claim files were created.",
+    "fields": {
+      "verify_calls_init": "boolean",
+      "init_can_create_ledger": "boolean",
+      "init_can_create_newton": "boolean"
+    },
+    "expected": {
+      "verify_calls_init": true,
+      "init_can_create_ledger": true,
+      "init_can_create_newton": true
+    },
+    "excerpt": "23: def init():\n24:     LEDGER.parent.mkdir(parents=True, exist_ok=True)\n25:     if not LEDGER.exists() or LEDGER.stat().st_size == 0:\n26:         g = {\n27:             \"id\": \"genesis\",\n28:             \"ts\": \"2026-09-02T00:00:00Z\",\n29:             \"type\": \"genesis\",\n30:             \"prev\": None,\n31:             \"payload\": {\"note\": \"PoPW thermal + Newton fusion\", \"eta_law\": \"useful_joules / human_joules\"},\n32:         }\n33:         g[\"hash\"] = sha({k: g[k] for k in (\"id\", \"ts\", \"type\", \"prev\", \"payload\")})\n34:         with open(LEDGER, \"w\") as f:\n35:             f.write(json.dumps(g) + \"\\n\")\n36:         print(\"initialized\", LEDGER)\n37:     if not NEWTON.exists():\n38:         with open(NEWTON, \"w\") as f:\n39:             f.write(json.dumps({\"id\": \"newton-genesis\", \"ts\": datetime.now(timezone.utc).isoformat(), \"postulate\": \"N00-N16 locked\", \"prev\": None}) + \"\\n\")\n40:         print(\"initialized\", NEWTON)\n41: \n42: def add(payload, human_joules=0.0, useful_joules=0.0):\n43:     init()\n44:     prev = tip(LEDGER)\n45:     prev_hash = prev[\"hash\"] if prev else None\n46:     rec = {\n47:         \"id\": f\"popw-{int(time.time()*1000)}\",\n48:         \"ts\": datetime.now(timezone.utc).isoformat(),\n49:         \"type\": \"thermal_cycle\",\n50:         \"prev\": prev_hash,\n51:         \"payload\": {\n52:             \"cycle_id\": payload.get(\"cycle_id\"),\n53:             \"models\": payload.get(\"models\", []),\n54:             \"recall_hits\": payload.get(\"recall_hits\"),\n55:             \"questions\": payload.get(\"questions\"),\n56:             \"eta\": round(useful_joules / human_joules, 6) if human_joules > 0 else None,\n57:             \"human_joules\": human_joules,\n58:             \"useful_joules\": useful_joules,\n59:             \"evidence\": payload.get(\"evidence\", []),\n60:             \"newton_tip\": (tip(NEWTON) or {}).get(\"id\"),\n61:             \"pod_root\": payload.get(\"pod_root\"),\n62:             \"db_used\": payload.get(\"db_used\"),\n63:         },\n64:     }\n65:     rec[\"hash\"] = sha({k: rec[k] for k in (\"id\", \"ts\", \"type\", \"prev\", \"payload\")})\n66:     with open(LEDGER, \"a\") as f:\n67:         f.write(json.dumps(rec) + \"\\n\")\n68:     print(json.dumps({\"written\": rec[\"id\"], \"hash\": rec[\"hash\"][:16], \"eta\": rec[\"payload\"][\"eta\"]}))\n69:     return rec\n70: \n71: def verify():\n72:     init()\n73:     prev_hash = None\n74:     count = 0\n75:     with open(LEDGER) as f:\n76:         for line in f:\n77:             rec = json.loads(line)\n78:             expected = sha({k: rec[k] for k in (\"id\", \"ts\", \"type\", \"prev\", \"payload\")})\n79:             if rec[\"hash\"] != expected or rec[\"prev\"] != prev_hash:\n80:                 print(\"FAIL at\", rec[\"id\"])\n81:                 return False\n82:             prev_hash = rec[\"hash\"]\n83:             count += 1\n84:     print(f\"OK {count} records tip={prev_hash[:16] if prev_hash else None}\")\n85:     return True"
+  }
+]

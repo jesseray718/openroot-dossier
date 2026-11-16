@@ -1,0 +1,7 @@
+wrote /home/jesse/openroot/outbox/ai_hybrid_loop/20261104T140001Z/PODS_FRACTAL.json
+  sig[7 pods]: chunk_paths,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_  e.g. ['pod_android_skills', 'pod_anomalyco_opencode', 'pod_awesome-selfhosted_awesome-selfhosted']
+  sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,corr  e.g. ['clone_universal_20261016T083202Z', 'lab_universal']
+  sig[2 pods]: ask_runs,chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts  e.g. ['github-docs', 'github-docs-clone']
+  sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,file  e.g. ['grants_pod', 'sare_grants']
+  sig[2 pods]: chunks,chunks_fts,chunks_fts_config,chunks_fts_data,chunks_fts_docsize,chunks_fts_idx,embe  e.g. ['pod_a15-mobile', 'pod_github-history']
+  verdict: 24 pods, 14 distinct signatures, largest self-similar group 7

@@ -1,0 +1,15 @@
+{
+  "file": "008-interface_selector-r2.json",
+  "role": "interface_selector",
+  "model": "qwen2.5-coder:0.5b",
+  "round": 2,
+  "budget_seconds": 45,
+  "status": "token_limited_partial",
+  "prompt_sha256": "54bb50550b67346481a8eea05daf203ecaf2baf714117e8927cd8b933a540d42",
+  "generation": {
+    "done": true,
+    "done_reason": "length",
+    "eval_count": 200
+  },
+  "elapsed_seconds": 25.0
+}

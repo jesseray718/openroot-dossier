@@ -1,0 +1,8 @@
+{
+  "question": "What does the indexed OpenRoot documentation say about autodossier workflows, pathway receipts, and verification? Distinguish documented intentions from demonstrated execution.",
+  "fts_query": "\"autodossier\" OR \"pathway\" OR \"receipt\"",
+  "model": "qwen2.5-coder:1.5b",
+  "max_evidence_items": 5,
+  "max_excerpt_characters": 1600,
+  "max_model_requests": 1
+}

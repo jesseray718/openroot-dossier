@@ -1,0 +1,2 @@
+  q0: rowid=7158059 recall@5=MISS answer=OK model=smollm2:1.7b
+  recall@5 = 0/1  answered_ok = 1/1

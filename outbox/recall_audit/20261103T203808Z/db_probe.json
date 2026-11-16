@@ -1,0 +1,76 @@
+[
+  {
+    "path": "/home/jesse/pods/clone_universal_20261016T083202Z/pod.db",
+    "exists": true,
+    "bytes": 905707520,
+    "readable": true,
+    "tables": 13,
+    "fts5_tables": [
+      "chunks_fts"
+    ],
+    "has_dossiers": true,
+    "has_pathways": true,
+    "sample": {
+      "table": "chunks_fts",
+      "rows": [
+        [
+          "*.bak\n*.before\nconsolidation-backups/\ndata_bot_state.json\ndata/chunk_manifest.jsonl\ndata/operator_holds/\ndata/rootkit_ch",
+          "f/.gitignore"
+        ],
+        [
+          "#!/usr/bin/env bash\n# openroot_deepdive_triad_v1.sh \u2014 combined deep dive + monetization triad\n# CANARY:OPENROOT-DEEPDIVE",
+          "f/openroot_deepdive_triad_v1.sh"
+        ]
+      ]
+    },
+    "error": null
+  },
+  {
+    "path": "/home/jesse/openloom-build/grand-unification/unified_rag.sqlite3",
+    "exists": true,
+    "bytes": 263565312,
+    "readable": true,
+    "tables": 10,
+    "fts5_tables": [
+      "chunks_fts"
+    ],
+    "has_dossiers": false,
+    "has_pathways": false,
+    "sample": {
+      "table": "chunks_fts",
+      "rows": [
+        [
+          "POD: demo-pod SOURCE_DB: /pods/demo-pod/pod.db TABLE: sources ROW: 1 sha256: f105230b5e91a0c63c0056705e7dc70950c1728dff6"
+        ],
+        [
+          "POD: demo-pod SOURCE_DB: /pods/demo-pod/pod.db TABLE: sources ROW: 2 sha256: 1b07e3d5175b4520941444cbcb196f7abbfeeb147c5"
+        ]
+      ]
+    },
+    "error": null
+  },
+  {
+    "path": "/home/jesse/openloom-build/grand-unification/staging/optiplex__home__jesse__recovery-evidence__unified-evidence-800k-v3-20261014T230703Z__unified_evidence.db",
+    "exists": true,
+    "bytes": 481665024,
+    "readable": true,
+    "tables": 8,
+    "fts5_tables": [
+      "sources_fts"
+    ],
+    "has_dossiers": false,
+    "has_pathways": false,
+    "sample": {
+      "table": "sources_fts",
+      "rows": [
+        [
+          "/data/MASTER_BACKUP/home_projects/setup_openroot_pc.sh"
+        ],
+        [
+          "/data/MASTER_BACKUP/home_projects/openroot_modelfile"
+        ]
+      ]
+    },
+    "error": null
+  }
+]

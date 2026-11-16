@@ -1,0 +1,3 @@
+usage: pathway_cache_v1.py [-h] [--root ROOT] [--ledger LEDGER]
+                           {record,list,show,search,verify,export-md} ...
+pathway_cache_v1.py: error: argument cmd: invalid choice: 'ai-hybrid-20261104T140001Z' (choose from 'record', 'list', 'show', 'search', 'verify', 'export-md')

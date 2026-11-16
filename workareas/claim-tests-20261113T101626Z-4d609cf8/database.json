@@ -1,0 +1,30 @@
+{
+  "path": "/home/jesse/openroot_metrics_core.db",
+  "exists": true,
+  "journal_mode": "delete",
+  "schema": [
+    [
+      "table",
+      "cascade_metrics",
+      "cascade_metrics",
+      "CREATE TABLE cascade_metrics (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    timestamp TEXT,\n    node TEXT,\n    latency_seconds REAL,\n    status TEXT,\n    fallback_triggered INTEGER,\n    response_tokens INTEGER\n)"
+    ]
+  ],
+  "columns": [
+    "id",
+    "timestamp",
+    "node",
+    "latency_seconds",
+    "status",
+    "fallback_triggered",
+    "response_tokens"
+  ],
+  "aggregates": {
+    "rows": 2,
+    "fallback_sum": 2,
+    "mean_seconds": 0.0738,
+    "response_tokens_sum": 0,
+    "min_seconds": 0.0229,
+    "max_seconds": 0.1247
+  }
+}

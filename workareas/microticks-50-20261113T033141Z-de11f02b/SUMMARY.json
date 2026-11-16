@@ -1,0 +1,18 @@
+{
+  "ticks_used": 50,
+  "max_ticks": 50,
+  "tick_seconds": 1.0,
+  "elapsed_seconds": 50.454,
+  "stop_reason": "tick_limit",
+  "task_statuses": {
+    "scan_pattern": "needs_revision",
+    "insert_table": "needs_revision",
+    "parent_value": "saved_unfinished",
+    "human_value": "pending",
+    "verify_calls_init": "pending"
+  },
+  "live_ledger_writers_invoked": false,
+  "canonical_promotion": false,
+  "git_operations": 0,
+  "resume_note": "Task records and partial text are saved. Active inference state is not checkpointed. Do not automatically restart an unfinished request without accounting for server activity."
+}

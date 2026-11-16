@@ -1,0 +1,25 @@
+{
+  "attempt": {
+    "role": "provenance",
+    "model": "granite4:1b",
+    "attempt": 1,
+    "launch_round": 25,
+    "start_seconds": 24.00238768896088,
+    "first_text_seconds": null,
+    "characters": 0,
+    "observed_finish_round": 71,
+    "observed_finish_seconds": 70.00281021697447,
+    "elapsed_seconds": 46.00042252801359,
+    "status": "attempt_timeout",
+    "error": null,
+    "generation": {}
+  },
+  "state": {
+    "attempts": 1,
+    "status": "attempt_timeout",
+    "partial": "",
+    "error": null,
+    "validated": null,
+    "terminal": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "file": "013-contradiction_reviewer-r2.json",
+  "role": "contradiction_reviewer",
+  "model": "granite4:1b",
+  "round": 2,
+  "budget_seconds": 45,
+  "status": "time_limited_partial",
+  "prompt_sha256": "6abb5600d34b608fe1d47b593fc63f55b16f1b070a742213a9889a3d3414948a",
+  "elapsed_seconds": 45.05
+}

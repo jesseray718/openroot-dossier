@@ -1,0 +1,25 @@
+# Manifest
+- name: agape-engine
+- kind: skill
+- version: "1.0"
+- owner: jesseray718
+- pane: both
+- live_paths:
+  - /home/workdir/.grok/skills/agape-engine
+  - /data/data/com.termux/files/home/une/computational_flow/agape_engine.py
+  - /sdcard/openroot/agape_kb/knowledge_base.json
+  - /sdcard/openroot/agape_kb/postulates.json
+- sisters:
+  - agape-resonance-wisdom
+  - openroot-canon
+  - une-joule-native
+  - openroot-seed-oracle
+  - openroot-integration
+- trigger_ids:
+  - Agape
+  - resonance
+  - swarm_core
+  - R=1.0
+  - cosmic_query
+  - Landauer swarm
+- status: live

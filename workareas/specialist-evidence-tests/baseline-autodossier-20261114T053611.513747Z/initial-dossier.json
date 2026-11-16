@@ -1,0 +1,79 @@
+{
+  "experiment": "nonstreaming_baseline_autodossier_first",
+  "task": "Identify the smallest evidence-supported pathway for the A15 to reuse work already completed on the OptiPlex. Distinguish documented procedures from demonstrated execution. Identify missing evidence and concrete acceptance tests.",
+  "scope": "Bounded indexed excerpts; not exhaustive retrieval",
+  "evidence": [
+    {
+      "id": "S1",
+      "database": "data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 126,
+      "source_path": "attic/rescue_staging_vendor/0104_organize_docs_a15.py",
+      "excerpt": " ... assert_a15()\n    print(\"pane\", \"A15\")\n    print(\"host\", os.uname().nodename)\n    print(\"uid\", os.getuid())\n    print(\"cwd\", os.getcwd())\n    print(\"termux_home\", TERMUX_HOME.exists())\n    print(\"mesh\", MESH.exists(), \"outbox\", MESH_OUT.exists())\n    for r in ROOTS:\n        print(\"root\", str(r), \"exists\", r.is_dir())\n    HOME_OUT.mkdir(parents=True, exist ... ",
+      "excerpt_sha256": "9c908ce0e821666469651ce1d08cc01abb8a30ed51b2b80fa8ab77abb80a4364"
+    },
+    {
+      "id": "S2",
+      "database": "data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 127,
+      "source_path": "attic/rescue_staging_vendor/0105_organize_docs_a15_v2.py",
+      "excerpt": " ... 20260906\"\nMESH_OUT = MESH / \"outbox\"\nVERSION = \"a15-v2-20260906\"\n\nROOTS_DEFAULT = [\n    Path(\"/storage/emulated/0/Download\"),\n    Path(\"/storage/emulated/0/Documents/Markor\"),\n    Path(\"/storage/emulated/0/Markor\"),\n    MESH / \"outbox\",\n]\nTEXT_SUFFIX = {\".md\", \".txt\", \".rst\", \".org\", \".json\", \".csv\", \".py\", \".sh\", \".tsv\"}\nSKIP_DIRS = {\".git\", \".venv\", \"__pycache__\", \"node_modules\", \".cache\", \".stversions\", \"Android ... ",
+      "excerpt_sha256": "a28826f19a5ca51960cea04ee65c6d3e5812aed70d09fc01f5491a7799bdb0d5"
+    },
+    {
+      "id": "S3",
+      "database": "data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 620,
+      "source_path": "attic/rescue_staging_vendor/0623_openroot-classifier.py",
+      "excerpt": " ... LEGAL_SEE = frozenset({\n    (Pane.SSH, PathClass.BOX),\n    (Pane.SSH, PathClass.MESH),\n    (Pane.SSH, PathClass.BUS),\n    (Pane.SSH, PathClass.COLD),\n    (Pane.SSH, PathClass.RELATIVE),\n    (Pane.A15, PathClass.PHONE),\n    (Pane.A15, PathClass.MESH),\n    (Pane.A15, PathClass.BUS),\n    (Pane.A15, PathClass.CLONE),\n    (Pane.A15, PathClass.RELATIVE),\n})\n\n# Who may WRITE. COLD never. MESH root ... ",
+      "excerpt_sha256": "53cf945eb3c176991ca7ac3b6c630691c894060e53eb3bb4645adfce69854041"
+    },
+    {
+      "id": "S4",
+      "database": "data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 6,
+      "source_path": "/data/data/com.termux/files/home/openroot/README.md",
+      "excerpt": " ... This collaboration is not yet validated end to end.\n\n### Verified results \u2014 2026-11-03\n\nA manifest-gated transfer staged 20 files on the A15. All 20 passed\npost-transfer SHA-256 verification against the generated manifest.\n\nThe staged artifacts include the auto-dossier compiler, pathway-cache\ntooling and ledger, receipt ... ",
+      "excerpt_sha256": "7f44f4f156a43141a69ee7a82877a8f1964a54e9873b5be2a2d1d5bc95c94f64"
+    },
+    {
+      "id": "S5",
+      "database": "data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 336,
+      "source_path": "/data/data/com.termux/files/home/openroot/a15/inbox/friction_triage/b40ed83fcbfe_CACHED_PATHWAY_L0.md",
+      "excerpt": "# OpenRoot Cached Pathway L0\n\n## Status\n\n**L0 exact reuse is verified for one local pathway.**\n\nThis package documents a bounded vertical slice:\n\n```text\ncandidate \u2192 Turing Tidbit identity \u2192 verified provenance\n          \u2192 reviewed cache promotion \u2192 exact cache lookup\n          \u2192 local verified response, no model dispatch\n```\n\n## What L0 does\n\nL0 is exact reuse. It does not ... ",
+      "excerpt_sha256": "5767eeb23f851b755487fab55e57a989026ef9ac807d64d1deda23da41a8886c"
+    },
+    {
+      "id": "S6",
+      "database": "data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 318,
+      "source_path": "/data/data/com.termux/files/home/openroot/a15/inbox/friction_triage/d8e613deb98c_README.md",
+      "excerpt": "# L0 Cached Pathway Evidence\n\nThis directory contains only reviewed source copies and sealed evidence receipts\nfor the first documented OpenRoot exact cache pathway.\n\nIt intentionally excludes:\n\n- live SQLite databases,\n- Turing Tidbit object storage,\n- user documents,\n- model artifacts,\n- secrets,\n- runtime logs,\n- unrelated worktree state.\n\nRun:\n\n```bash\nOPENROOT_LIVE_ROOT=/path/to ... ",
+      "excerpt_sha256": "19cabd2eda5bdcd5e4bf542189aea6cf81222bc72dc14518d2660f6aa4f927cc"
+    }
+  ],
+  "retrieval": [
+    {
+      "reason": "initial autodossier",
+      "database": "data/fts_index.db",
+      "query": "\"A15\" OR \"pathway\" OR \"cache\" OR \"mesh\"",
+      "status": "executed",
+      "rows_returned": 3
+    },
+    {
+      "reason": "initial autodossier",
+      "database": "data/md_fts_v1.db",
+      "query": "\"A15\" OR \"pathway\" OR \"cache\" OR \"mesh\"",
+      "status": "executed",
+      "rows_returned": 3
+    }
+  ],
+  "latest_role_results": {},
+  "native_cache_replay": "not_tested"
+}

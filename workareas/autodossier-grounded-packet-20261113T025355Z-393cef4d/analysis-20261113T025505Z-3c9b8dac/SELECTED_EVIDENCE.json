@@ -1,0 +1,82 @@
+[
+  {
+    "source_id": "E1",
+    "path": "LOOP_SPEC.md",
+    "excerpts": [
+      {
+        "line_start": 3,
+        "line_end": 19,
+        "text": "3: ## Phase order (strict; no step runs before its precondition holds)\n4: 0. interface discovery — enumerate DB links, models, paths. Abort on dangling DB_LINK.\n5: 1. friction scan — append-only to data/friction_ledger.jsonl. Never mutates source.\n6: 2. question travel — FTS5 retrieve -> ollama ground. Recall is DATA, not failure.\n7:    MISS = record the miss, continue. Never retry-loop a single question more than once.\n8: 3. fractal pod verification — every claimed theorem must classify DERIVED or carry\n9:    an explicit ATTESTED label. Assertions are valid records; they are not proofs.\n10: 4. pathway cache — parent seq must be a resolved integer from data/pathway_cache.jsonl\n11:    (tail -1), never a literal placeholder. On missing evidence: emit minimal-proof\n12:    record and continue, exit 0 with warning.\n13: 5. regenerate PATHWAYS.md — idempotent from ledger, never hand-edited.\n14: 6. auto dossier — compile receipts; include classification counts.\n15: \n16: ## Exit codes\n17: - 0 = all steps attempted, receipts written (even with warnings/misses)\n18: - 1 = core step could not EXECUTE (missing file, broken DB, dead model endpoint)\n19: A recall MISS or ATTESTED theorem is exit 0. Silence or fabrication is exit 1."
+      }
+    ]
+  },
+  {
+    "source_id": "E2",
+    "path": "run_ai_hybrid_loop_v1.sh",
+    "excerpts": [
+      {
+        "line_start": 194,
+        "line_end": 223,
+        "text": "194: # step4 pathway\n195: echo \"[loop] step4: pathway record\"\n196: S4=\"SKIP(no-evidence)\"\n197: if [ -f \"$RUN/QUESTION_TRAVEL.json\" ] && [ -f \"$RUN/PODS_FRACTAL.json\" ] && [ -f \"$RUN/friction_report.json\" ]; then\n198:   S4=\"FAIL\"\n199:   if python3 bin/pathway_cache_v1.py --root \"$PWD\" --ledger data/pathway_cache.jsonl record \\\n200:       --name \"ai-hybrid-${TS}\" --actor jesse \\\n201:       --step \"friction_observer\" --step \"question_travel\" --step \"pods_fractal\" \\\n202:       --evidence \"${ABS_RUN}/friction_report.json\" \\\n203:       --evidence \"${ABS_RUN}/QUESTION_TRAVEL.json\" \\\n204:       --evidence \"${ABS_RUN}/PODS_FRACTAL.json\" \\\n205:       --parent 1 --notes \"absolute-path fractal fix; NQ=${NQ}\" \\\n206:       > \"$RUN/step4_pathway.log\" 2>&1; then S4=\"OK\"; fi\n207: fi\n208: mark step4-pathway-record \"$S4\" \"see step4_pathway.log\"\n209: \n210: # step5 PATHWAYS.md\n211: echo \"[loop] step5: PATHWAYS.md\"\n212: S5=\"FAIL\"\n213: cp PATHWAYS.md \"$RUN/PATHWAYS.md.bak\" 2>/dev/null || true\n214: if timeout 60 python3 bin/pathway_cache_v1.py --root \"$PWD\" --ledger data/pathway_cache.jsonl export-md PATHWAYS.md > \"$RUN/step5_export.log\" 2>&1; then S5=\"OK\"; fi\n215: mark step5-pathways-md \"$S5\" \"see step5_export.log\"\n216: \n217: # step6 dossier\n218: echo \"[loop] step6: auto dossier\"\n219: S6=\"FAIL\"\n220: mkdir -p data/sdcard-sync/markor 2>/dev/null || true\n221: [ -f data/sdcard-sync/markor/dossier.md ] && cp data/sdcard-sync/markor/dossier.md \"$RUN/dossier.md.bak\"\n222: if timeout 120 python3 bin/autodossier_compiler.py > \"$RUN/step6_dossier.log\" 2>&1 < /dev/null; then S6=\"OK\"; fi\n223: mark step6-auto-dossier \"$S6\" \"see step6_dossier.log\""
+      }
+    ]
+  },
+  {
+    "source_id": "E3",
+    "path": "run_ai_hybrid_loop_v2.sh",
+    "excerpts": [
+      {
+        "line_start": 54,
+        "line_end": 89,
+        "text": "54: db = candidates[0] if candidates else None\n55: doc = {\n56:     \"ts\": time.strftime(\"%Y-%m-%dT%H:%M:%SZ\", time.gmtime()),\n57:     \"db\": db,\n58:     \"candidates\": candidates[:12],\n59:     \"questions\": [],\n60:     \"models_tried\": MODELS,\n61:     \"pod_root\": str(PODS) if PODS.exists() else None,\n62:     \"fulltext_state\": str(FTS_STATE) if FTS_STATE.exists() else None,\n63: }\n64: if not db:\n65:     doc[\"error\"] = \"no fts/pod db found\"\n66:     json.dump(doc, open(RUN / \"travel.json\", \"w\"), indent=2)\n67:     print(json.dumps({\"error\": \"no db\", \"candidates\": candidates}))\n68:     raise SystemExit(0)\n69: \n70: conn = sqlite3.connect(f\"file:{db}?mode=ro\", uri=True)\n71: conn.execute(\"PRAGMA query_only=1\")\n72: cur = conn.cursor()\n73: \n74: # Prefer FTS5 virtual tables that look like the fulltext schema\n75: tabs = [r[0] for r in cur.execute(\"SELECT name FROM sqlite_master WHERE type='table' AND name LIKE '%fts%' OR name='words'\")]\n76: tab = None\n77: for candidate in (\"words\", \"chunks_fts\", \"chunks\"):\n78:     if candidate in tabs:\n79:         tab = candidate\n80:         break\n81: if not tab and tabs:\n82:     tab = tabs[0]\n83: if not tab:\n84:     tabs = [r[0] for r in cur.execute(\"SELECT name FROM sqlite_master WHERE type='table'\")]\n85:     tab = tabs[0] if tabs else None\n86: if not tab:\n87:     doc[\"error\"] = \"no usable table\"\n88:     json.dump(doc, open(RUN / \"travel.json\", \"w\"), indent=2)\n89:     raise SystemExit(0)"
+      },
+      {
+        "line_start": 139,
+        "line_end": 176,
+        "text": "139:     q = \"What does the corpus say about \" + \", \".join(top[:3]) + \"?\"\n140:     query = \" OR \".join(f'\"{t}\"' for t in top[:4])\n141:     try:\n142:         if tab in (\"words\",) or \"fts\" in tab.lower():\n143:             res = cur.execute(f'SELECT rowid, \"{tcol}\" FROM \"{tab}\" WHERE \"{tab}\" MATCH ? ORDER BY rank LIMIT 5', (query,)).fetchall()\n144:         else:\n145:             res = cur.execute(f'SELECT rowid, \"{tcol}\" FROM \"{tab}\" WHERE \"{tcol}\" LIKE ? LIMIT 5', (f\"%{top[0]}%\",)).fetchall()\n146:     except Exception:\n147:         res = cur.execute(f'SELECT rowid, \"{tcol}\" FROM \"{tab}\" WHERE \"{tcol}\" LIKE ? LIMIT 5', (f\"%{top[0]}%\",)).fetchall()\n148:     rids = [r[0] for r in res]\n149:     hit = src_rid in rids\n150:     hits += int(hit)\n151:     ctx = \"\\n\\n---\\n\\n\".join(f\"[chunk {r[0]}] {(r[1] or '')[:500]}\" for r in res[:3])\n152:     prompt = f\"Answer strictly from the context. If missing reply exactly: NOT_IN_CONTEXT.\\n\\nQuestion: {q}\\n\\nContext:\\n{ctx}\\n\\nAnswer (max 3 sentences):\"\n153:     ans = {\"status\": \"UNAVAILABLE\", \"model\": None, \"text\": \"\", \"elapsed_s\": None}\n154:     for m in MODELS:\n155:         if m not in avail:\n156:             continue\n157:         body = json.dumps({\"model\": m, \"prompt\": prompt, \"stream\": False, \"options\": {\"num_predict\": 120, \"temperature\": 0.15}}).encode()\n158:         req = urllib.request.Request(\"http://localhost:11434/api/generate\", data=body, headers={\"Content-Type\": \"application/json\"})\n159:         t0 = time.time()\n160:         try:\n161:             with urllib.request.urlopen(req, timeout=90) as r:\n162:                 out = json.load(r)\n163:             ans = {\"status\": \"OK\", \"model\": m, \"text\": (out.get(\"response\") or \"\").strip()[:400], \"elapsed_s\": round(time.time() - t0, 1)}\n164:             break\n165:         except Exception as e:\n166:             ans = {\"status\": f\"ERR {type(e).__name__}\", \"model\": m, \"text\": \"\", \"elapsed_s\": None}\n167:     doc[\"questions\"].append({\"idx\": i, \"source_rowid\": src_rid, \"question\": q, \"recall_hit\": hit, \"answer\": ans})\n168: \n169: doc[\"summary\"] = {\"questions\": NQ, \"recall_hits\": hits, \"answered_ok\": sum(1 for x in doc[\"questions\"] if x[\"answer\"][\"status\"] == \"OK\")}\n170: json.dump(doc, open(RUN / \"travel.json\", \"w\"), indent=2)\n171: print(json.dumps(doc[\"summary\"]))\n172: print(\"db_used:\", db)\n173: print(\"candidates:\", len(candidates))\n174: print(\"pods_seen:\", len(list(PODS.iterdir())) if PODS.exists() else 0)\n175: print(\"fulltext_pods:\", sum(1 for n in (\"knowledge\",\"system\",\"manual\") if (FTS_STATE / f\"{n}.pod.sqlite3\").exists()) if FTS_STATE.exists() else 0)\n176: PY"
+      },
+      {
+        "line_start": 178,
+        "line_end": 214,
+        "text": "178: # Write PoPW record from the travel result\n179: python3 - << PY\n180: import json, pathlib, subprocess, os\n181: ROOT = pathlib.Path(\"/home/jesse/openroot\")\n182: run = pathlib.Path(os.environ[\"RUN\"])\n183: travel_path = run / \"travel.json\"\n184: if not travel_path.exists():\n185:     print(\"no travel.json — skip PoPW\")\n186:     raise SystemExit(0)\n187: travel = json.load(open(travel_path))\n188: summary = travel.get(\"summary\", {})\n189: hits = summary.get(\"recall_hits\", 0)\n190: ok = summary.get(\"answered_ok\", 0)\n191: useful = 1.0 if (hits > 0 or ok > 0) else 0.0\n192: human = 0.9\n193: payload = {\n194:     \"cycle_id\": os.environ[\"TS\"],\n195:     \"models\": travel.get(\"models_tried\", []),\n196:     \"recall_hits\": hits,\n197:     \"questions\": summary.get(\"questions\"),\n198:     \"evidence\": [str(travel_path)],\n199:     \"pod_root\": travel.get(\"pod_root\"),\n200:     \"db_used\": travel.get(\"db\"),\n201: }\n202: subprocess.check_call([\"python3\", str(ROOT / \"bin\" / \"popw_thermal_ledger.py\"), \"add\",\n203:                        json.dumps(payload), str(human), str(useful)])\n204: print(f\"PoPW sealed: hits={hits} ok={ok} useful={useful} db={travel.get('db')}\")\n205: PY\n206: \n207: echo \"\" >> \"$RECEIPT\"\n208: python3 bin/popw_thermal_ledger.py tip >> \"$RECEIPT\"\n209: echo \"[v2] receipt: $RECEIPT\"\n210: python3 bin/popw_thermal_ledger.py verify\n211: echo \"[v2] cycle sealed next to pods\"\n212: ls -la /home/jesse/pods 2>/dev/null | head -8 || echo \"no /home/jesse/pods yet\"\n213: ls -la \"$HOME/.local/state/openroot-fulltext-v2\"/*.pod.sqlite3 2>/dev/null | head -5 || echo \"no fulltext pods yet\"\n214: exit 0"
+      }
+    ]
+  },
+  {
+    "source_id": "E4",
+    "path": "bin/autodossier_compiler.py",
+    "excerpts": [
+      {
+        "line_start": 15,
+        "line_end": 66,
+        "text": "15: DB_PATH = Path(\"analysis/autodossier.db\")\n16: \n17: def init_db():\n18:     DB_PATH.parent.mkdir(parents=True, exist_ok=True)\n19:     conn = sqlite3.connect(DB_PATH)\n20:     cursor = conn.cursor()\n21:     cursor.execute(\"\"\"\n22:         CREATE TABLE IF NOT EXISTS dossier_nodes (\n23:             id INTEGER PRIMARY KEY AUTOINCREMENT,\n24:             node_hash TEXT UNIQUE,\n25:             filepath TEXT,\n26:             content TEXT,\n27:             timestamp REAL\n28:         )\n29:     \"\"\")\n30:     cursor.execute(\"CREATE VIRTUAL TABLE IF NOT EXISTS dossier_fts USING fts5(content, content=dossier_nodes)\")\n31:     conn.commit()\n32:     conn.close()\n33: \n34: def compile_dossier():\n35:     init_db()\n36:     conn = sqlite3.connect(DB_PATH)\n37:     cursor = conn.cursor()\n38:     \n39:     print(\"[*] Compiling autodossier across workspace...\")\n40:     count = 0\n41:     for path in Path(\"bin\").rglob(\"*.py\"):\n42:         if path.is_file():\n43:             content = path.read_text(errors=\"ignore\")\n44:             node_hash = hashlib.blake2b(content.encode(), digest_size=16).hexdigest()\n45:             cursor.execute(\"\"\"\n46:                 INSERT OR IGNORE INTO dossier_nodes (node_hash, filepath, content, timestamp)\n47:                 VALUES (?, ?, ?, ?)\n48:             \"\"\", (node_hash, str(path), content, time.time()))\n49:             count += 1\n50:             \n51:     conn.commit()\n52:     conn.close()\n53:     print(f\"[✔] Compiled {count} nodes into autodossier database.\")\n54: \n55: def ai_loop_daemon():\n56:     print(\"[*] Starting AI Loop Daemon (R=1, c=0 coordination)...\")\n57:     while True:\n58:         compile_dossier()\n59:         print(\"[*] Loop iteration complete. Sleeping for 60 seconds...\")\n60:         time.sleep(60)\n61: \n62: if __name__ == \"__main__\":\n63:     if len(sys.argv) > 1 and sys.argv[1] == \"daemon\":\n64:         ai_loop_daemon()\n65:     else:\n66:         compile_dossier()"
+      }
+    ]
+  },
+  {
+    "source_id": "E5",
+    "path": "bin/popw_thermal_ledger.py",
+    "excerpts": [
+      {
+        "line_start": 6,
+        "line_end": 8,
+        "text": "6: ROOT = pathlib.Path(os.environ.get(\"OPENROOT_ROOT\", \"/home/jesse/openroot\")).resolve()\n7: LEDGER = ROOT / \"ledger\" / \"popw_thermal.jsonl\"\n8: NEWTON = ROOT / \"ledger\" / \"newton_chain.jsonl\""
+      },
+      {
+        "line_start": 23,
+        "line_end": 43,
+        "text": "23: def init():\n24:     LEDGER.parent.mkdir(parents=True, exist_ok=True)\n25:     if not LEDGER.exists() or LEDGER.stat().st_size == 0:\n26:         g = {\n27:             \"id\": \"genesis\",\n28:             \"ts\": \"2026-09-02T00:00:00Z\",\n29:             \"type\": \"genesis\",\n30:             \"prev\": None,\n31:             \"payload\": {\"note\": \"PoPW thermal + Newton fusion\", \"eta_law\": \"useful_joules / human_joules\"},\n32:         }\n33:         g[\"hash\"] = sha({k: g[k] for k in (\"id\", \"ts\", \"type\", \"prev\", \"payload\")})\n34:         with open(LEDGER, \"w\") as f:\n35:             f.write(json.dumps(g) + \"\\n\")\n36:         print(\"initialized\", LEDGER)\n37:     if not NEWTON.exists():\n38:         with open(NEWTON, \"w\") as f:\n39:             f.write(json.dumps({\"id\": \"newton-genesis\", \"ts\": datetime.now(timezone.utc).isoformat(), \"postulate\": \"N00-N16 locked\", \"prev\": None}) + \"\\n\")\n40:         print(\"initialized\", NEWTON)\n41: \n42: def add(payload, human_joules=0.0, useful_joules=0.0):\n43:     init()"
+      },
+      {
+        "line_start": 46,
+        "line_end": 68,
+        "text": "46:     rec = {\n47:         \"id\": f\"popw-{int(time.time()*1000)}\",\n48:         \"ts\": datetime.now(timezone.utc).isoformat(),\n49:         \"type\": \"thermal_cycle\",\n50:         \"prev\": prev_hash,\n51:         \"payload\": {\n52:             \"cycle_id\": payload.get(\"cycle_id\"),\n53:             \"models\": payload.get(\"models\", []),\n54:             \"recall_hits\": payload.get(\"recall_hits\"),\n55:             \"questions\": payload.get(\"questions\"),\n56:             \"eta\": round(useful_joules / human_joules, 6) if human_joules > 0 else None,\n57:             \"human_joules\": human_joules,\n58:             \"useful_joules\": useful_joules,\n59:             \"evidence\": payload.get(\"evidence\", []),\n60:             \"newton_tip\": (tip(NEWTON) or {}).get(\"id\"),\n61:             \"pod_root\": payload.get(\"pod_root\"),\n62:             \"db_used\": payload.get(\"db_used\"),\n63:         },\n64:     }\n65:     rec[\"hash\"] = sha({k: rec[k] for k in (\"id\", \"ts\", \"type\", \"prev\", \"payload\")})\n66:     with open(LEDGER, \"a\") as f:\n67:         f.write(json.dumps(rec) + \"\\n\")\n68:     print(json.dumps({\"written\": rec[\"id\"], \"hash\": rec[\"hash\"][:16], \"eta\": rec[\"payload\"][\"eta\"]}))"
+      },
+      {
+        "line_start": 71,
+        "line_end": 85,
+        "text": "71: def verify():\n72:     init()\n73:     prev_hash = None\n74:     count = 0\n75:     with open(LEDGER) as f:\n76:         for line in f:\n77:             rec = json.loads(line)\n78:             expected = sha({k: rec[k] for k in (\"id\", \"ts\", \"type\", \"prev\", \"payload\")})\n79:             if rec[\"hash\"] != expected or rec[\"prev\"] != prev_hash:\n80:                 print(\"FAIL at\", rec[\"id\"])\n81:                 return False\n82:             prev_hash = rec[\"hash\"]\n83:             count += 1\n84:     print(f\"OK {count} records tip={prev_hash[:16] if prev_hash else None}\")\n85:     return True"
+      }
+    ]
+  }
+]

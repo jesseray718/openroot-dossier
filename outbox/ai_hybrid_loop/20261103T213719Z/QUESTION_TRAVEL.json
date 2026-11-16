@@ -1,0 +1,67 @@
+{
+  "ts": "2026-11-03T21:37:30Z",
+  "db": "/home/jesse/pods/clone_universal_20261016T083202Z/pod.db",
+  "db_bytes": 905707520,
+  "label": "SELF-DERIVED PROBE from pod chunks \u2014 NOT the 132-bank",
+  "questions": [
+    {
+      "idx": 0,
+      "source_rowid": 7158059,
+      "source_excerpt": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+      "question": "What does the corpus say about ?",
+      "query_terms": [],
+      "retrieval": {
+        "engine": "like-fallback",
+        "top5_rowids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "source_in_top5": false
+      },
+      "answer": {
+        "model": "smollm2:1.7b",
+        "elapsed_s": 78.8,
+        "text": "The corpus does not contain any information about the specific details of the context. However, we can infer that the context is related to the maintenance and organization of files and directories on a computer system, possibly involving backups, archives, and other related tasks.",
+        "status": "OK"
+      }
+    }
+  ],
+  "fts_table": "chunks_fts",
+  "text_col": "text",
+  "rows": 515396,
+  "ollama_models_available": [
+    "deepseek-r1:1.5b",
+    "gemma3:1b",
+    "gemma4:31b-cloud",
+    "granite3.3:2b",
+    "llama3.2:1b",
+    "llama3.2:3b",
+    "minimax-m3.1-flash:cloud",
+    "nomic-embed-text:latest",
+    "openroot-assistant:latest",
+    "openroot-coder:latest",
+    "openroot-instruct:7b",
+    "phi4-mini:latest",
+    "phi4-router:latest",
+    "qwen2.5-coder:0.5b",
+    "qwen2.5-coder:1.5b",
+    "qwen2.5-coder:3b",
+    "qwen2.5-coder:7b",
+    "qwen2.5:1.5b",
+    "qwen2.5:3b",
+    "qwen2.5:7b-instruct",
+    "qwen3.5:9b",
+    "qwen3:0.6b",
+    "qwen3:1.7b",
+    "smollm2:1.7b"
+  ],
+  "summary": {
+    "questions": 1,
+    "recall_hits": 0,
+    "recall_at_5": 0.0,
+    "answered": 1
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "20261114T050139.723168Z",
+  "question": "What mesh workflow is described in the supplied records? Summarize only what the excerpts support. Do not claim that described operations actually completed.",
+  "fts_query": "\"mesh\" OR \"agape\"",
+  "scope": "Top three matches per index; excerpts, not exhaustive retrieval",
+  "checks": [
+    {
+      "database": "/home/jesse/openroot/data/fts_index.db",
+      "table": "knowledge_fts",
+      "query_status": "passed",
+      "returned_rows": 3,
+      "elapsed_ms": 72.78
+    },
+    {
+      "database": "/home/jesse/openroot/data/md_fts_v1.db",
+      "table": "md",
+      "query_status": "passed",
+      "returned_rows": 3,
+      "elapsed_ms": 66.67
+    }
+  ],
+  "evidence": [
+    {
+      "id": "S1",
+      "database": "/home/jesse/openroot/data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 90,
+      "source_path": "attic/rescue_staging_vendor/0068_agape_net_setup.py",
+      "title": "0068_agape_net_setup.py",
+      "excerpt": "#!/usr/bin/env python3\n\"\"\"\nagape_net_setup.py v1.1 - Fixed SQL placeholder bug\nOne-shot idempotent setup for OpenRoot meta-mesh + nomen system.\nMobile-safe (stdlib only). Creates db, seeds, runs proofs, aggregates results.\n\"\"\"\nfrom __future__ import annotations\n\nimport argparse\nimport hashlib\nimport json\nimport math\nimport ... ",
+      "character_truncated": false,
+      "excerpt_sha256": "6623ca5be5261b62e306e3fce10ca72dee24fb5242ef7d93905bb9a547b346d9"
+    },
+    {
+      "id": "S2",
+      "database": "/home/jesse/openroot/data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 61,
+      "source_path": "attic/rescue_staging_vendor/0039_apape_net_setup.py",
+      "title": "0039_apape_net_setup.py",
+      "excerpt": "#!/usr/bin/env python3\n\"\"\"\nagape_net_setup.py v1.1 - Fixed SQL placeholder bug\nOne-shot idempotent setup for OpenRoot meta-mesh + nomen system.\nMobile-safe (stdlib only). Creates db, seeds, runs proofs, aggregates results.\n\"\"\"\nfrom __future__ import annotations\n\nimport argparse\nimport hashlib\nimport json\nimport math\nimport ... ",
+      "character_truncated": false,
+      "excerpt_sha256": "6623ca5be5261b62e306e3fce10ca72dee24fb5242ef7d93905bb9a547b346d9"
+    },
+    {
+      "id": "S3",
+      "database": "/home/jesse/openroot/data/fts_index.db",
+      "table": "knowledge_fts",
+      "rowid": 91,
+      "source_path": "attic/rescue_staging_vendor/0069_agape_net_full_integration.py",
+      "title": "0069_agape_net_full_integration.py",
+      "excerpt": "#!/usr/bin/env python3\n\"\"\"\nagape_net_full_integration.py v1.0\nCOMPLETE ONE-SHOT EXECUTION: Scale mesh + deepen lattice + seed physical yield\nValidates OpenRoot across all dimensions simultaneously.\n\nUsage:\n  python3 agape_net_full_integration.py\n  python3 agape_net_full_integration.py --light     # Skip heavy depth-6 sweep\n  python3 ... ",
+      "character_truncated": false,
+      "excerpt_sha256": "33e945c593d1078de4573f8995c16f04cc12cd9a6e590e8a8ae12d711fb53005"
+    },
+    {
+      "id": "S4",
+      "database": "/home/jesse/openroot/data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 70,
+      "source_path": "/data/data/com.termux/files/home/openroot/analysis/knowledge_probe_report_2026-09-18.md",
+      "title": "",
+      "excerpt": " ... 1 more truncated in ledger\n\n### agape_coordination \u2014 3071 hit(s)\n- `canonical_index.db::files` [agape=match 1]: /home/jesse/src/openroot-release/agape_mesh_advertise.py ab22cdc94aadc12eb69905812a527e5e70299e45a1deea41d11e8be86c550285 4262 1788998156.40\n- `canonical_index.db::files` [agape=match 2]: /home/jesse/src/openroot-release/agape_engine.py cf8d36089e38106fcb3ad0ed18d521962df53bb1988f42b5b1e3ed814b1064ce 6558 1788998156 ... ",
+      "character_truncated": false,
+      "excerpt_sha256": "77e8c758d9cd84d2fcb2850568454b42fa7f5ac368dc658754f38f8356655429"
+    },
+    {
+      "id": "S5",
+      "database": "/home/jesse/openroot/data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 377,
+      "source_path": "/data/data/com.termux/files/home/openroot/a15/openroot/analysis/knowledge_probe_report_2026-09-18.md",
+      "title": "",
+      "excerpt": " ... 1 more truncated in ledger\n\n### agape_coordination \u2014 3071 hit(s)\n- `canonical_index.db::files` [agape=match 1]: /home/jesse/src/openroot-release/agape_mesh_advertise.py ab22cdc94aadc12eb69905812a527e5e70299e45a1deea41d11e8be86c550285 4262 1788998156.40\n- `canonical_index.db::files` [agape=match 2]: /home/jesse/src/openroot-release/agape_engine.py cf8d36089e38106fcb3ad0ed18d521962df53bb1988f42b5b1e3ed814b1064ce 6558 1788998156 ... ",
+      "character_truncated": false,
+      "excerpt_sha256": "77e8c758d9cd84d2fcb2850568454b42fa7f5ac368dc658754f38f8356655429"
+    },
+    {
+      "id": "S6",
+      "database": "/home/jesse/openroot/data/md_fts_v1.db",
+      "table": "md",
+      "rowid": 180,
+      "source_path": "/data/data/com.termux/files/home/openroot/a15/inbox/friction_triage/1d39d45cf674_knowledge_probe_report_2026-09-18.md",
+      "title": "",
+      "excerpt": " ... 1 more truncated in ledger\n\n### agape_coordination \u2014 3071 hit(s)\n- `canonical_index.db::files` [agape=match 1]: /home/jesse/src/openroot-release/agape_mesh_advertise.py ab22cdc94aadc12eb69905812a527e5e70299e45a1deea41d11e8be86c550285 4262 1788998156.40\n- `canonical_index.db::files` [agape=match 2]: /home/jesse/src/openroot-release/agape_engine.py cf8d36089e38106fcb3ad0ed18d521962df53bb1988f42b5b1e3ed814b1064ce 6558 1788998156 ... ",
+      "character_truncated": false,
+      "excerpt_sha256": "77e8c758d9cd84d2fcb2850568454b42fa7f5ac368dc658754f38f8356655429"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.344478507Z","response":"```","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.359471338Z","response":"sql","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.374469497Z","response":"\n","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.389477845Z","response":"INSERT","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.40447691Z","response":" OR","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.419475273Z","response":" IGNORE","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.434474337Z","response":" INTO","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.449466537Z","response":" dossier","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.464473188Z","response":"_nodes","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.479475008Z","response":" (","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.494478032Z","response":"node","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.509478051Z","response":"_hash","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.524476716Z","response":",","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.539479864Z","response":" filepath","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.554471894Z","response":",","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.569148211Z","response":" content","done":false}
+{"model":"qwen2.5-coder:0.5b","created_at":"2026-11-13T03:31:50.569445147Z","response":"","done":true,"done_reason":"length","context":[151644,8948,198,2610,525,1207,16948,11,3465,553,54364,14817,13,1446,525,264,10950,17847,13,151645,198,151644,872,198,46951,825,2038,32189,13,8748,374,821,11,537,11221,13,2308,16148,11,50494,11,476,4960,4244,624,65813,25,3411,1172,279,7870,1965,12308,279,39518,624,42998,510,310,8128,7769,68760,394,39518,2726,81290,12496,52476,14896,320,3509,8950,11,26054,11,2213,11,11441,340,394,14710,63985,22473,22473,937,340,310,1591,497,320,3509,8950,11,607,5581,701,2213,11,882,6378,12145,11692,39351,25,151645,198,151644,77091,198,73594,3544,198,12698,2726,81290,12496,52476,14896,320,3509,8950,11,26054,11,2213],"total_duration":396111178,"load_duration":2350794,"prompt_eval_count":109,"prompt_eval_cached_count":50,"prompt_eval_duration":165149000,"eval_count":16,"eval_duration":226208000}

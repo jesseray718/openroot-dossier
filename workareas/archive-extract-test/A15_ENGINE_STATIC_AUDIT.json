@@ -1,0 +1,96 @@
+{
+  "report": [
+    {
+      "executed": false,
+      "filename": "lattice_cli.py",
+      "filesystem_calls": [
+        {
+          "function": "open",
+          "line": 276
+        },
+        {
+          "function": "open",
+          "line": 121
+        },
+        {
+          "function": "open",
+          "line": 227
+        },
+        {
+          "function": "open",
+          "line": 234
+        },
+        {
+          "function": "open",
+          "line": 75
+        },
+        {
+          "function": "open",
+          "line": 213
+        },
+        {
+          "function": "open",
+          "line": 340
+        },
+        {
+          "function": "open",
+          "line": 103
+        }
+      ],
+      "imports": [
+        "collections",
+        "copy",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "sys",
+        "time",
+        "uuid"
+      ],
+      "sha256": "8600f822418cae4f86cf749ba56756bd7f0c6f56ec42e78445085f2c94bd5e0f",
+      "static_analysis_only": true
+    },
+    {
+      "executed": false,
+      "filename": "newton_chain.py",
+      "filesystem_calls": [
+        {
+          "function": "open",
+          "line": 368
+        },
+        {
+          "function": "open",
+          "line": 227
+        },
+        {
+          "function": "open",
+          "line": 243
+        },
+        {
+          "function": "open",
+          "line": 129
+        },
+        {
+          "function": "open",
+          "line": 235
+        }
+      ],
+      "imports": [
+        "collections",
+        "copy",
+        "datetime",
+        "flask",
+        "hashlib",
+        "json",
+        "os",
+        "sys",
+        "time",
+        "uuid"
+      ],
+      "sha256": "0cd3a6176896cf7c009240268d71d9256e713141d5e0f5264f29aae5635cfd94",
+      "static_analysis_only": true
+    }
+  ],
+  "timestamp": "2026-11-11T13:10:30.027759+00:00"
+}
