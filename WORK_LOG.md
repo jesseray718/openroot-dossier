@@ -27,3 +27,4 @@ Published `review-tool-v2-20261111T140058Z` to
 2026-11-16T13:37:04Z ENSEMBLE: ollama restarted, roster live (gen=openroot-instruct:7b verify=qwen3.5:9b), specialists health-checked, eval re-run
 2026-11-16T13:43:04Z RAIL RECOVERY: suspects audited, gates embedded, remote census saved
 2026-11-16T13:46:46Z RAIL CURATED: 8 zombie worktrees quarantined, active embedded repos ejected, curated remotes created for code/docs stacks; big dirs (oldmain 135G, wisdom-scaffold 11G, thesis 11G, models 11G, code 1G) HELD for corpus review
+2026-11-16T15:49:40Z TIDBIT FINISH: wisdom+thesis+modelzoo+codelib ingested; live-dedupe patched; duplicates re-linked; yield measured; corpus sealed
