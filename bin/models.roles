@@ -1,0 +1,7 @@
+# OpenRoot ensemble roster - tiny specialists, one big coder (v1)
+GEN=openroot-instruct:7b
+VFY=qwen3.5:9b
+TRIAGE=granite3.3:2b
+CODEREVIEW=qwen2.5-coder:3b
+SUMMARY=llama3.2:1b
+EMBED=nomic-embed-text:latest
