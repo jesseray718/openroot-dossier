@@ -28,3 +28,9 @@ Published `review-tool-v2-20261111T140058Z` to
 2026-11-16T13:43:04Z RAIL RECOVERY: suspects audited, gates embedded, remote census saved
 2026-11-16T13:46:46Z RAIL CURATED: 8 zombie worktrees quarantined, active embedded repos ejected, curated remotes created for code/docs stacks; big dirs (oldmain 135G, wisdom-scaffold 11G, thesis 11G, models 11G, code 1G) HELD for corpus review
 2026-11-16T15:49:40Z TIDBIT FINISH: wisdom+thesis+modelzoo+codelib ingested; live-dedupe patched; duplicates re-linked; yield measured; corpus sealed
+
+## 2026-11-16T23:49:12Z pod-census-mesh run (resumed)
+  - a15-termux.sqlite 28K
+  - mesh.sqlite 28K
+  - optiplex3060-github.sqlite 28K
+  - optiplex3060-openroot.sqlite 28K

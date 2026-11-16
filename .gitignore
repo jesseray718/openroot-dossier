@@ -1,24 +1,34 @@
-# syncthing temp/conflict debris
-**/.syncthing*
-.stfolder/
-.stversions/
-# derived / oversized artifacts - never commit
-dossier_output.jsonl
-dossier_summary.md
-*.db
-*.db-wal
-*.db-shm
-node_modules/
-__pycache__/
-termlogs/
-corpus/index.db
-corpus/index.db-wal
-corpus/index.db-shm
 
-# embedded git repositories - never absorb into the hub
 a15/
+analysis/*.db
+.bundles/
+claim
+# --- commit-cleanup 2026-11-16: payloads and junk ---
+corpus/index.db
+corpus/index.db-shm
+corpus/index.db-wal
+corpus/tidbits/
+corpus/tidbits/index*
 data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/
 data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/
 data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/
 data/sdcard-sync/
+*.db
+*.db-shm
+*.db-wal
+# derived / oversized artifacts - never commit
 dossier/
+dossier_output.jsonl
+dossier_summary.md
+# embedded git repositories - never absorb into the hub
+'h origin master'
+logs/
+no
+node_modules/
+__pycache__/
+.stfolder/
+.stversions/
+**/.syncthing*
+# syncthing temp/conflict debris
+termlogs/
+WORK_LOG
