@@ -14,3 +14,11 @@ termlogs/
 corpus/index.db
 corpus/index.db-wal
 corpus/index.db-shm
+
+# embedded git repositories - never absorb into the hub
+a15/
+data/operator_holds/account_foundation_worktrees_20260926T231334Z/.github/
+data/operator_holds/account_foundation_worktrees_20260926T231334Z/jesseray718/
+data/operator_holds/design_packet_template_prep_20260926T232331Z/openroot-design-packet-template/
+data/sdcard-sync/
+dossier/

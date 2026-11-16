@@ -130,8 +130,8 @@ def rebuild_index(corpus, records):
         c.execute("INSERT OR REPLACE INTO files VALUES (?,?,?,?,?,?,?)",
                   (r["uuid"], r["relpath"], r["blake3"], r["prev_seal"],
                    r["bytes"], r["mtime"], r["seal_time"]))
-        c.execute("INSERT INTO files_fts(rowid, relpath) VALUES (rowid, ?)",
-                  (r["relpath"],))
+    # populate external-content FTS5 from the base table (rowid mapping preserved)
+    c.execute("INSERT INTO files_fts(rowid, relpath) SELECT rowid, relpath FROM files")
     conn.commit()
     conn.close()
 
