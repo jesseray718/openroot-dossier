@@ -18,3 +18,5 @@ Published `review-tool-v2-20261111T140058Z` to
 2026-11-16T08:48:33Z GATE PASS all-one docs+mesh-align v1.2.1-popw-ledger
 2026-11-16T09:28:33Z CLOSEOUT: pod sealed+verified (3 files, BLAKE3), gitlinks purged, gate hardened, keyed mode armed, bundle staged for offload
 2026-11-16T09:31:54Z FINAL: alias 9wa5l-2o8fl removed (was same-path alias of openroot); keyed seals adopted
+2026-11-16T09:33:50Z CORRECTION: prior receipt overstated - alias deletion had aborted (a15 not yet on canonical).
+2026-11-16T09:33:50Z FIX: a15 added to openroot folder; alias 9wa5l-2o8fl then deleted. Single canonical share.
