@@ -10,6 +10,7 @@ Doctrine: corpus files are immutable; manifest.jsonl is the truth; index.db is
 derived per node and NEVER synced. Manifest lines: {"uuid","relpath","blake3","prev_seal","bytes","mtime","seal_time"}
 """
 import argparse
+import os
 import datetime
 import json
 import sqlite3
@@ -19,8 +20,9 @@ from pathlib import Path
 
 try:
     from blake3 import blake3
+    _KEY = os.environ.get("SEAL_KEY", "")
     def file_hash(p, _mem={}):
-        h = blake3()
+        h = blake3(_KEY.encode()) if _KEY else blake3()
         with open(p, "rb") as f:
             for chunk in iter(lambda: f.read(1 << 20), b""):
                 h.update(chunk)
