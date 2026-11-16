@@ -10,3 +10,7 @@ dossier_summary.md
 *.db-shm
 node_modules/
 __pycache__/
+termlogs/
+corpus/index.db
+corpus/index.db-wal
+corpus/index.db-shm
