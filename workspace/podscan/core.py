@@ -15,7 +15,7 @@ except Exception:
 CHUNK_BYTES = 4096
 SNAP_RADIUS = 512
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".thumbnails",
-             "Android/data", "Android/obb"}
+             "Android/data", "Android/obb", "pod_mesh_pods", ".venv", "venv"}
 NOTES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
 SCHEMA = """
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS chunks(
   is_text INTEGER DEFAULT 0, emb BLOB);
 CREATE INDEX IF NOT EXISTS ix_chunks_file ON chunks(file_id);
 CREATE VIRTUAL TABLE IF NOT EXISTS chunk_words USING fts5(
-  text, path UNINDEXED, tokenize='unicode61 porter');
+  text, path UNINDEXED, tokenize='porter unicode61');
 CREATE TABLE IF NOT EXISTS word_stats(
   word TEXT PRIMARY KEY, count INTEGER, octave INTEGER, semitone INTEGER, note TEXT);
 CREATE TABLE IF NOT EXISTS embed_queue(chunk_id INTEGER PRIMARY KEY);
@@ -103,6 +103,12 @@ def cmd_scan(args):
                 st = os.stat(p)
                 if not os.path.isfile(p) or st.st_size == 0:
                     continue
+                if st.st_size > (1 << 29):
+                    con.execute("INSERT OR REPLACE INTO failed(path,reason) VALUES(?,?)",
+                                (p, f"skipped-oversize {st.st_size}"))
+                    continue
+                if n % 100 == 0:
+                    print(f"  [{tag}] #{n} {p}", flush=True)
                 with open(p, "rb") as fp:
                     head = fp.read(CHUNK_BYTES)
                     fp.seek(0)
@@ -136,7 +142,7 @@ def cmd_scan(args):
                             words[w.strip('.,;:!?"\'`()[]{}<>/\\|-_*=+~^@$%&#0123456789')] += 1
                         con.execute("INSERT OR IGNORE INTO embed_queue(chunk_id) VALUES(?)", (cid,))
                 n += 1
-                if n % 500 == 0:
+                if n % 200 == 0:
                     con.commit()
                     print(f"  [{tag}] {n} files, {time.time()-started:.0f}s", flush=True)
             except Exception as e:
@@ -219,7 +225,7 @@ def cmd_federate(args):
       CREATE TABLE IF NOT EXISTS mesh_chunks(pod TEXT, chunk_id INTEGER, file_path TEXT,
         offset INTEGER, size INTEGER, blake3 TEXT, octave_f REAL, emb BLOB);
       CREATE VIRTUAL TABLE IF NOT EXISTS mesh_words USING fts5(text, pod UNINDEXED,
-        chunk_id UNINDEXED, file_path UNINDEXED, tokenize='unicode61 porter');
+        chunk_id UNINDEXED, file_path UNINDEXED, tokenize='porter unicode61');
       CREATE TABLE IF NOT EXISTS dupes(blake3 TEXT, pod TEXT, path TEXT);
       CREATE INDEX IF NOT EXISTS ix_meshf ON mesh_files(blake3);
       CREATE INDEX IF NOT EXISTS ix_meshc ON mesh_chunks(blake3);""")

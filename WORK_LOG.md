@@ -43,3 +43,20 @@ Published `review-tool-v2-20261111T140058Z` to
   - optiplex3060-github.sqlite 28K
   - optiplex3060-openroot.sqlite 28K
   - POD_RECEIPT.json 502
+
+## 2026-11-17T04:48:52Z pod-census-mesh run (resumed)
+  - a15-termux.sqlite 64K
+  - MANIFEST.blake3 350
+  - MANIFEST.sha256 350
+  - mesh.sqlite 104K
+  - optiplex3060-github.faiss 6.1M
+  - optiplex3060-github.sqlite 1.0G
+  - optiplex3060-openroot.faiss 3.1M
+  - optiplex3060-openroot.sqlite 1.8G
+  - optiplex3060-openroot.sqlite-shm 32K
+  - optiplex3060-openroot.sqlite-wal 0
+  - POD_RECEIPT.json 502
+  - mesh_files rows = 0
+  - distinct blake3 = 0
+  - mesh_words rows = 0
+  - cross-pod dupes = 0
