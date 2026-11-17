@@ -1,0 +1,11 @@
+{
+ "sealed_at": "2026-11-17T00:37:57Z",
+ "host": "optiplex3060",
+ "files": 1562,
+ "bytes_total": 153086172,
+ "manifest_sha256_blake3": "f9c919cb26bb417f5c90d150ebd55c5c474c4106cc373dfcb8d807d2618c6d93",
+ "manifest_blake3_blake3": "39332cff585ef69a499ed3fb7798d0753c3a9415e6af34f1246c16e974cee3cf",
+ "prev_receipt": "5cecf1303ef7aa16eae7b7afa7eaf304d62fc1420738aae4e7fff9e791362598",
+ "note": "universal pod manifest v1",
+ "receipt_blake3": "073442c83664584e57fbbaa56eb34333baa6c9cb861ec6aad75650a3367b45a3"
+}
