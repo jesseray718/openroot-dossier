@@ -60,3 +60,11 @@ Published `review-tool-v2-20261111T140058Z` to
   - distinct blake3 = 0
   - mesh_words rows = 0
   - cross-pod dupes = 0
+
+## 2026-11-17T08:47:05Z green-sweep receipt (aperture-mesh branches)
+- main baseline: a06b29e47746e0542a563a3ddab4f94e65306e4f
+- merged: none
+- skipped: docs/connection-context-20261024T203917-1431906 (gone) docs/a15-mirror-20261103T133848Z-168362 (gone) review/unified-architecture-20261023-154628 (gone) feature/synergetic-compounding-toolkit (gone) copilot/recover-newton-chain-spec (gone) ghost/a15-old-lineage (gone)
+- deleted: none
+- log: /home/jesse/aperture-mesh/logs/branch_sweep_20261117T084659Z.log
+- 2026-11-18T03:13:39Z PoPW RAPL metering live: block 7 cycle 20261118T031203Z measured 115 J / 153 chars (tip a1b218c67f64a8e0), OTS-submitted. Block 6 = metered no-op (model missing, 2 J). Doctrine held: append-only, no rewrite.

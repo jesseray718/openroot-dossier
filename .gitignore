@@ -32,3 +32,7 @@ __pycache__/
 # syncthing temp/conflict debris
 termlogs/
 WORK_LOG
+*.tmp
+*.db
+.syncthing.*
+universal_lattice_fts5.db
