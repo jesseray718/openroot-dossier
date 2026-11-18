@@ -28,7 +28,7 @@ def autodossier(question):
     con = cell_schema.open_db()
     dossier = {}
     for w in words:
-        hits = con.execute("SELECT cell.tid, substr(cell_fts.body,1,400) FROM cell_fts JOIN cell ON cell.tid=cell_fts.tid WHERE cell_fts MATCH ? ORDER BY rank LIMIT 40", (w,)).fetchall()
+        hits = con.execute("SELECT cell.tid, substr(cell_fts.body,1,400) FROM cell_fts JOIN cell ON cell.tid=cell_fts.tid WHERE cell_fts MATCH ? ORDER BY rank LIMIT 40", (chr(34) + w + chr(34),)).fetchall()
         dossier[w] = hits
     con.close()
     return words, dossier
