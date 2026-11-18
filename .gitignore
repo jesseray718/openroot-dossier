@@ -41,3 +41,17 @@ data/*.db
 state/
 worklog/
 tmp/
+data/
+logs/
+mesh/
+state/
+worklog/
+workspace/
+tmp/
+workareas/
+pods/
+outbox/
+openroot-dossier/
+logs_mesh_sync.out
+autodossier_cache.db
+*.log
