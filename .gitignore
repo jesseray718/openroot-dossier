@@ -69,3 +69,4 @@ openroot-dossier/
 logs_mesh_sync.out
 autodossier_cache.db
 *.log
+corpus/
