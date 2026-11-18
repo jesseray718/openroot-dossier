@@ -68,3 +68,4 @@ Published `review-tool-v2-20261111T140058Z` to
 - deleted: none
 - log: /home/jesse/aperture-mesh/logs/branch_sweep_20261117T084659Z.log
 - 2026-11-18T03:13:39Z PoPW RAPL metering live: block 7 cycle 20261118T031203Z measured 115 J / 153 chars (tip a1b218c67f64a8e0), OTS-submitted. Block 6 = metered no-op (model missing, 2 J). Doctrine held: append-only, no rewrite.
+- 2026-11-18T10:31:11Z CORPUS EXPAND: 17,145 cells (15,253 files, 2,785 git commits, 1 pathway) + aerocement learn cell. Probe stack=355 incidences. Pipeline grounded answer @952 J vs ungrounded baseline @1769 J. Pathway f9a9766f sealed.
