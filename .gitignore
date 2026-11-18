@@ -36,3 +36,8 @@ WORK_LOG
 *.db
 .syncthing.*
 universal_lattice_fts5.db
+data/*.db
+*.db
+state/
+worklog/
+tmp/
