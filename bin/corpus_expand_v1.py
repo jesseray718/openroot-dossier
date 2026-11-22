@@ -14,7 +14,7 @@ def kingdom(con, name, desc):
     tid = hashlib.blake2b(("4taxonNone" + lb).encode(), digest_size=32).hexdigest()
     con.execute("INSERT OR IGNORE INTO cell VALUES (?,?,?,?,?,?,?,?,?,?)",
                 (tid, 4, None, lb, sha(desc), len(desc.encode()), int(time.time()), None, "taxon", None))
-    con.execute("INSERT OR IGNORE INTO cell_fts (tid, body) VALUES (?,?)", (tid, desc))
+    cell_schema.insert_fts(con, tid, desc)
     return tid
 
 def add_cells(con, parent, kind, level, items):
@@ -27,7 +27,7 @@ def add_cells(con, parent, kind, level, items):
         tid = hashlib.blake2b((str(level) + kind + str(parent) + lb).encode(), digest_size=32).hexdigest()
         con.execute("INSERT OR IGNORE INTO cell VALUES (?,?,?,?,?,?,?,?,?,?)",
                     (tid, level, parent, lb, sha(body), len(body.encode()), int(time.time()), None, kind, ref))
-        con.execute("INSERT OR IGNORE INTO cell_fts (tid, body) VALUES (?,?)", (tid, body))
+        cell_schema.insert_fts(con, tid, body)
         n += 1
     return n
 

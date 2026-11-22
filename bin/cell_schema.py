@@ -36,13 +36,42 @@ def open_db(db=DB):
     con.executescript(DDL)
     return con
 
+
+def insert_fts(con, tid, body):
+    """Insert once per TID; reject a different body without committing caller work."""
+    if not isinstance(tid, str) or not tid:
+        raise ValueError("invalid FTS TID")
+    if not isinstance(body, str):
+        raise ValueError("non-text FTS body")
+    con.execute("SAVEPOINT openroot_fts_guard")
+    try:
+        inserted = con.execute(
+            "INSERT INTO cell_fts (tid, body) "
+            "SELECT ?, ? WHERE NOT EXISTS "
+            "(SELECT 1 FROM cell_fts WHERE tid=?)",
+            (tid, body, tid),
+        ).rowcount
+        rows = con.execute(
+            "SELECT DISTINCT body COLLATE BINARY "
+            "FROM cell_fts WHERE tid=? LIMIT 2",
+            (tid,),
+        ).fetchall()
+        if len(rows) != 1 or rows[0][0] != body:
+            raise ValueError("conflicting FTS body for existing TID")
+    except BaseException:
+        con.execute("ROLLBACK TO openroot_fts_guard")
+        con.execute("RELEASE openroot_fts_guard")
+        raise
+    con.execute("RELEASE openroot_fts_guard")
+    return inserted == 1
+
 def insert_cell(con, level, kind, parent_tid, body, payload_ref=None, prev=None, tid_salt=""):
     b3 = hashlib.blake2b((tid_salt + body).encode(), digest_size=32).hexdigest()
     tid = hashlib.blake2b((str(level) + kind + str(parent_tid) + b3).encode(), digest_size=32).hexdigest()
     ts = int(os.environ.get("CELL_MTIME", __import__("time").time()))
     con.execute("INSERT OR IGNORE INTO cell VALUES (?,?,?,?,?,?,?,?,?,?)",
                 (tid, level, parent_tid, b3, sha256(body), len(body.encode()), ts, prev, kind, payload_ref))
-    con.execute("INSERT INTO cell_fts (tid, body) VALUES (?,?)", (tid, body))
+    insert_fts(con, tid, body)
     return tid
 
 if __name__ == "__main__":
